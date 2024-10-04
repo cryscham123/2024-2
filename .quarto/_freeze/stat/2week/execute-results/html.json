@@ -1,0 +1,15 @@
+{
+  "hash": "3343bde60dadf9dc4e0238027a982b27",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\n---\n\n\n\n\n## 확률\n확률(모집단): 상대도수의 극한값\n- Law of Large Numbers\n- sample space: 표본공간\n- event: sample space의 부분집합\nex) 주사위 1개를 던지는 실험에서 가능한 event 개수: 모든 sub event의 갯수 = 2^6 = 64\n\n### 고전적 확률\n- 모든 single event가 동일한 확률을 가진다.\n\n### 통계적 확률\n- single event가 동일한 확률을 가지지 않아도 된다.\n- 표본의 수가 무한대로 갈 때, 표본의 확률이 수렴하는 값\n\n통계(표본): \n\n## List\n다양한 데이터 타입을 담을 수 있는 데이터 타입\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlist1 <- list(1, 2, 3, 4, '5')\nlist1[[5]]\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] \"5\"\n```\n\n\n:::\n\n```{.r .cell-code}\nnames(list1) <- c('a', 'b', 'c', 'd', 'e')\n```\n:::\n\n\n\n\n## dataframe\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

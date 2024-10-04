@@ -1,0 +1,18 @@
+## what is human factors
+- human factors = Ergonomics
+- a human-centered design philosophy <-> technology-centered design
+
+## component of human factors
+- human: physical, cognitive, group
+- task: physical + cognitive + group
+- envirnment: working environment, systems
+
+## Goal of human factors
+- Reduce errors
+- Increase productivity
+- Enhance safety
+- Enhance comfort
+
+## cycle of human factors
+
+

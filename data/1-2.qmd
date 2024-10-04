@@ -1,0 +1,17 @@
+---
+title: 'init'
+---
+
+다음주 목요일 휴강
+
+## multiple themes in same table 
+1. redundancy problem in table
+2. 없는 row 발생
+3. 일관성 문제(referential integrity constraint)
+
+=> in relational db, each informational topic is stored in its own table
+
+db is self-describing collection of related tables
+table and metadata, index, application metadata are stored in db
+
+

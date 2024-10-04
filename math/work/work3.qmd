@@ -1,0 +1,224 @@
+---
+title: '기공수 과제 #3'
+author: "20192208 김형훈"
+format: 
+  pdf:
+    documentclass: report
+    papersize: a4
+    number-sections: true
+    number-depth: 3
+    top-level-division: chapter
+    geometry:
+      - top=10mm
+include-in-header: 
+  text: |
+    \usepackage{fontspec}
+    \setmainfont{Noto Sans KR}
+    \usepackage{titlesec}
+    \titleformat{\chapter}{\normalfont\huge\bfseries}{}{0pt}{\huge}
+    \titleformat{\section}[block]{\normalfont\Large\bfseries}{}{0pt}{}
+    \titleformat{\subsection}[block]{\normalfont\large\bfseries}{}{0pt}{}
+    \titleformat{\subsubsection}[block]{\normalfont\normalsize\bfseries}{}{0pt}{}
+    \titlespacing*{\chapter}{-3pt}{0pt}{10pt}
+    \titlespacing*{\section}{0pt}{20pt}{10pt}
+    \newcommand{\sectionbreak}{\clearpage}
+    \usepackage{setspace}
+    \setstretch{2}
+    \usepackage{tabularx}
+    \newcolumntype{Y}{>{\centering\arraybackslash}X}
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+# 3장 1절
+## 3번 문제
+### 1
+$y=x^3+x-8$와 $y=x$의 교점은 $x=2$  
+$y=x^3+x-8=0$의 $x=2$에서의 기울기는 13  
+$y=x$의 기울기는 1  
+$|tan∅| = |\frac{13 - 1}{1 + 13}| = \frac{6}{7}$  
+**∴ $\frac{6}{7}$**
+
+### 2
+$y=\sqrt{x}$와 $x+2y-3=0$의 교점은 $x=1$  
+$y=\sqrt{x}$의 $x=1$에서의 기울기는 $\frac{1}{2}$, $x=9$에서의 기울기는 $\frac{1}{6}$  
+$x+2y-3=0$의 기울기는 $-\frac{1}{2}$  
+$x=1$일 때, $|tan∅| = |\frac{\frac{1}{2} + \frac{1}{2}}{1 - \frac{1}{4}}| = \frac{4}{3}$  
+**∴ $\frac{4}{3}$**
+
+### 3
+$x^3-x^2+x-1=0$, 교점은 $x=1$  
+$y=x^2+1$의 $x=1$에서의 기울기는 2  
+$y=x+x^{-1}$의 $x=1$에서의 기울기는 0  
+$|tan∅| = |\frac{2 - 0}{1 + 0}| = 2$  
+**∴ 2**
+
+### 4
+$x^3+x=x^2$의 교점은 $x=0$  
+$y=x^3+x$의 $x=0$에서의 기울기는 1  
+$y=x^2$의 $x=0$에서의 기울기는 0  
+$|tan∅| = |\frac{1 - 0}{1 + 0}| = 1$  
+**∴ 1**
+
+## 4번 문제
+$3x-y=2$의 기울기는 3.  
+기울기가 3이되는 $y=x^2-3x-5$의 어떤 점은 $y′=2x-3=3$을 만족하는 $x$.  
+$x=3, y=-5$ 기울기는 3.  
+접선의 방정식은 $y=3x-14$이다.
+
+## 5번 문제
+$x=4$일 때 기울기는 $\frac{5}{4}$  
+점 (4,6)에서의 법선은 $y=-\frac{4}{5}x+\frac{46}{5}$  
+$y$축과 만나는 점은 $(0,\frac{46}{5})$
+
+# 3장 2절
+## 4번 문제
+$s′= \frac{1}{2}t^{-\frac{1}{2}} - \frac{1}{3}t^{-\frac{2}{3}}$  
+$s′′= -\frac{1}{4}t^{-\frac{3}{2}} + \frac{2}{9}t^{-\frac{5}{3}}$  
+가속도가 0이 되는 시각은 $t=(\frac{8}{9})^6$  
+이때의 속도는 $\frac{3^6}{2^{12}}$  
+**∴ $\frac{729}{4096}$**
+
+# 3장 3절
+## 5번 문제
+### 1
+$f′(x)=3x^2-18x+15$  
+$= 3(x-1)(x-5)$  
+**극대점은 1, 극소점은 5이다.**
+
+### 2
+$f′(x)=\frac{6x^2-2x+3}{3\sqrt[3]{(2x^3-x^2+3x-1)^2}}$  
+$6x^2-2x+3$의 실근의 갯수를 구하면, $(-2)^2-4*6*3 = -68 < 0$이므로 실근이 없다.  
+**따라서 극대점과 극소점이 없다.**
+
+### 3
+$f′(x)=-\frac{4x^3}{(x^4+4)^2}$  
+**0일 때 극대점이다.**
+
+### 4
+$f′(x)=\frac{x^2-1}{x^2}$  
+**극대점은 -1, 극소점은 1이다.**
+
+### 5
+$f′(x)=\frac{1}{2}x^{-\frac{1}{2}}(\frac{x-1}{x})$  
+**$x = 1$에서 극솟점.**
+
+### 6
+$f′(x)=4x(3x-1)+6(x^2-1)$  
+$= 2(9x^2-2x-3)$  
+근의 공식을 이용하여 $x$를 구하면 $x=\frac{1±2\sqrt{7}}{9}$  
+**극대점은 $\frac{1-2\sqrt{7}}{9}$, 극솟점은 $\frac{1+2\sqrt{7}}{9}$이다.**
+
+# 3장 4절
+## 3번 문제
+### 1
+$y′=3x^2-6x+2$  
+$y′′=6x-6$  
+$(1, ∞)$에서 위로 오목하다.
+
+### 2
+$y′=-3x^2-4x+1$  
+$y′′=-6x-4$  
+$(-\infty, -\frac{2}{3})$에서 위로 오목하다.  
+
+### 3
+$y′=\frac{x^2+2x-1}{(x+1)^2}$  
+$y′′=\frac{4}{(x+1)^3}$  
+$(-1, ∞)$에서 위로 오목하다.
+
+### 4
+$y′=\frac{2x+1}{2\sqrt{x^2+x+1}}$  
+$y′′=\frac{4x^2+2x+3}{4(x^2+x+1)^{\frac{3}{2}}}$  
+모든 실수에서 위로 오목하다.
+
+## 4번 문제
+### 1
+$y′=3x^2-1$  
+**임계점은 $x=±\sqrt{\frac{1}{3}}$**  
+$y′′=6x$  
+**변곡점은 $x=0$**
+
+### 2
+$y′=(x-2)(x+1)$  
+**임계점은 $x=2, -1$**  
+$y′′=2x-1$  
+**변곡점은 $x=\frac{1}{2}$**
+
+### 3
+$x≤-2, x≥0$  
+$y′=\frac{3(x+1)}{2(x^2+2x)^{\frac{1}{4}}}$  
+**임계점은 $x=-2, 0$**  
+$y′′=\frac{3(2-(x+1)^2(x^2+2x)^{-1})}{4(x^2+2x)^{\frac{1}{4}}}$  
+$(2-(x+1)^2(x^2+2x)^{-1}) = 0$  
+$(x+1)^2 = 2(x^2+2x)$  
+$x^2+2x+1 = 2x^2+4x$  
+$x^2+2x-1=0$  
+$x=-1±\sqrt{2}$  
+**변곡점은 $x=-1±\sqrt{2}$**
+
+
+\small graph가 답지에 없어서 python으로 한번 그려보았습니다.
+
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(-7, 5, 1000)
+y = np.power(x**2 + 2*x, 3/4)
+
+plt.figure(figsize=(10, 6))
+plt.plot(x, y)
+plt.title('Python Code Graph')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.grid(True)
+plt.show()
+```
+
+### 4
+$x≠0$  
+$y′=\frac{x^2-1}{x^2}$  
+**임계점은 $x=1, -1$**  
+$y′′=\frac{2}{x^3}$  
+**변곡점은 존재하지 않는다**
+
+# 3장 5절
+## 4번 문제
+직선 $y=x$ 위의 점에서 점 (4,1)에 가장 가까운 점은 접선이 직선 $y=x$와 수직이 되는 점이다.  
+점 (4,1)을 지나는 $y=x$의 법선은 $y=-x+5$이다.  
+$y=x$와 $y=-x+5$의 교점은 $(\frac{5}{2}, \frac{5}{2})$  
+**∴ $(\frac{5}{2}, \frac{5}{2})$**
+
+## 7번 문제
+가로를 $x$, 세로를 $y$라고 하자.  
+$3x+2y=800$  
+$y=400-\frac{3}{2}x$  
+$xy = -\frac{3}{2}x^2+400x$  
+이것의 일계도함수는 $-3x+400$  
+$x=\frac{400}{3}$일 때 토지의 넓이가 최댓값을 가진다.  
+**∴$\frac{400}{3}$, 200**
+
+# 3장 6절
+## 5번 문제
+### 1
+$f(x)=\sqrt{x}$  
+$f(25 + 2) ≈ f(25) + f′(25)2$  
+**∴ $\frac{26}{5}$**
+
+### 2
+$f(x)=\sqrt[3]{x}$  
+$f(64 - 3) ≈ f(64) - f′(64)3$  
+**∴ $\frac{63}{16}$**
+
+### 3
+$f(x)=\sqrt[4]{x}$  
+$f(81 + 2.7) ≈ f(81) + f′(81)2.7$  
+**∴ $\frac{121}{40}$**
+
+### 4
+$f(x)=\sqrt[3]{x}$  
+$f(125 - 3) ≈ f(125) - f′(125)3$  
+**∴ $\frac{124}{25}$**  

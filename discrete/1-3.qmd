@@ -1,0 +1,13 @@
+## Quantifiers
+
+∀: p(x) is always true for all x in the domain
+∃: p(x) is true for at least one x in the domain
+
+¬∀p(x) is ∃¬p(x) and vice versa
+
+### Uniqueness Quantifier
+∃!x: p(x) is true for exactly one x in the domain
+
+### precedence of Quantifiers
+∀xp(x) v q(x) is equivalent to (∀xp(x)) v q(x)
+

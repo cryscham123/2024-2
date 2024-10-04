@@ -1,0 +1,36 @@
+---
+title: ''
+---
+
+10/1 출석체크 안함
+
+외우셈.
+## definition of human factors
+Human factors discovers and applies information
+about human behavior, abilities, limitations, and other
+characteristics to the design of tools, machines, systems,
+tasks, jobs, and environments for productive, safe,
+comfortable, and effective human use
+
+외우셈.
+## goals of human factors
+- reduce errors
+- increase productivity
+- enhance safety
+- enhance comfort
+
+## history of human factors and ergonomics
+- first fashioned simple tools
+- leonardo da vinci
+- tayler's four principles:
+  1. 관리자가 작업의 세세한 특성을 이해해야한다.
+  2. 일을 과학적으로 디자인해야한다.
+  3. 과학적으로 훈련시켜야한다.
+  4. 정해진 방식으로 작업이 이루어지는지 확인해야한다.
+- frank and lillian gilbreth
+- world war 1: IQ, EQ
+- world war 2: fit human to job -> fit job to human
+
+## area of human factors and ergonomics
+## apply human factors and ergonomics to real world problems
+

@@ -1,0 +1,76 @@
+## 인간 정보 처리 과정
+
+### 1. 감각 처리 (Sensory Processing)
+- 주요 감각: 시각, 청각, 운동 감각(proprioception)
+- 운동 감각: 생리적 신호, 중력과 가속도에 따른 몸의 위치 감각
+- STSS (Short Term Sensory Store)
+  - 각 감각기관별 정보 저장 공간
+  - 주의 집중 불필요, 정보 그대로 저장
+  - 빠르게 소멸 (예: 시각 - Iconic Memory 200-300ms, 청각 - Echoic Memory 2-8s)
+
+### 2. 지각 (Perception)
+- 정보 해석 과정
+- Top-Down Processing: 과거 기억으로 정보 해석 (Long Term Memory 활용)
+- Bottom-Up Processing: 새로운/익숙하지 않은 정보 해석
+- Preattentive Processing: 주의 집중 없이 자동적 정보 해석 (예: Stroop Effect)
+
+### 3. 주의 자원 (Attention Resources)
+- 전반적인 정보 처리 과정에 영향
+- Search Light Metaphor: 주의 집중의 비유적 설명
+- 주의 실패 유형:
+  - Selective Attention: 잘못된 곳에 집중
+  - Focused Attention: 주의 집중 부족
+  - Divided Attention: 다중 작업 시 주의 분산
+  - Sustained Attention: 장시간 주의 유지 실패
+
+### 4. 장기 기억 (Long Term Memory)
+- 학습을 통한 정보 저장
+- 유형:
+  - Declarative Memory (What): 사실적 지식 (Episodic, Semantic)
+  - Procedural Memory (How): 절차적 지식
+- 기억 실패: Encoding, Storage, Retrieval 단계에서 발생 가능
+
+### 5. 인지 (Cognition)
+- Working Memory:
+  - 단기적 정보 처리 및 조작
+  - 제한된 용량 (7±2 items)
+  - Long Term Memory와 Perception으로부터 정보 획득
+
+### 6. 반응 선택 (Response Selection)
+- 의사결정 이론:
+  - Signal Detection Theory
+  - Expected Value
+  - Bayesian Decision Theory
+  - Multi-attribute Theory
+- Naturalistic Decision Making: Recognition-Primed Decision Model
+
+### 7. 반응 실행 (Response Execution)
+
+### 8. 시스템 환경 (System Environment)
+- 피드백 제공
+
+## 퀴즈
+
+1. STSS(Short Term Sensory Store)와 Working Memory의 차이점을 설명하시오. (주관식)
+
+
+2. Top-Down Processing과 Bottom-Up Processing의 차이를 예를 들어 설명하시오. (주관식)
+
+
+3. 다음 중 주의 자원(Attention Resources)과 관련된 현상이 아닌 것은?
+   a) Change Blindness
+   b) Inattentional Blindness
+   c) Stroop Effect
+   d) Cocktail Party Effect
+
+4. 장기 기억(Long Term Memory)의 세 가지 주요 단계를 순서대로 나열하고, 각 단계에서 발생할 수 있는 기억 실패의 예를 들어 설명하시오. (주관식)
+
+5. 다음 중 Naturalistic Decision Making의 특징으로 가장 적절한 것은?
+   a) 항상 최적의 결정을 도출한다.
+   b) 실험실 환경에서 가장 효과적으로 적용된다.
+   c) 경험을 바탕으로 한 직관적 의사결정을 강조한다.
+   d) 모든 가능한 대안을 체계적으로 분석한다.
+
+6. Working Memory의 용량 제한(7±2 items)이 인간-컴퓨터 상호작용(HCI) 설계에 어떤 영향을 미치는지 설명하고, 이를 고려한 인터페이스 설계 예시를 제시하시오. (주관식)
+
+

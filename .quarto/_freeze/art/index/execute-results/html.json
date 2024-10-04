@@ -1,0 +1,15 @@
+{
+  "hash": "fd9c1c62a6532e0803ef7f00c482e8b2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"공연예술의 이해\"\nformat: html\n---\n\n- [1.qmd](1.qmd)\n\n- [2.qmd](2.qmd)\n\n- [3.qmd](3.qmd)\n\n- [4.qmd](4.qmd)\n\n- [5.qmd](5.qmd)\n\n- [6.qmd](6.qmd)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

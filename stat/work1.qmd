@@ -1,0 +1,95 @@
+---
+title: '확률과 통계1 과제 1 - 20192208 김형훈'
+---
+
+## 1
+
+```{r}
+x <- seq(5.0, -11.0, -0.3)
+x
+y <- x[length(x):1]
+y
+```
+
+## 2
+
+```{r}
+x <- c(seq(3, 6, length.out=5), rep(c(2, -5.1, -33), 2), 7 / 42 + 2)
+x
+y <- x[c(-1, -length(x))]
+y
+z <- sort(x, decreasing = TRUE)
+z
+```
+## 3
+
+```{r}
+A <- matrix(c(4.3, 3.1, 8.2, 8.2, 3.2, 0.9, 1.6, 6.5), 4, 2)
+A
+B <- rbind(c(4.3, 3.2), c(3.1, 0.9), c(8.2, 1.6), c(8.2, 6.5))
+B
+A[, 2] <- sort(A[, 2])
+A
+for (n in 1:ncol(A)) {
+  A[, n] <- sort(A[, n])
+}
+A
+```
+
+## 4
+
+```{r}
+df <- data.frame(
+  person=c("Stan", "Francine", "Steve", "Roger", "Hayley", "Klaus"),
+  sex=factor(c('M', 'F', 'M', 'M', 'F', 'M')),
+  funny=factor(c('High', 'Mid', 'Low', 'High', 'Mid', 'Mid'), levels=c('Low', 'Mid', 'High'), ordered=TRUE)
+)
+str(df)
+df['gpa'] <- c(3.5, 3.5, 3.0, 4.1, 2.8, 3.9)
+df
+yo <- df[substr(df$person, 1, 1) == 'S', ]
+yo
+df['sex'] <- ifelse(df['sex'] == 'M', 0, 1)
+df
+```
+
+## 5
+
+```{r}
+sortMatrix <- function(A) {
+  for (n in 1:ncol(A)) {
+    A[, n] <- sort(A[, n])
+  }
+  return (A)
+}
+
+mat <- matrix(c(4.3, 3.1, 8.2, 8.2, 3.2, 0.9, 1.6, 6.5), 4, 2)
+mat <- sortMatrix(mat)
+mat
+```
+
+## 6
+
+```{r}
+df <- data.frame(quakes)
+str(df)
+mean(df$mag)
+median(df$mag)
+tab <- table(df$mag)
+which(tab == max(tab))
+summary(df$mag)
+var(df$mag)
+sd(df$mag)
+IQR(df$mag)
+cv <- sd(df$mag) / mean(df$mag)
+cv
+table(df$mag)
+barplot(table(df$mag))
+hist(df$mag)
+x_grid1 = seq(4, 6.4, 0.1)
+x_grid2 = seq(4, 6.4, 0.3)
+hist(df$mag, breaks = x_grid1, col='blue', xlab='리히터규모', ylab='빈도')
+hist(df$mag, breaks = x_grid2, col='green', xlab='리히터규모', ylab='빈도')
+boxplot(df$lat, df$long, df$depth, df$mag, col=c('red', 'blue', 'green', 'yellow'))
+pairs(df[, c("lat", "long", "depth", "mag")])
+```

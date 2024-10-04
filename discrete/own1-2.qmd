@@ -1,0 +1,110 @@
+---
+title: 'yo'
+---
+## some terminology
+- tautology: a statement that is always true
+- contradiction: a statement that is always false
+- contingent: a statement that is neither a tautology nor a contradiction
+
+## compound propositions
+if p <-> q is a tautology, then p and q are logically equivalent
+p | q | p ^ q | ㄱ(p ^ q) | ㄱp | ㄱq | ㄱp v ㄱq
+T | T | T     | F         | F   | F   | F
+T | F | F     | T         | F   | T   | T
+F | T | F     | T         | T   | F   | T
+F | F | F     | T         | T   | T   | T
+
+## logical logical equivalence
+### identity laws
+- p ^ T = p
+- p v F = p
+
+### domination laws
+- p v T = T(tautology)
+- p ^ F = F(contradiction)
+
+### idempotent laws
+- p v p = p
+- p ^ p = p
+
+### double negation laws
+- ㄱ(ㄱp) = p
+
+### Absorbation laws
+- p v (p ^ q) = p
+- p ^ (p v q) = p
+
+### negation laws
+- p v ㄱp = T(tautology)
+- p ^ ㄱp = F(contradiction)
+
+## predict logic 
+- variables
+- predicates
+- quantifier
+universal quantifier(∀): for all in domain
+existential quantifier(∃): there exists at least one in domain
+uniqune quantifier(∃!): there exists only one in domain
+ㄱ∀xP(x) = ∃xㄱP(x)
+ㄱ∃xP(x) = ∀xㄱP(x)
+
+## nested quantifiers 
+- ∀x∃yP(x, y) = for every x, there exists a y such that P(x, y)
+- ∃x∀yP(x, y) = there exists an x such that for every y, P(x, y)
+
+
+## rules of inference
+### argument
+- a sequence of statements that end with a conclusion
+- premises: statements that are assumed to be true
+- conclusion: statement that can be inferred from the premises
+- valid argument: if the conclusion follows from the premises
+
+### modus ponens
+- p -> q
+- p
+- q
+
+### modus tollens
+- p -> q
+- ㄱq
+- ㄱp
+
+### hypothetical syllogism
+- p -> q
+- q -> r
+- p -> r
+
+### disjunctive syllogism
+- p v q
+- ㄱp
+- q
+
+### addition
+- p
+- p v q
+
+### simplification
+- p ^ q
+- p
+
+### conjunction
+- p
+- q
+- p ^ q
+
+### resolution
+- p v q
+- ㄱp v r
+- q v r
+
+## predicate logic 
+- universal instantiation: if P(x) is true for all x, then P(c) is true for any c in the domain
+- universal generalization: if P(c) is true for any c in the domain, then P(x) is true for all x
+- existential instantiation: if P(x) is true for some x, then there exists an x such that P(x) is true
+- existential generalization: if there exists an x such that P(x) is true, then P(x) is true for some x
+
+## direct proof
+- assume p is true
+- show that q is true
+

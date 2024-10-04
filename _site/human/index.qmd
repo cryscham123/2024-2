@@ -1,0 +1,27 @@
+---
+title: "폴더 내 파일 목록"
+format: html
+---
+
+```{r}
+#| echo: false
+#| output: asis
+
+library(fs)
+library(stringr)
+
+# 현재 작업 디렉토리의 모든 파일 찾기
+files <- dir_ls(recurse = TRUE)
+
+# 각 파일에 대해 처리
+for (file in files) {
+  # 파일 이름 추출
+  file_name <- basename(file)
+  
+  # 파일 경로를 상대 경로로 변환
+  relative_path <- str_replace(file, fixed(getwd()), ".")
+  
+  # Quarto 문서에 출력
+  cat(sprintf("![%s](%s)\n\n", file_name, relative_path))
+}
+```

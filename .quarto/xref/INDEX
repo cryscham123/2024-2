@@ -1,0 +1,176 @@
+{
+  "index.qmd": {
+    "index.html": "926dd2c9"
+  },
+  "about.qmd": {
+    "about.html": "ea7097c1"
+  },
+  "human/1-1.qmd": {
+    "1-1.html": "da62af34"
+  },
+  "human/5.qmd": {
+    "5.html": "05e8e4a7"
+  },
+  "human/6.qmd": {
+    "6.html": "fc35126e"
+  },
+  "human/1-2.qmd": {
+    "1-2.html": "4348dee2"
+  },
+  "human/final/0_intro.qmd": {
+    "0_intro.html": "69f452d7"
+  },
+  "human/final/3_sensory_system.qmd": {
+    "3_sensory_system.html": "5577d4e5"
+  },
+  "human/final/1_reaserch_method.qmd": {
+    "1_reaserch_method.html": "536f14d7"
+  },
+  "human/final/2_human_information_processing_model.qmd": {
+    "2_human_information_processing_model.html": "7704c261"
+  },
+  "human/4.qmd": {
+    "4.html": "ff5c0483"
+  },
+  "human/1-3.qmd": {
+    "1-3.html": "525dbc54"
+  },
+  "human/index.qmd": {
+    "index.html": "e4248c3e"
+  },
+  "math/work/work2.qmd": {
+    "work2.tex": "c1b6c44b"
+  },
+  "math/work/work3.qmd": {
+    "work3.tex": "6950c899"
+  },
+  "math/work/work1.qmd": {
+    "work1.tex": "d30c3ce4"
+  },
+  "math/work/work4.qmd": {
+    "work4.tex": "5424b381"
+  },
+  "math/index.qmd": {
+    "index.html": "ac9198b6"
+  },
+  "math/final/3.qmd": {
+    "3.html": "e19221a6"
+  },
+  "math/final/2.qmd": {
+    "2.html": "0ff6132c"
+  },
+  "math/final/4.qmd": {
+    "4.html": "a86c2f4b"
+  },
+  "math/final/triangle_func1.qmd": {
+    "triangle_func1.html": "cdac6870"
+  },
+  "stat/1week.qmd": {
+    "1week.html": "bbcc81e3"
+  },
+  "stat/work2.qmd": {
+    "work2.html": "22a9568b"
+  },
+  "stat/3.qmd": {
+    "3.html": "9b44d8ad"
+  },
+  "stat/2week.qmd": {
+    "2week.html": "2e3af1d5"
+  },
+  "stat/work3.qmd": {
+    "work3.html": "7977faf1"
+  },
+  "stat/index.qmd": {
+    "index.html": "1f54dcf6"
+  },
+  "stat/practice.qmd": {
+    "practice.html": "9ea365fe"
+  },
+  "stat/work1.qmd": {
+    "work1.html": "b2136f7a"
+  },
+  "stat/final/2-확률변수와-분포.qmd": {
+    "2-확률변수와-분포.html": "4be72828"
+  },
+  "stat/final/1-통계학의-개념.qmd": {
+    "1-통계학의-개념.html": "c62ef108"
+  },
+  "data/3.qmd": {
+    "3.html": "2b30171b"
+  },
+  "data/index.qmd": {
+    "index.html": "fdc117f5"
+  },
+  "data/5.qmd": {
+    "5.html": "efdc9b60"
+  },
+  "data/6.qmd": {
+    "6.html": "48d9e398"
+  },
+  "data/1-2.qmd": {
+    "1-2.html": "4d3ddc66"
+  },
+  "data/4.qmd": {
+    "4.html": "08cf9df9"
+  },
+  "discrete/1-1.qmd": {
+    "1-1.html": "1a61431c"
+  },
+  "discrete/3-1.qmd": {
+    "3-1.html": "a0ccd697"
+  },
+  "discrete/work/work2.qmd": {
+    "work2.tex": "83cb8a3e"
+  },
+  "discrete/work/work1.qmd": {
+    "work1.tex": "398ef3b4"
+  },
+  "discrete/index.qmd": {
+    "index.html": "fd71ede6"
+  },
+  "discrete/own4.qmd": {
+    "own4.html": "8ca62db5"
+  },
+  "discrete/5.qmd": {
+    "5.html": "40a2f9bb"
+  },
+  "discrete/6.qmd": {
+    "6.html": "7411cb97"
+  },
+  "discrete/own1-1.qmd": {
+    "own1-1.html": "aa158754"
+  },
+  "discrete/1-2.qmd": {
+    "1-2.html": "b450fcf5"
+  },
+  "discrete/4.qmd": {
+    "4.html": "8e294654"
+  },
+  "discrete/own1-2.qmd": {
+    "own1-2.html": "3c9da2d6"
+  },
+  "discrete/1-3.qmd": {
+    "1-3.html": "0864258b"
+  },
+  "art/3.qmd": {
+    "3.html": "c241f6b1"
+  },
+  "art/2.qmd": {
+    "2.html": "6dfa5d65"
+  },
+  "art/index.qmd": {
+    "index.html": "3c8055b8"
+  },
+  "art/5.qmd": {
+    "5.html": "f6e82d25"
+  },
+  "art/6.qmd": {
+    "6.html": "79fd6da3"
+  },
+  "art/1.qmd": {
+    "1.html": "427d548a"
+  },
+  "art/4.qmd": {
+    "4.html": "36d5ec54"
+  }
+}

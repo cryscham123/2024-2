@@ -1,0 +1,47 @@
+---
+title: 'r base'
+---
+
+## vector and matrix
+```{r}
+vec <- c(1, 4, 2, 3)
+str(vec)
+seq(from=3, to=21, by=3)
+seq(3, 21, length.out=4)
+rep(x=1, times=5)
+rep(c(1,2), 3)
+rep(1:2, each=3)
+rep(1:2, times=5, each=3)
+sort(vec)
+A <- matrix(data=1:6, nrow=2, ncol=3)
+str(A)
+A <- matrix(data=1:6, nrow=2, ncol=3, byrow=TRUE)
+A
+A[,2] <- 1
+A
+```
+
+## Non-numeric values
+
+```{r}
+x <- c(1, 2, 3, 4, 5)
+x < 1 & x > 2 # x < 1 && x > 2 is not work
+x < 1 | x > 2 # x < 1 || x > 2 is not work
+y <- c(1, 2, '3', 4, 5)
+nchar(y)
+str(y)
+xy <- paste('this is', 'a', 'test')
+xy
+xy <- cat('this is', 'a', 'test')
+xy
+```
+
+## factor
+
+```{r}
+name <- c('a', 'b', 'c', 'a', 'b', 'c')
+name <- factor(name, levels=c('a', 'b', 'c', 'd', 'e'), order=TRUE)
+str(name)
+name
+as.character(name)
+```

@@ -1,0 +1,35 @@
+---
+title: "기초공학수학"
+format: html
+---
+
+```{r}
+#| echo: false
+#| output: asis
+
+library(fs)
+library(stringr)
+
+create_dropdown <- function(path, level = 0) {
+  files <- dir_ls(path, recurse = FALSE)
+  
+  has_qmd <- any(str_ends(basename(files), ".qmd"))
+  
+  if (has_qmd || level == 0) {
+    for (file in files) {
+      file_name <- basename(file)
+      relative_path <- str_replace(file, fixed(getwd()), ".")
+      
+      if (fs::is_dir(file)) {
+        cat(sprintf("%s<details>\n<summary>%s</summary>\n\n", strrep("  ", level), file_name))
+        create_dropdown(file, level + 1)
+        cat(sprintf("%s</details>\n\n", strrep("  ", level)))
+      } else if (str_ends(file_name, ".qmd") && file_name != "index.qmd") {
+        cat(sprintf("%s- [%s](%s)\n\n", strrep("  ", level), file_name, relative_path))
+      }
+    }
+  }
+}
+
+create_dropdown(".")
+```

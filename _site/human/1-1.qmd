@@ -1,0 +1,17 @@
+---
+title: 'intro'
+---
+
+## 인간공학의 분야(human factors / ergonomics)
+- 신체
+- 인지(주로 다룰 분야)
+- 사회 / 조직
+
+## human factor's philosophy
+- 사람을 기반으로 하는 설계
+- <-> technology-centered design
+
+## component of human factors
+- human: physical, cognitive, group
+- task: physical + cognitive + group
+- envirnment: working environment, systems

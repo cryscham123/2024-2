@@ -1,0 +1,42 @@
+## sensation: visual
+### photoreceptor
+- cone: fine detail, color vision 
+  - 0도에 주로 분포(중심시) => 중앙이 선명하게 보임
+- rods: low light, peripheral vision (동체 시력)
+  - rhodopsin: light-sensitive pigment
+  - 주변에 분포
+- optic dist: blind spot
+  - no photoreceptors
+
+### light sensitivity
+- cones: sensitive to bright light, photopic condition
+- rods: sensitive to dim light, scotopic condition
+
+### adaption
+#### light
+rhodopsin regeneration
+adjust in bright light
+disable rods
+
+#### dark
+rhodopsin breakdown
+adjust in dim light
+disable cones
+
+#### purkinje shift
+
+### color vision
+cone cells detect color (hue, saturation, value) through photo-pigments(RGB 64:32:2, center of retina has no blue)
+
+### color design
+#### color patterns
+- Monochromatic: one color
+- Analogous: similar colors
+- Compementary: opposite colors
+
+### depth perception
+- object centered cues: relative size, occlusion, linear perspective, motion parallax
+- observer centered cues: binocular disparity
+
+### Relative UseFulness of Depth Cues
+잘 보셈

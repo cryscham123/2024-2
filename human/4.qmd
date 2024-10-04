@@ -1,0 +1,54 @@
+## sensory processing
+### short term sensory store
+- preattentive processing: automatic processing of sensory information (no need for attention)
+- verdical: does not depend on attention
+- decays rapidly
+vision: iconic memory(duration: 200-300ms)
+audition: echoic memory(duration: 2-8s)
+
+## perception
+의미 부여 단계
+- top-down processing: use prior knowledge to interpret sensory information
+- bottom-up processing: build up perception from individual pieces of sensory information
+
+## attention
+### searchlight metaphor
+- lighted area: momentary attention
+- movement of searchlight: rate of attentional shift
+- brightness of light: sharpness of detail
+
+### failure of attention
+- selective attention: 다른데 정신 팔림.
+- focused attention: 
+- divided attention: multitasking
+- sustained attention: 
+
+### preattentive processing
+- The stroop effect: interference in the reaction time of a task
+
+## memory
+- workinng memory: short-term memory. occupy conscious mind. 7±2 items. in running memory, less capacity.
+- long-term memory. unconscious mind
+  - declarative memory(what)
+    - semantic memory: general knowledge. abstract concepts
+    - episodic memory: personal experiences. visual imagery. specific events
+  - procedural memory(how): skills. habits. implicit memory
+- memory failure
+  - encoding failure: information never enters long-term memory
+  - storage failure: information is lost from memory
+  - retrieval failure: information is in long-term memory but cannot be accessed
+
+## response selection
+### decision making models
+- normative models
+  - signal detection theory: detect a signal in a noisy environment
+  - expected value: maximize the expected value
+  - bayesian decision theory: update beliefs based on new information
+  - multi-attribute utility theory: consider multiple attributes
+- information processing models
+  - Attemtopm and working memory
+  - heuristics: mental shortcuts
+- naturalistic decision making
+  - recognition primed decision model: recognize patterns
+  - expertise: experience and knowledge
+  - intuition: gut feeling

@@ -1,0 +1,34 @@
+## visual
+
+### 눈의 구조
+- 결막 (conjunctiva): 눈을 보호
+- 각막 (cornea): 빛을 굴절
+- 홍채(iris): 빛의 양을 조절
+- 동공 (pupil): 빛이 들어오는 곳
+- 수정체(lens): 빛을 집중하는 역할
+- 공막 (sclera): 눈을 보호
+- 유리체 (vitreous humor): 눈을 유지
+- 망막(retina): 빛을 감지
+- 망막의 세포
+  - Nerve cell: 빛을 감지
+  - Photoreceptor: 빛을 감지
+    - 간상세포(cone): 세부적인 정보, 색상 인식, photopic conditions. 짧은 파장의 색에 더 민감함
+    - 막대세포(rod): 어두운 곳에서 활동, 주변 시야 빛을 받으면 rhodopsin이 분해됨, scotopic conditions. 긴 파장의 색에 더 민감함.
+  - Choroid: 영양 공급 
+- 시신경(optic nerve): 망막에서 뇌로 정보 전달
+- 맹점(optic disk)
+
+## color vision
+- cone cell의 photo-pigment(RGB 64:32:2)로 색상을 인식
+- 망막 중앙에는 파란색이 없음
+- sharpness는 brightness와 color difference에 영향을 받음
+
+## design with color
+1. Mono-chromatic: 단색
+2. Analogous: 비슷한 색
+3. Complementary: 반대 색
+
+## depth perception
+### depth judgment
+- object-centered cues: 상대적 크기, 가려짐, 선형 관점, 움직임 시차
+- observer-centered cues: 이중 시력

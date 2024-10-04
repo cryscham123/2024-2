@@ -1,0 +1,307 @@
+---
+title: 'Discrete Mathematics #2'
+author: "20192208 김형훈"
+format: 
+  pdf:
+    documentclass: report
+    papersize: a4
+    number-sections: true
+    number-depth: 3
+    top-level-division: chapter
+    fontsize: 17pt
+    geometry:
+      - top=20mm
+include-in-header: 
+  text: |
+    \usepackage{fontspec}
+    \setmainfont{Noto Sans KR}
+    \usepackage{titlesec}
+    \titleformat{\chapter}{\normalfont\huge\bfseries}{}{0pt}{\huge}
+    \titleformat{\section}[block]{\normalfont\Large\bfseries}{}{0pt}{}
+    \titleformat{\subsection}[block]{\normalfont\large\bfseries}{}{0pt}{}
+    \titleformat{\subsubsection}[block]{\normalfont\normalsize\bfseries}{}{0pt}{}
+    \titlespacing*{\chapter}{-3pt}{0pt}{10pt}
+    \titlespacing*{\section}{0pt}{20pt}{10pt}
+    \newcommand{\sectionbreak}{\clearpage}
+    \usepackage{setspace}
+    \setstretch{2}
+    \usepackage{tabularx}
+    \newcolumntype{Y}{>{\centering\arraybackslash}X}
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+
+# 1.6
+## Problem 14
+### A
+
+p(x): x is a student in this class  
+q(x): x owns a red convertible  
+r(x): x has gotten at least one speeding ticket
+
+\vspace{0.7em}
+\begin{minipage}[t]{0.45\textwidth}
+1. p(Linda)  \\
+2. q(Linda) \\
+3. p(Linda) ∧ q(Linda) \\
+4. ∀x(q(x) → r(x)) \\
+5. q(Linda) → r(Linda) \\
+6. r(Linda) \\
+7. p(Linda) ∧ r(Linda) \\
+8. ∃x(p(x) ∧ r(x))
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\textbf{premise \\
+  premise \\
+  conjunction (1) (2) \\
+  premise \\
+  universal instantiation (4) \\
+  modus ponens (2) (5) \\
+  conjunction (1) (6) \\
+  existential generalization (7)
+}
+\end{minipage}
+\vspace{0.7em}
+
+### B
+p(x): x has taken a course in discrete mathematics  
+q(x): x can take a course in algorithms
+
+\vspace{0.7em}
+\begin{minipage}[t]{0.45\textwidth}
+1. p(5 roommates) \\
+2. ∀x(p(x)->q(x)) \\
+3. p(5 roommates)->q(5 roommates) \\
+4. q(5 roommates)
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\textbf{premise \\
+  premise \\
+  universal instantiation (2) \\
+  Modus Ponens (1) (3)
+}
+\end{minipage}
+\vspace{0.7em}
+
+### C
+p(x): x is a movie produced by John Sayles  
+q(x): x is wonderful
+
+\vspace{0.7em}
+\begin{minipage}[t]{0.45\textwidth}
+1. ∀x(p(x)->q(x)) \\
+2. p(coal miners)->q(coal miners) \\
+3. p(coal miners) \\
+4. q(coal miners)
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\textbf{premise \\
+  universal instantiation (1) \\
+  premise \\
+  Modus Ponens (2) (3)
+}
+\end{minipage}
+\vspace{0.7em}
+
+### D
+p(x): x is a student in this class  
+q(x): x has been to France  
+r(x): x has visited the Louvre
+
+\vspace{0.7em}
+\begin{minipage}[t]{0.45\textwidth}
+1. ∃x(p(x)∧q(x)) \\
+2. ∀x(p(x)->r(x)) \\
+3. p(c)∧q(c) \\
+4. p(c)->r(x) \\
+5. p(c) \\
+6. r(c)
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\textbf{premise \\
+  premise \\
+  Existential instantiation (1) \\
+  Universal instantiation (2) \\
+  Simplification (3) \\
+  Modus Ponens (4) (5)
+}
+\end{minipage}
+\vspace{0.7em}
+
+## Problem 16
+### A
+p(x): x is enrolled in the university  
+q(x): x has lived in a dormitory
+
+\vspace{0.7em}
+\begin{minipage}[t]{0.45\textwidth}
+1. ∀x(p(x) -> q(x)) \\
+2. p(Mia) -> q(mia) \\
+3. ¬q(Mia) \\
+4. ¬p(Mia)
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\textbf{premise \\
+  universal instantiation (1) \\
+  premise \\
+  modus tollens (2) (3)
+}
+\end{minipage}
+\vspace{0.7em}
+
+**∴ 'Mia is not enrolled in the university' is correct**
+
+### B
+p(x): x is a convertible car  
+q(x): x is fun to drive
+
+\vspace{0.7em}
+\begin{minipage}[t]{0.45\textwidth}
+1. ∀x(p(x) -> q(x)) \\
+2. p(Issac) -> q(Isaac) \\
+3. ¬p(Issac) \\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\textbf{premise \\
+  universal instantiation (1) \\
+  premise
+}
+\end{minipage}
+\vspace{0.7em}
+
+Issac's car can be fun to drive even if it is not a convertible.  
+**∴ 'Isaac's car is not fun to drive' is incorrect**
+
+### C
+p(x): x is an action movie  
+q(x): Quincy likes x
+
+\vspace{0.7em}
+\begin{minipage}[t]{0.45\textwidth}
+1. ∀x(p(x) -> q(x)) \\
+2. p(Eight Men Out) -> q(Eight Men Out) \\
+3. q(Eight Men Out) \\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\textbf{premise \\
+  universal instantiation (1) \\
+  premise
+}
+\end{minipage}
+\vspace{0.7em}
+
+Eight Men Out Can not be an action movie even if Quincy likes  
+**∴ 'Eight Men Out is an action movie' is incorrect**'
+
+### D
+p(x): x is a lobsterman  
+q(x): x sets at least a dozen traps
+
+\vspace{0.7em}
+\begin{minipage}[t]{0.45\textwidth}
+1. ∀x(p(x) -> q(x)) \\
+2. p(Hamilton) -> q(Hamilton) \\
+3. p(Hamilton) \\
+4. q(Hamilton)
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\textbf{premise \\
+  universal instantiation (1) \\
+  premise \\
+  Modus Ponens (2) (3)
+}
+\end{minipage}
+\vspace{0.7em}
+
+**∴ 'Hamilton sets at least a dozen traps' is correct**
+
+# 1.7
+
+## Problem 4
+even number: $2n$, $n ∈ ℤ$  
+negative of an even number: $-2n$  
+$-2n = 2(-n)$, $-n ∈ ℤ$  
+**∴ The negative of an even number is an even number.**
+
+
+## Problem 14
+$x = \frac{p}{q}$ where $p, q ∈ ℤ$ and $q ≠ 0$ and because $x ≠ 0$, $p ≠ 0$  
+$\frac{1}{x} = \frac{q}{p}$ where $q, p ∈ ℤ$ and $p ≠ 0$  
+**∴$\frac{1}{x}$ is rational.**
+
+## Problem 18
+If $m$ and $n$ are odd, then $mn$ is odd where $m, n ∈ ℤ$  
+$m = 2p + 1$  
+$n = 2q + 1$  
+$mn = (2p + 1)(2q + 1) = 4pq + 2p + 2q + 1 = 2(2pq + p + q) + 1$  
+$t = 2pq + p + q$  
+$mn = 2t + 1$  
+∴ $mn$ is odd  
+**By contraposition, If $mn$ is even, then $m$ or $n$ is even.**
+
+## Problem 22
+n is not 0, so just devide by n.
+
+
+\vspace{0.7em}
+$\begin{aligned}
+P(n) &: n^2 ≥ n \\
+&: n ≥ 1 \\
+P(1) &: 1 ≥ 1
+\end{aligned}$
+\vspace{0.7em}
+
+
+**∴ P(1) is true**
+
+# 1.8
+## Problem 3
+$P(n): n^3 = 100$, $n ∈ ℤ$, $n > 0$  
+$P(1): 1^3 = 1$  
+$P(2): 2^3 = 8$  
+$P(3): 3^3 = 27$  
+$P(4): 4^3 = 64$  
+$P(5): 5^3 = 125$  
+100 is between 64 and 125 which is P(4) and P(5), but there is no integer that is between 4 and 5  
+**∴ 100 is not the cube of a positive integer.**
+
+## Problem 25
+- Harmonic Mean: $H = \frac{2xy}{(x + y)}$
+- Geometric Mean: $G = \sqrt{xy}$
+
+
+1. $x=2, y=8$  
+  $H = \frac{32}{10} = 3.2$  
+  $G = \sqrt{16} = 4$  
+
+2. $x=3, y=12$  
+  $H = \frac{72}{15} = 4.8$  
+  $G = \sqrt{36} = 6$
+
+3. $x=5, y=20$  
+  $H = \frac{200}{25} = 8$  
+  $G = \sqrt{100} = 10$
+
+
+Conjecture: $G > H$  
+Proof:  
+$(\sqrt{x} - \sqrt{y})^2 > 0$ for all distinct positive real numbers  
+$x - 2\sqrt{xy} + y > 0$  
+$x + y > 2\sqrt{xy}$  
+$1 > \frac{2\sqrt{xy}}{x + y}$  
+$\sqrt{xy} > \frac{2xy}{x + y}$  
+$G > H$
+
+
+**∴ $G > H$**
