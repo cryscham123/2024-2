@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 21e994fd-a1ac-4246-82bd-79808e3b7bb7
+      url: 'https://shimmering-genie-7fc32b.netlify.app'

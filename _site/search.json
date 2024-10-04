@@ -1,295 +1,43 @@
 [
   {
-    "objectID": "human/1-3.html",
-    "href": "human/1-3.html",
-    "title": "quarto preview",
-    "section": "",
-    "text": "descriptive research: describe(독립변수의 mean,std,…)\nevaluation research: 시스템의 목적을 충족하는지 평가\n\nusability testing\ncost-benefit analysis\n\nexperimanetal research: 실험 해보는거"
-  },
-  {
-    "objectID": "human/1-3.html#human-factors-research-categories",
-    "href": "human/1-3.html#human-factors-research-categories",
-    "title": "quarto preview",
-    "section": "",
-    "text": "descriptive research: describe(독립변수의 mean,std,…)\nevaluation research: 시스템의 목적을 충족하는지 평가\n\nusability testing\ncost-benefit analysis\n\nexperimanetal research: 실험 해보는거"
-  },
-  {
-    "objectID": "human/1-3.html#field-study-vs-lab-experiment",
-    "href": "human/1-3.html#field-study-vs-lab-experiment",
-    "title": "quarto preview",
-    "section": "field study vs lab experiment",
-    "text": "field study vs lab experiment\n\nfield study\n\n직접 가서 확인하는거.\nuncontrolled\nresults may be more generalizable to real-world situations\nhigher cost\ndifficult to replicate\ndifficult to control extraneous variables\n\n\n\nlab experiment\n\ncontrolled\nprecise replication\nlower cost\nmore flexibility\nreal-world generalizability may be limited"
-  },
-  {
-    "objectID": "human/1-3.html#human-variability",
-    "href": "human/1-3.html#human-variability",
-    "title": "quarto preview",
-    "section": "human variability",
-    "text": "human variability\n\nintra individual variability\ninter individual variability\n\n\nhandle human variability\n\nuse statistical techniques"
-  },
-  {
-    "objectID": "human/1-3.html#research-design",
-    "href": "human/1-3.html#research-design",
-    "title": "quarto preview",
-    "section": "research design",
-    "text": "research design\n\nquantitative research\n\ncorrelational observation\nsurveys and questionnaires: 랜덤하게 샘플링하는게 중요\nexperiments\narchival research"
-  },
-  {
-    "objectID": "human/1-3.html#experimanetal-method",
-    "href": "human/1-3.html#experimanetal-method",
-    "title": "quarto preview",
-    "section": "experimanetal method",
-    "text": "experimanetal method\ncircumstances -&gt; behaviors\n\ntype of variables\n\nindependent variable\ndependent variable\ncontrol variable: 이 값은 고정시키고 실험을 진행한다. 일반화하기 어렵게 한다.\nrandom variable (sigma): 통제할 수 없는 변수. 일반화하기 용이하다.\nconfounding variable: 수식에는 포함되지 않지만 주의해야하는 변수. control 변수로 못뺀거\n\n\n\ndecide variables\noperational definition: 변수를 어떻게 측정할 것인가\n\nindependent variable\n\nRange: realistic / select a range taht will show the effect / pilot experiment\n\n\n\ndependent variable\n\nreliability: consistent. solution: increase the number of observations\nvalidity: measure what it is supposed to measure\n\n\n\n\nexperimental design (single variable)\n\nbetween-subjects design: 각각의 실험군에 다른 사람들을 넣는다. generalibility 높다, intra person variability를 제거할 수 있다.\nwithin-subjects design: 같은 사람들을 다른 실험군에 넣는다. cost-effective, less variability, inter person variability를 제거할 수 있다.\n\n\n\nexperimental design (multiple variables)\n\nfactorial design: 두개 이상의 독립변수를 조합하여 실험군을 만든다. can test the interaction effect"
-  },
-  {
-    "objectID": "human/final/2_human_information_processing_model.html",
-    "href": "human/final/2_human_information_processing_model.html",
-    "title": "quarto preview",
-    "section": "",
-    "text": "주요 감각: 시각, 청각, 운동 감각(proprioception)\n운동 감각: 생리적 신호, 중력과 가속도에 따른 몸의 위치 감각\nSTSS (Short Term Sensory Store)\n\n각 감각기관별 정보 저장 공간\n주의 집중 불필요, 정보 그대로 저장\n빠르게 소멸 (예: 시각 - Iconic Memory 200-300ms, 청각 - Echoic Memory 2-8s)\n\n\n\n\n\n\n정보 해석 과정\nTop-Down Processing: 과거 기억으로 정보 해석 (Long Term Memory 활용)\nBottom-Up Processing: 새로운/익숙하지 않은 정보 해석\nPreattentive Processing: 주의 집중 없이 자동적 정보 해석 (예: Stroop Effect)\n\n\n\n\n\n전반적인 정보 처리 과정에 영향\nSearch Light Metaphor: 주의 집중의 비유적 설명\n주의 실패 유형:\n\nSelective Attention: 잘못된 곳에 집중\nFocused Attention: 주의 집중 부족\nDivided Attention: 다중 작업 시 주의 분산\nSustained Attention: 장시간 주의 유지 실패\n\n\n\n\n\n\n학습을 통한 정보 저장\n유형:\n\nDeclarative Memory (What): 사실적 지식 (Episodic, Semantic)\nProcedural Memory (How): 절차적 지식\n\n기억 실패: Encoding, Storage, Retrieval 단계에서 발생 가능\n\n\n\n\n\nWorking Memory:\n\n단기적 정보 처리 및 조작\n제한된 용량 (7±2 items)\nLong Term Memory와 Perception으로부터 정보 획득\n\n\n\n\n\n\n의사결정 이론:\n\nSignal Detection Theory\nExpected Value\nBayesian Decision Theory\nMulti-attribute Theory\n\nNaturalistic Decision Making: Recognition-Primed Decision Model\n\n\n\n\n\n\n\n\n피드백 제공"
-  },
-  {
-    "objectID": "human/final/2_human_information_processing_model.html#인간-정보-처리-과정",
-    "href": "human/final/2_human_information_processing_model.html#인간-정보-처리-과정",
-    "title": "quarto preview",
-    "section": "",
-    "text": "주요 감각: 시각, 청각, 운동 감각(proprioception)\n운동 감각: 생리적 신호, 중력과 가속도에 따른 몸의 위치 감각\nSTSS (Short Term Sensory Store)\n\n각 감각기관별 정보 저장 공간\n주의 집중 불필요, 정보 그대로 저장\n빠르게 소멸 (예: 시각 - Iconic Memory 200-300ms, 청각 - Echoic Memory 2-8s)\n\n\n\n\n\n\n정보 해석 과정\nTop-Down Processing: 과거 기억으로 정보 해석 (Long Term Memory 활용)\nBottom-Up Processing: 새로운/익숙하지 않은 정보 해석\nPreattentive Processing: 주의 집중 없이 자동적 정보 해석 (예: Stroop Effect)\n\n\n\n\n\n전반적인 정보 처리 과정에 영향\nSearch Light Metaphor: 주의 집중의 비유적 설명\n주의 실패 유형:\n\nSelective Attention: 잘못된 곳에 집중\nFocused Attention: 주의 집중 부족\nDivided Attention: 다중 작업 시 주의 분산\nSustained Attention: 장시간 주의 유지 실패\n\n\n\n\n\n\n학습을 통한 정보 저장\n유형:\n\nDeclarative Memory (What): 사실적 지식 (Episodic, Semantic)\nProcedural Memory (How): 절차적 지식\n\n기억 실패: Encoding, Storage, Retrieval 단계에서 발생 가능\n\n\n\n\n\nWorking Memory:\n\n단기적 정보 처리 및 조작\n제한된 용량 (7±2 items)\nLong Term Memory와 Perception으로부터 정보 획득\n\n\n\n\n\n\n의사결정 이론:\n\nSignal Detection Theory\nExpected Value\nBayesian Decision Theory\nMulti-attribute Theory\n\nNaturalistic Decision Making: Recognition-Primed Decision Model\n\n\n\n\n\n\n\n\n피드백 제공"
-  },
-  {
-    "objectID": "human/final/2_human_information_processing_model.html#퀴즈",
-    "href": "human/final/2_human_information_processing_model.html#퀴즈",
-    "title": "quarto preview",
-    "section": "퀴즈",
-    "text": "퀴즈\n\nSTSS(Short Term Sensory Store)와 Working Memory의 차이점을 설명하시오. (주관식)\nTop-Down Processing과 Bottom-Up Processing의 차이를 예를 들어 설명하시오. (주관식)\n다음 중 주의 자원(Attention Resources)과 관련된 현상이 아닌 것은?\n\nChange Blindness\nInattentional Blindness\nStroop Effect\nCocktail Party Effect\n\n장기 기억(Long Term Memory)의 세 가지 주요 단계를 순서대로 나열하고, 각 단계에서 발생할 수 있는 기억 실패의 예를 들어 설명하시오. (주관식)\n다음 중 Naturalistic Decision Making의 특징으로 가장 적절한 것은?\n\n항상 최적의 결정을 도출한다.\n실험실 환경에서 가장 효과적으로 적용된다.\n경험을 바탕으로 한 직관적 의사결정을 강조한다.\n모든 가능한 대안을 체계적으로 분석한다.\n\nWorking Memory의 용량 제한(7±2 items)이 인간-컴퓨터 상호작용(HCI) 설계에 어떤 영향을 미치는지 설명하고, 이를 고려한 인터페이스 설계 예시를 제시하시오. (주관식)"
-  },
-  {
-    "objectID": "human/final/3_sensory_system.html",
-    "href": "human/final/3_sensory_system.html",
-    "title": "2024-2 정리노트",
-    "section": "",
-    "text": "결막 (conjunctiva): 눈을 보호\n각막 (cornea): 빛을 굴절\n홍채(iris): 빛의 양을 조절\n동공 (pupil): 빛이 들어오는 곳\n수정체(lens): 빛을 집중하는 역할\n공막 (sclera): 눈을 보호\n유리체 (vitreous humor): 눈을 유지\n망막(retina): 빛을 감지\n망막의 세포\n\nNerve cell: 빛을 감지\nPhotoreceptor: 빛을 감지\n\n간상세포(cone): 세부적인 정보, 색상 인식, photopic conditions. 짧은 파장의 색에 더 민감함\n막대세포(rod): 어두운 곳에서 활동, 주변 시야 빛을 받으면 rhodopsin이 분해됨, scotopic conditions. 긴 파장의 색에 더 민감함.\n\nChoroid: 영양 공급\n\n시신경(optic nerve): 망막에서 뇌로 정보 전달\n맹점(optic disk)"
-  },
-  {
-    "objectID": "human/final/3_sensory_system.html#visual",
-    "href": "human/final/3_sensory_system.html#visual",
-    "title": "2024-2 정리노트",
-    "section": "",
-    "text": "결막 (conjunctiva): 눈을 보호\n각막 (cornea): 빛을 굴절\n홍채(iris): 빛의 양을 조절\n동공 (pupil): 빛이 들어오는 곳\n수정체(lens): 빛을 집중하는 역할\n공막 (sclera): 눈을 보호\n유리체 (vitreous humor): 눈을 유지\n망막(retina): 빛을 감지\n망막의 세포\n\nNerve cell: 빛을 감지\nPhotoreceptor: 빛을 감지\n\n간상세포(cone): 세부적인 정보, 색상 인식, photopic conditions. 짧은 파장의 색에 더 민감함\n막대세포(rod): 어두운 곳에서 활동, 주변 시야 빛을 받으면 rhodopsin이 분해됨, scotopic conditions. 긴 파장의 색에 더 민감함.\n\nChoroid: 영양 공급\n\n시신경(optic nerve): 망막에서 뇌로 정보 전달\n맹점(optic disk)"
-  },
-  {
-    "objectID": "human/final/3_sensory_system.html#color-vision",
-    "href": "human/final/3_sensory_system.html#color-vision",
-    "title": "2024-2 정리노트",
-    "section": "color vision",
-    "text": "color vision\n\ncone cell의 photo-pigment(RGB 64:32:2)로 색상을 인식\n망막 중앙에는 파란색이 없음\nsharpness는 brightness와 color difference에 영향을 받음"
-  },
-  {
-    "objectID": "human/final/3_sensory_system.html#design-with-color",
-    "href": "human/final/3_sensory_system.html#design-with-color",
-    "title": "2024-2 정리노트",
-    "section": "design with color",
-    "text": "design with color\n\nMono-chromatic: 단색\nAnalogous: 비슷한 색\nComplementary: 반대 색"
-  },
-  {
-    "objectID": "human/final/3_sensory_system.html#depth-perception",
-    "href": "human/final/3_sensory_system.html#depth-perception",
-    "title": "2024-2 정리노트",
-    "section": "depth perception",
-    "text": "depth perception\n\ndepth judgment\n\nobject-centered cues: 상대적 크기, 가려짐, 선형 관점, 움직임 시차\nobserver-centered cues: 이중 시력"
-  },
-  {
-    "objectID": "human/1-2.html",
-    "href": "human/1-2.html",
-    "title": "quarto preview",
-    "section": "",
-    "text": "10/1 출석체크 안함\n외우셈. ## definition of human factors Human factors discovers and applies information about human behavior, abilities, limitations, and other characteristics to the design of tools, machines, systems, tasks, jobs, and environments for productive, safe, comfortable, and effective human use\n외우셈. ## goals of human factors - reduce errors - increase productivity - enhance safety - enhance comfort"
-  },
-  {
-    "objectID": "human/1-2.html#history-of-human-factors-and-ergonomics",
-    "href": "human/1-2.html#history-of-human-factors-and-ergonomics",
-    "title": "quarto preview",
-    "section": "history of human factors and ergonomics",
-    "text": "history of human factors and ergonomics\n\nfirst fashioned simple tools\nleonardo da vinci\ntayler’s four principles:\n\n관리자가 작업의 세세한 특성을 이해해야한다.\n일을 과학적으로 디자인해야한다.\n과학적으로 훈련시켜야한다.\n정해진 방식으로 작업이 이루어지는지 확인해야한다.\n\nfrank and lillian gilbreth\nworld war 1: IQ, EQ\nworld war 2: fit human to job -&gt; fit job to human"
-  },
-  {
-    "objectID": "human/1-2.html#area-of-human-factors-and-ergonomics",
-    "href": "human/1-2.html#area-of-human-factors-and-ergonomics",
-    "title": "quarto preview",
-    "section": "area of human factors and ergonomics",
-    "text": "area of human factors and ergonomics"
-  },
-  {
-    "objectID": "human/1-2.html#apply-human-factors-and-ergonomics-to-real-world-problems",
-    "href": "human/1-2.html#apply-human-factors-and-ergonomics-to-real-world-problems",
-    "title": "quarto preview",
-    "section": "apply human factors and ergonomics to real world problems",
-    "text": "apply human factors and ergonomics to real world problems"
-  },
-  {
-    "objectID": "human/5.html",
-    "href": "human/5.html",
-    "title": "quarto preview",
-    "section": "",
-    "text": "cone: fine detail, color vision\n\n0도에 주로 분포(중심시) =&gt; 중앙이 선명하게 보임\n\nrods: low light, peripheral vision (동체 시력)\n\nrhodopsin: light-sensitive pigment\n주변에 분포\n\noptic dist: blind spot\n\nno photoreceptors\n\n\n\n\n\n\ncones: sensitive to bright light, photopic condition\nrods: sensitive to dim light, scotopic condition\n\n\n\n\n\n\nrhodopsin regeneration adjust in bright light disable rods\n\n\n\nrhodopsin breakdown adjust in dim light disable cones\n\n\n\n\n\n\n\ncone cells detect color (hue, saturation, value) through photo-pigments(RGB 64:32:2, center of retina has no blue)\n\n\n\n\n\n\nMonochromatic: one color\nAnalogous: similar colors\nCompementary: opposite colors\n\n\n\n\n\n\nobject centered cues: relative size, occlusion, linear perspective, motion parallax\nobserver centered cues: binocular disparity\n\n\n\n\n잘 보셈"
-  },
-  {
-    "objectID": "human/5.html#sensation-visual",
-    "href": "human/5.html#sensation-visual",
-    "title": "quarto preview",
-    "section": "",
-    "text": "cone: fine detail, color vision\n\n0도에 주로 분포(중심시) =&gt; 중앙이 선명하게 보임\n\nrods: low light, peripheral vision (동체 시력)\n\nrhodopsin: light-sensitive pigment\n주변에 분포\n\noptic dist: blind spot\n\nno photoreceptors\n\n\n\n\n\n\ncones: sensitive to bright light, photopic condition\nrods: sensitive to dim light, scotopic condition\n\n\n\n\n\n\nrhodopsin regeneration adjust in bright light disable rods\n\n\n\nrhodopsin breakdown adjust in dim light disable cones\n\n\n\n\n\n\n\ncone cells detect color (hue, saturation, value) through photo-pigments(RGB 64:32:2, center of retina has no blue)\n\n\n\n\n\n\nMonochromatic: one color\nAnalogous: similar colors\nCompementary: opposite colors\n\n\n\n\n\n\nobject centered cues: relative size, occlusion, linear perspective, motion parallax\nobserver centered cues: binocular disparity\n\n\n\n\n잘 보셈"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "2024-2 정리노트",
-    "section": "",
-    "text": "안녕하세요. 그냥 제 정리노트입니다."
-  },
-  {
-    "objectID": "human/1-1.html",
-    "href": "human/1-1.html",
-    "title": "intro",
-    "section": "",
-    "text": "신체\n인지(주로 다룰 분야)\n사회 / 조직"
-  },
-  {
-    "objectID": "human/1-1.html#인간공학의-분야human-factors-ergonomics",
-    "href": "human/1-1.html#인간공학의-분야human-factors-ergonomics",
-    "title": "intro",
-    "section": "",
-    "text": "신체\n인지(주로 다룰 분야)\n사회 / 조직"
-  },
-  {
-    "objectID": "human/1-1.html#human-factors-philosophy",
-    "href": "human/1-1.html#human-factors-philosophy",
-    "title": "intro",
-    "section": "human factor’s philosophy",
-    "text": "human factor’s philosophy\n\n사람을 기반으로 하는 설계\n&lt;-&gt; technology-centered design"
-  },
-  {
-    "objectID": "human/1-1.html#component-of-human-factors",
-    "href": "human/1-1.html#component-of-human-factors",
-    "title": "intro",
-    "section": "component of human factors",
-    "text": "component of human factors\n\nhuman: physical, cognitive, group\ntask: physical + cognitive + group\nenvirnment: working environment, systems"
-  },
-  {
-    "objectID": "human/final/0_intro.html",
-    "href": "human/final/0_intro.html",
-    "title": "2024-2 정리노트",
-    "section": "",
-    "text": "human factors = Ergonomics\na human-centered design philosophy &lt;-&gt; technology-centered design"
-  },
-  {
-    "objectID": "human/final/0_intro.html#what-is-human-factors",
-    "href": "human/final/0_intro.html#what-is-human-factors",
-    "title": "2024-2 정리노트",
-    "section": "",
-    "text": "human factors = Ergonomics\na human-centered design philosophy &lt;-&gt; technology-centered design"
-  },
-  {
-    "objectID": "human/final/0_intro.html#component-of-human-factors",
-    "href": "human/final/0_intro.html#component-of-human-factors",
-    "title": "2024-2 정리노트",
-    "section": "component of human factors",
-    "text": "component of human factors\n\nhuman: physical, cognitive, group\ntask: physical + cognitive + group\nenvirnment: working environment, systems"
-  },
-  {
-    "objectID": "human/final/0_intro.html#goal-of-human-factors",
-    "href": "human/final/0_intro.html#goal-of-human-factors",
-    "title": "2024-2 정리노트",
-    "section": "Goal of human factors",
-    "text": "Goal of human factors\n\nReduce errors\nIncrease productivity\nEnhance safety\nEnhance comfort"
-  },
-  {
-    "objectID": "human/final/0_intro.html#cycle-of-human-factors",
-    "href": "human/final/0_intro.html#cycle-of-human-factors",
-    "title": "2024-2 정리노트",
-    "section": "cycle of human factors",
-    "text": "cycle of human factors"
-  },
-  {
-    "objectID": "human/final/1_reaserch_method.html",
-    "href": "human/final/1_reaserch_method.html",
-    "title": "quarto preview",
-    "section": "",
-    "text": "실험을 통해 모형을 구축하고 법칙을 찾는다. - descriptive research: 관찰을 통해 데이터 묘사 1. 무엇을 측정할지 2. 어떻게 숫자로 표현할지 - evaluation research: 시스템의 목적을 충족하는지 평가 - usability testing - cost-benefit analysis - experimanetal research: 직접 실험해서 변수간 관계를 파악"
-  },
-  {
-    "objectID": "human/final/1_reaserch_method.html#human-factors-research-categories",
-    "href": "human/final/1_reaserch_method.html#human-factors-research-categories",
-    "title": "quarto preview",
-    "section": "",
-    "text": "실험을 통해 모형을 구축하고 법칙을 찾는다. - descriptive research: 관찰을 통해 데이터 묘사 1. 무엇을 측정할지 2. 어떻게 숫자로 표현할지 - evaluation research: 시스템의 목적을 충족하는지 평가 - usability testing - cost-benefit analysis - experimanetal research: 직접 실험해서 변수간 관계를 파악"
-  },
-  {
-    "objectID": "human/final/1_reaserch_method.html#research-design",
-    "href": "human/final/1_reaserch_method.html#research-design",
-    "title": "quarto preview",
-    "section": "research design",
-    "text": "research design\n\nqualitative research\n\n보통 마케팅에서 진행.\n\n\n\nquantitative research\n\ncorrelational observation\nsurveys and questionnaires\n\nsample: 랜덤하게 샘플링하는게 중요\nrating\nbias\n\nexperiments\narchival research"
-  },
-  {
-    "objectID": "human/final/1_reaserch_method.html#field-study-vs-lab-experiment",
-    "href": "human/final/1_reaserch_method.html#field-study-vs-lab-experiment",
-    "title": "quarto preview",
-    "section": "field study vs lab experiment",
-    "text": "field study vs lab experiment\n\nfield study\n\n주로 descriptive research, 다른 research도 가능\n직접 가서 확인하는거.\n정성적\nuncontrolled\nresults may be more generalizable to real-world situations\nhigher cost\ndifficult to replicate\ndifficult to control extraneous variables\n\n\n\nlab experiment\n\ncontrolled\nprecise replication\nlower cost\nmore flexibility\nreal-world generalizability may be limited\n\n\n\nwhy use experimental method\n\nhumans are variable\n\n\nintra individual variability\ninter individual variability\n\n\nways to handle variability\n\n\nuse statistical techniques\ncontrol variability as much as possible"
-  },
-  {
-    "objectID": "human/final/1_reaserch_method.html#experimanetal-method",
-    "href": "human/final/1_reaserch_method.html#experimanetal-method",
-    "title": "quarto preview",
-    "section": "experimanetal method",
-    "text": "experimanetal method\ncircumstances -&gt; behaviors 변수간 인과관계를 파악\n\ntype of variables\n\nindependent variable\ndependent variable\ncontrol variable: 이 값은 고정시키고 실험을 진행한다. 일반화하기 어렵게 한다.\nrandom variable (sigma): 통제할 수 없는 변수. 일반화하기 용이하다.\nconfounding variable: 수식에는 포함되지 않지만 주의해야하는 변수. control 변수로 못뺀거\n\n\n\ndecide variables\noperational definition: 변수를 어떻게 측정할 것인가\n\nindependent variable\n\nRange: realistic / select a range taht will show the effect / pilot experiment\n\n\n\ndependent variable\n\nreliability: consistent. solution: increase the number of observations\nvalidity: measure what it is supposed to measure\n\n\n\n\nexperimental design (single variable)\n\nbetween-subjects design: 각각의 실험군에 다른 사람들을 넣는다. generalibility 높다, intra person variability를 제거할 수 있다.\nwithin-subjects design: 같은 사람들을 다른 실험군에 넣는다. cost-effective, less variability, inter person variability를 제거할 수 있다.\n\n\n\nexperimental design (multiple variables)\n\nfactorial design: 두개 이상의 독립변수를 조합하여 실험군을 만든다. can test the interaction effect\n\n\n(주관식) Human factors research의 세 가지 주요 카테고리를 나열하시오. discriptive research, evaluation research, experimental research\n(빈칸 채우기) discriptive research는 관찰을 통해 데이터를 묘사하는 연구 방법이다.\n(주관식) Usability testing과 cost-benefit analysis는 어떤 종류의 research에 해당하는가? evaluation\n(빈칸 채우기) Quantitative research의 방법 중 하나인 ______에서는 랜덤하게 샘플링하는 것이 중요하다. experimental research\n(주관식) Field study의 장점과 단점을 각각 두 가지씩 설명하시오. 장점: 일반화하기 용이하다. 단점: 비용이 많이 든다. 재현이 어렵다.\n(빈칸 채우기) Lab experiment는 ______ 되어 있고, ______ 복제가 가능하며, 비용이 _______. 통제, 정확한, 낮다\n(주관식) 실험 방법을 사용하는 이유 두 가지를 설명하시오. 사람들은 다양하다. 통계적 기법을 사용할 수 있다.\n(빈칸 채우기) 실험에서 ______ 변수는 이 값을 고정시키고 실험을 진행하며, 일반화하기 어렵게 만든다. controla\n(주관식) Operational definition이란 무엇인지 설명하시오.\n(빈칸 채우기) Between-subjects design은 ______를 제거할 수 있고, within-subjects design은 ______를 제거할 수 있다."
-  },
-  {
     "objectID": "human/4.html",
     "href": "human/4.html",
-    "title": "quarto preview",
+    "title": "2024-2 정리노트",
     "section": "",
     "text": "preattentive processing: automatic processing of sensory information (no need for attention)\nverdical: does not depend on attention\ndecays rapidly vision: iconic memory(duration: 200-300ms) audition: echoic memory(duration: 2-8s)"
   },
   {
     "objectID": "human/4.html#sensory-processing",
     "href": "human/4.html#sensory-processing",
-    "title": "quarto preview",
+    "title": "2024-2 정리노트",
     "section": "",
     "text": "preattentive processing: automatic processing of sensory information (no need for attention)\nverdical: does not depend on attention\ndecays rapidly vision: iconic memory(duration: 200-300ms) audition: echoic memory(duration: 2-8s)"
   },
   {
     "objectID": "human/4.html#perception",
     "href": "human/4.html#perception",
-    "title": "quarto preview",
+    "title": "2024-2 정리노트",
     "section": "perception",
     "text": "perception\n의미 부여 단계 - top-down processing: use prior knowledge to interpret sensory information - bottom-up processing: build up perception from individual pieces of sensory information"
   },
   {
     "objectID": "human/4.html#attention",
     "href": "human/4.html#attention",
-    "title": "quarto preview",
+    "title": "2024-2 정리노트",
     "section": "attention",
     "text": "attention\n\nsearchlight metaphor\n\nlighted area: momentary attention\nmovement of searchlight: rate of attentional shift\nbrightness of light: sharpness of detail\n\n\n\nfailure of attention\n\nselective attention: 다른데 정신 팔림.\nfocused attention:\ndivided attention: multitasking\nsustained attention:\n\n\n\npreattentive processing\n\nThe stroop effect: interference in the reaction time of a task"
   },
   {
     "objectID": "human/4.html#memory",
     "href": "human/4.html#memory",
-    "title": "quarto preview",
+    "title": "2024-2 정리노트",
     "section": "memory",
     "text": "memory\n\nworkinng memory: short-term memory. occupy conscious mind. 7±2 items. in running memory, less capacity.\nlong-term memory. unconscious mind\n\ndeclarative memory(what)\n\nsemantic memory: general knowledge. abstract concepts\nepisodic memory: personal experiences. visual imagery. specific events\n\nprocedural memory(how): skills. habits. implicit memory\n\nmemory failure\n\nencoding failure: information never enters long-term memory\nstorage failure: information is lost from memory\nretrieval failure: information is in long-term memory but cannot be accessed"
   },
   {
     "objectID": "human/4.html#response-selection",
     "href": "human/4.html#response-selection",
-    "title": "quarto preview",
+    "title": "2024-2 정리노트",
     "section": "response selection",
     "text": "response selection\n\ndecision making models\n\nnormative models\n\nsignal detection theory: detect a signal in a noisy environment\nexpected value: maximize the expected value\nbayesian decision theory: update beliefs based on new information\nmulti-attribute utility theory: consider multiple attributes\n\ninformation processing models\n\nAttemtopm and working memory\nheuristics: mental shortcuts\n\nnaturalistic decision making\n\nrecognition primed decision model: recognize patterns\nexpertise: experience and knowledge\nintuition: gut feeling"
   },
@@ -298,7 +46,42 @@
     "href": "human/index.html",
     "title": "인간 공학",
     "section": "",
-    "text": "1-1.qmd\n1-2.qmd\n1-3.qmd\n4.qmd\n5.qmd\n6.qmd\n\n\n\nfinal\n\n\n0_intro.qmd\n1_reaserch_method.qmd\n2_human_information_processing_model.qmd\n3_sensory_system.qmd"
+    "text": "0_intro.qmd\n1_reaserch_method.qmd\n2_human_information_processing_model.qmd\n3_sensory_system.qmd\n4.qmd"
+  },
+  {
+    "objectID": "human/3_sensory_system.html",
+    "href": "human/3_sensory_system.html",
+    "title": "2024-2 정리노트",
+    "section": "",
+    "text": "결막 (conjunctiva): 눈을 보호\n각막 (cornea): 빛을 굴절\n홍채(iris): 빛의 양을 조절\n동공 (pupil): 빛이 들어오는 곳\n수정체(lens): 빛을 집중하는 역할\n공막 (sclera): 눈을 보호\n유리체 (vitreous humor): 눈을 유지\n망막(retina): 빛을 감지\n망막의 세포\n\nNerve cell: 빛을 감지\nPhotoreceptor: 빛을 감지\n\n간상세포(cone): 세부적인 정보, 색상 인식, photopic conditions. 짧은 파장의 색에 더 민감함\n막대세포(rod): 어두운 곳에서 활동, 주변 시야 빛을 받으면 rhodopsin이 분해됨, scotopic conditions. 긴 파장의 색에 더 민감함.\n\nChoroid: 영양 공급\n\n시신경(optic nerve): 망막에서 뇌로 정보 전달\n맹점(optic disk)"
+  },
+  {
+    "objectID": "human/3_sensory_system.html#visual",
+    "href": "human/3_sensory_system.html#visual",
+    "title": "2024-2 정리노트",
+    "section": "",
+    "text": "결막 (conjunctiva): 눈을 보호\n각막 (cornea): 빛을 굴절\n홍채(iris): 빛의 양을 조절\n동공 (pupil): 빛이 들어오는 곳\n수정체(lens): 빛을 집중하는 역할\n공막 (sclera): 눈을 보호\n유리체 (vitreous humor): 눈을 유지\n망막(retina): 빛을 감지\n망막의 세포\n\nNerve cell: 빛을 감지\nPhotoreceptor: 빛을 감지\n\n간상세포(cone): 세부적인 정보, 색상 인식, photopic conditions. 짧은 파장의 색에 더 민감함\n막대세포(rod): 어두운 곳에서 활동, 주변 시야 빛을 받으면 rhodopsin이 분해됨, scotopic conditions. 긴 파장의 색에 더 민감함.\n\nChoroid: 영양 공급\n\n시신경(optic nerve): 망막에서 뇌로 정보 전달\n맹점(optic disk)"
+  },
+  {
+    "objectID": "human/3_sensory_system.html#color-vision",
+    "href": "human/3_sensory_system.html#color-vision",
+    "title": "2024-2 정리노트",
+    "section": "color vision",
+    "text": "color vision\n\ncone cell의 photo-pigment(RGB 64:32:2)로 색상을 인식\n망막 중앙에는 파란색이 없음\nsharpness는 brightness와 color difference에 영향을 받음"
+  },
+  {
+    "objectID": "human/3_sensory_system.html#design-with-color",
+    "href": "human/3_sensory_system.html#design-with-color",
+    "title": "2024-2 정리노트",
+    "section": "design with color",
+    "text": "design with color\n\nMono-chromatic: 단색\nAnalogous: 비슷한 색\nComplementary: 반대 색"
+  },
+  {
+    "objectID": "human/3_sensory_system.html#depth-perception",
+    "href": "human/3_sensory_system.html#depth-perception",
+    "title": "2024-2 정리노트",
+    "section": "depth perception",
+    "text": "depth perception\n\ndepth judgment\n\nobject-centered cues: 상대적 크기, 가려짐, 선형 관점, 움직임 시차\nobserver-centered cues: 이중 시력"
   },
   {
     "objectID": "art/4.html",
@@ -511,137 +294,102 @@
     "text": "tuples\n\nordered collection of elements"
   },
   {
-    "objectID": "data/4.html",
-    "href": "data/4.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "2024-2 정리노트",
     "section": "",
-    "text": "CREATE (database, tables, views, indexes)\nALTER: add, modify, drop columns\nDROP\nTRUNCATE (delete all rows)\n\nCREATE TABLE student (\n    id INT PRIMARY KEY,\n    name VARCHAR(100),\n    age INT\n);\nALTER TABLE student ADD COLUMN major VARCHAR(100);\nDROP TABLE student;\nTRUNCATE TABLE student;\n\n\n\nINSERT INTO student VALUES (1, 'Alice', 20);\nUPDATE student SET age = 21 WHERE id = 1;\nDELETE FROM student WHERE id = 1;\n\n\n\nSELECT * FROM student;\nSELECT name FROM student WHERE age &gt; 20;"
+    "text": "안녕하세요. 그냥 제 정리노트입니다."
   },
   {
-    "objectID": "data/4.html#sql",
-    "href": "data/4.html#sql",
+    "objectID": "data/1-2.html",
+    "href": "data/1-2.html",
+    "title": "init",
+    "section": "",
+    "text": "다음주 목요일 휴강"
+  },
+  {
+    "objectID": "data/1-2.html#multiple-themes-in-same-table",
+    "href": "data/1-2.html#multiple-themes-in-same-table",
+    "title": "init",
+    "section": "multiple themes in same table",
+    "text": "multiple themes in same table\n\nredundancy problem in table\n없는 row 발생\n일관성 문제(referential integrity constraint)\n\n=&gt; in relational db, each informational topic is stored in its own table\ndb is self-describing collection of related tables table and metadata, index, application metadata are stored in db"
+  },
+  {
+    "objectID": "data/5.html",
+    "href": "data/5.html",
     "title": "2024-2 정리노트",
     "section": "",
-    "text": "CREATE (database, tables, views, indexes)\nALTER: add, modify, drop columns\nDROP\nTRUNCATE (delete all rows)\n\nCREATE TABLE student (\n    id INT PRIMARY KEY,\n    name VARCHAR(100),\n    age INT\n);\nALTER TABLE student ADD COLUMN major VARCHAR(100);\nDROP TABLE student;\nTRUNCATE TABLE student;\n\n\n\nINSERT INTO student VALUES (1, 'Alice', 20);\nUPDATE student SET age = 21 WHERE id = 1;\nDELETE FROM student WHERE id = 1;\n\n\n\nSELECT * FROM student;\nSELECT name FROM student WHERE age &gt; 20;"
+    "text": "well formedness: each relational has only one theme every determinant must be a candidate key ### normalization process 한문제 내신단다.\n\n\nidentify all the candidate keys of relation\nidentify all functional dependencies in the relation\nexamine the determinants of the functional dependencies if the determinant is not a candidate key, not well-formed\n\nis every determinant a candidate key? - if not, not well-formed"
   },
   {
-    "objectID": "data/index.html",
-    "href": "data/index.html",
-    "title": "데이터베이스설계및활용",
-    "section": "",
-    "text": "1-2.qmd\n3.qmd\n4.qmd\n5.qmd\n6.qmd"
-  },
-  {
-    "objectID": "stat/final/1-통계학의-개념.html",
-    "href": "stat/final/1-통계학의-개념.html",
+    "objectID": "data/5.html#data-normalization",
+    "href": "data/5.html#data-normalization",
     "title": "2024-2 정리노트",
     "section": "",
-    "text": "모집단에서 특정 사건(event)의 상대도수의 극한 =&gt; law of large numbers(대수의 법칙)"
+    "text": "well formedness: each relational has only one theme every determinant must be a candidate key ### normalization process 한문제 내신단다.\n\n\nidentify all the candidate keys of relation\nidentify all functional dependencies in the relation\nexamine the determinants of the functional dependencies if the determinant is not a candidate key, not well-formed\n\nis every determinant a candidate key? - if not, not well-formed"
   },
   {
-    "objectID": "stat/final/1-통계학의-개념.html#확률의-개념",
-    "href": "stat/final/1-통계학의-개념.html#확률의-개념",
+    "objectID": "data/5.html#functional-dependency",
+    "href": "data/5.html#functional-dependency",
+    "title": "2024-2 정리노트",
+    "section": "functional dependency",
+    "text": "functional dependency\n\nstudent_id -&gt; student_name, student_major, student_grade\ncourse_id -&gt; course_name, course_credit\nstudent_id, course_id -&gt; score\ndeterminant -&gt; dependent\nprimary key of a relation will functionally determine all other attributes in the row\ncandidate key can also functionally determine all other attributes in the row"
+  },
+  {
+    "objectID": "data/3.html",
+    "href": "data/3.html",
     "title": "2024-2 정리노트",
     "section": "",
-    "text": "모집단에서 특정 사건(event)의 상대도수의 극한 =&gt; law of large numbers(대수의 법칙)"
+    "text": "a formal name for a thing that is being tracked one theme or topic (just single table)\n\n\nintersection table"
   },
   {
-    "objectID": "stat/final/1-통계학의-개념.html#sample-space-and-events",
-    "href": "stat/final/1-통계학의-개념.html#sample-space-and-events",
+    "objectID": "data/3.html#entity",
+    "href": "data/3.html#entity",
     "title": "2024-2 정리노트",
-    "section": "sample space and events",
-    "text": "sample space and events\n\nExperiment(확률실험): 동일한 조건에서 독립적으로 반복할 수 있는 실험이나 관측\nEvent(사건): 실험에서 발생하는 결과 (부분 집합)\nSimple event(단순사건): 원소가 하나인 사건\nSample space(표본공간): 모든 simple event의 집합\n\n예시: 주사위 두 개를 던지는 실험 - Sample space: {(1,1), (1,2), …, (6,6)} =&gt; 36개의 simple event - 가능한 event의 개수: 2^36 (sample space의 부분집합의 개수) =&gt; sample space의 원소의 갯수랑 다르다."
-  },
-  {
-    "objectID": "stat/final/1-통계학의-개념.html#확률의-정의",
-    "href": "stat/final/1-통계학의-개념.html#확률의-정의",
-    "title": "2024-2 정리노트",
-    "section": "확률의 정의",
-    "text": "확률의 정의\n\n고전적 확률: 모든 simple event가 동일한 확률을 가질 때 P(A)는 sample space가 n개의 원소로 이루어져 있을 때 k개의 원소를 가지는 event A의 확률\n통계적 확률: simple event가 동일한 확률을 가지지 않아도 된다. 표본의 수가 무한대로 갈 때, 표본의 확률이 수렴하는 값\n\n\n확률의 성질\n\n모든x에 대하여 P(x) &gt;= 0\nP(sample space) = 1\nA와 B가 배반사건이면 P(A or B) = P(A) + P(B)"
-  },
-  {
-    "objectID": "stat/final/1-통계학의-개념.html#확률의-연산",
-    "href": "stat/final/1-통계학의-개념.html#확률의-연산",
-    "title": "2024-2 정리노트",
-    "section": "확률의 연산",
-    "text": "확률의 연산"
-  },
-  {
-    "objectID": "stat/final/1-통계학의-개념.html#조건부-확률",
-    "href": "stat/final/1-통계학의-개념.html#조건부-확률",
-    "title": "2024-2 정리노트",
-    "section": "조건부 확률",
-    "text": "조건부 확률"
-  },
-  {
-    "objectID": "stat/final/1-통계학의-개념.html#독립-사건",
-    "href": "stat/final/1-통계학의-개념.html#독립-사건",
-    "title": "2024-2 정리노트",
-    "section": "독립 사건",
-    "text": "독립 사건\n\n두 사건 A와 B가 독립일 때, P(A∩B) = P(A) * P(B)\nsample space는 임의의 event와 독립이다.\n공집합은 임의의 event와 독립이다. (P(∅∩A) = P(∅) * P(A) = 0 * P(A) = 0 = P(∅))"
-  },
-  {
-    "objectID": "stat/final/1-통계학의-개념.html#베이즈-정리",
-    "href": "stat/final/1-통계학의-개념.html#베이즈-정리",
-    "title": "2024-2 정리노트",
-    "section": "베이즈 정리",
-    "text": "베이즈 정리\n\nsample space를 상호 배반인 {B1, B2, …, Bn}으로 분할 (partition)"
-  },
-  {
-    "objectID": "stat/work1.html",
-    "href": "stat/work1.html",
-    "title": "확률과 통계1 과제 1 - 20192208 김형훈",
     "section": "",
-    "text": "x &lt;- seq(5.0, -11.0, -0.3)\nx\n\n [1]   5.0   4.7   4.4   4.1   3.8   3.5   3.2   2.9   2.6   2.3   2.0   1.7\n[13]   1.4   1.1   0.8   0.5   0.2  -0.1  -0.4  -0.7  -1.0  -1.3  -1.6  -1.9\n[25]  -2.2  -2.5  -2.8  -3.1  -3.4  -3.7  -4.0  -4.3  -4.6  -4.9  -5.2  -5.5\n[37]  -5.8  -6.1  -6.4  -6.7  -7.0  -7.3  -7.6  -7.9  -8.2  -8.5  -8.8  -9.1\n[49]  -9.4  -9.7 -10.0 -10.3 -10.6 -10.9\n\ny &lt;- x[length(x):1]\ny\n\n [1] -10.9 -10.6 -10.3 -10.0  -9.7  -9.4  -9.1  -8.8  -8.5  -8.2  -7.9  -7.6\n[13]  -7.3  -7.0  -6.7  -6.4  -6.1  -5.8  -5.5  -5.2  -4.9  -4.6  -4.3  -4.0\n[25]  -3.7  -3.4  -3.1  -2.8  -2.5  -2.2  -1.9  -1.6  -1.3  -1.0  -0.7  -0.4\n[37]  -0.1   0.2   0.5   0.8   1.1   1.4   1.7   2.0   2.3   2.6   2.9   3.2\n[49]   3.5   3.8   4.1   4.4   4.7   5.0"
+    "text": "a formal name for a thing that is being tracked one theme or topic (just single table)\n\n\nintersection table"
   },
   {
-    "objectID": "stat/work1.html#section",
-    "href": "stat/work1.html#section",
-    "title": "확률과 통계1 과제 1 - 20192208 김형훈",
+    "objectID": "data/3.html#domain-cartesian-product",
+    "href": "data/3.html#domain-cartesian-product",
+    "title": "2024-2 정리노트",
+    "section": "domain & cartesian product",
+    "text": "domain & cartesian product\n\ndomain: set of possible values for a column\ncartesian product: set of all possible combinations of rows from two tables\n\ntable = file = relation row = record = tuple column = field = attribute"
+  },
+  {
+    "objectID": "data/3.html#key",
+    "href": "data/3.html#key",
+    "title": "2024-2 정리노트",
+    "section": "key",
+    "text": "key\n\nprimary key\nthe candidate key that is chosen as the main key for the table ### foreign key ### composite key &lt;-&gt; surrogate key ### candidate key"
+  },
+  {
+    "objectID": "stat/final/2-확률변수와-분포.html",
+    "href": "stat/final/2-확률변수와-분포.html",
+    "title": "2024-2 정리노트",
     "section": "",
-    "text": "x &lt;- seq(5.0, -11.0, -0.3)\nx\n\n [1]   5.0   4.7   4.4   4.1   3.8   3.5   3.2   2.9   2.6   2.3   2.0   1.7\n[13]   1.4   1.1   0.8   0.5   0.2  -0.1  -0.4  -0.7  -1.0  -1.3  -1.6  -1.9\n[25]  -2.2  -2.5  -2.8  -3.1  -3.4  -3.7  -4.0  -4.3  -4.6  -4.9  -5.2  -5.5\n[37]  -5.8  -6.1  -6.4  -6.7  -7.0  -7.3  -7.6  -7.9  -8.2  -8.5  -8.8  -9.1\n[49]  -9.4  -9.7 -10.0 -10.3 -10.6 -10.9\n\ny &lt;- x[length(x):1]\ny\n\n [1] -10.9 -10.6 -10.3 -10.0  -9.7  -9.4  -9.1  -8.8  -8.5  -8.2  -7.9  -7.6\n[13]  -7.3  -7.0  -6.7  -6.4  -6.1  -5.8  -5.5  -5.2  -4.9  -4.6  -4.3  -4.0\n[25]  -3.7  -3.4  -3.1  -2.8  -2.5  -2.2  -1.9  -1.6  -1.3  -1.0  -0.7  -0.4\n[37]  -0.1   0.2   0.5   0.8   1.1   1.4   1.7   2.0   2.3   2.6   2.9   3.2\n[49]   3.5   3.8   4.1   4.4   4.7   5.0"
+    "text": "sample space의 원소를 실수로 대응시키는 함수 - 이산확률변수: 확률변수가 취할 수 있는 값이 유한개 또는 무한개이지만 셀 수 있는 경우 - 연속확률변수: 확률변수가 취할 수 있는 값이 실수의 구간이고 셀 수 없는 경우 이산 표본공간 -&gt; 이산 확률변수 연속 표본공간 -&gt; 연속 확률변수 연속 표본공간 -&gt; 이산 확률변수\n확률 실험 -&gt; 표본공간 -&gt; 확률변수 -&gt; 확률분포"
   },
   {
-    "objectID": "stat/work1.html#section-1",
-    "href": "stat/work1.html#section-1",
-    "title": "확률과 통계1 과제 1 - 20192208 김형훈",
-    "section": "2",
-    "text": "2\n\nx &lt;- c(seq(3, 6, length.out=5), rep(c(2, -5.1, -33), 2), 7 / 42 + 2)\nx\n\n [1]   3.000000   3.750000   4.500000   5.250000   6.000000   2.000000\n [7]  -5.100000 -33.000000   2.000000  -5.100000 -33.000000   2.166667\n\ny &lt;- x[c(-1, -length(x))]\ny\n\n [1]   3.75   4.50   5.25   6.00   2.00  -5.10 -33.00   2.00  -5.10 -33.00\n\nz &lt;- sort(x, decreasing = TRUE)\nz\n\n [1]   6.000000   5.250000   4.500000   3.750000   3.000000   2.166667\n [7]   2.000000   2.000000  -5.100000  -5.100000 -33.000000 -33.000000"
+    "objectID": "stat/final/2-확률변수와-분포.html#확률변수",
+    "href": "stat/final/2-확률변수와-분포.html#확률변수",
+    "title": "2024-2 정리노트",
+    "section": "",
+    "text": "sample space의 원소를 실수로 대응시키는 함수 - 이산확률변수: 확률변수가 취할 수 있는 값이 유한개 또는 무한개이지만 셀 수 있는 경우 - 연속확률변수: 확률변수가 취할 수 있는 값이 실수의 구간이고 셀 수 없는 경우 이산 표본공간 -&gt; 이산 확률변수 연속 표본공간 -&gt; 연속 확률변수 연속 표본공간 -&gt; 이산 확률변수\n확률 실험 -&gt; 표본공간 -&gt; 확률변수 -&gt; 확률분포"
   },
   {
-    "objectID": "stat/work1.html#section-2",
-    "href": "stat/work1.html#section-2",
-    "title": "확률과 통계1 과제 1 - 20192208 김형훈",
-    "section": "3",
-    "text": "3\n\nA &lt;- matrix(c(4.3, 3.1, 8.2, 8.2, 3.2, 0.9, 1.6, 6.5), 4, 2)\nA\n\n     [,1] [,2]\n[1,]  4.3  3.2\n[2,]  3.1  0.9\n[3,]  8.2  1.6\n[4,]  8.2  6.5\n\nB &lt;- rbind(c(4.3, 3.2), c(3.1, 0.9), c(8.2, 1.6), c(8.2, 6.5))\nB\n\n     [,1] [,2]\n[1,]  4.3  3.2\n[2,]  3.1  0.9\n[3,]  8.2  1.6\n[4,]  8.2  6.5\n\nA[, 2] &lt;- sort(A[, 2])\nA\n\n     [,1] [,2]\n[1,]  4.3  0.9\n[2,]  3.1  1.6\n[3,]  8.2  3.2\n[4,]  8.2  6.5\n\nfor (n in 1:ncol(A)) {\n  A[, n] &lt;- sort(A[, n])\n}\nA\n\n     [,1] [,2]\n[1,]  3.1  0.9\n[2,]  4.3  1.6\n[3,]  8.2  3.2\n[4,]  8.2  6.5"
-  },
-  {
-    "objectID": "stat/work1.html#section-3",
-    "href": "stat/work1.html#section-3",
-    "title": "확률과 통계1 과제 1 - 20192208 김형훈",
-    "section": "4",
-    "text": "4\n\ndf &lt;- data.frame(\n  person=c(\"Stan\", \"Francine\", \"Steve\", \"Roger\", \"Hayley\", \"Klaus\"),\n  sex=factor(c('M', 'F', 'M', 'M', 'F', 'M')),\n  funny=factor(c('High', 'Mid', 'Low', 'High', 'Mid', 'Mid'), levels=c('Low', 'Mid', 'High'), ordered=TRUE)\n)\nstr(df)\n\n'data.frame':   6 obs. of  3 variables:\n $ person: chr  \"Stan\" \"Francine\" \"Steve\" \"Roger\" ...\n $ sex   : Factor w/ 2 levels \"F\",\"M\": 2 1 2 2 1 2\n $ funny : Ord.factor w/ 3 levels \"Low\"&lt;\"Mid\"&lt;\"High\": 3 2 1 3 2 2\n\ndf['gpa'] &lt;- c(3.5, 3.5, 3.0, 4.1, 2.8, 3.9)\ndf\n\n    person sex funny gpa\n1     Stan   M  High 3.5\n2 Francine   F   Mid 3.5\n3    Steve   M   Low 3.0\n4    Roger   M  High 4.1\n5   Hayley   F   Mid 2.8\n6    Klaus   M   Mid 3.9\n\nyo &lt;- df[substr(df$person, 1, 1) == 'S', ]\nyo\n\n  person sex funny gpa\n1   Stan   M  High 3.5\n3  Steve   M   Low 3.0\n\ndf['sex'] &lt;- ifelse(df['sex'] == 'M', 0, 1)\ndf\n\n    person sex funny gpa\n1     Stan   0  High 3.5\n2 Francine   1   Mid 3.5\n3    Steve   0   Low 3.0\n4    Roger   0  High 4.1\n5   Hayley   1   Mid 2.8\n6    Klaus   0   Mid 3.9"
-  },
-  {
-    "objectID": "stat/work1.html#section-4",
-    "href": "stat/work1.html#section-4",
-    "title": "확률과 통계1 과제 1 - 20192208 김형훈",
-    "section": "5",
-    "text": "5\n\nsortMatrix &lt;- function(A) {\n  for (n in 1:ncol(A)) {\n    A[, n] &lt;- sort(A[, n])\n  }\n  return (A)\n}\n\nmat &lt;- matrix(c(4.3, 3.1, 8.2, 8.2, 3.2, 0.9, 1.6, 6.5), 4, 2)\nmat &lt;- sortMatrix(mat)\nmat\n\n     [,1] [,2]\n[1,]  3.1  0.9\n[2,]  4.3  1.6\n[3,]  8.2  3.2\n[4,]  8.2  6.5"
-  },
-  {
-    "objectID": "stat/work1.html#section-5",
-    "href": "stat/work1.html#section-5",
-    "title": "확률과 통계1 과제 1 - 20192208 김형훈",
-    "section": "6",
-    "text": "6\n\ndf &lt;- data.frame(quakes)\nstr(df)\n\n'data.frame':   1000 obs. of  5 variables:\n $ lat     : num  -20.4 -20.6 -26 -18 -20.4 ...\n $ long    : num  182 181 184 182 182 ...\n $ depth   : int  562 650 42 626 649 195 82 194 211 622 ...\n $ mag     : num  4.8 4.2 5.4 4.1 4 4 4.8 4.4 4.7 4.3 ...\n $ stations: int  41 15 43 19 11 12 43 15 35 19 ...\n\nmean(df$mag)\n\n[1] 4.6204\n\nmedian(df$mag)\n\n[1] 4.6\n\ntab &lt;- table(df$mag)\nwhich(tab == max(tab))\n\n4.5 \n  6 \n\nsummary(df$mag)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   4.00    4.30    4.60    4.62    4.90    6.40 \n\nvar(df$mag)\n\n[1] 0.1622261\n\nsd(df$mag)\n\n[1] 0.402773\n\nIQR(df$mag)\n\n[1] 0.6\n\ncv &lt;- sd(df$mag) / mean(df$mag)\ncv\n\n[1] 0.08717275\n\ntable(df$mag)\n\n\n  4 4.1 4.2 4.3 4.4 4.5 4.6 4.7 4.8 4.9   5 5.1 5.2 5.3 5.4 5.5 5.6 5.7 5.9   6 \n 46  55  90  85 101 107 101  98  65  54  47  43  29  21  20  14   9   8   2   3 \n6.1 6.4 \n  1   1 \n\nbarplot(table(df$mag))\n\n\n\n\n\n\n\nhist(df$mag)\n\n\n\n\n\n\n\nx_grid1 = seq(4, 6.4, 0.1)\nx_grid2 = seq(4, 6.4, 0.3)\nhist(df$mag, breaks = x_grid1, col='blue', xlab='리히터규모', ylab='빈도')\n\n\n\n\n\n\n\nhist(df$mag, breaks = x_grid2, col='green', xlab='리히터규모', ylab='빈도')\n\n\n\n\n\n\n\nboxplot(df$lat, df$long, df$depth, df$mag, col=c('red', 'blue', 'green', 'yellow'))\n\n\n\n\n\n\n\npairs(df[, c(\"lat\", \"long\", \"depth\", \"mag\")])"
+    "objectID": "stat/final/2-확률변수와-분포.html#확률-분포",
+    "href": "stat/final/2-확률변수와-분포.html#확률-분포",
+    "title": "2024-2 정리노트",
+    "section": "확률 분포",
+    "text": "확률 분포\n\n이산확률분포\n확률 질량 함수(pmf): P(X=x) = f(x) =&gt; X가 x일 확률 - 기하분포: 성공확률 p인 베르누이 시행을 독립적으로 반복했을 때 첫 번째 성공이 나타날 때까지의 시행횟수\n\n\n연속확률분포\n\n확률 밀도 함수(pdf): \\(\\int{f(x)}dx = 1\\)\n\\(\\int[a,b]{f(x)}dx = P(a ≤ x ≤ b)\\) =&gt; x가 a와 b사이에 있을 확률\nP(X=x) = 0 (연속형 데이터여서 특정값을 가질 확률은 0)\nf(x)는 1보다 큰 값을 가질 수 있음\n누적분포함수(cdf): \\(F(x) = P(X ≤ x)\\) (이산확률분포와 연속확률분포 모두에 적용)"
   },
   {
     "objectID": "stat/index.html",
     "href": "stat/index.html",
     "title": "확률과 통계",
     "section": "",
-    "text": "1week.qmd\n2week.qmd\n3.qmd\n\n\n\nfinal\n\n\n1-통계학의-개념.qmd\n2-확률변수와-분포.qmd\n\n\n\npractice.qmd\nwork1.qmd\nwork2.qmd\nwork3.qmd"
+    "text": "1week.qmd\n2week.qmd\n3.qmd\n\n\n\n3_files\n\n\n\n\nfinal\n\n\n1-통계학의-개념.qmd\n2-확률변수와-분포.qmd\n\n\n\n\nwork\n\n\n\nwork1.qmd\nwork2.qmd\nwork3.qmd"
   },
   {
     "objectID": "stat/2week.html",
@@ -886,7 +634,7 @@
     "href": "stat/3.html#sampling",
     "title": "2024-2 정리노트",
     "section": "sampling",
-    "text": "sampling\n\nsample(1:20, 10, replace=T)\n\n [1]  6 11 14 12 10  1 15  5  5  8\n\nsample(c('H', 'T'), 10, replace=T, prob=c(0.3, 0.7))\n\n [1] \"H\" \"T\" \"T\" \"H\" \"H\" \"T\" \"T\" \"H\" \"T\" \"H\"\n\npar(mfrow=c(2,2))\nfor (i in c(100, 1000, 10000, 100000)) {\n  x &lt;- sample(1:6, i, replace=T)\n  x.tab &lt;- table(x)\n  barplot(x.tab / i, ylim=c(0, 0.5), xlab=paste(\"n=\", i))\n}"
+    "text": "sampling\n\nsample(1:20, 10, replace=T)\n\n [1]  2  8  6  6 15 19 12 10  1  2\n\nsample(c('H', 'T'), 10, replace=T, prob=c(0.3, 0.7))\n\n [1] \"T\" \"T\" \"T\" \"T\" \"H\" \"T\" \"H\" \"T\" \"T\" \"T\"\n\npar(mfrow=c(2,2))\nfor (i in c(100, 1000, 10000, 100000)) {\n  x &lt;- sample(1:6, i, replace=T)\n  x.tab &lt;- table(x)\n  barplot(x.tab / i, ylim=c(0, 0.5), xlab=paste(\"n=\", i))\n}"
   },
   {
     "objectID": "stat/work3.html",
@@ -910,137 +658,130 @@
     "text": "2"
   },
   {
-    "objectID": "stat/practice.html",
-    "href": "stat/practice.html",
-    "title": "2024-2 정리노트",
+    "objectID": "stat/work1.html",
+    "href": "stat/work1.html",
+    "title": "확률과 통계1 과제 1 - 20192208 김형훈",
     "section": "",
-    "text": "a &lt;- seq(5, -11, -0.3)\na\n\n [1]   5.0   4.7   4.4   4.1   3.8   3.5   3.2   2.9   2.6   2.3   2.0   1.7\n[13]   1.4   1.1   0.8   0.5   0.2  -0.1  -0.4  -0.7  -1.0  -1.3  -1.6  -1.9\n[25]  -2.2  -2.5  -2.8  -3.1  -3.4  -3.7  -4.0  -4.3  -4.6  -4.9  -5.2  -5.5\n[37]  -5.8  -6.1  -6.4  -6.7  -7.0  -7.3  -7.6  -7.9  -8.2  -8.5  -8.8  -9.1\n[49]  -9.4  -9.7 -10.0 -10.3 -10.6 -10.9\n\n\n\n\n\n\nb &lt;- a[length(a):1]\nb\n\n [1] -10.9 -10.6 -10.3 -10.0  -9.7  -9.4  -9.1  -8.8  -8.5  -8.2  -7.9  -7.6\n[13]  -7.3  -7.0  -6.7  -6.4  -6.1  -5.8  -5.5  -5.2  -4.9  -4.6  -4.3  -4.0\n[25]  -3.7  -3.4  -3.1  -2.8  -2.5  -2.2  -1.9  -1.6  -1.3  -1.0  -0.7  -0.4\n[37]  -0.1   0.2   0.5   0.8   1.1   1.4   1.7   2.0   2.3   2.6   2.9   3.2\n[49]   3.5   3.8   4.1   4.4   4.7   5.0"
+    "text": "x &lt;- seq(5.0, -11.0, -0.3)\nx\n\n [1]   5.0   4.7   4.4   4.1   3.8   3.5   3.2   2.9   2.6   2.3   2.0   1.7\n[13]   1.4   1.1   0.8   0.5   0.2  -0.1  -0.4  -0.7  -1.0  -1.3  -1.6  -1.9\n[25]  -2.2  -2.5  -2.8  -3.1  -3.4  -3.7  -4.0  -4.3  -4.6  -4.9  -5.2  -5.5\n[37]  -5.8  -6.1  -6.4  -6.7  -7.0  -7.3  -7.6  -7.9  -8.2  -8.5  -8.8  -9.1\n[49]  -9.4  -9.7 -10.0 -10.3 -10.6 -10.9\n\ny &lt;- x[length(x):1]\ny\n\n [1] -10.9 -10.6 -10.3 -10.0  -9.7  -9.4  -9.1  -8.8  -8.5  -8.2  -7.9  -7.6\n[13]  -7.3  -7.0  -6.7  -6.4  -6.1  -5.8  -5.5  -5.2  -4.9  -4.6  -4.3  -4.0\n[25]  -3.7  -3.4  -3.1  -2.8  -2.5  -2.2  -1.9  -1.6  -1.3  -1.0  -0.7  -0.4\n[37]  -0.1   0.2   0.5   0.8   1.1   1.4   1.7   2.0   2.3   2.6   2.9   3.2\n[49]   3.5   3.8   4.1   4.4   4.7   5.0"
   },
   {
-    "objectID": "stat/practice.html#section",
-    "href": "stat/practice.html#section",
-    "title": "2024-2 정리노트",
+    "objectID": "stat/work1.html#section",
+    "href": "stat/work1.html#section",
+    "title": "확률과 통계1 과제 1 - 20192208 김형훈",
     "section": "",
-    "text": "a &lt;- seq(5, -11, -0.3)\na\n\n [1]   5.0   4.7   4.4   4.1   3.8   3.5   3.2   2.9   2.6   2.3   2.0   1.7\n[13]   1.4   1.1   0.8   0.5   0.2  -0.1  -0.4  -0.7  -1.0  -1.3  -1.6  -1.9\n[25]  -2.2  -2.5  -2.8  -3.1  -3.4  -3.7  -4.0  -4.3  -4.6  -4.9  -5.2  -5.5\n[37]  -5.8  -6.1  -6.4  -6.7  -7.0  -7.3  -7.6  -7.9  -8.2  -8.5  -8.8  -9.1\n[49]  -9.4  -9.7 -10.0 -10.3 -10.6 -10.9\n\n\n\n\n\n\nb &lt;- a[length(a):1]\nb\n\n [1] -10.9 -10.6 -10.3 -10.0  -9.7  -9.4  -9.1  -8.8  -8.5  -8.2  -7.9  -7.6\n[13]  -7.3  -7.0  -6.7  -6.4  -6.1  -5.8  -5.5  -5.2  -4.9  -4.6  -4.3  -4.0\n[25]  -3.7  -3.4  -3.1  -2.8  -2.5  -2.2  -1.9  -1.6  -1.3  -1.0  -0.7  -0.4\n[37]  -0.1   0.2   0.5   0.8   1.1   1.4   1.7   2.0   2.3   2.6   2.9   3.2\n[49]   3.5   3.8   4.1   4.4   4.7   5.0"
+    "text": "x &lt;- seq(5.0, -11.0, -0.3)\nx\n\n [1]   5.0   4.7   4.4   4.1   3.8   3.5   3.2   2.9   2.6   2.3   2.0   1.7\n[13]   1.4   1.1   0.8   0.5   0.2  -0.1  -0.4  -0.7  -1.0  -1.3  -1.6  -1.9\n[25]  -2.2  -2.5  -2.8  -3.1  -3.4  -3.7  -4.0  -4.3  -4.6  -4.9  -5.2  -5.5\n[37]  -5.8  -6.1  -6.4  -6.7  -7.0  -7.3  -7.6  -7.9  -8.2  -8.5  -8.8  -9.1\n[49]  -9.4  -9.7 -10.0 -10.3 -10.6 -10.9\n\ny &lt;- x[length(x):1]\ny\n\n [1] -10.9 -10.6 -10.3 -10.0  -9.7  -9.4  -9.1  -8.8  -8.5  -8.2  -7.9  -7.6\n[13]  -7.3  -7.0  -6.7  -6.4  -6.1  -5.8  -5.5  -5.2  -4.9  -4.6  -4.3  -4.0\n[25]  -3.7  -3.4  -3.1  -2.8  -2.5  -2.2  -1.9  -1.6  -1.3  -1.0  -0.7  -0.4\n[37]  -0.1   0.2   0.5   0.8   1.1   1.4   1.7   2.0   2.3   2.6   2.9   3.2\n[49]   3.5   3.8   4.1   4.4   4.7   5.0"
   },
   {
-    "objectID": "stat/practice.html#section-1",
-    "href": "stat/practice.html#section-1",
-    "title": "2024-2 정리노트",
+    "objectID": "stat/work1.html#section-1",
+    "href": "stat/work1.html#section-1",
+    "title": "확률과 통계1 과제 1 - 20192208 김형훈",
     "section": "2",
-    "text": "2\n\na\n\na &lt;- c(seq(3, 6, length.out=5), rep(c(2, -5.1, -33), 2), 7/42 + 2)\na\n\n [1]   3.000000   3.750000   4.500000   5.250000   6.000000   2.000000\n [7]  -5.100000 -33.000000   2.000000  -5.100000 -33.000000   2.166667\n\n\n\n\nb\n\nb &lt;- a[c(-1, -length(a))]\nb\n\n [1]   3.75   4.50   5.25   6.00   2.00  -5.10 -33.00   2.00  -5.10 -33.00\n\n\n\n\nc\n\nsort(b, decreasing=TRUE)\n\n [1]   6.00   5.25   4.50   3.75   2.00   2.00  -5.10  -5.10 -33.00 -33.00"
+    "text": "2\n\nx &lt;- c(seq(3, 6, length.out=5), rep(c(2, -5.1, -33), 2), 7 / 42 + 2)\nx\n\n [1]   3.000000   3.750000   4.500000   5.250000   6.000000   2.000000\n [7]  -5.100000 -33.000000   2.000000  -5.100000 -33.000000   2.166667\n\ny &lt;- x[c(-1, -length(x))]\ny\n\n [1]   3.75   4.50   5.25   6.00   2.00  -5.10 -33.00   2.00  -5.10 -33.00\n\nz &lt;- sort(x, decreasing = TRUE)\nz\n\n [1]   6.000000   5.250000   4.500000   3.750000   3.000000   2.166667\n [7]   2.000000   2.000000  -5.100000  -5.100000 -33.000000 -33.000000"
   },
   {
-    "objectID": "stat/practice.html#section-2",
-    "href": "stat/practice.html#section-2",
-    "title": "2024-2 정리노트",
+    "objectID": "stat/work1.html#section-2",
+    "href": "stat/work1.html#section-2",
+    "title": "확률과 통계1 과제 1 - 20192208 김형훈",
     "section": "3",
-    "text": "3\n\na\n\na &lt;- matrix(c(4.3, 3.1, 8.2, 8.2, 3.2, 0.9, 1.6, 6.5), 4, 2, byrow=TRUE)\na\n\n     [,1] [,2]\n[1,]  4.3  3.1\n[2,]  8.2  8.2\n[3,]  3.2  0.9\n[4,]  1.6  6.5\n\na &lt;- rbind(c(4.3, 3.1), c(8.2, 8.2), c(3.2, 0.9), c(1.6, 6.5))\na\n\n     [,1] [,2]\n[1,]  4.3  3.1\n[2,]  8.2  8.2\n[3,]  3.2  0.9\n[4,]  1.6  6.5\n\n\n\n\nb\n\na[, 2] &lt;- sort(a[, 2])\n\n\n\nc\n\nfor (i in 1:ncol(a)) {\n  a[, i] &lt;- sort(a[, i])\n}\na\n\n     [,1] [,2]\n[1,]  1.6  0.9\n[2,]  3.2  3.1\n[3,]  4.3  6.5\n[4,]  8.2  8.2"
+    "text": "3\n\nA &lt;- matrix(c(4.3, 3.1, 8.2, 8.2, 3.2, 0.9, 1.6, 6.5), 4, 2)\nA\n\n     [,1] [,2]\n[1,]  4.3  3.2\n[2,]  3.1  0.9\n[3,]  8.2  1.6\n[4,]  8.2  6.5\n\nB &lt;- rbind(c(4.3, 3.2), c(3.1, 0.9), c(8.2, 1.6), c(8.2, 6.5))\nB\n\n     [,1] [,2]\n[1,]  4.3  3.2\n[2,]  3.1  0.9\n[3,]  8.2  1.6\n[4,]  8.2  6.5\n\nA[, 2] &lt;- sort(A[, 2])\nA\n\n     [,1] [,2]\n[1,]  4.3  0.9\n[2,]  3.1  1.6\n[3,]  8.2  3.2\n[4,]  8.2  6.5\n\nfor (n in 1:ncol(A)) {\n  A[, n] &lt;- sort(A[, n])\n}\nA\n\n     [,1] [,2]\n[1,]  3.1  0.9\n[2,]  4.3  1.6\n[3,]  8.2  3.2\n[4,]  8.2  6.5"
   },
   {
-    "objectID": "stat/practice.html#section-3",
-    "href": "stat/practice.html#section-3",
-    "title": "2024-2 정리노트",
+    "objectID": "stat/work1.html#section-3",
+    "href": "stat/work1.html#section-3",
+    "title": "확률과 통계1 과제 1 - 20192208 김형훈",
     "section": "4",
-    "text": "4\n\na\n\ndframe &lt;- data.frame(person=c('Stan', 'Francine', 'Steve', 'Roger', 'Hayley', 'Klaus'), sex=factor(c('M', 'F', 'M', 'M', 'F', 'M')), funny=factor(c('High', 'Mid', 'Low', 'High', 'Mid', 'Mid'), ordered=TRUE, levels=c('Low', 'Mid', 'High')))\nstr(dframe)\n\n'data.frame':   6 obs. of  3 variables:\n $ person: chr  \"Stan\" \"Francine\" \"Steve\" \"Roger\" ...\n $ sex   : Factor w/ 2 levels \"F\",\"M\": 2 1 2 2 1 2\n $ funny : Ord.factor w/ 3 levels \"Low\"&lt;\"Mid\"&lt;\"High\": 3 2 1 3 2 2\n\n\n\n\nb\n\ndframe['gpa'] = c(3.5, 3.5, 3.0, 4.1, 2.8, 3.9)\ndframe\n\n    person sex funny gpa\n1     Stan   M  High 3.5\n2 Francine   F   Mid 3.5\n3    Steve   M   Low 3.0\n4    Roger   M  High 4.1\n5   Hayley   F   Mid 2.8\n6    Klaus   M   Mid 3.9\n\n\n\n\nc\n\ndframe[substr(dframe$person, 1, 1) == 'S', ]\n\n  person sex funny gpa\n1   Stan   M  High 3.5\n3  Steve   M   Low 3.0\n\n\n\n\nd\n\ndframe['sex'] &lt;- ifelse(dframe$sex == 'M', 0, 1)\ndframe\n\n    person sex funny gpa\n1     Stan   0  High 3.5\n2 Francine   1   Mid 3.5\n3    Steve   0   Low 3.0\n4    Roger   0  High 4.1\n5   Hayley   1   Mid 2.8\n6    Klaus   0   Mid 3.9"
+    "text": "4\n\ndf &lt;- data.frame(\n  person=c(\"Stan\", \"Francine\", \"Steve\", \"Roger\", \"Hayley\", \"Klaus\"),\n  sex=factor(c('M', 'F', 'M', 'M', 'F', 'M')),\n  funny=factor(c('High', 'Mid', 'Low', 'High', 'Mid', 'Mid'), levels=c('Low', 'Mid', 'High'), ordered=TRUE)\n)\nstr(df)\n\n'data.frame':   6 obs. of  3 variables:\n $ person: chr  \"Stan\" \"Francine\" \"Steve\" \"Roger\" ...\n $ sex   : Factor w/ 2 levels \"F\",\"M\": 2 1 2 2 1 2\n $ funny : Ord.factor w/ 3 levels \"Low\"&lt;\"Mid\"&lt;\"High\": 3 2 1 3 2 2\n\ndf['gpa'] &lt;- c(3.5, 3.5, 3.0, 4.1, 2.8, 3.9)\ndf\n\n    person sex funny gpa\n1     Stan   M  High 3.5\n2 Francine   F   Mid 3.5\n3    Steve   M   Low 3.0\n4    Roger   M  High 4.1\n5   Hayley   F   Mid 2.8\n6    Klaus   M   Mid 3.9\n\nyo &lt;- df[substr(df$person, 1, 1) == 'S', ]\nyo\n\n  person sex funny gpa\n1   Stan   M  High 3.5\n3  Steve   M   Low 3.0\n\ndf['sex'] &lt;- ifelse(df['sex'] == 'M', 0, 1)\ndf\n\n    person sex funny gpa\n1     Stan   0  High 3.5\n2 Francine   1   Mid 3.5\n3    Steve   0   Low 3.0\n4    Roger   0  High 4.1\n5   Hayley   1   Mid 2.8\n6    Klaus   0   Mid 3.9"
   },
   {
-    "objectID": "stat/practice.html#section-4",
-    "href": "stat/practice.html#section-4",
-    "title": "2024-2 정리노트",
+    "objectID": "stat/work1.html#section-4",
+    "href": "stat/work1.html#section-4",
+    "title": "확률과 통계1 과제 1 - 20192208 김형훈",
     "section": "5",
-    "text": "5\n\nsortMatrix &lt;- function (mat) {\n  for (i in 1:ncol(mat)) {\n    mat[, i] &lt;- sort(mat[, i])\n  }\n  return (mat)\n}\nyo &lt;- matrix(c(2345, 123, 46 , 234, 2134 , 1 ,124 ,134), 2)\nyo &lt;- sortMatrix(yo)\nyo\n\n     [,1] [,2] [,3] [,4]\n[1,]  123   46    1  124\n[2,] 2345  234 2134  134"
+    "text": "5\n\nsortMatrix &lt;- function(A) {\n  for (n in 1:ncol(A)) {\n    A[, n] &lt;- sort(A[, n])\n  }\n  return (A)\n}\n\nmat &lt;- matrix(c(4.3, 3.1, 8.2, 8.2, 3.2, 0.9, 1.6, 6.5), 4, 2)\nmat &lt;- sortMatrix(mat)\nmat\n\n     [,1] [,2]\n[1,]  3.1  0.9\n[2,]  4.3  1.6\n[3,]  8.2  3.2\n[4,]  8.2  6.5"
   },
   {
-    "objectID": "stat/practice.html#section-5",
-    "href": "stat/practice.html#section-5",
-    "title": "2024-2 정리노트",
+    "objectID": "stat/work1.html#section-5",
+    "href": "stat/work1.html#section-5",
+    "title": "확률과 통계1 과제 1 - 20192208 김형훈",
     "section": "6",
-    "text": "6\n\na\n\na &lt;- quakes\nstr(a)\n\n'data.frame':   1000 obs. of  5 variables:\n $ lat     : num  -20.4 -20.6 -26 -18 -20.4 ...\n $ long    : num  182 181 184 182 182 ...\n $ depth   : int  562 650 42 626 649 195 82 194 211 622 ...\n $ mag     : num  4.8 4.2 5.4 4.1 4 4 4.8 4.4 4.7 4.3 ...\n $ stations: int  41 15 43 19 11 12 43 15 35 19 ...\n\n\n\n\nb\n\nmean(a$mag)\n\n[1] 4.6204\n\nmedian(a$mag)\n\n[1] 4.6\n\na.tab &lt;- table(a$mag)\na.tab[a.tab == max(a.tab)]\n\n4.5 \n107 \n\nsummary(a$mag)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   4.00    4.30    4.60    4.62    4.90    6.40 \n\n\n\n\nc\n\nvar(a$mag)\n\n[1] 0.1622261\n\nsd(a$mag)\n\n[1] 0.402773\n\nIQR(a$mag)\n\n[1] 0.6\n\nsd(a$mag) / mean(a$mag)\n\n[1] 0.08717275\n\n\n\n\nd\n\ntable(a$mag)\n\n\n  4 4.1 4.2 4.3 4.4 4.5 4.6 4.7 4.8 4.9   5 5.1 5.2 5.3 5.4 5.5 5.6 5.7 5.9   6 \n 46  55  90  85 101 107 101  98  65  54  47  43  29  21  20  14   9   8   2   3 \n6.1 6.4 \n  1   1 \n\nbarplot(table(a$mag))\n\n\n\n\n\n\n\n\n\n\ne\n\nhist(a$mag)\n\n\n\n\n\n\n\n\n\n\nf\n\nhist(a$mag, breaks=seq(4, 6.4, 0.1), main='0.1 space', col='green', xlab='mag', ylab='count')\n\n\n\n\n\n\n\nhist(a$mag, breaks=seq(4, 6.4, 0.3), main='0.3 space', col='blue', xlab='mag', ylab='count')\n\n\n\n\n\n\n\n\n\n\ng\n\npar(mfrow=c(2,2))\nboxplot(a$lat, main='lat', col='pink')\nboxplot(a$long, main='long', col='red')\nboxplot(a$depth, main='depth', col='blue')\nboxplot(a$mag, main='mag', col='green')\n\n\n\n\n\n\n\n\n\n\nh\n\npar(mfrow=c(1,1))\npairs(a[, c('lat', 'long', 'depth', 'mag')])"
+    "text": "6\n\ndf &lt;- data.frame(quakes)\nstr(df)\n\n'data.frame':   1000 obs. of  5 variables:\n $ lat     : num  -20.4 -20.6 -26 -18 -20.4 ...\n $ long    : num  182 181 184 182 182 ...\n $ depth   : int  562 650 42 626 649 195 82 194 211 622 ...\n $ mag     : num  4.8 4.2 5.4 4.1 4 4 4.8 4.4 4.7 4.3 ...\n $ stations: int  41 15 43 19 11 12 43 15 35 19 ...\n\nmean(df$mag)\n\n[1] 4.6204\n\nmedian(df$mag)\n\n[1] 4.6\n\ntab &lt;- table(df$mag)\nwhich(tab == max(tab))\n\n4.5 \n  6 \n\nsummary(df$mag)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   4.00    4.30    4.60    4.62    4.90    6.40 \n\nvar(df$mag)\n\n[1] 0.1622261\n\nsd(df$mag)\n\n[1] 0.402773\n\nIQR(df$mag)\n\n[1] 0.6\n\ncv &lt;- sd(df$mag) / mean(df$mag)\ncv\n\n[1] 0.08717275\n\ntable(df$mag)\n\n\n  4 4.1 4.2 4.3 4.4 4.5 4.6 4.7 4.8 4.9   5 5.1 5.2 5.3 5.4 5.5 5.6 5.7 5.9   6 \n 46  55  90  85 101 107 101  98  65  54  47  43  29  21  20  14   9   8   2   3 \n6.1 6.4 \n  1   1 \n\nbarplot(table(df$mag))\n\n\n\n\n\n\n\nhist(df$mag)\n\n\n\n\n\n\n\nx_grid1 = seq(4, 6.4, 0.1)\nx_grid2 = seq(4, 6.4, 0.3)\nhist(df$mag, breaks = x_grid1, col='blue', xlab='리히터규모', ylab='빈도')\n\n\n\n\n\n\n\nhist(df$mag, breaks = x_grid2, col='green', xlab='리히터규모', ylab='빈도')\n\n\n\n\n\n\n\nboxplot(df$lat, df$long, df$depth, df$mag, col=c('red', 'blue', 'green', 'yellow'))\n\n\n\n\n\n\n\npairs(df[, c(\"lat\", \"long\", \"depth\", \"mag\")])"
   },
   {
-    "objectID": "stat/final/2-확률변수와-분포.html",
-    "href": "stat/final/2-확률변수와-분포.html",
+    "objectID": "stat/final/1-통계학의-개념.html",
+    "href": "stat/final/1-통계학의-개념.html",
     "title": "2024-2 정리노트",
     "section": "",
-    "text": "sample space의 원소를 실수로 대응시키는 함수 - 이산확률변수: 확률변수가 취할 수 있는 값이 유한개 또는 무한개이지만 셀 수 있는 경우 - 연속확률변수: 확률변수가 취할 수 있는 값이 실수의 구간이고 셀 수 없는 경우 이산 표본공간 -&gt; 이산 확률변수 연속 표본공간 -&gt; 연속 확률변수 연속 표본공간 -&gt; 이산 확률변수\n확률 실험 -&gt; 표본공간 -&gt; 확률변수 -&gt; 확률분포"
+    "text": "모집단에서 특정 사건(event)의 상대도수의 극한 =&gt; law of large numbers(대수의 법칙)"
   },
   {
-    "objectID": "stat/final/2-확률변수와-분포.html#확률변수",
-    "href": "stat/final/2-확률변수와-분포.html#확률변수",
+    "objectID": "stat/final/1-통계학의-개념.html#확률의-개념",
+    "href": "stat/final/1-통계학의-개념.html#확률의-개념",
     "title": "2024-2 정리노트",
     "section": "",
-    "text": "sample space의 원소를 실수로 대응시키는 함수 - 이산확률변수: 확률변수가 취할 수 있는 값이 유한개 또는 무한개이지만 셀 수 있는 경우 - 연속확률변수: 확률변수가 취할 수 있는 값이 실수의 구간이고 셀 수 없는 경우 이산 표본공간 -&gt; 이산 확률변수 연속 표본공간 -&gt; 연속 확률변수 연속 표본공간 -&gt; 이산 확률변수\n확률 실험 -&gt; 표본공간 -&gt; 확률변수 -&gt; 확률분포"
+    "text": "모집단에서 특정 사건(event)의 상대도수의 극한 =&gt; law of large numbers(대수의 법칙)"
   },
   {
-    "objectID": "stat/final/2-확률변수와-분포.html#확률-분포",
-    "href": "stat/final/2-확률변수와-분포.html#확률-분포",
+    "objectID": "stat/final/1-통계학의-개념.html#sample-space-and-events",
+    "href": "stat/final/1-통계학의-개념.html#sample-space-and-events",
     "title": "2024-2 정리노트",
-    "section": "확률 분포",
-    "text": "확률 분포\n\n이산확률분포\n확률 질량 함수(pmf): P(X=x) = f(x) =&gt; X가 x일 확률 - 기하분포: 성공확률 p인 베르누이 시행을 독립적으로 반복했을 때 첫 번째 성공이 나타날 때까지의 시행횟수\n\n\n연속확률분포\n\n확률 밀도 함수(pdf): \\(\\int{f(x)}dx = 1\\)\n\\(\\int[a,b]{f(x)}dx = P(a ≤ x ≤ b)\\) =&gt; x가 a와 b사이에 있을 확률\nP(X=x) = 0 (연속형 데이터여서 특정값을 가질 확률은 0)\nf(x)는 1보다 큰 값을 가질 수 있음\n누적분포함수(cdf): \\(F(x) = P(X ≤ x)\\) (이산확률분포와 연속확률분포 모두에 적용)"
+    "section": "sample space and events",
+    "text": "sample space and events\n\nExperiment(확률실험): 동일한 조건에서 독립적으로 반복할 수 있는 실험이나 관측\nEvent(사건): 실험에서 발생하는 결과 (부분 집합)\nSimple event(단순사건): 원소가 하나인 사건\nSample space(표본공간): 모든 simple event의 집합\n\n예시: 주사위 두 개를 던지는 실험 - Sample space: {(1,1), (1,2), …, (6,6)} =&gt; 36개의 simple event - 가능한 event의 개수: 2^36 (sample space의 부분집합의 개수) =&gt; sample space의 원소의 갯수랑 다르다."
   },
   {
-    "objectID": "data/3.html",
-    "href": "data/3.html",
+    "objectID": "stat/final/1-통계학의-개념.html#확률의-정의",
+    "href": "stat/final/1-통계학의-개념.html#확률의-정의",
+    "title": "2024-2 정리노트",
+    "section": "확률의 정의",
+    "text": "확률의 정의\n\n고전적 확률: 모든 simple event가 동일한 확률을 가질 때 P(A)는 sample space가 n개의 원소로 이루어져 있을 때 k개의 원소를 가지는 event A의 확률\n통계적 확률: simple event가 동일한 확률을 가지지 않아도 된다. 표본의 수가 무한대로 갈 때, 표본의 확률이 수렴하는 값\n\n\n확률의 성질\n\n모든x에 대하여 P(x) &gt;= 0\nP(sample space) = 1\nA와 B가 배반사건이면 P(A or B) = P(A) + P(B)"
+  },
+  {
+    "objectID": "stat/final/1-통계학의-개념.html#확률의-연산",
+    "href": "stat/final/1-통계학의-개념.html#확률의-연산",
+    "title": "2024-2 정리노트",
+    "section": "확률의 연산",
+    "text": "확률의 연산"
+  },
+  {
+    "objectID": "stat/final/1-통계학의-개념.html#조건부-확률",
+    "href": "stat/final/1-통계학의-개념.html#조건부-확률",
+    "title": "2024-2 정리노트",
+    "section": "조건부 확률",
+    "text": "조건부 확률"
+  },
+  {
+    "objectID": "stat/final/1-통계학의-개념.html#독립-사건",
+    "href": "stat/final/1-통계학의-개념.html#독립-사건",
+    "title": "2024-2 정리노트",
+    "section": "독립 사건",
+    "text": "독립 사건\n\n두 사건 A와 B가 독립일 때, P(A∩B) = P(A) * P(B)\nsample space는 임의의 event와 독립이다.\n공집합은 임의의 event와 독립이다. (P(∅∩A) = P(∅) * P(A) = 0 * P(A) = 0 = P(∅))"
+  },
+  {
+    "objectID": "stat/final/1-통계학의-개념.html#베이즈-정리",
+    "href": "stat/final/1-통계학의-개념.html#베이즈-정리",
+    "title": "2024-2 정리노트",
+    "section": "베이즈 정리",
+    "text": "베이즈 정리\n\nsample space를 상호 배반인 {B1, B2, …, Bn}으로 분할 (partition)"
+  },
+  {
+    "objectID": "data/index.html",
+    "href": "data/index.html",
+    "title": "데이터베이스설계및활용",
+    "section": "",
+    "text": "1-2.qmd\n3.qmd\n4.qmd\n5.qmd\n6.qmd"
+  },
+  {
+    "objectID": "data/4.html",
+    "href": "data/4.html",
     "title": "2024-2 정리노트",
     "section": "",
-    "text": "a formal name for a thing that is being tracked one theme or topic (just single table)\n\n\nintersection table"
+    "text": "CREATE (database, tables, views, indexes)\nALTER: add, modify, drop columns\nDROP\nTRUNCATE (delete all rows)\n\nCREATE TABLE student (\n    id INT PRIMARY KEY,\n    name VARCHAR(100),\n    age INT\n);\nALTER TABLE student ADD COLUMN major VARCHAR(100);\nDROP TABLE student;\nTRUNCATE TABLE student;\n\n\n\nINSERT INTO student VALUES (1, 'Alice', 20);\nUPDATE student SET age = 21 WHERE id = 1;\nDELETE FROM student WHERE id = 1;\n\n\n\nSELECT * FROM student;\nSELECT name FROM student WHERE age &gt; 20;"
   },
   {
-    "objectID": "data/3.html#entity",
-    "href": "data/3.html#entity",
+    "objectID": "data/4.html#sql",
+    "href": "data/4.html#sql",
     "title": "2024-2 정리노트",
     "section": "",
-    "text": "a formal name for a thing that is being tracked one theme or topic (just single table)\n\n\nintersection table"
-  },
-  {
-    "objectID": "data/3.html#domain-cartesian-product",
-    "href": "data/3.html#domain-cartesian-product",
-    "title": "2024-2 정리노트",
-    "section": "domain & cartesian product",
-    "text": "domain & cartesian product\n\ndomain: set of possible values for a column\ncartesian product: set of all possible combinations of rows from two tables\n\ntable = file = relation row = record = tuple column = field = attribute"
-  },
-  {
-    "objectID": "data/3.html#key",
-    "href": "data/3.html#key",
-    "title": "2024-2 정리노트",
-    "section": "key",
-    "text": "key\n\nprimary key\nthe candidate key that is chosen as the main key for the table ### foreign key ### composite key &lt;-&gt; surrogate key ### candidate key"
-  },
-  {
-    "objectID": "data/5.html",
-    "href": "data/5.html",
-    "title": "2024-2 정리노트",
-    "section": "",
-    "text": "well formedness: each relational has only one theme every determinant must be a candidate key ### normalization process 한문제 내신단다.\n\n\nidentify all the candidate keys of relation\nidentify all functional dependencies in the relation\nexamine the determinants of the functional dependencies if the determinant is not a candidate key, not well-formed\n\nis every determinant a candidate key? - if not, not well-formed"
-  },
-  {
-    "objectID": "data/5.html#data-normalization",
-    "href": "data/5.html#data-normalization",
-    "title": "2024-2 정리노트",
-    "section": "",
-    "text": "well formedness: each relational has only one theme every determinant must be a candidate key ### normalization process 한문제 내신단다.\n\n\nidentify all the candidate keys of relation\nidentify all functional dependencies in the relation\nexamine the determinants of the functional dependencies if the determinant is not a candidate key, not well-formed\n\nis every determinant a candidate key? - if not, not well-formed"
-  },
-  {
-    "objectID": "data/5.html#functional-dependency",
-    "href": "data/5.html#functional-dependency",
-    "title": "2024-2 정리노트",
-    "section": "functional dependency",
-    "text": "functional dependency\n\nstudent_id -&gt; student_name, student_major, student_grade\ncourse_id -&gt; course_name, course_credit\nstudent_id, course_id -&gt; score\ndeterminant -&gt; dependent\nprimary key of a relation will functionally determine all other attributes in the row\ncandidate key can also functionally determine all other attributes in the row"
-  },
-  {
-    "objectID": "data/1-2.html",
-    "href": "data/1-2.html",
-    "title": "init",
-    "section": "",
-    "text": "다음주 목요일 휴강"
-  },
-  {
-    "objectID": "data/1-2.html#multiple-themes-in-same-table",
-    "href": "data/1-2.html#multiple-themes-in-same-table",
-    "title": "init",
-    "section": "multiple themes in same table",
-    "text": "multiple themes in same table\n\nredundancy problem in table\n없는 row 발생\n일관성 문제(referential integrity constraint)\n\n=&gt; in relational db, each informational topic is stored in its own table\ndb is self-describing collection of related tables table and metadata, index, application metadata are stored in db"
+    "text": "CREATE (database, tables, views, indexes)\nALTER: add, modify, drop columns\nDROP\nTRUNCATE (delete all rows)\n\nCREATE TABLE student (\n    id INT PRIMARY KEY,\n    name VARCHAR(100),\n    age INT\n);\nALTER TABLE student ADD COLUMN major VARCHAR(100);\nDROP TABLE student;\nTRUNCATE TABLE student;\n\n\n\nINSERT INTO student VALUES (1, 'Alice', 20);\nUPDATE student SET age = 21 WHERE id = 1;\nDELETE FROM student WHERE id = 1;\n\n\n\nSELECT * FROM student;\nSELECT name FROM student WHERE age &gt; 20;"
   },
   {
     "objectID": "discrete/1-1.html",
@@ -1230,5 +971,96 @@
     "title": "2024-2 정리노트",
     "section": "",
     "text": "프로시니엄 무대 (액자 무대): 제일 기본\n\n\n제 4의 벽 (관객 참여 x, 집중력)\n무대 장치 발전\n환영창조\n사실주의에 적합\n\n\n트러스트 무대 (돌출 무대)\n\n\n무대장치 재약\n\n\n원형 무대: 레슬링 같은거\n\n\n환영 창조가 어려움\n관객 참여 최대\n\n\n가변형 무대(open stage): 프로시니엄, 트러스트, 원형 지 마음대로 무대를 만듦. 변형 가능한 움직이는 무대"
+  },
+  {
+    "objectID": "human/0_intro.html",
+    "href": "human/0_intro.html",
+    "title": "2024-2 정리노트",
+    "section": "",
+    "text": "human factors = Ergonomics\na human-centered design philosophy &lt;-&gt; technology-centered design"
+  },
+  {
+    "objectID": "human/0_intro.html#what-is-human-factors",
+    "href": "human/0_intro.html#what-is-human-factors",
+    "title": "2024-2 정리노트",
+    "section": "",
+    "text": "human factors = Ergonomics\na human-centered design philosophy &lt;-&gt; technology-centered design"
+  },
+  {
+    "objectID": "human/0_intro.html#component-of-human-factors",
+    "href": "human/0_intro.html#component-of-human-factors",
+    "title": "2024-2 정리노트",
+    "section": "component of human factors",
+    "text": "component of human factors\n\nhuman: physical, cognitive, group\ntask: physical + cognitive + group\nenvirnment: working environment, systems"
+  },
+  {
+    "objectID": "human/0_intro.html#goal-of-human-factors",
+    "href": "human/0_intro.html#goal-of-human-factors",
+    "title": "2024-2 정리노트",
+    "section": "Goal of human factors",
+    "text": "Goal of human factors\n\nReduce errors\nIncrease productivity\nEnhance safety\nEnhance comfort"
+  },
+  {
+    "objectID": "human/0_intro.html#cycle-of-human-factors",
+    "href": "human/0_intro.html#cycle-of-human-factors",
+    "title": "2024-2 정리노트",
+    "section": "cycle of human factors",
+    "text": "cycle of human factors"
+  },
+  {
+    "objectID": "human/1_reaserch_method.html",
+    "href": "human/1_reaserch_method.html",
+    "title": "2024-2 정리노트",
+    "section": "",
+    "text": "실험을 통해 모형을 구축하고 법칙을 찾는다. - descriptive research: 관찰을 통해 데이터 묘사 1. 무엇을 측정할지 2. 어떻게 숫자로 표현할지 - evaluation research: 시스템의 목적을 충족하는지 평가 - usability testing - cost-benefit analysis - experimanetal research: 직접 실험해서 변수간 관계를 파악"
+  },
+  {
+    "objectID": "human/1_reaserch_method.html#human-factors-research-categories",
+    "href": "human/1_reaserch_method.html#human-factors-research-categories",
+    "title": "2024-2 정리노트",
+    "section": "",
+    "text": "실험을 통해 모형을 구축하고 법칙을 찾는다. - descriptive research: 관찰을 통해 데이터 묘사 1. 무엇을 측정할지 2. 어떻게 숫자로 표현할지 - evaluation research: 시스템의 목적을 충족하는지 평가 - usability testing - cost-benefit analysis - experimanetal research: 직접 실험해서 변수간 관계를 파악"
+  },
+  {
+    "objectID": "human/1_reaserch_method.html#research-design",
+    "href": "human/1_reaserch_method.html#research-design",
+    "title": "2024-2 정리노트",
+    "section": "research design",
+    "text": "research design\n\nqualitative research\n\n보통 마케팅에서 진행.\n\n\n\nquantitative research\n\ncorrelational observation\nsurveys and questionnaires\n\nsample: 랜덤하게 샘플링하는게 중요\nrating\nbias\n\nexperiments\narchival research"
+  },
+  {
+    "objectID": "human/1_reaserch_method.html#field-study-vs-lab-experiment",
+    "href": "human/1_reaserch_method.html#field-study-vs-lab-experiment",
+    "title": "2024-2 정리노트",
+    "section": "field study vs lab experiment",
+    "text": "field study vs lab experiment\n\nfield study\n\n주로 descriptive research, 다른 research도 가능\n직접 가서 확인하는거.\n정성적\nuncontrolled\nresults may be more generalizable to real-world situations\nhigher cost\ndifficult to replicate\ndifficult to control extraneous variables\n\n\n\nlab experiment\n\ncontrolled\nprecise replication\nlower cost\nmore flexibility\nreal-world generalizability may be limited\n\n\n\nwhy use experimental method\n\nhumans are variable\n\n\nintra individual variability\ninter individual variability\n\n\nways to handle variability\n\n\nuse statistical techniques\ncontrol variability as much as possible"
+  },
+  {
+    "objectID": "human/1_reaserch_method.html#experimanetal-method",
+    "href": "human/1_reaserch_method.html#experimanetal-method",
+    "title": "2024-2 정리노트",
+    "section": "experimanetal method",
+    "text": "experimanetal method\ncircumstances -&gt; behaviors 변수간 인과관계를 파악\n\ntype of variables\n\nindependent variable\ndependent variable\ncontrol variable: 이 값은 고정시키고 실험을 진행한다. 일반화하기 어렵게 한다.\nrandom variable (sigma): 통제할 수 없는 변수. 일반화하기 용이하다.\nconfounding variable: 수식에는 포함되지 않지만 주의해야하는 변수. control 변수로 못뺀거\n\n\n\ndecide variables\noperational definition: 변수를 어떻게 측정할 것인가\n\nindependent variable\n\nRange: realistic / select a range taht will show the effect / pilot experiment\n\n\n\ndependent variable\n\nreliability: consistent. solution: increase the number of observations\nvalidity: measure what it is supposed to measure\n\n\n\n\nexperimental design (single variable)\n\nbetween-subjects design: 각각의 실험군에 다른 사람들을 넣는다. generalibility 높다, intra person variability를 제거할 수 있다.\nwithin-subjects design: 같은 사람들을 다른 실험군에 넣는다. cost-effective, less variability, inter person variability를 제거할 수 있다.\n\n\n\nexperimental design (multiple variables)\n\nfactorial design: 두개 이상의 독립변수를 조합하여 실험군을 만든다. can test the interaction effect\n\n\n(주관식) Human factors research의 세 가지 주요 카테고리를 나열하시오. discriptive research, evaluation research, experimental research\n(빈칸 채우기) discriptive research는 관찰을 통해 데이터를 묘사하는 연구 방법이다.\n(주관식) Usability testing과 cost-benefit analysis는 어떤 종류의 research에 해당하는가? evaluation\n(빈칸 채우기) Quantitative research의 방법 중 하나인 ______에서는 랜덤하게 샘플링하는 것이 중요하다. experimental research\n(주관식) Field study의 장점과 단점을 각각 두 가지씩 설명하시오. 장점: 일반화하기 용이하다. 단점: 비용이 많이 든다. 재현이 어렵다.\n(빈칸 채우기) Lab experiment는 ______ 되어 있고, ______ 복제가 가능하며, 비용이 _______. 통제, 정확한, 낮다\n(주관식) 실험 방법을 사용하는 이유 두 가지를 설명하시오. 사람들은 다양하다. 통계적 기법을 사용할 수 있다.\n(빈칸 채우기) 실험에서 ______ 변수는 이 값을 고정시키고 실험을 진행하며, 일반화하기 어렵게 만든다. controla\n(주관식) Operational definition이란 무엇인지 설명하시오.\n(빈칸 채우기) Between-subjects design은 ______를 제거할 수 있고, within-subjects design은 ______를 제거할 수 있다."
+  },
+  {
+    "objectID": "human/2_human_information_processing_model.html",
+    "href": "human/2_human_information_processing_model.html",
+    "title": "2024-2 정리노트",
+    "section": "",
+    "text": "주요 감각: 시각, 청각, 운동 감각(proprioception)\n운동 감각: 생리적 신호, 중력과 가속도에 따른 몸의 위치 감각\nSTSS (Short Term Sensory Store)\n\n각 감각기관별 정보 저장 공간\n주의 집중 불필요, 정보 그대로 저장\n빠르게 소멸 (예: 시각 - Iconic Memory 200-300ms, 청각 - Echoic Memory 2-8s)\n\n\n\n\n\n\n정보 해석 과정\nTop-Down Processing: 과거 기억으로 정보 해석 (Long Term Memory 활용)\nBottom-Up Processing: 새로운/익숙하지 않은 정보 해석\nPreattentive Processing: 주의 집중 없이 자동적 정보 해석 (예: Stroop Effect)\n\n\n\n\n\n전반적인 정보 처리 과정에 영향\nSearch Light Metaphor: 주의 집중의 비유적 설명\n주의 실패 유형:\n\nSelective Attention: 잘못된 곳에 집중\nFocused Attention: 주의 집중 부족\nDivided Attention: 다중 작업 시 주의 분산\nSustained Attention: 장시간 주의 유지 실패\n\n\n\n\n\n\n학습을 통한 정보 저장\n유형:\n\nDeclarative Memory (What): 사실적 지식 (Episodic, Semantic)\nProcedural Memory (How): 절차적 지식\n\n기억 실패: Encoding, Storage, Retrieval 단계에서 발생 가능\n\n\n\n\n\nWorking Memory:\n\n단기적 정보 처리 및 조작\n제한된 용량 (7±2 items)\nLong Term Memory와 Perception으로부터 정보 획득\n\n\n\n\n\n\n의사결정 이론:\n\nSignal Detection Theory\nExpected Value\nBayesian Decision Theory\nMulti-attribute Theory\n\nNaturalistic Decision Making: Recognition-Primed Decision Model\n\n\n\n\n\n\n\n\n피드백 제공"
+  },
+  {
+    "objectID": "human/2_human_information_processing_model.html#인간-정보-처리-과정",
+    "href": "human/2_human_information_processing_model.html#인간-정보-처리-과정",
+    "title": "2024-2 정리노트",
+    "section": "",
+    "text": "주요 감각: 시각, 청각, 운동 감각(proprioception)\n운동 감각: 생리적 신호, 중력과 가속도에 따른 몸의 위치 감각\nSTSS (Short Term Sensory Store)\n\n각 감각기관별 정보 저장 공간\n주의 집중 불필요, 정보 그대로 저장\n빠르게 소멸 (예: 시각 - Iconic Memory 200-300ms, 청각 - Echoic Memory 2-8s)\n\n\n\n\n\n\n정보 해석 과정\nTop-Down Processing: 과거 기억으로 정보 해석 (Long Term Memory 활용)\nBottom-Up Processing: 새로운/익숙하지 않은 정보 해석\nPreattentive Processing: 주의 집중 없이 자동적 정보 해석 (예: Stroop Effect)\n\n\n\n\n\n전반적인 정보 처리 과정에 영향\nSearch Light Metaphor: 주의 집중의 비유적 설명\n주의 실패 유형:\n\nSelective Attention: 잘못된 곳에 집중\nFocused Attention: 주의 집중 부족\nDivided Attention: 다중 작업 시 주의 분산\nSustained Attention: 장시간 주의 유지 실패\n\n\n\n\n\n\n학습을 통한 정보 저장\n유형:\n\nDeclarative Memory (What): 사실적 지식 (Episodic, Semantic)\nProcedural Memory (How): 절차적 지식\n\n기억 실패: Encoding, Storage, Retrieval 단계에서 발생 가능\n\n\n\n\n\nWorking Memory:\n\n단기적 정보 처리 및 조작\n제한된 용량 (7±2 items)\nLong Term Memory와 Perception으로부터 정보 획득\n\n\n\n\n\n\n의사결정 이론:\n\nSignal Detection Theory\nExpected Value\nBayesian Decision Theory\nMulti-attribute Theory\n\nNaturalistic Decision Making: Recognition-Primed Decision Model\n\n\n\n\n\n\n\n\n피드백 제공"
+  },
+  {
+    "objectID": "human/2_human_information_processing_model.html#퀴즈",
+    "href": "human/2_human_information_processing_model.html#퀴즈",
+    "title": "2024-2 정리노트",
+    "section": "퀴즈",
+    "text": "퀴즈\n\nSTSS(Short Term Sensory Store)와 Working Memory의 차이점을 설명하시오. (주관식)\nTop-Down Processing과 Bottom-Up Processing의 차이를 예를 들어 설명하시오. (주관식)\n다음 중 주의 자원(Attention Resources)과 관련된 현상이 아닌 것은?\n\nChange Blindness\nInattentional Blindness\nStroop Effect\nCocktail Party Effect\n\n장기 기억(Long Term Memory)의 세 가지 주요 단계를 순서대로 나열하고, 각 단계에서 발생할 수 있는 기억 실패의 예를 들어 설명하시오. (주관식)\n다음 중 Naturalistic Decision Making의 특징으로 가장 적절한 것은?\n\n항상 최적의 결정을 도출한다.\n실험실 환경에서 가장 효과적으로 적용된다.\n경험을 바탕으로 한 직관적 의사결정을 강조한다.\n모든 가능한 대안을 체계적으로 분석한다.\n\nWorking Memory의 용량 제한(7±2 items)이 인간-컴퓨터 상호작용(HCI) 설계에 어떤 영향을 미치는지 설명하고, 이를 고려한 인터페이스 설계 예시를 제시하시오. (주관식)"
   }
 ]

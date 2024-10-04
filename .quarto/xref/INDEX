@@ -172,5 +172,17 @@
   },
   "art/4.qmd": {
     "4.html": "36d5ec54"
+  },
+  "human/0_intro.qmd": {
+    "0_intro.html": "cafca87b"
+  },
+  "human/3_sensory_system.qmd": {
+    "3_sensory_system.html": "8903bcb5"
+  },
+  "human/1_reaserch_method.qmd": {
+    "1_reaserch_method.html": "63337833"
+  },
+  "human/2_human_information_processing_model.qmd": {
+    "2_human_information_processing_model.html": "7ca839e7"
   }
 }
