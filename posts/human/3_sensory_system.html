@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-09-24">
 
-<title>인간 공학 – 2024-2 정리노트</title>
+<title>Sensor System (Visual) – 2024-2 정리노트</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&amp;display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -79,44 +80,13 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">2024-2 정리노트</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="../human/index.html" aria-current="page"> 
-<span class="menu-text">인간공학</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../stat/index.html"> 
-<span class="menu-text">확률과통계</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../art/index.html"> 
-<span class="menu-text">공연예술의이해</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../data/index.html"> 
-<span class="menu-text">데이터베이스설계및활용</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../math/index.html"> 
-<span class="menu-text">기초공학수학</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../discrete/index.html"> 
-<span class="menu-text">이산수학</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+        <div class="quarto-navbar-tools tools-end">
 </div>
+          <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -124,22 +94,46 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#visual" id="toc-visual" class="nav-link active" data-scroll-target="#visual">visual</a>
+  <ul class="collapse">
+  <li><a href="#눈의-구조" id="toc-눈의-구조" class="nav-link" data-scroll-target="#눈의-구조">눈의 구조</a></li>
+  </ul></li>
+  <li><a href="#color-vision" id="toc-color-vision" class="nav-link" data-scroll-target="#color-vision">color vision</a></li>
+  <li><a href="#design-with-color" id="toc-design-with-color" class="nav-link" data-scroll-target="#design-with-color">design with color</a></li>
+  <li><a href="#depth-perception" id="toc-depth-perception" class="nav-link" data-scroll-target="#depth-perception">depth perception</a>
+  <ul class="collapse">
+  <li><a href="#depth-judgment" id="toc-depth-judgment" class="nav-link" data-scroll-target="#depth-judgment">depth judgment</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">인간 공학</h1>
-</div>
+<h1 class="title">Sensor System (Visual)</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">인간 공학</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 24, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -149,22 +143,64 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="visual" class="level2">
+<h2 class="anchored" data-anchor-id="visual">visual</h2>
+<section id="눈의-구조" class="level3">
+<h3 class="anchored" data-anchor-id="눈의-구조">눈의 구조</h3>
 <ul>
-<li><p><a href="../human/0_intro.html">0_intro.qmd</a></p></li>
-<li><p><a href="../human/1_reaserch_method.html">1_reaserch_method.qmd</a></p></li>
-<li><p><a href="../human/2_human_information_processing_model.html">2_human_information_processing_model.qmd</a></p></li>
-<li><p><a href="../human/3_sensory_system.html">3_sensory_system.qmd</a></p></li>
-<li><p><a href="../human/4.html">4.qmd</a></p></li>
+<li>결막 (conjunctiva): 눈을 보호</li>
+<li>각막 (cornea): 빛을 굴절</li>
+<li>홍채(iris): 빛의 양을 조절</li>
+<li>동공 (pupil): 빛이 들어오는 곳</li>
+<li>수정체(lens): 빛을 집중하는 역할</li>
+<li>공막 (sclera): 눈을 보호</li>
+<li>유리체 (vitreous humor): 눈을 유지</li>
+<li>망막(retina): 빛을 감지</li>
+<li>망막의 세포
+<ul>
+<li>Nerve cell: 빛을 감지</li>
+<li>Photoreceptor: 빛을 감지
+<ul>
+<li>간상세포(cone): 세부적인 정보, 색상 인식, photopic conditions. 짧은 파장의 색에 더 민감함</li>
+<li>막대세포(rod): 어두운 곳에서 활동, 주변 시야 빛을 받으면 rhodopsin이 분해됨, scotopic conditions. 긴 파장의 색에 더 민감함.</li>
+</ul></li>
+<li>Choroid: 영양 공급</li>
+</ul></li>
+<li>시신경(optic nerve): 망막에서 뇌로 정보 전달</li>
+<li>맹점(optic disk)</li>
 </ul>
-<details>
-<summary>
-notes
-</summary>
-</details>
+</section>
+</section>
+<section id="color-vision" class="level2">
+<h2 class="anchored" data-anchor-id="color-vision">color vision</h2>
+<ul>
+<li>cone cell의 photo-pigment(RGB 64:32:2)로 색상을 인식</li>
+<li>망막 중앙에는 파란색이 없음</li>
+<li>sharpness는 brightness와 color difference에 영향을 받음</li>
+</ul>
+</section>
+<section id="design-with-color" class="level2">
+<h2 class="anchored" data-anchor-id="design-with-color">design with color</h2>
+<ol type="1">
+<li>Mono-chromatic: 단색</li>
+<li>Analogous: 비슷한 색</li>
+<li>Complementary: 반대 색</li>
+</ol>
+</section>
+<section id="depth-perception" class="level2">
+<h2 class="anchored" data-anchor-id="depth-perception">depth perception</h2>
+<section id="depth-judgment" class="level3">
+<h3 class="anchored" data-anchor-id="depth-judgment">depth judgment</h3>
+<ul>
+<li>object-centered cues: 상대적 크기, 가려짐, 선형 관점, 움직임 시차</li>
+<li>observer-centered cues: 이중 시력</li>
+</ul>
 
 
+</section>
+</section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

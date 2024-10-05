@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-09-17">
 
-<title>인간 공학 – 2024-2 정리노트</title>
+<title>Human Information Processing Model – 2024-2 정리노트</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&amp;display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -79,44 +80,13 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">2024-2 정리노트</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="../human/index.html" aria-current="page"> 
-<span class="menu-text">인간공학</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../stat/index.html"> 
-<span class="menu-text">확률과통계</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../art/index.html"> 
-<span class="menu-text">공연예술의이해</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../data/index.html"> 
-<span class="menu-text">데이터베이스설계및활용</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../math/index.html"> 
-<span class="menu-text">기초공학수학</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../discrete/index.html"> 
-<span class="menu-text">이산수학</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+        <div class="quarto-navbar-tools tools-end">
 </div>
+          <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -124,22 +94,48 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#인간-정보-처리-과정" id="toc-인간-정보-처리-과정" class="nav-link active" data-scroll-target="#인간-정보-처리-과정">인간 정보 처리 과정</a>
+  <ul class="collapse">
+  <li><a href="#감각-처리-sensory-processing" id="toc-감각-처리-sensory-processing" class="nav-link" data-scroll-target="#감각-처리-sensory-processing">1. 감각 처리 (Sensory Processing)</a></li>
+  <li><a href="#지각-perception" id="toc-지각-perception" class="nav-link" data-scroll-target="#지각-perception">2. 지각 (Perception)</a></li>
+  <li><a href="#주의-자원-attention-resources" id="toc-주의-자원-attention-resources" class="nav-link" data-scroll-target="#주의-자원-attention-resources">3. 주의 자원 (Attention Resources)</a></li>
+  <li><a href="#장기-기억-long-term-memory" id="toc-장기-기억-long-term-memory" class="nav-link" data-scroll-target="#장기-기억-long-term-memory">4. 장기 기억 (Long Term Memory)</a></li>
+  <li><a href="#인지-cognition" id="toc-인지-cognition" class="nav-link" data-scroll-target="#인지-cognition">5. 인지 (Cognition)</a></li>
+  <li><a href="#반응-선택-response-selection" id="toc-반응-선택-response-selection" class="nav-link" data-scroll-target="#반응-선택-response-selection">6. 반응 선택 (Response Selection)</a></li>
+  <li><a href="#반응-실행-response-execution" id="toc-반응-실행-response-execution" class="nav-link" data-scroll-target="#반응-실행-response-execution">7. 반응 실행 (Response Execution)</a></li>
+  <li><a href="#시스템-환경-system-environment" id="toc-시스템-환경-system-environment" class="nav-link" data-scroll-target="#시스템-환경-system-environment">8. 시스템 환경 (System Environment)</a></li>
+  </ul></li>
+  <li><a href="#퀴즈" id="toc-퀴즈" class="nav-link" data-scroll-target="#퀴즈">퀴즈</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">인간 공학</h1>
-</div>
+<h1 class="title">Human Information Processing Model</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">인간 공학</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 17, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -149,22 +145,117 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="인간-정보-처리-과정" class="level2">
+<h2 class="anchored" data-anchor-id="인간-정보-처리-과정">인간 정보 처리 과정</h2>
+<section id="감각-처리-sensory-processing" class="level3">
+<h3 class="anchored" data-anchor-id="감각-처리-sensory-processing">1. 감각 처리 (Sensory Processing)</h3>
 <ul>
-<li><p><a href="../human/0_intro.html">0_intro.qmd</a></p></li>
-<li><p><a href="../human/1_reaserch_method.html">1_reaserch_method.qmd</a></p></li>
-<li><p><a href="../human/2_human_information_processing_model.html">2_human_information_processing_model.qmd</a></p></li>
-<li><p><a href="../human/3_sensory_system.html">3_sensory_system.qmd</a></p></li>
-<li><p><a href="../human/4.html">4.qmd</a></p></li>
+<li>주요 감각: 시각, 청각, 운동 감각(proprioception)</li>
+<li>운동 감각: 생리적 신호, 중력과 가속도에 따른 몸의 위치 감각</li>
+<li>STSS (Short Term Sensory Store)
+<ul>
+<li>각 감각기관별 정보 저장 공간</li>
+<li>주의 집중 불필요, 정보 그대로 저장</li>
+<li>빠르게 소멸 (예: 시각 - Iconic Memory 200-300ms, 청각 - Echoic Memory 2-8s)</li>
+</ul></li>
 </ul>
-<details>
-<summary>
-notes
-</summary>
-</details>
+</section>
+<section id="지각-perception" class="level3">
+<h3 class="anchored" data-anchor-id="지각-perception">2. 지각 (Perception)</h3>
+<ul>
+<li>정보 해석 과정</li>
+<li>Top-Down Processing: 과거 기억으로 정보 해석 (Long Term Memory 활용)</li>
+<li>Bottom-Up Processing: 새로운/익숙하지 않은 정보 해석</li>
+<li>Preattentive Processing: 주의 집중 없이 자동적 정보 해석 (예: Stroop Effect)</li>
+</ul>
+</section>
+<section id="주의-자원-attention-resources" class="level3">
+<h3 class="anchored" data-anchor-id="주의-자원-attention-resources">3. 주의 자원 (Attention Resources)</h3>
+<ul>
+<li>전반적인 정보 처리 과정에 영향</li>
+<li>Search Light Metaphor: 주의 집중의 비유적 설명</li>
+<li>주의 실패 유형:
+<ul>
+<li>Selective Attention: 잘못된 곳에 집중</li>
+<li>Focused Attention: 주의 집중 부족</li>
+<li>Divided Attention: 다중 작업 시 주의 분산</li>
+<li>Sustained Attention: 장시간 주의 유지 실패</li>
+</ul></li>
+</ul>
+</section>
+<section id="장기-기억-long-term-memory" class="level3">
+<h3 class="anchored" data-anchor-id="장기-기억-long-term-memory">4. 장기 기억 (Long Term Memory)</h3>
+<ul>
+<li>학습을 통한 정보 저장</li>
+<li>유형:
+<ul>
+<li>Declarative Memory (What): 사실적 지식 (Episodic, Semantic)</li>
+<li>Procedural Memory (How): 절차적 지식</li>
+</ul></li>
+<li>기억 실패: Encoding, Storage, Retrieval 단계에서 발생 가능</li>
+</ul>
+</section>
+<section id="인지-cognition" class="level3">
+<h3 class="anchored" data-anchor-id="인지-cognition">5. 인지 (Cognition)</h3>
+<ul>
+<li>Working Memory:
+<ul>
+<li>단기적 정보 처리 및 조작</li>
+<li>제한된 용량 (7±2 items)</li>
+<li>Long Term Memory와 Perception으로부터 정보 획득</li>
+</ul></li>
+</ul>
+</section>
+<section id="반응-선택-response-selection" class="level3">
+<h3 class="anchored" data-anchor-id="반응-선택-response-selection">6. 반응 선택 (Response Selection)</h3>
+<ul>
+<li>의사결정 이론:
+<ul>
+<li>Signal Detection Theory</li>
+<li>Expected Value</li>
+<li>Bayesian Decision Theory</li>
+<li>Multi-attribute Theory</li>
+</ul></li>
+<li>Naturalistic Decision Making: Recognition-Primed Decision Model</li>
+</ul>
+</section>
+<section id="반응-실행-response-execution" class="level3">
+<h3 class="anchored" data-anchor-id="반응-실행-response-execution">7. 반응 실행 (Response Execution)</h3>
+</section>
+<section id="시스템-환경-system-environment" class="level3">
+<h3 class="anchored" data-anchor-id="시스템-환경-system-environment">8. 시스템 환경 (System Environment)</h3>
+<ul>
+<li>피드백 제공</li>
+</ul>
+</section>
+</section>
+<section id="퀴즈" class="level2">
+<h2 class="anchored" data-anchor-id="퀴즈">퀴즈</h2>
+<ol type="1">
+<li><p>STSS(Short Term Sensory Store)와 Working Memory의 차이점을 설명하시오. (주관식)</p></li>
+<li><p>Top-Down Processing과 Bottom-Up Processing의 차이를 예를 들어 설명하시오. (주관식)</p></li>
+<li><p>다음 중 주의 자원(Attention Resources)과 관련된 현상이 아닌 것은?</p>
+<ol type="a">
+<li>Change Blindness</li>
+<li>Inattentional Blindness</li>
+<li>Stroop Effect</li>
+<li>Cocktail Party Effect</li>
+</ol></li>
+<li><p>장기 기억(Long Term Memory)의 세 가지 주요 단계를 순서대로 나열하고, 각 단계에서 발생할 수 있는 기억 실패의 예를 들어 설명하시오. (주관식)</p></li>
+<li><p>다음 중 Naturalistic Decision Making의 특징으로 가장 적절한 것은?</p>
+<ol type="a">
+<li>항상 최적의 결정을 도출한다.</li>
+<li>실험실 환경에서 가장 효과적으로 적용된다.</li>
+<li>경험을 바탕으로 한 직관적 의사결정을 강조한다.</li>
+<li>모든 가능한 대안을 체계적으로 분석한다.</li>
+</ol></li>
+<li><p>Working Memory의 용량 제한(7±2 items)이 인간-컴퓨터 상호작용(HCI) 설계에 어떤 영향을 미치는지 설명하고, 이를 고려한 인터페이스 설계 예시를 제시하시오. (주관식)</p></li>
+</ol>
 
 
+</section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
