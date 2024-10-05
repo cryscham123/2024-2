@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-09-03">
 
-<title>quarto-input752e2a62b5cbfdb2 – 2024-2 정리노트</title>
+<title>확률변수와 분포 – 2024-2 정리노트</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -139,25 +140,58 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">확률변수와 분포</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">확률과통계1</div>
+  </div>
+  </div>
 
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 3, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 <section id="확률변수" class="level2">
 <h2 class="anchored" data-anchor-id="확률변수">확률변수</h2>
-<p>sample space의 원소를 실수로 대응시키는 함수 - 이산확률변수: 확률변수가 취할 수 있는 값이 유한개 또는 무한개이지만 셀 수 있는 경우 - 연속확률변수: 확률변수가 취할 수 있는 값이 실수의 구간이고 셀 수 없는 경우 이산 표본공간 -&gt; 이산 확률변수 연속 표본공간 -&gt; 연속 확률변수 연속 표본공간 -&gt; 이산 확률변수</p>
+<p>sample space의 원소를 실수로 대응시키는 함수</p>
+<ul>
+<li>이산확률변수: 확률변수가 취할 수 있는 값이 유한개 또는 무한개이지만 셀 수 있는 경우</li>
+<li>연속확률변수: 확률변수가 취할 수 있는 값이 실수의 구간이고 셀 수 없는 경우</li>
+</ul>
+<p>이산 표본공간 -&gt; 이산 확률변수<br>
+연속 표본공간 -&gt; 연속 확률변수<br>
+연속 표본공간 -&gt; 이산 확률변수</p>
 <p>확률 실험 -&gt; 표본공간 -&gt; 확률변수 -&gt; 확률분포</p>
 </section>
 <section id="확률-분포" class="level2">
 <h2 class="anchored" data-anchor-id="확률-분포">확률 분포</h2>
 <section id="이산확률분포" class="level3">
 <h3 class="anchored" data-anchor-id="이산확률분포">이산확률분포</h3>
-<p>확률 질량 함수(pmf): P(X=x) = f(x) =&gt; X가 x일 확률 - 기하분포: 성공확률 p인 베르누이 시행을 독립적으로 반복했을 때 첫 번째 성공이 나타날 때까지의 시행횟수</p>
+<p>확률 질량 함수(pmf): P(X=x) = f(x) =&gt; X가 x일 확률<br>
+- 기하분포: 성공확률 p인 베르누이 시행을 독립적으로 반복했을 때 첫 번째 성공이 나타날 때까지의 시행횟수</p>
 </section>
 <section id="연속확률분포" class="level3">
 <h3 class="anchored" data-anchor-id="연속확률분포">연속확률분포</h3>
 <ul>
 <li><p>확률 밀도 함수(pdf): <span class="math inline">\(\int{f(x)}dx = 1\)</span></p></li>
-<li><p><span class="math inline">\(\int[a,b]{f(x)}dx = P(a ≤ x ≤ b)\)</span> =&gt; x가 a와 b사이에 있을 확률</p></li>
+<li><p><span class="math inline">\(\int_a^b {f(x)}dx = P(a ≤ x ≤ b)\)</span> =&gt; x가 a와 b사이에 있을 확률</p></li>
 <li><p>P(X=x) = 0 (연속형 데이터여서 특정값을 가질 확률은 0)</p></li>
 <li><p>f(x)는 1보다 큰 값을 가질 수 있음</p></li>
 <li><p>누적분포함수(cdf): <span class="math inline">\(F(x) = P(X ≤ x)\)</span> (이산확률분포와 연속확률분포 모두에 적용)</p></li>

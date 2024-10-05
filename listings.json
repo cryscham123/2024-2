@@ -10,8 +10,6 @@
       "/posts/stat/work1.html",
       "/posts/stat/work2.html",
       "/posts/stat/work3.html",
-      "/posts/stat/final/2-확률변수와-분포.html",
-      "/posts/stat/final/1-통계학의-개념.html",
       "/posts/discrete/work/work1.pdf",
       "/posts/discrete/work/work2.pdf",
       "/posts/data/3.html",
@@ -45,8 +43,10 @@
       "/posts/math/notes/1week/2.html",
       "/posts/art/notes/1week/2.html",
       "/posts/human/0_intro.html",
+      "/posts/stat/final/2-확률변수와-분포.html",
       "/posts/math/notes/1week/1.html",
-      "/posts/art/notes/1week/1.html"
+      "/posts/art/notes/1week/1.html",
+      "/posts/stat/final/1-통계학의-개념.html"
     ]
   }
 ]
