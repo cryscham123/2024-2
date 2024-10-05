@@ -46,7 +46,7 @@
     "href": "human/index.html",
     "title": "인간 공학",
     "section": "",
-    "text": "0_intro.qmd\n1_reaserch_method.qmd\n2_human_information_processing_model.qmd\n3_sensory_system.qmd\n4.qmd"
+    "text": "0_intro.qmd\n1_reaserch_method.qmd\n2_human_information_processing_model.qmd\n3_sensory_system.qmd\n4.qmd\n\n\n\nnotes"
   },
   {
     "objectID": "human/3_sensory_system.html",
@@ -144,7 +144,7 @@
     "href": "art/index.html",
     "title": "공연예술의 이해",
     "section": "",
-    "text": "1.qmd\n2.qmd\n3.qmd\n4.qmd\n5.qmd\n6.qmd"
+    "text": "1.qmd\n2.qmd\n3.qmd\n4.qmd\n5.qmd\n6.qmd\n\n\n\nnotes"
   },
   {
     "objectID": "art/3.html",
@@ -389,7 +389,7 @@
     "href": "stat/index.html",
     "title": "확률과 통계",
     "section": "",
-    "text": "1week.qmd\n2week.qmd\n3.qmd\n\n\n\n3_files\n\n\n\n\nfinal\n\n\n1-통계학의-개념.qmd\n2-확률변수와-분포.qmd\n\n\n\n\nwork\n\n\n\nwork1.qmd\nwork2.qmd\nwork3.qmd"
+    "text": "1week.qmd\n2week.qmd\n3.qmd\n\n\n\n3_files\n\n\n\n\nfinal\n\n\n1-통계학의-개념.qmd\n2-확률변수와-분포.qmd\n\n\n\n\nhomework\n\n\n\n\nnotes\n\n\n\nwork1.qmd\nwork2.qmd\nwork3.qmd"
   },
   {
     "objectID": "stat/2week.html",
@@ -571,7 +571,7 @@
     "href": "math/index.html",
     "title": "기초공학수학",
     "section": "",
-    "text": "final\n\n\n2.qmd\n3.qmd\n4.qmd\ntriangle_func1.qmd\n\n\n\n\nwork\n\n\n\n_site\n\n\n\nwork1.qmd\nwork2.qmd\nwork3.qmd\nwork4.qmd"
+    "text": "final\n\n\n2.qmd\n3.qmd\n4.qmd\ntriangle_func1.qmd\n\n\n\n\nhomework\n\n\n\n_site\n\n\n\nwork1.qmd\nwork2.qmd\nwork3.qmd\nwork4.qmd\n\n\n\n\nnotes"
   },
   {
     "objectID": "math/final/4.html",
@@ -634,7 +634,7 @@
     "href": "stat/3.html#sampling",
     "title": "2024-2 정리노트",
     "section": "sampling",
-    "text": "sampling\n\nsample(1:20, 10, replace=T)\n\n [1]  2  8  6  6 15 19 12 10  1  2\n\nsample(c('H', 'T'), 10, replace=T, prob=c(0.3, 0.7))\n\n [1] \"T\" \"T\" \"T\" \"T\" \"H\" \"T\" \"H\" \"T\" \"T\" \"T\"\n\npar(mfrow=c(2,2))\nfor (i in c(100, 1000, 10000, 100000)) {\n  x &lt;- sample(1:6, i, replace=T)\n  x.tab &lt;- table(x)\n  barplot(x.tab / i, ylim=c(0, 0.5), xlab=paste(\"n=\", i))\n}"
+    "text": "sampling\n\nsample(1:20, 10, replace=T)\n\n [1]  4 16 12  6 13  7 10  6  1 13\n\nsample(c('H', 'T'), 10, replace=T, prob=c(0.3, 0.7))\n\n [1] \"T\" \"H\" \"T\" \"T\" \"T\" \"T\" \"T\" \"T\" \"H\" \"T\"\n\npar(mfrow=c(2,2))\nfor (i in c(100, 1000, 10000, 100000)) {\n  x &lt;- sample(1:6, i, replace=T)\n  x.tab &lt;- table(x)\n  barplot(x.tab / i, ylim=c(0, 0.5), xlab=paste(\"n=\", i))\n}"
   },
   {
     "objectID": "stat/work3.html",
@@ -767,7 +767,7 @@
     "href": "data/index.html",
     "title": "데이터베이스설계및활용",
     "section": "",
-    "text": "1-2.qmd\n3.qmd\n4.qmd\n5.qmd\n6.qmd"
+    "text": "1-2.qmd\n3.qmd\n4.qmd\n5.qmd\n6.qmd\n\n\n\nnotes"
   },
   {
     "objectID": "data/4.html",
@@ -802,7 +802,7 @@
     "href": "discrete/index.html",
     "title": "이산 수학",
     "section": "",
-    "text": "1-1.qmd\n1-2.qmd\n1-3.qmd\n3-1.qmd\n4.qmd\n5.qmd\n6.qmd\nown1-1.qmd\nown1-2.qmd\nown4.qmd\n\n\n\nwork\n\n\nwork1.qmd\nwork2.qmd"
+    "text": "1-1.qmd\n1-2.qmd\n1-3.qmd\n3-1.qmd\n4.qmd\n5.qmd\n6.qmd\n\n\n\nnotes\n\n\n\nown1-1.qmd\nown1-2.qmd\nown4.qmd\n\n\n\nwork\n\n\nwork1.qmd\nwork2.qmd"
   },
   {
     "objectID": "discrete/5.html",
