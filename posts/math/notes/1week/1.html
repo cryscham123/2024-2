@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-09-02">
 
-<title>quarto-input29c333376e4b9669 – 2024-2 정리노트</title>
+<title>1장- 집합, 실수의 성질 – 2024-2 정리노트</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&amp;display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -79,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../../index.html">
     <span class="navbar-title">2024-2 정리노트</span>
     </a>
   </div>
@@ -98,23 +99,95 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#입센" id="toc-입센" class="nav-link active" data-scroll-target="#입센">입센</a></li>
+  <li><a href="#정의" id="toc-정의" class="nav-link active" data-scroll-target="#정의">정의</a></li>
+  <li><a href="#실수의-성질" id="toc-실수의-성질" class="nav-link" data-scroll-target="#실수의-성질">실수의 성질</a>
+  <ul class="collapse">
+  <li><a href="#유계집합" id="toc-유계집합" class="nav-link" data-scroll-target="#유계집합">유계집합</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">1장- 집합, 실수의 성질</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">기초공학수학</div>
+  </div>
+  </div>
 
 
 
-<section id="입센" class="level2">
-<h2 class="anchored" data-anchor-id="입센">입센</h2>
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 2, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="정의" class="level2">
+<h2 class="anchored" data-anchor-id="정의">정의</h2>
 <ul>
-<li>최초의 사실주의 희극</li>
+<li>집합: 명확하게 식별할 수 있는 대사의 모음</li>
+<li>원소: 집합을 구성하는 대상</li>
+<li>집합의 표현
+<ul>
+<li>원소 나열법: 집합의 원소를 모두 나열하는 방법<br>
+ex) A = {1, 2, 3, 4, 5}</li>
+<li>조건 제시법: 집합의 원소가 만족해야 하는 조건을 나열하는 방법<br>
+ex) A = {x | x ⋴ 𝕟, 1 ≤ x ≤ 5}</li>
+</ul></li>
+<li>부분집합: 집합 A의 모든 원소가 집합 B의 원소이면 집합 A는 집합 B의 부분집합이다.<br>
+ex) A = {1, 2, 3}, B = {1, 2, 3, 4, 5}<br>
+A ⊆ B</li>
+<li>진부분집합: A ⊆ B 이면서 A ≠ B인 경우</li>
+<li>공집합: 어떤 집합의 원소도 포함하지 않는 집합</li>
+<li>집합 연산
+<ul>
+<li>합집합: A ∪ B = {x | x ⋴ A 또는 x ⋴ B}</li>
+<li>교집합: A ∩ B = {x | x ⋴ A 그리고 x ⋴ B}</li>
+<li>차집합: A - B = {x | x ⋴ A 그리고 x ⋏ B}</li>
+<li>A x B = {(a, b) | a ⋴ A 그리고 b ⋴ B}</li>
+<li>여집합: A’ = {x | x ⋴ U 그리고 x ⋏ A} (U: 전체집합)</li>
+</ul></li>
+</ul>
+</section>
+<section id="실수의-성질" class="level2">
+<h2 class="anchored" data-anchor-id="실수의-성질">실수의 성질</h2>
+<section id="유계집합" class="level3">
+<h3 class="anchored" data-anchor-id="유계집합">유계집합</h3>
+<ul>
+<li>위로 유계: A ⊆ R의 모든 원소 x에 대하여 x &lt;= c인 c ∈ R이 존재</li>
+<li>아래로 유계: A ⊆ R의 모든 원소 x에 대하여 x &gt;= d인 d ∈ R이 존재</li>
+<li>상계: 위로 유계인 집합에서 c</li>
+<li>하계: 아래로 유계인 집합에서 d</li>
+<li>상한: 상계 중에서 가장 작은 원소 (“sup A”)</li>
+<li>하한: 하계 중에서 가장 큰 원소 (“inf A”)</li>
+</ul>
+<section id="상한과-하한의-성질" class="level4">
+<h4 class="anchored" data-anchor-id="상한과-하한의-성질">상한과 하한의 성질</h4>
+<ul>
+<li><code>상한과 하한은 유일하다</code></li>
+<li>존재하지 않을 수 있다</li>
+<li>해당 집합의 원소일 필요가 없다.</li>
 </ul>
 
 
+</section>
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
