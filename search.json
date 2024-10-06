@@ -704,7 +704,7 @@
     "href": "posts/stat/3.html#sampling",
     "title": "확률과 통계1",
     "section": "sampling",
-    "text": "sampling\n\nsample(1:20, 10, replace=T)\n\n [1]  3  1 15 13  5  7  1  7  6  6\n\nsample(c('H', 'T'), 10, replace=T, prob=c(0.3, 0.7))\n\n [1] \"T\" \"T\" \"T\" \"T\" \"H\" \"T\" \"H\" \"T\" \"H\" \"T\"\n\npar(mfrow=c(2,2))\nfor (i in c(100, 1000, 10000, 100000)) {\n  x &lt;- sample(1:6, i, replace=T)\n  x.tab &lt;- table(x)\n  barplot(x.tab / i, ylim=c(0, 0.5), xlab=paste(\"n=\", i))\n}"
+    "text": "sampling\n\nsample(1:20, 10, replace=T)\n\n [1] 11  1  2  1  2  9 14 11 12  2\n\nsample(c('H', 'T'), 10, replace=T, prob=c(0.3, 0.7))\n\n [1] \"T\" \"T\" \"H\" \"T\" \"H\" \"T\" \"T\" \"T\" \"T\" \"T\"\n\npar(mfrow=c(2,2))\nfor (i in c(100, 1000, 10000, 100000)) {\n  x &lt;- sample(1:6, i, replace=T)\n  x.tab &lt;- table(x)\n  barplot(x.tab / i, ylim=c(0, 0.5), xlab=paste(\"n=\", i))\n}"
   },
   {
     "objectID": "posts/stat/work3.html",
