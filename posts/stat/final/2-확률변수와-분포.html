@@ -134,6 +134,10 @@ window.Quarto = {
   <li><a href="#이산확률분포" id="toc-이산확률분포" class="nav-link" data-scroll-target="#이산확률분포">이산확률분포</a></li>
   <li><a href="#연속확률분포" id="toc-연속확률분포" class="nav-link" data-scroll-target="#연속확률분포">연속확률분포</a></li>
   </ul></li>
+  <li><a href="#결합-확률분포" id="toc-결합-확률분포" class="nav-link" data-scroll-target="#결합-확률분포">결합 확률분포</a></li>
+  <li><a href="#주변-확률분포" id="toc-주변-확률분포" class="nav-link" data-scroll-target="#주변-확률분포">주변 확률분포</a></li>
+  <li><a href="#조건부-확률분포" id="toc-조건부-확률분포" class="nav-link" data-scroll-target="#조건부-확률분포">조건부 확률분포</a></li>
+  <li><a href="#독립-확률변수" id="toc-독립-확률변수" class="nav-link" data-scroll-target="#독립-확률변수">독립 확률변수</a></li>
   </ul>
 </nav>
     </div>
@@ -190,18 +194,45 @@ window.Quarto = {
 <section id="연속확률분포" class="level3">
 <h3 class="anchored" data-anchor-id="연속확률분포">연속확률분포</h3>
 <ul>
-<li><p>확률 밀도 함수(pdf): <span class="math inline">\(\int{f(x)}dx = 1\)</span></p></li>
-<li><p><span class="math inline">\(\int_a^b {f(x)}dx = P(a ≤ x ≤ b)\)</span> =&gt; x가 a와 b사이에 있을 확률</p></li>
-<li><p>P(X=x) = 0 (연속형 데이터여서 특정값을 가질 확률은 0)</p></li>
-<li><p>f(x)는 1보다 큰 값을 가질 수 있음</p></li>
-<li><p>누적분포함수(cdf): <span class="math inline">\(F(x) = P(X ≤ x)\)</span> (이산확률분포와 연속확률분포 모두에 적용)</p></li>
+<li>확률 밀도 함수(pdf): <span class="math inline">\(\int{f(x)}dx = 1\)</span></li>
+<li><span class="math inline">\(\int_a^b {f(x)}dx = P(a ≤ x ≤ b)\)</span> =&gt; x가 a와 b사이에 있을 확률</li>
+<li>P(X=x) = 0 (연속형 데이터여서 특정값을 가질 확률은 0)</li>
+<li>f(x)는 1보다 큰 값을 가질 수 있음</li>
+<li>누적분포함수(cdf): <span class="math inline">\(F(x) = P(X ≤ x)\)</span> =&gt; <span class="math inline">\(\int_{-∞}^x{f(y)}dy\)</span> (이산확률분포와 연속확률분포 모두에 적용)</li>
+</ul>
+</section>
+</section>
+<section id="결합-확률분포" class="level2">
+<h2 class="anchored" data-anchor-id="결합-확률분포">결합 확률분포</h2>
+<ul>
+<li>pmf: <span class="math inline">\(P(X=x, Y=y) = f(x, y)\)</span></li>
+<li>pdf: <span class="math inline">\(P(a ≤ X ≤ b, c ≤ Y ≤ d) = \int_{a}^{b}\int_{c}^{d}{f(x, y)}dydx\)</span></li>
+</ul>
+</section>
+<section id="주변-확률분포" class="level2">
+<h2 class="anchored" data-anchor-id="주변-확률분포">주변 확률분포</h2>
+<ul>
+<li>pmf: <span class="math inline">\(f_X(x) = \sum_y{f(x,y)}\)</span></li>
+<li>pdf: <span class="math inline">\(f_X(x) = \int_{-∞}^{∞}{f(x, y)}dy\)</span></li>
+</ul>
+</section>
+<section id="조건부-확률분포" class="level2">
+<h2 class="anchored" data-anchor-id="조건부-확률분포">조건부 확률분포</h2>
+<ul>
+<li><span class="math inline">\(f(x|y) = \frac{joint}{marginal}\)</span></li>
+<li><span class="math inline">\(f(x|y) = \frac{f(x, y)}{f_Y(y)}\)</span></li>
+</ul>
+</section>
+<section id="독립-확률변수" class="level2">
+<h2 class="anchored" data-anchor-id="독립-확률변수">독립 확률변수</h2>
+<ul>
+<li>모든 <span class="math inline">\(x, y\)</span>에 대해 <span class="math inline">\(f(x, y) = f_X(x)f_Y(y)\)</span></li>
 </ul>
 
 
 </section>
-</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -99,12 +99,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#visual" id="toc-visual" class="nav-link active" data-scroll-target="#visual">visual</a>
-  <ul class="collapse">
-  <li><a href="#눈의-구조" id="toc-눈의-구조" class="nav-link" data-scroll-target="#눈의-구조">눈의 구조</a></li>
-  </ul></li>
+  <li><a href="#눈의-구조" id="toc-눈의-구조" class="nav-link active" data-scroll-target="#눈의-구조">눈의 구조</a></li>
+  <li><a href="#light-adaption" id="toc-light-adaption" class="nav-link" data-scroll-target="#light-adaption">light adaption</a></li>
   <li><a href="#color-vision" id="toc-color-vision" class="nav-link" data-scroll-target="#color-vision">color vision</a></li>
-  <li><a href="#design-with-color" id="toc-design-with-color" class="nav-link" data-scroll-target="#design-with-color">design with color</a></li>
+  <li><a href="#design-with-color" id="toc-design-with-color" class="nav-link" data-scroll-target="#design-with-color">design with color</a>
+  <ul class="collapse">
+  <li><a href="#before-design" id="toc-before-design" class="nav-link" data-scroll-target="#before-design">before design</a></li>
+  </ul></li>
   <li><a href="#depth-perception" id="toc-depth-perception" class="nav-link" data-scroll-target="#depth-perception">depth perception</a>
   <ul class="collapse">
   <li><a href="#depth-judgment" id="toc-depth-judgment" class="nav-link" data-scroll-target="#depth-judgment">depth judgment</a></li>
@@ -143,26 +144,24 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="visual" class="level2">
-<h2 class="anchored" data-anchor-id="visual">visual</h2>
-<section id="눈의-구조" class="level3">
-<h3 class="anchored" data-anchor-id="눈의-구조">눈의 구조</h3>
+<section id="눈의-구조" class="level2">
+<h2 class="anchored" data-anchor-id="눈의-구조">눈의 구조</h2>
 <ul>
 <li>결막 (conjunctiva): 눈을 보호</li>
 <li>각막 (cornea): 빛을 굴절</li>
-<li>홍채(iris): 빛의 양을 조절</li>
+<li><code>홍채(iris)</code>: 빛의 양을 조절</li>
 <li>동공 (pupil): 빛이 들어오는 곳</li>
-<li>수정체(lens): 빛을 집중하는 역할</li>
+<li><code>수정체(lens)</code>: 빛을 집중하는 역할</li>
 <li>공막 (sclera): 눈을 보호</li>
 <li>유리체 (vitreous humor): 눈을 유지</li>
-<li>망막(retina): 빛을 감지</li>
+<li><code>망막(retina)</code>: 빛을 감지</li>
 <li>망막의 세포
 <ul>
 <li>Nerve cell: 빛을 감지</li>
 <li>Photoreceptor: 빛을 감지
 <ul>
-<li>간상세포(cone): 세부적인 정보, 색상 인식, photopic conditions. 짧은 파장의 색에 더 민감함</li>
-<li>막대세포(rod): 어두운 곳에서 활동, 주변 시야 빛을 받으면 rhodopsin이 분해됨, scotopic conditions. 긴 파장의 색에 더 민감함.</li>
+<li><code>간상세포(cone)</code>: 세부적인 정보, 색상 인식, photopic conditions. fovea에 몰려있음. 짧은 파장의 색에 더 민감함</li>
+<li><code>막대세포(rod)</code>: 어두운 곳에서 활동, 주변 시야 빛을 받으면 <code>rhodopsin이 분해됨</code>, scotopic conditions. 긴 파장의 색에 더 민감함.</li>
 </ul></li>
 <li>Choroid: 영양 공급</li>
 </ul></li>
@@ -170,6 +169,14 @@ ul.task-list li input[type="checkbox"] {
 <li>맹점(optic disk)</li>
 </ul>
 </section>
+<section id="light-adaption" class="level2">
+<h2 class="anchored" data-anchor-id="light-adaption">light adaption</h2>
+<ul>
+<li>눈이 어두운 곳에서 밝은 곳으로 이동할 때, 시간이 걸림</li>
+<li>명순응동안 rod sensitivity가 감소하고 cone sensitivity가 증가</li>
+<li>어두운 곳에서 밝은 곳으로 이동할 때, 눈이 눈부실 수 있음</li>
+<li>암순응동안 cone sensitivity가 감소하고 rod sensitivity가 증가</li>
+</ul>
 </section>
 <section id="color-vision" class="level2">
 <h2 class="anchored" data-anchor-id="color-vision">color vision</h2>
@@ -177,6 +184,7 @@ ul.task-list li input[type="checkbox"] {
 <li>cone cell의 photo-pigment(RGB 64:32:2)로 색상을 인식</li>
 <li>망막 중앙에는 파란색이 없음</li>
 <li>sharpness는 brightness와 color difference에 영향을 받음</li>
+<li>사람은 7백만가지 색상을 인식할 수 있음</li>
 </ul>
 </section>
 <section id="design-with-color" class="level2">
@@ -186,21 +194,68 @@ ul.task-list li input[type="checkbox"] {
 <li>Analogous: 비슷한 색</li>
 <li>Complementary: 반대 색</li>
 </ol>
+<section id="before-design" class="level3">
+<h3 class="anchored" data-anchor-id="before-design">before design</h3>
+<ol type="1">
+<li>굳이 흑백을 안쓰고 color를 사용해야하는 이유가 있는지</li>
+<li>color가 텍스트나 object에 적합한지</li>
+<li>color가 이해나 관습에 도움이 되는지</li>
+<li>노안 / 색맹 고려</li>
+</ol>
+</section>
 </section>
 <section id="depth-perception" class="level2">
 <h2 class="anchored" data-anchor-id="depth-perception">depth perception</h2>
 <section id="depth-judgment" class="level3">
 <h3 class="anchored" data-anchor-id="depth-judgment">depth judgment</h3>
+<ol type="1">
+<li>object-centered cues</li>
+</ol>
 <ul>
-<li>object-centered cues: 상대적 크기, 가려짐, 선형 관점, 움직임 시차</li>
-<li>observer-centered cues: 이중 시력</li>
+<li>linear perspective: 두 평행선이 좁을 수록 더 멀리 있는 것으로 인식</li>
+<li>interposition(occlusion): 물체가 다른 물체를 가리면 가려진 물체가 더 멀리 있는 것으로 인식</li>
+<li>height in the plane: 물체가 높이 있을수록 더 멀리 있는 것으로 인식</li>
+<li>light and shadow: 빛과 그림자로 물체의 거리를 인식</li>
+<li>relative size: 물체가 작을수록 더 멀리 있는 것으로 인식</li>
+<li>texture gradient: 물체가 멀어질수록 세부적인 텍스처가 사라짐</li>
+<li>brightness: 물체가 밝을수록 더 가까이 있는 것으로 인식</li>
+<li>aerial perspective: 물체가 먼발에서 가까워질수록 색이 흐려짐</li>
+<li>motion parallax: 물체가 빠르게 움직일수록 더 가까이 있는 것으로 인식</li>
 </ul>
+<ol start="2" type="1">
+<li>observer-centered cues</li>
+</ol>
+<ul>
+<li>binocular disparity: 두 눈의 시각적 차이</li>
+<li>convergence: 눈이 물체를 바라볼 때 발생하는 각도</li>
+<li>accommodation: 눈의 렌즈가 물체를 바라볼 때 발생하는 조절. 가까운 물체일수록 렌즈가 더 둥글어짐</li>
+</ul>
+<ol start="5" type="1">
+<li>간상세포(cone)의 주요 기능 두 가지는 무엇인가요?</li>
+</ol>
+<p>세부적인 정보 인식, 색상 인식</p>
+<ol start="6" type="1">
+<li>막대세포(rod)는 주로 어떤 조건에서 활동하나요?</li>
+</ol>
+<p>어두운 곳</p>
+<ol start="8" type="1">
+<li>명순응 동안 어떤 세포의 감도가 증가하나요?</li>
+</ol>
+<p>cone cell</p>
+<ol start="9" type="1">
+<li>암순응 동안 어떤 세포의 감도가 증가하나요?</li>
+</ol>
+<p>rod cell</p>
+<ol start="11" type="1">
+<li>망막 중앙에 없는 색상 감지 세포는 무엇인가요?</li>
+</ol>
+<p>맹점</p>
 
 
 </section>
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

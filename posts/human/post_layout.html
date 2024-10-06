@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-09-10">
 
-<title>확률과 통계1 – 2024-2 정리노트</title>
+<title>Research Method in Human Factors – 2024-2 정리노트</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -132,13 +99,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#descriptive-statistics" id="toc-descriptive-statistics" class="nav-link active" data-scroll-target="#descriptive-statistics">descriptive statistics</a>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">Research Method in Human Factors</a></li>
+  <li><a href="#human-factors-research" id="toc-human-factors-research" class="nav-link" data-scroll-target="#human-factors-research">human factors research</a>
   <ul class="collapse">
-  <li><a href="#data-classification" id="toc-data-classification" class="nav-link" data-scroll-target="#data-classification">data classification</a></li>
-  <li><a href="#basic-statistics" id="toc-basic-statistics" class="nav-link" data-scroll-target="#basic-statistics">basic statistics</a></li>
+  <li><a href="#reaserch-meathods" id="toc-reaserch-meathods" class="nav-link" data-scroll-target="#reaserch-meathods">reaserch meathods</a>
+  <ul class="collapse">
+  <li><a href="#descriptive-research" id="toc-descriptive-research" class="nav-link" data-scroll-target="#descriptive-research">descriptive Research</a></li>
+  <li><a href="#experimanetal-research" id="toc-experimanetal-research" class="nav-link" data-scroll-target="#experimanetal-research">experimanetal Research</a></li>
+  <li><a href="#evaluation-research" id="toc-evaluation-research" class="nav-link" data-scroll-target="#evaluation-research">evaluation research</a></li>
   </ul></li>
-  <li><a href="#bar-plot" id="toc-bar-plot" class="nav-link" data-scroll-target="#bar-plot">bar plot</a></li>
-  <li><a href="#sampling" id="toc-sampling" class="nav-link" data-scroll-target="#sampling">sampling</a></li>
+  <li><a href="#research-design" id="toc-research-design" class="nav-link" data-scroll-target="#research-design">research design</a>
+  <ul class="collapse">
+  <li><a href="#qualitative-research" id="toc-qualitative-research" class="nav-link" data-scroll-target="#qualitative-research">qualitative research</a></li>
+  <li><a href="#quantitative-research" id="toc-quantitative-research" class="nav-link" data-scroll-target="#quantitative-research">quantitative research</a></li>
+  </ul></li>
+  <li><a href="#댓글" id="toc-댓글" class="nav-link" data-scroll-target="#댓글">댓글</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -147,9 +123,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">확률과 통계1</h1>
+<h1 class="title">Research Method in Human Factors</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">확률과통계1</div>
+    <div class="quarto-category">인간 공학</div>
   </div>
   </div>
 
@@ -158,6 +134,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2024-09-10</p>
+    </div>
+  </div>
   
     
   </div>
@@ -167,147 +149,219 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="descriptive-statistics" class="level2">
-<h2 class="anchored" data-anchor-id="descriptive-statistics">descriptive statistics</h2>
-<section id="data-classification" class="level3">
-<h3 class="anchored" data-anchor-id="data-classification">data classification</h3>
+<section id="section" class="level1">
+<h1>Research Method in Human Factors</h1>
+</section>
+<section id="human-factors-research" class="level1">
+<h1>human factors research</h1>
+<p>실험을 통해 모형을 구축하고 법칙을 찾아 예측한다.</p>
+<section id="reaserch-meathods" class="level2">
+<h2 class="anchored" data-anchor-id="reaserch-meathods">reaserch meathods</h2>
+<section id="descriptive-research" class="level3">
+<h3 class="anchored" data-anchor-id="descriptive-research">descriptive Research</h3>
+<p>관찰을 통해 데이터 묘사</p>
 <ol type="1">
-<li>범주형 데이터
-<ul>
-<li>명목형 데이터</li>
-<li>순서형 데이터</li>
-</ul></li>
-<li>수치형 데이터
-<ul>
-<li>이산형 데이터</li>
-<li>연속형 데이터</li>
-</ul></li>
+<li><p>무엇을 측정할지</p></li>
+<li><p>어떻게 숫자로 표현할지</p></li>
 </ol>
-</section>
-<section id="basic-statistics" class="level3">
-<h3 class="anchored" data-anchor-id="basic-statistics">basic statistics</h3>
+<ul>
+<li>대부분 평균, 표준편차를 대푯값으로 사용</li>
+<li>변수들 간의 관계를 파악하기 위해 상관분석, 회귀분석을 사용</li>
+</ul>
+<section id="types-of-descriptive-research" class="level4">
+<h4 class="anchored" data-anchor-id="types-of-descriptive-research">types of descriptive research</h4>
 <ol type="1">
-<li>중심 경향성
-<ul>
-<li>평균</li>
-<li>중앙값</li>
-<li>최빈값</li>
-</ul></li>
-<li>산포도
-<ul>
-<li>분산</li>
-<li>표준편차</li>
-<li>범위</li>
-<li>사분위수</li>
-<li>IQR</li>
-</ul></li>
-<li>분포도
-<ul>
-<li>왜도</li>
-<li>첨도</li>
-<li>백분위수</li>
-<li>박스플롯</li>
-</ul></li>
+<li>observational research</li>
 </ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> chickwts</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tapply</span>(c<span class="sc">$</span>weight, c<span class="sc">$</span>feed, max)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   casein horsebean   linseed  meatmeal   soybean sunflower 
-      404       227       309       380       329       423 </code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">table</span>(c<span class="sc">$</span>feed) <span class="sc">/</span> <span class="fu">nrow</span>(c), <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-   casein horsebean   linseed  meatmeal   soybean sunflower 
-    0.169     0.141     0.169     0.155     0.197     0.169 </code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(c<span class="sc">$</span>feed <span class="sc">==</span> <span class="st">"horsebean"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 10</code></pre>
-</div>
-</div>
+<ul>
+<li>관찰 연구를 계획할 때, 측정할 변수, 각 변수를 기록할 방법, 관찰이 이루어지는 조건, 관찰 기간 등을 식별</li>
+</ul>
+<ol start="2" type="1">
+<li>survey research</li>
+</ol>
+<ul>
+<li>설문조사를 통해 데이터 수집</li>
+</ul>
+<ol start="3" type="1">
+<li>incident and accident analysis</li>
+</ol>
+<ul>
+<li>사고나 오류를 분석하여 원인을 찾음</li>
+<li>사고나 오류를 줄이기 위한 대책을 마련</li>
+</ul>
 </section>
 </section>
-<section id="bar-plot" class="level2">
-<h2 class="anchored" data-anchor-id="bar-plot">bar plot</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>car.tab <span class="ot">=</span> <span class="fu">table</span>(mtcars<span class="sc">$</span>carb)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(car.tab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="3_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>carb.mat <span class="ot">=</span> <span class="fu">table</span>(mtcars<span class="sc">$</span>carb, mtcars<span class="sc">$</span>am)</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(carb.mat, <span class="at">beside =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="3_files/figure-html/unnamed-chunk-2-2.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>))</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(mtcars<span class="sc">$</span>mpg, <span class="at">main =</span> <span class="st">"mpg"</span>)</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(mtcars<span class="sc">$</span>mpg, mtcars<span class="sc">$</span>am, <span class="at">main =</span> <span class="st">"mpg by am"</span>)</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(mtcars<span class="sc">$</span>mpg, mtcars<span class="sc">$</span>am, mtcars<span class="sc">$</span>gear, <span class="at">main =</span> <span class="st">"mpg by am and gear"</span>)</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(mtcars<span class="sc">$</span>mpg, mtcars<span class="sc">$</span>am, mtcars<span class="sc">$</span>gear, mtcars<span class="sc">$</span>carb, <span class="at">main =</span> <span class="st">"mpg by am, gear, and carb"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="3_files/figure-html/unnamed-chunk-2-3.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(mtcars<span class="sc">$</span>mpg, mtcars<span class="sc">$</span>wt, <span class="at">main =</span> <span class="st">"mpg by wt"</span>)</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(mtcars<span class="sc">$</span>mpg, mtcars<span class="sc">$</span>wt, <span class="at">pch =</span> mtcars<span class="sc">$</span>am <span class="sc">+</span> <span class="dv">1</span>)</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">pairs</span>(mtcars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="3_files/figure-html/unnamed-chunk-2-4.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="3_files/figure-html/unnamed-chunk-2-5.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
+<section id="experimanetal-research" class="level3">
+<h3 class="anchored" data-anchor-id="experimanetal-research">experimanetal Research</h3>
+<p>하나 이상의 독립변수에 의도적인 변화를 주고, 그 변화가 하나 이상의 종속변수에 미치는 <code>인과관계를 측정</code><br>
+이때 다른 변수들은 통제한다</p>
+<ul>
+<li>예시
+<ul>
+<li>휴대전화를 사용하는 것이 운전에 미치는 영향</li>
+<li>인센티브를 미리 주고 잘못 할 때마다 차감하는 것과, 잘할 때마다 인센티브를 주는 것의 차이</li>
+</ul></li>
+</ul>
+<section id="type-of-variables" class="level4">
+<h4 class="anchored" data-anchor-id="type-of-variables">type of variables</h4>
+<ul>
+<li>independent(predictor, stratification) variable</li>
+<li>dependent(descriptive, criterion) variable</li>
+<li>control variable: 이 값은 고정시키고 실험을 진행한다. 일반화하기 어렵게 한다.</li>
+<li>random variable (sigma): 통제할 수 없는 변수. 일반화하기 용이하다.</li>
+<li>confounding variable: 수식에는 포함되지 않지만 주의해야하는 변수.</li>
+</ul>
+<section id="decide-variables" class="level5">
+<h5 class="anchored" data-anchor-id="decide-variables">decide variables</h5>
+<p>operational definition: 변수를 관찰 가능하고 측정 가능한 형태로 정의</p>
+<ul>
+<li>independent variable
+<ul>
+<li>Range: realistic / select a range taht will show the effect / pilot experiment</li>
+</ul></li>
+<li>dependent variable
+<ul>
+<li>reliability: consistent. solution: increase the number of observations</li>
+<li>validity: measure what was intended</li>
+</ul></li>
+</ul>
 </section>
-<section id="sampling" class="level2">
-<h2 class="anchored" data-anchor-id="sampling">sampling</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>, <span class="dv">10</span>, <span class="at">replace=</span>T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code> [1] 15 11 13  1 12  9 19 16 18 11</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">'H'</span>, <span class="st">'T'</span>), <span class="dv">10</span>, <span class="at">replace=</span>T, <span class="at">prob=</span><span class="fu">c</span>(<span class="fl">0.3</span>, <span class="fl">0.7</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code> [1] "H" "T" "T" "T" "H" "T" "T" "H" "T" "T"</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">c</span>(<span class="dv">100</span>, <span class="dv">1000</span>, <span class="dv">10000</span>, <span class="dv">100000</span>)) {</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, i, <span class="at">replace=</span>T)</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  x.tab <span class="ot">&lt;-</span> <span class="fu">table</span>(x)</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">barplot</span>(x.tab <span class="sc">/</span> i, <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.5</span>), <span class="at">xlab=</span><span class="fu">paste</span>(<span class="st">"n="</span>, i))</span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
+</section>
+<section id="why-use-experimental-research" class="level4">
+<h4 class="anchored" data-anchor-id="why-use-experimental-research">why use experimental research?</h4>
+<ol type="1">
+<li>humans are variable</li>
+</ol>
+<ul>
+<li>intra individual variability</li>
+<li>inter individual variability</li>
+</ul>
+<ol start="2" type="1">
+<li>ways to handle variability</li>
+</ol>
+<ul>
+<li>use statistical techniques</li>
+<li>control variability as much as possible</li>
+</ul>
+</section>
+<section id="types-of-experimental-design" class="level4">
+<h4 class="anchored" data-anchor-id="types-of-experimental-design">types of experimental design</h4>
+<ol type="1">
+<li>single variable experiment</li>
+</ol>
+<ul>
+<li><p>two levels</p></li>
+<li><p>multi levels</p></li>
+</ul>
+<ol start="2" type="1">
+<li>factorial design: 두개 이상의 독립변수를 조합하여 실험군을 만든다.</li>
+</ol>
+<ul>
+<li>변수 간 <code>interaction effect</code>을 확인할 수 있다.</li>
+<li>more difficult to analyze</li>
+<li>2 x 2, 3 x 3, 2 x 2 x 2 등으로 설계한다.</li>
+<li>between-subject, within-subject를 모두 사용하는 mixed designs를 사용할 수 있음.</li>
+</ul>
+<ol start="3" type="1">
+<li>between-subjects design: 각각의 실험군에 다른 사람들을 넣는다.</li>
+</ol>
+<ul>
+<li><strong>generalibility 높다, intra person variability를 제거할 수 있다.</strong></li>
+</ul>
+<ol start="4" type="1">
+<li>within-subjects design: 같은 사람들을 다른 실험군에 넣는다.</li>
+</ol>
+<ul>
+<li><strong>cost-effective, less variability, inter person variability를 제거할 수 있다.</strong></li>
+</ul>
+</section>
+</section>
+<section id="evaluation-research" class="level3">
+<h3 class="anchored" data-anchor-id="evaluation-research">evaluation research</h3>
+<p>시스템이나 제품이 목적을 충족하는지 평가</p>
+<ul>
+<li><code>usability testing</code>: 사용자가 제품을 실제로 사용하면서 발생하는 문제점 파악
+<ul>
+<li>태스크 완료 시간, 오류율, 사용자 만족도 등을 측정</li>
+</ul></li>
+<li><code>cost-benefit analysis</code>: 제품 또는 시스템 도입의 경제성 평가
+<ul>
+<li>직접 비용(하드웨어, 소프트웨어 구입비, <code>training cost</code> 등)</li>
+<li>예상되는 이익(생산성 향상, 오류 감소 등)을 비교 분석</li>
+<li>간접 비용과 이익은 설명 안하셨음.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="research-design" class="level2">
+<h2 class="anchored" data-anchor-id="research-design">research design</h2>
+<section id="qualitative-research" class="level3">
+<h3 class="anchored" data-anchor-id="qualitative-research">qualitative research</h3>
+<ul>
+<li>보통 마케팅에서 진행.</li>
+</ul>
+</section>
+<section id="quantitative-research" class="level3">
+<h3 class="anchored" data-anchor-id="quantitative-research">quantitative research</h3>
+<ul>
+<li>experiments</li>
+<li>correlational observation</li>
+<li>surveys and questionnaires
+<ul>
+<li>sample: 랜덤하게 샘플링하는게 중요</li>
+<li>rating</li>
+<li>bias: 질문의 순서, 질문의 내용, 질문의 방향</li>
+</ul></li>
+<li>archival research</li>
+</ul>
+<section id="field-study" class="level4">
+<h4 class="anchored" data-anchor-id="field-study">field study</h4>
+<ul>
+<li>uncontrolled</li>
+<li>results may be more generalizable to real-world situations</li>
+<li>higher cost</li>
+<li>difficult to replicate</li>
+<li>difficult to control extraneous variables</li>
+</ul>
+</section>
+<section id="lab-experiment" class="level4">
+<h4 class="anchored" data-anchor-id="lab-experiment">lab experiment</h4>
+<ul>
+<li>controlled</li>
+<li>precise replication</li>
+<li>lower cost</li>
+<li>more flexibility</li>
+<li>real-world generalizability may be limited</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="댓글" class="level2">
+<h2 class="anchored" data-anchor-id="댓글">댓글</h2>
 <div>
-<figure class="figure">
-<p><img src="3_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
+<p>test</p>
 </div>
+<div id="disqus_thread">
+
 </div>
-</div>
+<script>
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://YOUR_SHORTNAME.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>
+Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
