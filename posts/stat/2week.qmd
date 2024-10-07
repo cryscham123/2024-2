@@ -1,0 +1,32 @@
+---
+title: 'r base'
+categories: ["확률과통계1"]
+---
+
+## 확률
+확률(모집단): 상대도수의 극한값
+- Law of Large Numbers
+- sample space: 표본공간
+- event: sample space의 부분집합
+ex) 주사위 1개를 던지는 실험에서 가능한 event 개수: 모든 sub event의 갯수 = 2^6 = 64
+
+### 고전적 확률
+- 모든 single event가 동일한 확률을 가진다.
+
+### 통계적 확률
+- single event가 동일한 확률을 가지지 않아도 된다.
+- 표본의 수가 무한대로 갈 때, 표본의 확률이 수렴하는 값
+
+통계(표본): 
+
+## List
+다양한 데이터 타입을 담을 수 있는 데이터 타입
+
+```{r}
+list1 <- list(1, 2, 3, 4, '5')
+list1[[5]]
+names(list1) <- c('a', 'b', 'c', 'd', 'e')
+```
+
+## dataframe
+

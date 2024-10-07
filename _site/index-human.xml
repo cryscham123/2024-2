@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>2024-2 정리노트</title>
+<link>https://cryscham123.github.io/#category=human</link>
+<atom:link href="https://cryscham123.github.io/index-human.xml" rel="self" type="application/rss+xml"/>
+<description>my 2024-2 note site</description>
+<generator>quarto-1.5.56</generator>
+<lastBuildDate>Mon, 07 Oct 2024 05:45:30 GMT</lastBuildDate>
+</channel>
+</rss>

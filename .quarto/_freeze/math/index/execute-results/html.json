@@ -2,7 +2,7 @@
   "hash": "97f8fcb182ffaf26cd005574b3a14983",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"기초공학수학\"\nformat: html\n---\n\n<details>\n<summary>final</summary>\n\n  - [2.qmd](final/2.qmd)\n\n  - [3.qmd](final/3.qmd)\n\n  - [4.qmd](final/4.qmd)\n\n  - [triangle_func1.qmd](final/triangle_func1.qmd)\n\n</details>\n\n<details>\n<summary>work</summary>\n\n  <details>\n<summary>_site</summary>\n\n  </details>\n\n  - [work1.qmd](work/work1.qmd)\n\n  - [work2.qmd](work/work2.qmd)\n\n  - [work3.qmd](work/work3.qmd)\n\n  - [work4.qmd](work/work4.qmd)\n\n</details>\n",
+    "markdown": "---\ntitle: \"기초공학수학\"\nformat: html\n---\n\n<details>\n<summary>final</summary>\n\n  - [2.qmd](final/2.qmd)\n\n  - [3.qmd](final/3.qmd)\n\n  - [4.qmd](final/4.qmd)\n\n  - [triangle_func1.qmd](final/triangle_func1.qmd)\n\n</details>\n\n<details>\n<summary>homework</summary>\n\n  <details>\n<summary>_site</summary>\n\n  </details>\n\n  - [work1.qmd](homework/work1.qmd)\n\n  - [work2.qmd](homework/work2.qmd)\n\n  - [work3.qmd](homework/work3.qmd)\n\n  - [work4.qmd](homework/work4.qmd)\n\n</details>\n\n<details>\n<summary>notes</summary>\n\n</details>\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

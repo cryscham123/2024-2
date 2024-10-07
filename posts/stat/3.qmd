@@ -1,0 +1,71 @@
+---
+title: '확률과 통계1'
+categories: ["확률과통계1"]
+---
+
+## descriptive statistics
+
+### data  classification
+
+1. 범주형 데이터
+    - 명목형 데이터
+    - 순서형 데이터
+2. 수치형 데이터
+    - 이산형 데이터
+    - 연속형 데이터
+
+### basic statistics
+1. 중심 경향성
+    - 평균
+    - 중앙값
+    - 최빈값
+2. 산포도
+    - 분산
+    - 표준편차
+    - 범위
+    - 사분위수
+    - IQR
+3. 분포도
+    - 왜도
+    - 첨도
+    - 백분위수
+    - 박스플롯
+
+
+```{r}
+c <- chickwts
+tapply(c$weight, c$feed, max)
+round(table(c$feed) / nrow(c), 3)
+sum(c$feed == "horsebean")
+```
+
+## bar plot
+
+```{r}
+car.tab = table(mtcars$carb)
+barplot(car.tab)
+carb.mat = table(mtcars$carb, mtcars$am)
+barplot(carb.mat, beside = T)
+par(mfrow = c(2, 2))
+boxplot(mtcars$mpg, main = "mpg")
+boxplot(mtcars$mpg, mtcars$am, main = "mpg by am")
+boxplot(mtcars$mpg, mtcars$am, mtcars$gear, main = "mpg by am and gear")
+boxplot(mtcars$mpg, mtcars$am, mtcars$gear, mtcars$carb, main = "mpg by am, gear, and carb")
+plot(mtcars$mpg, mtcars$wt, main = "mpg by wt")
+points(mtcars$mpg, mtcars$wt, pch = mtcars$am + 1)
+pairs(mtcars)
+```
+
+## sampling
+
+```{r}
+sample(1:20, 10, replace=T)
+sample(c('H', 'T'), 10, replace=T, prob=c(0.3, 0.7))
+
+par(mfrow=c(2,2))
+for (i in c(100, 1000, 10000, 100000)) {
+  x <- sample(1:6, i, replace=T)
+  x.tab <- table(x)
+  barplot(x.tab / i, ylim=c(0, 0.5), xlab=paste("n=", i))
+}
+```

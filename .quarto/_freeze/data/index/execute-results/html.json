@@ -2,7 +2,7 @@
   "hash": "4d164992f866b4ca1f0d67eb6d4b223e",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"데이터베이스설계및활용\"\nformat: html\n---\n\n- [1-2.qmd](1-2.qmd)\n\n- [3.qmd](3.qmd)\n\n- [4.qmd](4.qmd)\n\n- [5.qmd](5.qmd)\n\n- [6.qmd](6.qmd)\n",
+    "markdown": "---\ntitle: \"데이터베이스설계및활용\"\nformat: html\n---\n\n- [1-2.qmd](1-2.qmd)\n\n- [3.qmd](3.qmd)\n\n- [4.qmd](4.qmd)\n\n- [5.qmd](5.qmd)\n\n- [6.qmd](6.qmd)\n\n<details>\n<summary>notes</summary>\n\n</details>\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

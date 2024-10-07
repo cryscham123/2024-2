@@ -66,6 +66,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&amp;display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -161,7 +162,7 @@ final
 </details>
 <details>
 <summary>
-work
+homework
 </summary>
 <details>
 <summary>
@@ -169,11 +170,16 @@ _site
 </summary>
 </details>
 <ul>
-<li><p><a href="../math/work/work1.pdf">work1.qmd</a></p></li>
-<li><p><a href="../math/work/work2.pdf">work2.qmd</a></p></li>
-<li><p><a href="../math/work/work3.pdf">work3.qmd</a></p></li>
-<li><p><a href="../math/work/work4.pdf">work4.qmd</a></p></li>
+<li><p><a href="../math/homework/work1.pdf">work1.qmd</a></p></li>
+<li><p><a href="../math/homework/work2.pdf">work2.qmd</a></p></li>
+<li><p><a href="../math/homework/work3.pdf">work3.qmd</a></p></li>
+<li><p><a href="../math/homework/work4.pdf">work4.qmd</a></p></li>
 </ul>
+</details>
+<details>
+<summary>
+notes
+</summary>
 </details>
 
 
@@ -271,7 +277,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/cryscham123\.github\.io\/2024-2\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
