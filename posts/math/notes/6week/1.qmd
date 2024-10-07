@@ -1,0 +1,24 @@
+---
+title: '삼각함수의 도함수'
+date: 2024-10-07
+categories: ['기초공학수학']
+---
+
+1. $\lim_{θ \to 0} \frac{\sin θ}{θ} = 1$
+
+$\sin θ <= θ <= \tan θ$  
+$1 <= \frac{θ}{\sin θ} <= \frac{1}{\cos θ}$  
+$\cos θ <= \frac{\sin θ}{θ} <= 1$  
+∴ $\lim_{θ \to 0} \frac{\sin θ}{θ} = 1$  
+
+- cf) $\lim_{θ \to ∞} \frac{\sin θ}{θ} = 0$  
+
+2. $\lim_{θ \to 0} \frac{\cos θ - 1}{θ} = 0$
+
+$\lim_{\theta \to 0} \frac{(\cos θ - 1)(\cos θ + 1)}{θ(\cos θ + 1)}  
+= \lim_{θ \to 0} \frac{\cos^2 θ - 1}{θ(\cos θ + 1)}
+= \lim_{θ \to 0} \frac{-\sin^2 θ}{θ(\cos θ + 1)}  
+= \lim_{θ \to 0} \frac{\sin θ}{θ} \cdot \lim_{θ \to 0} \frac{-\sin θ}{\cos θ + 1}  
+= 1 \cdot 0 = 0$
+
+

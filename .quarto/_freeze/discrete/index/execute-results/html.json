@@ -2,7 +2,7 @@
   "hash": "d2ca1deeaa3c82e43bb64448a9762251",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"이산 수학\"\nformat: html\n---\n\n- [1-1.qmd](1-1.qmd)\n\n- [1-2.qmd](1-2.qmd)\n\n- [1-3.qmd](1-3.qmd)\n\n- [3-1.qmd](3-1.qmd)\n\n- [4.qmd](4.qmd)\n\n- [5.qmd](5.qmd)\n\n- [6.qmd](6.qmd)\n\n- [own1-1.qmd](own1-1.qmd)\n\n- [own1-2.qmd](own1-2.qmd)\n\n- [own4.qmd](own4.qmd)\n\n<details>\n<summary>work</summary>\n\n  - [work1.qmd](work/work1.qmd)\n\n  - [work2.qmd](work/work2.qmd)\n\n</details>\n",
+    "markdown": "---\ntitle: \"이산 수학\"\nformat: html\n---\n\n- [1-1.qmd](1-1.qmd)\n\n- [1-2.qmd](1-2.qmd)\n\n- [1-3.qmd](1-3.qmd)\n\n- [3-1.qmd](3-1.qmd)\n\n- [4.qmd](4.qmd)\n\n- [5.qmd](5.qmd)\n\n- [6.qmd](6.qmd)\n\n<details>\n<summary>notes</summary>\n\n</details>\n\n- [own1-1.qmd](own1-1.qmd)\n\n- [own1-2.qmd](own1-2.qmd)\n\n- [own4.qmd](own4.qmd)\n\n<details>\n<summary>work</summary>\n\n  - [work1.qmd](work/work1.qmd)\n\n  - [work2.qmd](work/work2.qmd)\n\n</details>\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

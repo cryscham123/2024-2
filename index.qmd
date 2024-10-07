@@ -1,8 +1,20 @@
 ---
 title: "2024-2 정리노트"
+listing:
+  contents: posts
+  feed:
+    categories: [human]
+  fields: [title, date]
+  sort: 
+    - "date desc"
+    - "title"
+  type: table
+  table-hover: true
+  page-size: 20
+  date-format: "YYYY-MM-DD"
+  categories: true
+page-layout: full
+title-block-banner: true
 ---
 
-![](https://avatars.githubusercontent.com/u/58943980?v=4)
-
-
-안녕하세요. 그냥 제 정리노트입니다.
+안녕하세요 그냥 제 정리노트입니다.

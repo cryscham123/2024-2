@@ -1,0 +1,7 @@
+---
+title: 'Working With Queries in Microsoft Access 1'
+date: 2024-10-07
+categories: ["데이터베이스설계와활용"]
+---
+
+

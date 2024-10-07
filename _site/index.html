@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -66,15 +68,75 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      page: 20,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&amp;display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
-</head>
+<link rel="alternate" type="application/rss+xml" title="2024-2 정리노트" href="index.xml" data-external="1"></head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -82,78 +144,1050 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">2024-2 정리노트</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./human/index.html"> 
-<span class="menu-text">인간공학</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./stat/index.html"> 
-<span class="menu-text">확률과통계</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./art/index.html"> 
-<span class="menu-text">공연예술의이해</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./data/index.html"> 
-<span class="menu-text">데이터베이스설계및활용</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./math/index.html"> 
-<span class="menu-text">기초공학수학</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./discrete/index.html"> 
-<span class="menu-text">이산수학</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+        <div class="quarto-navbar-tools tools-end">
+    <a href="https://github.com/cryscham123/2024-2" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
+          <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">2024-2 정리노트</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">2024-2 정리노트</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">2024-2 정리노트</h1>
+                      </div>
   </div>
+    
   
+  <div class="quarto-title-meta column-body">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Art</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/art/5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">연극의 장르 - 멜로드라마와 소극</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/art/6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">연극의 장르 - 멜로드라마와 소극</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Notes</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">1week</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/art/notes/1week/1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Orientation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/art/notes/1week/2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">극장 및 공연 정보</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">2week</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/art/notes/2week/1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">무대의 종류</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/art/notes/2week/2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">공연예술의 개념과 특징</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">3week</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/art/notes/3week/1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">연극의 장르 - 비극과 희극</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/art/notes/3week/2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">연극의 장르 - 멜로드라마와 소극</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Data</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/data/1-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">init</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/data/3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">init</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/data/4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">init</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/data/5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">init</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Discrete</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/discrete/1-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">intro</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/discrete/1-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">intro</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/discrete/1-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">intro</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/discrete/4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">intro</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/discrete/5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">intro</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/discrete/6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">intro</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/discrete/own1-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">intro</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/discrete/own1-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">intro</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/discrete/own4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">intro</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
+ <span class="menu-text">Work</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/discrete/work/work1.pdf" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Discrete Mathematics #1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/discrete/work/work2.pdf" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Discrete Mathematics #2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">Human</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/human/0_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Human Factors</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/human/1_reaserch_method.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Research Method in Human Factors</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/human/2_human_information_processing_model.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Human Information Processing Model</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/human/3_sensory_system.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sensor System (Visual)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">Math</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false">
+ <span class="menu-text">Final</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/math/final/4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">삼각함수 정리</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/math/final/5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">지수함수</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/math/final/triangle_func1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">삼각함수 정리</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false">
+ <span class="menu-text">Homework</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/math/homework/work2.pdf" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">기공수 과제 #2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/math/homework/work3.pdf" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">기공수 과제 #3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/math/homework/work4.pdf" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">기공수 과제 #4</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false">
+ <span class="menu-text">Notes</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false">
+ <span class="menu-text">1week</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/math/notes/1week/1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1장- 집합, 실수의 성질</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/math/notes/1week/2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1장- 함수, 수열</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false">
+ <span class="menu-text">2week</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/math/notes/2week/1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1장- 함수의 극한</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false">
+ <span class="menu-text">3week</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/math/notes/3week/1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2장- 도함수의 개념 및 정의</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false">
+ <span class="menu-text">6week</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/math/notes/6week/1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">삼각함수의 도함수</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="true">
+ <span class="menu-text">Stat</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/stat/1week.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">r base</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/stat/2week.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">r base</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/stat/3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">확률과 통계1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/stat/work1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">확률과 통계1 과제 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/stat/work2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">확률과 통계1 과제 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/stat/work3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">확률과 통계1 과제 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false">
+ <span class="menu-text">Final</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/stat/final/1-통계학의-개념.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">통계학의 개념</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/stat/final/2-확률변수와-분포.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">확률변수와 분포</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false">
+ <span class="menu-text">Notes</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false">
+ <span class="menu-text">6week</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/stat/notes/6week/1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">확률변수의 기댓값</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(47)</span></div><div class="category" data-category="공연예술의이해">공연예술의이해 <span class="quarto-category-count">(8)</span></div><div class="category" data-category="과제">과제 <span class="quarto-category-count">(8)</span></div><div class="category" data-category="기초공학수학">기초공학수학 <span class="quarto-category-count">(11)</span></div><div class="category" data-category="데이터베이스설계및활용">데이터베이스설계및활용 <span class="quarto-category-count">(4)</span></div><div class="category" data-category="이산수학">이산수학 <span class="quarto-category-count">(11)</span></div><div class="category" data-category="인간 공학">인간 공학 <span class="quarto-category-count">(4)</span></div><div class="category" data-category="확률과통계1">확률과통계1 <span class="quarto-category-count">(9)</span></div></div></div>
+<!-- main -->
+<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
 
 
-</header>
-
-
-<p><img src="https://avatars.githubusercontent.com/u/58943980?v=4.png" class="img-fluid"></p>
-<p>안녕하세요. 그냥 제 정리노트입니다.</p>
 
 
 
-</main> <!-- /main -->
+<p>안녕하세요 그냥 제 정리노트입니다.</p>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Title
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table table-hover">
+<thead>
+<tr>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="확률과통계1" data-listing-file-modified-sort="1728092815136" data-listing-reading-time-sort="1" data-listing-word-count-sort="100" data-listing-title-sort="r base" data-listing-filename-sort="1week.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/stat/1week.html" class="title listing-title">r base</a>
+</td>
+<td>
+<span class="listing-date">&nbsp;</span>
+</td>
+</tr>
+<tr data-index="1" data-categories="확률과통계1" data-listing-file-modified-sort="1728092824946" data-listing-reading-time-sort="1" data-listing-word-count-sort="77" data-listing-title-sort="r base" data-listing-filename-sort="2week.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/stat/2week.html" class="title listing-title">r base</a>
+</td>
+<td>
+<span class="listing-date">&nbsp;</span>
+</td>
+</tr>
+<tr data-index="2" data-categories="확률과통계1" data-listing-file-modified-sort="1728092801596" data-listing-reading-time-sort="1" data-listing-word-count-sort="194" data-listing-title-sort="확률과 통계1" data-listing-filename-sort="3.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/stat/3.html" class="title listing-title">확률과 통계1</a>
+</td>
+<td>
+<span class="listing-date">&nbsp;</span>
+</td>
+</tr>
+<tr data-index="3" data-categories="확률과통계1,과제" data-listing-file-modified-sort="1728092736783" data-listing-reading-time-sort="1" data-listing-word-count-sort="190" data-listing-title-sort="확률과 통계1 과제 1" data-listing-filename-sort="work1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/stat/work1.html" class="title listing-title">확률과 통계1 과제 1</a>
+</td>
+<td>
+<span class="listing-date">&nbsp;</span>
+</td>
+</tr>
+<tr data-index="4" data-categories="확률과통계1,과제" data-listing-file-modified-sort="1728092764566" data-listing-reading-time-sort="4" data-listing-word-count-sort="621" data-listing-title-sort="확률과 통계1 과제 2" data-listing-filename-sort="work2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/stat/work2.html" class="title listing-title">확률과 통계1 과제 2</a>
+</td>
+<td>
+<span class="listing-date">&nbsp;</span>
+</td>
+</tr>
+<tr data-index="5" data-categories="확률과통계1,과제" data-listing-file-modified-sort="1728092772335" data-listing-reading-time-sort="1" data-listing-word-count-sort="21" data-listing-title-sort="확률과 통계1 과제 3" data-listing-filename-sort="work3.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/stat/work3.html" class="title listing-title">확률과 통계1 과제 3</a>
+</td>
+<td>
+<span class="listing-date">&nbsp;</span>
+</td>
+</tr>
+<tr data-index="6" data-categories="기초공학수학" data-listing-date-sort="1728226800000" data-listing-file-modified-sort="1728263679930" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="115" data-listing-title-sort="삼각함수의 도함수" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/math/notes/6week/1.html" class="title listing-title">삼각함수의 도함수</a>
+</td>
+<td>
+<span class="listing-date">2024-10-07</span>
+</td>
+</tr>
+<tr data-index="7" data-categories="확률과통계1" data-listing-date-sort="1728226800000" data-listing-file-modified-sort="1728272524217" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6" data-listing-title-sort="확률변수의 기댓값" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/stat/notes/6week/1.html" class="title listing-title">확률변수의 기댓값</a>
+</td>
+<td>
+<span class="listing-date">2024-10-07</span>
+</td>
+</tr>
+<tr data-index="8" data-categories="기초공학수학" data-listing-date-sort="1728140400000" data-listing-file-modified-sort="1728194501340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="90" data-listing-title-sort="지수함수" data-listing-filename-sort="5.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/math/final/5.html" class="title listing-title">지수함수</a>
+</td>
+<td>
+<span class="listing-date">2024-10-06</span>
+</td>
+</tr>
+<tr data-index="9" data-categories="이산수학,과제" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092961711" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2204" data-listing-title-sort="Discrete Mathematics #1" data-listing-filename-sort="work1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/discrete/work/work1.pdf" class="title listing-title">Discrete Mathematics #1</a>
+</td>
+<td>
+<span class="listing-date">2024-10-05</span>
+</td>
+</tr>
+<tr data-index="10" data-categories="이산수학,과제" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092968278" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="809" data-listing-title-sort="Discrete Mathematics #2" data-listing-filename-sort="work2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/discrete/work/work2.pdf" class="title listing-title">Discrete Mathematics #2</a>
+</td>
+<td>
+<span class="listing-date">2024-10-05</span>
+</td>
+</tr>
+<tr data-index="11" data-categories="데이터베이스설계및활용" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092997683" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="82" data-listing-title-sort="init" data-listing-filename-sort="3.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/data/3.html" class="title listing-title">init</a>
+</td>
+<td>
+<span class="listing-date">2024-10-05</span>
+</td>
+</tr>
+<tr data-index="12" data-categories="데이터베이스설계및활용" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728093011976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="106" data-listing-title-sort="init" data-listing-filename-sort="5.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/data/5.html" class="title listing-title">init</a>
+</td>
+<td>
+<span class="listing-date">2024-10-05</span>
+</td>
+</tr>
+<tr data-index="13" data-categories="데이터베이스설계및활용" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092991600" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41" data-listing-title-sort="init" data-listing-filename-sort="1-2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/data/1-2.html" class="title listing-title">init</a>
+</td>
+<td>
+<span class="listing-date">2024-10-05</span>
+</td>
+</tr>
+<tr data-index="14" data-categories="데이터베이스설계및활용" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728093005605" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="80" data-listing-title-sort="init" data-listing-filename-sort="4.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/data/4.html" class="title listing-title">init</a>
+</td>
+<td>
+<span class="listing-date">2024-10-05</span>
+</td>
+</tr>
+<tr data-index="15" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092864445" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="241" data-listing-title-sort="intro" data-listing-filename-sort="1-1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/discrete/1-1.html" class="title listing-title">intro</a>
+</td>
+<td>
+<span class="listing-date">2024-10-05</span>
+</td>
+</tr>
+<tr data-index="16" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092936001" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="133" data-listing-title-sort="intro" data-listing-filename-sort="own4.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/discrete/own4.html" class="title listing-title">intro</a>
+</td>
+<td>
+<span class="listing-date">2024-10-05</span>
+</td>
+</tr>
+<tr data-index="17" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092897331" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="169" data-listing-title-sort="intro" data-listing-filename-sort="5.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/discrete/5.html" class="title listing-title">intro</a>
+</td>
+<td>
+<span class="listing-date">2024-10-05</span>
+</td>
+</tr>
+<tr data-index="18" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092904005" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="94" data-listing-title-sort="intro" data-listing-filename-sort="6.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/discrete/6.html" class="title listing-title">intro</a>
+</td>
+<td>
+<span class="listing-date">2024-10-05</span>
+</td>
+</tr>
+<tr data-index="19" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092911586" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="336" data-listing-title-sort="intro" data-listing-filename-sort="own1-1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/discrete/own1-1.html" class="title listing-title">intro</a>
+</td>
+<td>
+<span class="listing-date">2024-10-05</span>
+</td>
+</tr>
+<tr data-index="20" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092875608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="intro" data-listing-filename-sort="1-2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/discrete/1-2.html" class="title listing-title">intro</a>
+</td>
+<td>
+<span class="listing-date">2024-10-05</span>
+</td>
+</tr>
+<tr data-index="21" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092891472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="192" data-listing-title-sort="intro" data-listing-filename-sort="4.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/discrete/4.html" class="title listing-title">intro</a>
+</td>
+<td>
+<span class="listing-date">2024-10-05</span>
+</td>
+</tr>
+<tr data-index="22" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092930805" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="492" data-listing-title-sort="intro" data-listing-filename-sort="own1-2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/discrete/own1-2.html" class="title listing-title">intro</a>
+</td>
+<td>
+<span class="listing-date">2024-10-05</span>
+</td>
+</tr>
+<tr data-index="23" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092883217" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50" data-listing-title-sort="intro" data-listing-filename-sort="1-3.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/discrete/1-3.html" class="title listing-title">intro</a>
+</td>
+<td>
+<span class="listing-date">2024-10-05</span>
+</td>
+</tr>
+<tr data-index="24" data-categories="기초공학수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728093122228" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="102" data-listing-title-sort="삼각함수 정리" data-listing-filename-sort="4.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/math/final/4.html" class="title listing-title">삼각함수 정리</a>
+</td>
+<td>
+<span class="listing-date">2024-10-05</span>
+</td>
+</tr>
+<tr data-index="25" data-categories="기초공학수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092664513" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="251" data-listing-title-sort="삼각함수 정리" data-listing-filename-sort="triangle_func1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/math/final/triangle_func1.html" class="title listing-title">삼각함수 정리</a>
+</td>
+<td>
+<span class="listing-date">2024-10-05</span>
+</td>
+</tr>
+<tr data-index="26" data-categories="인간 공학" data-listing-date-sort="1727103600000" data-listing-file-modified-sort="1728278620613" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="350" data-listing-title-sort="Sensor System (Visual)" data-listing-filename-sort="3_sensory_system.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/human/3_sensory_system.html" class="title listing-title">Sensor System (Visual)</a>
+</td>
+<td>
+<span class="listing-date">2024-09-24</span>
+</td>
+</tr>
+<tr data-index="27" data-categories="기초공학수학,과제" data-listing-date-sort="1727103600000" data-listing-file-modified-sort="1728092632034" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="740" data-listing-title-sort="기공수 과제 #2" data-listing-filename-sort="work2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/math/homework/work2.pdf" class="title listing-title">기공수 과제 #2</a>
+</td>
+<td>
+<span class="listing-date">2024-09-24</span>
+</td>
+</tr>
+<tr data-index="28" data-categories="기초공학수학,과제" data-listing-date-sort="1727103600000" data-listing-file-modified-sort="1728092639740" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="481" data-listing-title-sort="기공수 과제 #3" data-listing-filename-sort="work3.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/math/homework/work3.pdf" class="title listing-title">기공수 과제 #3</a>
+</td>
+<td>
+<span class="listing-date">2024-09-24</span>
+</td>
+</tr>
+<tr data-index="29" data-categories="기초공학수학,과제" data-listing-date-sort="1727103600000" data-listing-file-modified-sort="1728278624332" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="214" data-listing-title-sort="기공수 과제 #4" data-listing-filename-sort="work4.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/math/homework/work4.pdf" class="title listing-title">기공수 과제 #4</a>
+</td>
+<td>
+<span class="listing-date">2024-09-24</span>
+</td>
+</tr>
+<tr data-index="30" data-categories="공연예술의이해" data-listing-date-sort="1726585200000" data-listing-file-modified-sort="1728091482742" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="103" data-listing-title-sort="연극의 장르 - 멜로드라마와 소극" data-listing-filename-sort="2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/art/notes/3week/2.html" class="title listing-title">연극의 장르 - 멜로드라마와 소극</a>
+</td>
+<td>
+<span class="listing-date">2024-09-18</span>
+</td>
+</tr>
+<tr data-index="31" data-categories="공연예술의이해" data-listing-date-sort="1726585200000" data-listing-file-modified-sort="1728204251380" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="90" data-listing-title-sort="연극의 장르 - 멜로드라마와 소극" data-listing-filename-sort="5.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/art/5.html" class="title listing-title">연극의 장르 - 멜로드라마와 소극</a>
+</td>
+<td>
+<span class="listing-date">2024-09-18</span>
+</td>
+</tr>
+<tr data-index="32" data-categories="공연예술의이해" data-listing-date-sort="1726585200000" data-listing-file-modified-sort="1728204261899" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="연극의 장르 - 멜로드라마와 소극" data-listing-filename-sort="6.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/art/6.html" class="title listing-title">연극의 장르 - 멜로드라마와 소극</a>
+</td>
+<td>
+<span class="listing-date">2024-09-18</span>
+</td>
+</tr>
+<tr data-index="33" data-categories="인간 공학" data-listing-date-sort="1726498800000" data-listing-file-modified-sort="1728204529091" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="268" data-listing-title-sort="Human Information Processing Model" data-listing-filename-sort="2_human_information_processing_model.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/human/2_human_information_processing_model.html" class="title listing-title">Human Information Processing Model</a>
+</td>
+<td>
+<span class="listing-date">2024-09-17</span>
+</td>
+</tr>
+<tr data-index="34" data-categories="기초공학수학" data-listing-date-sort="1726412400000" data-listing-file-modified-sort="1728095994236" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="2장- 도함수의 개념 및 정의" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/math/notes/3week/1.html" class="title listing-title">2장- 도함수의 개념 및 정의</a>
+</td>
+<td>
+<span class="listing-date">2024-09-16</span>
+</td>
+</tr>
+<tr data-index="35" data-categories="공연예술의이해" data-listing-date-sort="1726412400000" data-listing-file-modified-sort="1728091460420" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="191" data-listing-title-sort="연극의 장르 - 비극과 희극" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/art/notes/3week/1.html" class="title listing-title">연극의 장르 - 비극과 희극</a>
+</td>
+<td>
+<span class="listing-date">2024-09-16</span>
+</td>
+</tr>
+<tr data-index="36" data-categories="공연예술의이해" data-listing-date-sort="1725980400000" data-listing-file-modified-sort="1728091394679" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="66" data-listing-title-sort="공연예술의 개념과 특징" data-listing-filename-sort="2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/art/notes/2week/2.html" class="title listing-title">공연예술의 개념과 특징</a>
+</td>
+<td>
+<span class="listing-date">2024-09-11</span>
+</td>
+</tr>
+<tr data-index="37" data-categories="인간 공학" data-listing-date-sort="1725894000000" data-listing-file-modified-sort="1728250542055" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="682" data-listing-title-sort="Research Method in Human Factors" data-listing-filename-sort="1_reaserch_method.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/human/1_reaserch_method.html" class="title listing-title">Research Method in Human Factors</a>
+</td>
+<td>
+<span class="listing-date">2024-09-10</span>
+</td>
+</tr>
+<tr data-index="38" data-categories="기초공학수학" data-listing-date-sort="1725807600000" data-listing-file-modified-sort="1728095768337" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="1장- 함수의 극한" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/math/notes/2week/1.html" class="title listing-title">1장- 함수의 극한</a>
+</td>
+<td>
+<span class="listing-date">2024-09-09</span>
+</td>
+</tr>
+<tr data-index="39" data-categories="공연예술의이해" data-listing-date-sort="1725807600000" data-listing-file-modified-sort="1728091358051" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="64" data-listing-title-sort="무대의 종류" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/art/notes/2week/1.html" class="title listing-title">무대의 종류</a>
+</td>
+<td>
+<span class="listing-date">2024-09-09</span>
+</td>
+</tr>
+<tr data-index="40" data-categories="기초공학수학" data-listing-date-sort="1725375600000" data-listing-file-modified-sort="1728095595473" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="66" data-listing-title-sort="1장- 함수, 수열" data-listing-filename-sort="2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/math/notes/1week/2.html" class="title listing-title">1장- 함수, 수열</a>
+</td>
+<td>
+<span class="listing-date">2024-09-04</span>
+</td>
+</tr>
+<tr data-index="41" data-categories="공연예술의이해" data-listing-date-sort="1725375600000" data-listing-file-modified-sort="1728091291783" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="3" data-listing-title-sort="극장 및 공연 정보" data-listing-filename-sort="2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/art/notes/1week/2.html" class="title listing-title">극장 및 공연 정보</a>
+</td>
+<td>
+<span class="listing-date">2024-09-04</span>
+</td>
+</tr>
+<tr data-index="42" data-categories="인간 공학" data-listing-date-sort="1725289200000" data-listing-file-modified-sort="1728116520623" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42" data-listing-title-sort="Introduction to Human Factors" data-listing-filename-sort="0_intro.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/human/0_intro.html" class="title listing-title">Introduction to Human Factors</a>
+</td>
+<td>
+<span class="listing-date">2024-09-03</span>
+</td>
+</tr>
+<tr data-index="43" data-categories="확률과통계1" data-listing-date-sort="1725289200000" data-listing-file-modified-sort="1728267888586" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="227" data-listing-title-sort="확률변수와 분포" data-listing-filename-sort="2-확률변수와-분포.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/stat/final/2-확률변수와-분포.html" class="title listing-title">확률변수와 분포</a>
+</td>
+<td>
+<span class="listing-date">2024-09-03</span>
+</td>
+</tr>
+<tr data-index="44" data-categories="기초공학수학" data-listing-date-sort="1725202800000" data-listing-file-modified-sort="1728095226109" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="274" data-listing-title-sort="1장- 집합, 실수의 성질" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/math/notes/1week/1.html" class="title listing-title">1장- 집합, 실수의 성질</a>
+</td>
+<td>
+<span class="listing-date">2024-09-02</span>
+</td>
+</tr>
+<tr data-index="45" data-categories="공연예술의이해" data-listing-date-sort="1725202800000" data-listing-file-modified-sort="1728091192139" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="3" data-listing-title-sort="Orientation" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/art/notes/1week/1.html" class="title listing-title">Orientation</a>
+</td>
+<td>
+<span class="listing-date">2024-09-02</span>
+</td>
+</tr>
+<tr data-index="46" data-categories="확률과통계1" data-listing-date-sort="1725202800000" data-listing-file-modified-sort="1728116103758" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="187" data-listing-title-sort="통계학의 개념" data-listing-filename-sort="1-통계학의-개념.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/stat/final/1-통계학의-개념.html" class="title listing-title">통계학의 개념</a>
+</td>
+<td>
+<span class="listing-date">2024-09-02</span>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -246,7 +1280,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/cryscham123\.github\.io");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -575,6 +1609,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Copyright 2024, hyunghoon kim</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 

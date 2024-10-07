@@ -184,5 +184,215 @@
   },
   "human/2_human_information_processing_model.qmd": {
     "2_human_information_processing_model.html": "7ca839e7"
+  },
+  "math/homework/work2.qmd": {
+    "work2.tex": "f1a36820"
+  },
+  "math/homework/work3.qmd": {
+    "work3.tex": "c2fd94e3"
+  },
+  "math/homework/work1.qmd": {
+    "work1.tex": "df495cd3"
+  },
+  "math/homework/work4.qmd": {
+    "work4.tex": "240a361b"
+  },
+  "posts/test.qmd": {
+    "test.html": "e23e6b44"
+  },
+  "posts/human/0_intro.qmd": {
+    "0_intro.html": "38dce15c"
+  },
+  "posts/human/3_sensory_system.qmd": {
+    "3_sensory_system.html": "4587581c"
+  },
+  "posts/human/1_reaserch_method.qmd": {
+    "1_reaserch_method.html": "8f08b0ac"
+  },
+  "posts/human/index.qmd": {
+    "index.html": "ed83073d"
+  },
+  "posts/human/2_human_information_processing_model.qmd": {
+    "2_human_information_processing_model.html": "549bfdba"
+  },
+  "posts/human/4.qmd": {
+    "4.html": "456ef898"
+  },
+  "posts/math/index.qmd": {
+    "index.html": "33225f39"
+  },
+  "posts/math/final/3.qmd": {
+    "3.html": "fd3eb4e4"
+  },
+  "posts/math/final/2.qmd": {
+    "2.html": "4e213b1f"
+  },
+  "posts/math/final/4.qmd": {
+    "4.html": "dd1a59aa"
+  },
+  "posts/math/final/triangle_func1.qmd": {
+    "triangle_func1.html": "2356e1a6"
+  },
+  "posts/math/homework/work2.qmd": {
+    "work2.tex": "f7a640de"
+  },
+  "posts/math/homework/work3.qmd": {
+    "work3.tex": "2472e02e"
+  },
+  "posts/math/homework/work1.qmd": {
+    "work1.tex": "f437ff36"
+  },
+  "posts/math/homework/work4.qmd": {
+    "work4.tex": "636f1b25"
+  },
+  "posts/stat/1week.qmd": {
+    "1week.html": "961c5208"
+  },
+  "posts/stat/work2.qmd": {
+    "work2.html": "9d1c596c"
+  },
+  "posts/stat/3.qmd": {
+    "3.html": "75d0b9b5"
+  },
+  "posts/stat/2week.qmd": {
+    "2week.html": "158343df"
+  },
+  "posts/stat/work3.qmd": {
+    "work3.html": "69c0650a"
+  },
+  "posts/stat/index.qmd": {
+    "index.html": "f5bc1d3c"
+  },
+  "posts/stat/work1.qmd": {
+    "work1.html": "fbb91cbe"
+  },
+  "posts/stat/final/2-확률변수와-분포.qmd": {
+    "2-확률변수와-분포.html": "d4b2196c"
+  },
+  "posts/stat/final/1-통계학의-개념.qmd": {
+    "1-통계학의-개념.html": "a01c15f5"
+  },
+  "posts/data/3.qmd": {
+    "3.html": "79968cc5"
+  },
+  "posts/data/index.qmd": {
+    "index.html": "054607e4"
+  },
+  "posts/data/5.qmd": {
+    "5.html": "a4bd098e"
+  },
+  "posts/data/6.qmd": {
+    "6.html": "bd0c3e5c"
+  },
+  "posts/data/1-2.qmd": {
+    "1-2.html": "b016d191"
+  },
+  "posts/data/4.qmd": {
+    "4.html": "0cc6f54d"
+  },
+  "posts/discrete/1-1.qmd": {
+    "1-1.html": "3300d62c"
+  },
+  "posts/discrete/3-1.qmd": {
+    "3-1.html": "235243b0"
+  },
+  "posts/discrete/work/work2.qmd": {
+    "work2.tex": "368b7bc6"
+  },
+  "posts/discrete/work/work1.qmd": {
+    "work1.tex": "025f3b68"
+  },
+  "posts/discrete/index.qmd": {
+    "index.html": "8caa48fb"
+  },
+  "posts/discrete/own4.qmd": {
+    "own4.html": "f14d1ab2"
+  },
+  "posts/discrete/5.qmd": {
+    "5.html": "94b16c39"
+  },
+  "posts/discrete/6.qmd": {
+    "6.html": "2864958b"
+  },
+  "posts/discrete/own1-1.qmd": {
+    "own1-1.html": "c9237e47"
+  },
+  "posts/discrete/1-2.qmd": {
+    "1-2.html": "f1b003a4"
+  },
+  "posts/discrete/4.qmd": {
+    "4.html": "a0c2bc97"
+  },
+  "posts/discrete/own1-2.qmd": {
+    "own1-2.html": "74ae5ebb"
+  },
+  "posts/discrete/1-3.qmd": {
+    "1-3.html": "ac8512be"
+  },
+  "posts/art/3.qmd": {
+    "3.html": "eb953a70"
+  },
+  "posts/art/2.qmd": {
+    "2.html": "87f7972b"
+  },
+  "posts/art/index.qmd": {
+    "index.html": "d35b3c8a"
+  },
+  "posts/art/5.qmd": {
+    "5.html": "8f667ad0"
+  },
+  "posts/art/6.qmd": {
+    "6.html": "cd969be6"
+  },
+  "posts/art/1.qmd": {
+    "1.html": "4733d34e"
+  },
+  "posts/art/4.qmd": {
+    "4.html": "0c3a9cbd"
+  },
+  "posts/art/notes/1week/2.qmd": {
+    "2.html": "aea8ad80"
+  },
+  "posts/art/notes/1week/1.qmd": {
+    "1.html": "09e6a58c"
+  },
+  "posts/art/notes/2week/2.qmd": {
+    "2.html": "69794ef5"
+  },
+  "posts/art/notes/2week/1.qmd": {
+    "1.html": "a38c17aa"
+  },
+  "posts/art/notes/3week/2.qmd": {
+    "2.html": "53c49706"
+  },
+  "posts/art/notes/3week/1.qmd": {
+    "1.html": "ecc17da4"
+  },
+  "posts/math/notes/1week/1.qmd": {
+    "1.html": "26af4d05"
+  },
+  "posts/math/notes/1week/2.qmd": {
+    "2.html": "fccf3e2c"
+  },
+  "posts/math/notes/2week/1.qmd": {
+    "1.html": "0071e5ac"
+  },
+  "posts/math/notes/3week/1.qmd": {
+    "1.html": "ac3c2d4c"
+  },
+  "posts/human/post_layout.qmd": {
+    "post_layout.html": "8fa7c1c2"
+  },
+  "posts/math/final/5.qmd": {
+    "5.html": "1de70ef5"
+  },
+  "posts/math/notes/6week/1.qmd": {
+    "1.html": "35202b30"
+  },
+  "posts/stat/notes/6week/1.qmd": {
+    "1.html": "8485d421"
+  },
+  "404.qmd": {
+    "404.html": "ee9d536f"
   }
 }

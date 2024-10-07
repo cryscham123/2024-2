@@ -1,0 +1,44 @@
+---
+title: 'intro'
+date: '2024-10-05'
+categories: ["이산수학"]
+---
+
+## propositions, negations, conjunctions, disjunctions
+1. proposition: declarative statement thet is either true or false
+x + 1 = 2 (this is not proposition)
+2. negation: the opposite of a propositions
+3. conjunction: a compound proposition formed by joining two propositions with the word "and"
+4. disjunction: a compound proposition formed by joining two propositions with the word "or"
+5. connective or (xor)
+
+### propositional variable
+p, q, r, s, ...
+ex) p: it is raining
+Negation: ㄱ false
+Conjunction: ^ both is true => true, else false
+Disjunction: v either is true => true, else false
+Implication: -> if p then q
+Biconditional: <-> p if and only if q
+
+## implications (converse, inverse, contrapositive, biconditional)
+1. implication: If p Then q, it is equivalent to ㄱp v q
+p | q | p -> q
+T | T | T
+T | F | F
+F | T | T
+F | F | T
+=> if hypothesis is not true, no matter what the conclusion is, the implication is true
+2. converse: If q Then p, q -> p
+3. inverse: If not p Then not q, ㄱp -> ㄱq
+4. contrapositive: If not q Then not p (same truthe value as the original implication), ㄱq -> ㄱp
+5. biconditional: p <-> q, it is equivalent to (p -> q) ^ (q -> p). (if and only if)
+> [if you confuse](https://sciphy.tistory.com/m/483)
+
+p | q | p->q  | q->p  | (p->q)^(q->p) | p<->q
+T | T | T     | T     | T             | T
+T | F | F     | T     | F             | F
+F | T | T     | F     | F             | F
+F | F | T     | T     | T             | T
+
+

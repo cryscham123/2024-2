@@ -1,0 +1,9 @@
+---
+title: 'Number Theory and cryptography'
+date: last-modified
+categories: ['이산수학']
+---
+
+## Divisibility
+
+~~Theorem1 증명문제 나온다함~~

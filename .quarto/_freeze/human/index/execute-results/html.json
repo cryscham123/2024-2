@@ -2,7 +2,7 @@
   "hash": "e1568a474eb935e4fbde1defcc9ee9bf",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"인간 공학\"\nformat: html\n---\n\n- [0_intro.qmd](0_intro.qmd)\n\n- [1_reaserch_method.qmd](1_reaserch_method.qmd)\n\n- [2_human_information_processing_model.qmd](2_human_information_processing_model.qmd)\n\n- [3_sensory_system.qmd](3_sensory_system.qmd)\n\n- [4.qmd](4.qmd)\n",
+    "markdown": "---\ntitle: \"인간 공학\"\nformat: html\n---\n\n- [0_intro.qmd](0_intro.qmd)\n\n- [1_reaserch_method.qmd](1_reaserch_method.qmd)\n\n- [2_human_information_processing_model.qmd](2_human_information_processing_model.qmd)\n\n- [3_sensory_system.qmd](3_sensory_system.qmd)\n\n- [4.qmd](4.qmd)\n\n<details>\n<summary>notes</summary>\n\n</details>\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

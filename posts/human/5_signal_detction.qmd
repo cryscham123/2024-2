@@ -1,0 +1,33 @@
+---
+title: "Signal Detection Theory"
+date: 2024-10-15
+categories: ["인간 공학"]
+---
+
+주변의 제품, 서비스 문제 파악, 해결 디자인 제시, 검증
+- Detection of signals is crucial to the performance of many tasks  
+  - quality-control inspector
+  - flash warning light (cctv)
+  - airport security guard (이상한 물건 있는지)
+  - x-ray
+
+## What does it mean to detect?
+
+- signal is digital (exist / not exist)
+- Absolute threshold is exist => `where the threshold?`
+
+- signal vs noise
+
+## Signal Detection Theory
+
+- Trials  
+  - Signal case(signal + noise): target이 존재
+  - Noise case: target이 없음
+
+- Response
+
+### Assumptions
+
+- 사용자가 관찰할 수 있는 근거는 숫자나 변수로 표현할 수 있어야함
+- evidence는 random variation이 있어야함
+- simple decision criterion으로 결정할 수 있어야함

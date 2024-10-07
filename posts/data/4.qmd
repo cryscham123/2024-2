@@ -1,0 +1,35 @@
+---
+title: 'init'
+date: "2024-10-05"
+categories: ["데이터베이스설계및활용"]
+---
+
+## sql
+### DDL
+1. CREATE (database, tables, views, indexes)
+2. ALTER: add, modify, drop columns
+3. DROP
+4. TRUNCATE (delete all rows)
+```sql
+CREATE TABLE student (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT
+);
+ALTER TABLE student ADD COLUMN major VARCHAR(100);
+DROP TABLE student;
+TRUNCATE TABLE student;
+```
+
+### DML
+```sql
+INSERT INTO student VALUES (1, 'Alice', 20);
+UPDATE student SET age = 21 WHERE id = 1;
+DELETE FROM student WHERE id = 1;
+```
+
+### DQL
+```sql
+SELECT * FROM student;
+SELECT name FROM student WHERE age > 20;
+```

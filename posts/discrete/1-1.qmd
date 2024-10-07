@@ -1,0 +1,60 @@
+---
+title: 'intro'
+date: '2024-10-05'
+categories: ["이산수학"]
+---
+
+1, 3, 4, 5, 6, 10장이 중요하다고 하신다.
+1. The foundations: logic and proofs
+- Logic: Study of reasoning, including propositional and predicate logic.
+- Proofs: Methods to demonstrate the truth of statements, including direct, indirect, and contradiction proofs.
+
+3. Algorithms
+- Design and Analysis: Techniques for creating efficient algorithms and analyzing their complexity.
+- Sorting and Searching: Common algorithms like quicksort, mergesort, and binary search.
+
+4. Number theory and cryptography
+- Number Theory: Properties of integers, divisibility, prime numbers, and modular arithmetic.
+- Cryptography: Techniques for secure communication, including encryption and decryption methods.
+
+5. Induction and recursion
+- Mathematical Induction: Proof technique used to prove statements about natural numbers.
+- Recursion: Defining functions or sequences where the next term is derived from previous terms.
+
+6. Counting
+- Combinatorics: Study of counting, arrangement, and combination of objects.
+- Permutations and Combinations: Methods to count arrangements and selections.
+
+10. Graphs
+- Graph Theory: Study of graphs, which are mathematical structures used to model pairwise relations between objects.
+- Applications: Network analysis, shortest path problems, and graph coloring.
+
+## Proposition
+declarative sentence that is either true or false
+### propositional variable
+p, q, r, s, ...
+ex) p: it is raining
+Negation: ㄱ false
+Conjunction: ^ both is true => true, else false
+Disjunction: v either is true => true, else false
+Implication: -> if p then q
+Biconditional: <-> p if and only if q
+
+p->q is equivalent to ㄱp v q
+
+### converse, contrapositive, inverse
+1. converse: q->p
+2. contrapositive: ㄱq -> ㄱp
+3. inverse: ㄱp -> ㄱq
+
+### Biconditional
+p <-> q is equivalent to (p->q) ^ (q->p)
+
+rosen 44, 46
+
+### precidence
+1. Negation
+2. Conjunction
+3. Disjunction
+4. Implication
+5. Biconditional

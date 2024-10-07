@@ -1,0 +1,15 @@
+{
+  "hash": "99ea727641d65734b27d8571e7a09a32",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: 'R base 02'\ndate: 2024-09-18\ncategories: [\"개념 정리\", \"R\"]\n---\n\n\n\n## List\n다양한 데이터 타입을 담을 수 있는 데이터 타입\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlist1 <- list(1, 2, 3, 4, '5')\nlist1[[5]]\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] \"5\"\n```\n\n\n:::\n\n```{.r .cell-code}\nnames(list1) <- c('a', 'b', 'c', 'd', 'e')\n```\n:::\n\n\n\n## dataframe\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\ndf <- data.frame(a = 1:5, b = c('a', 'b', 'c', 'd', 'e'))\ndf$a\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 1 2 3 4 5\n```\n\n\n:::\n\n```{.r .cell-code}\ndf$b\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] \"a\" \"b\" \"c\" \"d\" \"e\"\n```\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

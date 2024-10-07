@@ -1,0 +1,76 @@
+---
+title: 'Data Modeling and the Entity-Relationship Model'
+date: 2024-10-14
+categories: ["개념 정리"]
+---
+
+## Data and information
+
+- Data: raw facts. `recorded facts`
+- Information: `meaningful context`
+- Knowledge: information + 가치
+
+## What is information system?
+
+- System: a `set of components` that interact to achieve some `purpose` or `goal`
+
+- Information System: composed of `hardware`, `software`, `data`, `procedures`, `people`
+
+## System Analysis and Design
+
+- `System analysis and design`: process of creating and maintaining `information systems`
+- classic methodology: `SDLC`
+
+### `SDLC` (System Development Life Cycle)
+
+![SDLC](/img/system-use.png)
+
+1. System definitions
+2. `Requirements` analysis
+3. Component design
+4. Implementation
+5. System maintenance
+
+![](/img/system-work.png)
+ 
+#### database development process
+
+1. `Requirements` analysis  
+   input: the project plan  
+   output: a set of approved requirements -> `data model` (`ER model`로 `conceptual design`)  
+   source: Use cases, Business rules
+2. Component Design: Relational Database Design (상세 설계)
+3. Implementation
+
+## ER model
+
+- `Entities`  
+  - `Entity class`
+  - `Entity instance`
+- Attributes: `Data type`, `Properties`
+- Identifiers  
+  - `unique`
+  - `Nonunique`: identifies a set of instances
+- `Relationships`  
+  - `binary relationship`  
+    - Maximum cardinality: `1:1`, `1:N`, `M:N`
+    - Minimum cardinality: `0`, `1`
+  - `ternary relationship`
+
+![](/img/entity.png)
+
+## `Entit-Relationship Diagram`
+
+- `Entity classes`: rectangle
+- `Relationships`: diamond
+- `maximum cardinality`: inside the diamond
+- `minimum cardinality`: oval or hash mark next to diamond
+
+다음주 수업 없다
+까마귀발 그리는거 시험 내신단다 100%라시단다
+
+- `strong entity`: 독자적으로 존재 가능. 강한개체 관계는 점선
+- `weak entity`: 약, 강 관계는 실선. IS: rounded square, traditional: 2 layer square
+
+
+
