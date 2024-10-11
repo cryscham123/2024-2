@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      page: 20,
+      page: 10,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-date","listing-title","listing-author"],
     };
@@ -98,7 +98,6 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&amp;display=swap" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -131,12 +130,15 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="2024-2 정리노트" href="index.xml" data-external="1"></head>
+<link rel="alternate" type="application/rss+xml" title="2024-2 정리노트" href="index.xml" data-external="1"><meta property="og:title" content="2024-2 정리노트">
+<meta property="og:description" content="my 2024-2 note site">
+<meta property="og:site_name" content="2024-2 정리노트">
+</head>
 
 <body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -146,6 +148,11 @@ window.Quarto = {
   </div>
         <div class="quarto-navbar-tools tools-end">
     <a href="https://github.com/cryscham123/2024-2" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
           <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
@@ -162,45 +169,20 @@ window.Quarto = {
   </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">2024-2 정리노트</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-body">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Posts</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Art</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./posts/art/5.html" class="sidebar-item-text sidebar-link">
@@ -215,22 +197,22 @@ window.Quarto = {
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
  <span class="menu-text">Notes</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">1week</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 ">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
- <span class="menu-text">1week</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth4 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./posts/art/notes/1week/1.html" class="sidebar-item-text sidebar-link">
@@ -247,13 +229,13 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
  <span class="menu-text">2week</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth4 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./posts/art/notes/2week/1.html" class="sidebar-item-text sidebar-link">
@@ -270,13 +252,13 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
  <span class="menu-text">3week</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth4 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./posts/art/notes/3week/1.html" class="sidebar-item-text sidebar-link">
@@ -291,60 +273,128 @@ window.Quarto = {
 </li>
       </ul>
   </li>
-      </ul>
-  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+ <span class="menu-text">4week</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/art/notes/4week/1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">셰익스피어 희극 - 한여름 밤의 꿈</span></a>
+  </div>
+</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
- <span class="menu-text">Data</span></a>
+ <span class="menu-text">6week</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/art/notes/6week/1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">안톤 체홉의 사실주의극</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/art/notes/6week/2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">가부키</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
+ <span class="menu-text">Data</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./posts/data/1-2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">init</span></a>
+ <span class="menu-text">An Overview of Database</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/data/2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction of Commercial DBMS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./posts/data/3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">init</span></a>
+ <span class="menu-text">The Relational Model</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts/data/4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">init</span></a>
+  <a href="./posts/data/4-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Database Normalization</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts/data/5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">init</span></a>
+  <a href="./posts/data/4-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SQL</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false">
+ <span class="menu-text">Notes</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false">
+ <span class="menu-text">6week</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/data/notes/6week/1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Working With Queries in Microsoft Access 1</span></a>
   </div>
 </li>
       </ul>
   </li>
-          <li class="sidebar-item sidebar-item-section">
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false">
  <span class="menu-text">Discrete</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./posts/discrete/1-1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">intro</span></a>
-  </div>
-</li>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./posts/discrete/1-2.html" class="sidebar-item-text sidebar-link">
@@ -377,31 +427,48 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts/discrete/own1-1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">intro</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./posts/discrete/own1-2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">intro</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./posts/discrete/own4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">intro</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false">
- <span class="menu-text">Work</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false">
+ <span class="menu-text">Notes</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/discrete/notes/0.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">진도 나갈거 예상</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/discrete/notes/1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Logic and Proofs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./posts/discrete/notes/3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Algorithm</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false">
+ <span class="menu-text">Work</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./posts/discrete/work/work1.pdf" class="sidebar-item-text sidebar-link">
@@ -418,15 +485,15 @@ window.Quarto = {
   </li>
       </ul>
   </li>
-          <li class="sidebar-item sidebar-item-section">
+        <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false">
  <span class="menu-text">Human</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./posts/human/0_intro.html" class="sidebar-item-text sidebar-link">
@@ -453,24 +520,24 @@ window.Quarto = {
 </li>
       </ul>
   </li>
-          <li class="sidebar-item sidebar-item-section">
+        <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false">
  <span class="menu-text">Math</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false">
  <span class="menu-text">Final</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./posts/math/final/4.html" class="sidebar-item-text sidebar-link">
@@ -493,13 +560,13 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false">
  <span class="menu-text">Homework</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./posts/math/homework/work2.pdf" class="sidebar-item-text sidebar-link">
@@ -522,22 +589,22 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="false">
  <span class="menu-text">Notes</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false">
  <span class="menu-text">1week</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth4 ">  
+      <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./posts/math/notes/1week/1.html" class="sidebar-item-text sidebar-link">
@@ -554,13 +621,13 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false">
  <span class="menu-text">2week</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth4 ">  
+      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./posts/math/notes/2week/1.html" class="sidebar-item-text sidebar-link">
@@ -571,13 +638,13 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false">
  <span class="menu-text">3week</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth4 ">  
+      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./posts/math/notes/3week/1.html" class="sidebar-item-text sidebar-link">
@@ -588,13 +655,13 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="false">
  <span class="menu-text">6week</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth4 ">  
+      <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./posts/math/notes/6week/1.html" class="sidebar-item-text sidebar-link">
@@ -607,15 +674,15 @@ window.Quarto = {
   </li>
       </ul>
   </li>
-          <li class="sidebar-item sidebar-item-section">
+        <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false">
  <span class="menu-text">Stat</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./posts/stat/1week.html" class="sidebar-item-text sidebar-link">
@@ -654,13 +721,13 @@ window.Quarto = {
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="false">
  <span class="menu-text">Final</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-24" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./posts/stat/final/1-통계학의-개념.html" class="sidebar-item-text sidebar-link">
@@ -677,30 +744,28 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-25" role="navigation" aria-expanded="false">
  <span class="menu-text">Notes</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-25" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-25" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-26" role="navigation" aria-expanded="false">
  <span class="menu-text">6week</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-26" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth4 ">  
+      <ul id="quarto-sidebar-section-26" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./posts/stat/notes/6week/1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">확률변수의 기댓값</span></a>
   </div>
 </li>
-      </ul>
-  </li>
       </ul>
   </li>
       </ul>
@@ -714,14 +779,30 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(47)</span></div><div class="category" data-category="공연예술의이해">공연예술의이해 <span class="quarto-category-count">(8)</span></div><div class="category" data-category="과제">과제 <span class="quarto-category-count">(8)</span></div><div class="category" data-category="기초공학수학">기초공학수학 <span class="quarto-category-count">(11)</span></div><div class="category" data-category="데이터베이스설계및활용">데이터베이스설계및활용 <span class="quarto-category-count">(4)</span></div><div class="category" data-category="이산수학">이산수학 <span class="quarto-category-count">(11)</span></div><div class="category" data-category="인간 공학">인간 공학 <span class="quarto-category-count">(4)</span></div><div class="category" data-category="확률과통계1">확률과통계1 <span class="quarto-category-count">(9)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(52)</span></div><div class="category" data-category="공연예술의이해">공연예술의이해 <span class="quarto-category-count">(11)</span></div><div class="category" data-category="과제">과제 <span class="quarto-category-count">(8)</span></div><div class="category" data-category="기초공학수학">기초공학수학 <span class="quarto-category-count">(11)</span></div><div class="category" data-category="데이터베이스설계및활용">데이터베이스설계및활용 <span class="quarto-category-count">(5)</span></div><div class="category" data-category="데이터베이스설계와활용">데이터베이스설계와활용 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="이산수학">이산수학 <span class="quarto-category-count">(11)</span></div><div class="category" data-category="인간 공학">인간 공학 <span class="quarto-category-count">(4)</span></div><div class="category" data-category="확률과통계1">확률과통계1 <span class="quarto-category-count">(9)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">2024-2 정리노트</h1>
+</div>
 
 
 
+<div class="quarto-title-meta column-body">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<p>안녕하세요 그냥 제 정리노트입니다.</p>
 
 
 
@@ -815,7 +896,52 @@ window.Quarto = {
 <span class="listing-date">&nbsp;</span>
 </td>
 </tr>
-<tr data-index="6" data-categories="기초공학수학" data-listing-date-sort="1728226800000" data-listing-file-modified-sort="1728263679930" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="115" data-listing-title-sort="삼각함수의 도함수" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="6" data-categories="이산수학" data-listing-date-sort="1728572400000" data-listing-file-modified-sort="1728616004212" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="99" data-listing-title-sort="진도 나갈거 예상" data-listing-filename-sort="0.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/discrete/notes/0.html" class="title listing-title">진도 나갈거 예상</a>
+</td>
+<td>
+<span class="listing-date">2024-10-11</span>
+</td>
+</tr>
+<tr data-index="7" data-categories="공연예술의이해" data-listing-date-sort="1728399600000" data-listing-file-modified-sort="1728458370678" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="93" data-listing-title-sort="가부키" data-listing-filename-sort="2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/art/notes/6week/2.html" class="title listing-title">가부키</a>
+</td>
+<td>
+<span class="listing-date">2024-10-09</span>
+</td>
+</tr>
+<tr data-index="8" data-categories="이산수학" data-listing-date-sort="1728313200000" data-listing-file-modified-sort="1728617312112" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="214" data-listing-title-sort="Algorithm" data-listing-filename-sort="3.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/discrete/notes/3.html" class="title listing-title">Algorithm</a>
+</td>
+<td>
+<span class="listing-date">2024-10-08</span>
+</td>
+</tr>
+<tr data-index="9" data-categories="이산수학" data-listing-date-sort="1728313200000" data-listing-file-modified-sort="1728618177670" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="600" data-listing-title-sort="Logic and Proofs" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/discrete/notes/1.html" class="title listing-title">Logic and Proofs</a>
+</td>
+<td>
+<span class="listing-date">2024-10-08</span>
+</td>
+</tr>
+<tr data-index="10" data-categories="데이터베이스설계와활용" data-listing-date-sort="1728226800000" data-listing-file-modified-sort="1728290786717" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Working With Queries in Microsoft Access 1" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/data/notes/6week/1.html" class="title listing-title">Working With Queries in Microsoft Access 1</a>
+</td>
+<td>
+<span class="listing-date">2024-10-07</span>
+</td>
+</tr>
+<tr data-index="11" data-categories="기초공학수학" data-listing-date-sort="1728226800000" data-listing-file-modified-sort="1728263679930" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="115" data-listing-title-sort="삼각함수의 도함수" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/math/notes/6week/1.html" class="title listing-title">삼각함수의 도함수</a>
@@ -824,7 +950,16 @@ window.Quarto = {
 <span class="listing-date">2024-10-07</span>
 </td>
 </tr>
-<tr data-index="7" data-categories="확률과통계1" data-listing-date-sort="1728226800000" data-listing-file-modified-sort="1728272524217" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6" data-listing-title-sort="확률변수의 기댓값" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="12" data-categories="공연예술의이해" data-listing-date-sort="1728226800000" data-listing-file-modified-sort="1728285383494" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6" data-listing-title-sort="안톤 체홉의 사실주의극" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/art/notes/6week/1.html" class="title listing-title">안톤 체홉의 사실주의극</a>
+</td>
+<td>
+<span class="listing-date">2024-10-07</span>
+</td>
+</tr>
+<tr data-index="13" data-categories="확률과통계1" data-listing-date-sort="1728226800000" data-listing-file-modified-sort="1728272524217" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6" data-listing-title-sort="확률변수의 기댓값" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/stat/notes/6week/1.html" class="title listing-title">확률변수의 기댓값</a>
@@ -833,7 +968,7 @@ window.Quarto = {
 <span class="listing-date">2024-10-07</span>
 </td>
 </tr>
-<tr data-index="8" data-categories="기초공학수학" data-listing-date-sort="1728140400000" data-listing-file-modified-sort="1728194501340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="90" data-listing-title-sort="지수함수" data-listing-filename-sort="5.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="14" data-categories="기초공학수학" data-listing-date-sort="1728140400000" data-listing-file-modified-sort="1728462312285" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="149" data-listing-title-sort="지수함수" data-listing-filename-sort="5.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/math/final/5.html" class="title listing-title">지수함수</a>
@@ -842,7 +977,7 @@ window.Quarto = {
 <span class="listing-date">2024-10-06</span>
 </td>
 </tr>
-<tr data-index="9" data-categories="이산수학,과제" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092961711" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2204" data-listing-title-sort="Discrete Mathematics #1" data-listing-filename-sort="work1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="15" data-categories="이산수학,과제" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092961711" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2204" data-listing-title-sort="Discrete Mathematics #1" data-listing-filename-sort="work1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/discrete/work/work1.pdf" class="title listing-title">Discrete Mathematics #1</a>
@@ -851,64 +986,10 @@ window.Quarto = {
 <span class="listing-date">2024-10-05</span>
 </td>
 </tr>
-<tr data-index="10" data-categories="이산수학,과제" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092968278" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="809" data-listing-title-sort="Discrete Mathematics #2" data-listing-filename-sort="work2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="16" data-categories="이산수학,과제" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092968278" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="809" data-listing-title-sort="Discrete Mathematics #2" data-listing-filename-sort="work2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/discrete/work/work2.pdf" class="title listing-title">Discrete Mathematics #2</a>
-</td>
-<td>
-<span class="listing-date">2024-10-05</span>
-</td>
-</tr>
-<tr data-index="11" data-categories="데이터베이스설계및활용" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092997683" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="82" data-listing-title-sort="init" data-listing-filename-sort="3.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./posts/data/3.html" class="title listing-title">init</a>
-</td>
-<td>
-<span class="listing-date">2024-10-05</span>
-</td>
-</tr>
-<tr data-index="12" data-categories="데이터베이스설계및활용" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728093011976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="106" data-listing-title-sort="init" data-listing-filename-sort="5.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./posts/data/5.html" class="title listing-title">init</a>
-</td>
-<td>
-<span class="listing-date">2024-10-05</span>
-</td>
-</tr>
-<tr data-index="13" data-categories="데이터베이스설계및활용" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092991600" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41" data-listing-title-sort="init" data-listing-filename-sort="1-2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./posts/data/1-2.html" class="title listing-title">init</a>
-</td>
-<td>
-<span class="listing-date">2024-10-05</span>
-</td>
-</tr>
-<tr data-index="14" data-categories="데이터베이스설계및활용" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728093005605" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="80" data-listing-title-sort="init" data-listing-filename-sort="4.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./posts/data/4.html" class="title listing-title">init</a>
-</td>
-<td>
-<span class="listing-date">2024-10-05</span>
-</td>
-</tr>
-<tr data-index="15" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092864445" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="241" data-listing-title-sort="intro" data-listing-filename-sort="1-1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./posts/discrete/1-1.html" class="title listing-title">intro</a>
-</td>
-<td>
-<span class="listing-date">2024-10-05</span>
-</td>
-</tr>
-<tr data-index="16" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092936001" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="133" data-listing-title-sort="intro" data-listing-filename-sort="own4.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./posts/discrete/own4.html" class="title listing-title">intro</a>
 </td>
 <td>
 <span class="listing-date">2024-10-05</span>
@@ -932,16 +1013,7 @@ window.Quarto = {
 <span class="listing-date">2024-10-05</span>
 </td>
 </tr>
-<tr data-index="19" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092911586" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="336" data-listing-title-sort="intro" data-listing-filename-sort="own1-1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="./posts/discrete/own1-1.html" class="title listing-title">intro</a>
-</td>
-<td>
-<span class="listing-date">2024-10-05</span>
-</td>
-</tr>
-<tr data-index="20" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092875608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="intro" data-listing-filename-sort="1-2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="19" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092875608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="intro" data-listing-filename-sort="1-2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/discrete/1-2.html" class="title listing-title">intro</a>
@@ -950,7 +1022,7 @@ window.Quarto = {
 <span class="listing-date">2024-10-05</span>
 </td>
 </tr>
-<tr data-index="21" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092891472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="192" data-listing-title-sort="intro" data-listing-filename-sort="4.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="20" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092891472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="192" data-listing-title-sort="intro" data-listing-filename-sort="4.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/discrete/4.html" class="title listing-title">intro</a>
@@ -959,7 +1031,7 @@ window.Quarto = {
 <span class="listing-date">2024-10-05</span>
 </td>
 </tr>
-<tr data-index="22" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092930805" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="492" data-listing-title-sort="intro" data-listing-filename-sort="own1-2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="21" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092930805" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="492" data-listing-title-sort="intro" data-listing-filename-sort="own1-2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/discrete/own1-2.html" class="title listing-title">intro</a>
@@ -968,7 +1040,7 @@ window.Quarto = {
 <span class="listing-date">2024-10-05</span>
 </td>
 </tr>
-<tr data-index="23" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092883217" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50" data-listing-title-sort="intro" data-listing-filename-sort="1-3.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="22" data-categories="이산수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092883217" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50" data-listing-title-sort="intro" data-listing-filename-sort="1-3.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/discrete/1-3.html" class="title listing-title">intro</a>
@@ -977,7 +1049,7 @@ window.Quarto = {
 <span class="listing-date">2024-10-05</span>
 </td>
 </tr>
-<tr data-index="24" data-categories="기초공학수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728093122228" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="102" data-listing-title-sort="삼각함수 정리" data-listing-filename-sort="4.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="23" data-categories="기초공학수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728093122228" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="102" data-listing-title-sort="삼각함수 정리" data-listing-filename-sort="4.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/math/final/4.html" class="title listing-title">삼각함수 정리</a>
@@ -986,7 +1058,7 @@ window.Quarto = {
 <span class="listing-date">2024-10-05</span>
 </td>
 </tr>
-<tr data-index="25" data-categories="기초공학수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092664513" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="251" data-listing-title-sort="삼각함수 정리" data-listing-filename-sort="triangle_func1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="24" data-categories="기초공학수학" data-listing-date-sort="1728054000000" data-listing-file-modified-sort="1728092664513" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="251" data-listing-title-sort="삼각함수 정리" data-listing-filename-sort="triangle_func1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/math/final/triangle_func1.html" class="title listing-title">삼각함수 정리</a>
@@ -995,7 +1067,34 @@ window.Quarto = {
 <span class="listing-date">2024-10-05</span>
 </td>
 </tr>
-<tr data-index="26" data-categories="인간 공학" data-listing-date-sort="1727103600000" data-listing-file-modified-sort="1728278620613" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="350" data-listing-title-sort="Sensor System (Visual)" data-listing-filename-sort="3_sensory_system.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="25" data-categories="데이터베이스설계및활용" data-listing-date-sort="1727362800000" data-listing-file-modified-sort="1728548280500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="158" data-listing-title-sort="SQL" data-listing-filename-sort="4-2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/data/4-2.html" class="title listing-title">SQL</a>
+</td>
+<td>
+<span class="listing-date">2024-09-27</span>
+</td>
+</tr>
+<tr data-index="26" data-categories="공연예술의이해" data-listing-date-sort="1727190000000" data-listing-file-modified-sort="1728354471715" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="셰익스피어 희극 - 한여름 밤의 꿈" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/art/notes/4week/1.html" class="title listing-title">셰익스피어 희극 - 한여름 밤의 꿈</a>
+</td>
+<td>
+<span class="listing-date">2024-09-25</span>
+</td>
+</tr>
+<tr data-index="27" data-categories="데이터베이스설계및활용" data-listing-date-sort="1727103600000" data-listing-file-modified-sort="1728542460324" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148" data-listing-title-sort="Database Normalization" data-listing-filename-sort="4-1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/data/4-1.html" class="title listing-title">Database Normalization</a>
+</td>
+<td>
+<span class="listing-date">2024-09-24</span>
+</td>
+</tr>
+<tr data-index="28" data-categories="인간 공학" data-listing-date-sort="1727103600000" data-listing-file-modified-sort="1728278620613" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="350" data-listing-title-sort="Sensor System (Visual)" data-listing-filename-sort="3_sensory_system.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/human/3_sensory_system.html" class="title listing-title">Sensor System (Visual)</a>
@@ -1004,7 +1103,7 @@ window.Quarto = {
 <span class="listing-date">2024-09-24</span>
 </td>
 </tr>
-<tr data-index="27" data-categories="기초공학수학,과제" data-listing-date-sort="1727103600000" data-listing-file-modified-sort="1728092632034" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="740" data-listing-title-sort="기공수 과제 #2" data-listing-filename-sort="work2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="29" data-categories="기초공학수학,과제" data-listing-date-sort="1727103600000" data-listing-file-modified-sort="1728092632034" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="740" data-listing-title-sort="기공수 과제 #2" data-listing-filename-sort="work2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/math/homework/work2.pdf" class="title listing-title">기공수 과제 #2</a>
@@ -1013,7 +1112,7 @@ window.Quarto = {
 <span class="listing-date">2024-09-24</span>
 </td>
 </tr>
-<tr data-index="28" data-categories="기초공학수학,과제" data-listing-date-sort="1727103600000" data-listing-file-modified-sort="1728092639740" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="481" data-listing-title-sort="기공수 과제 #3" data-listing-filename-sort="work3.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="30" data-categories="기초공학수학,과제" data-listing-date-sort="1727103600000" data-listing-file-modified-sort="1728092639740" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="481" data-listing-title-sort="기공수 과제 #3" data-listing-filename-sort="work3.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/math/homework/work3.pdf" class="title listing-title">기공수 과제 #3</a>
@@ -1022,7 +1121,7 @@ window.Quarto = {
 <span class="listing-date">2024-09-24</span>
 </td>
 </tr>
-<tr data-index="29" data-categories="기초공학수학,과제" data-listing-date-sort="1727103600000" data-listing-file-modified-sort="1728278624332" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="214" data-listing-title-sort="기공수 과제 #4" data-listing-filename-sort="work4.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="31" data-categories="기초공학수학,과제" data-listing-date-sort="1727103600000" data-listing-file-modified-sort="1728528495652" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="619" data-listing-title-sort="기공수 과제 #4" data-listing-filename-sort="work4.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/math/homework/work4.pdf" class="title listing-title">기공수 과제 #4</a>
@@ -1031,7 +1130,7 @@ window.Quarto = {
 <span class="listing-date">2024-09-24</span>
 </td>
 </tr>
-<tr data-index="30" data-categories="공연예술의이해" data-listing-date-sort="1726585200000" data-listing-file-modified-sort="1728091482742" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="103" data-listing-title-sort="연극의 장르 - 멜로드라마와 소극" data-listing-filename-sort="2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="32" data-categories="공연예술의이해" data-listing-date-sort="1726585200000" data-listing-file-modified-sort="1728091482742" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="103" data-listing-title-sort="연극의 장르 - 멜로드라마와 소극" data-listing-filename-sort="2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/art/notes/3week/2.html" class="title listing-title">연극의 장르 - 멜로드라마와 소극</a>
@@ -1040,7 +1139,7 @@ window.Quarto = {
 <span class="listing-date">2024-09-18</span>
 </td>
 </tr>
-<tr data-index="31" data-categories="공연예술의이해" data-listing-date-sort="1726585200000" data-listing-file-modified-sort="1728204251380" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="90" data-listing-title-sort="연극의 장르 - 멜로드라마와 소극" data-listing-filename-sort="5.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="33" data-categories="공연예술의이해" data-listing-date-sort="1726585200000" data-listing-file-modified-sort="1728204251380" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="90" data-listing-title-sort="연극의 장르 - 멜로드라마와 소극" data-listing-filename-sort="5.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/art/5.html" class="title listing-title">연극의 장르 - 멜로드라마와 소극</a>
@@ -1049,7 +1148,7 @@ window.Quarto = {
 <span class="listing-date">2024-09-18</span>
 </td>
 </tr>
-<tr data-index="32" data-categories="공연예술의이해" data-listing-date-sort="1726585200000" data-listing-file-modified-sort="1728204261899" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="연극의 장르 - 멜로드라마와 소극" data-listing-filename-sort="6.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="34" data-categories="공연예술의이해" data-listing-date-sort="1726585200000" data-listing-file-modified-sort="1728285385694" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="17" data-listing-title-sort="연극의 장르 - 멜로드라마와 소극" data-listing-filename-sort="6.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/art/6.html" class="title listing-title">연극의 장르 - 멜로드라마와 소극</a>
@@ -1058,7 +1157,7 @@ window.Quarto = {
 <span class="listing-date">2024-09-18</span>
 </td>
 </tr>
-<tr data-index="33" data-categories="인간 공학" data-listing-date-sort="1726498800000" data-listing-file-modified-sort="1728204529091" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="268" data-listing-title-sort="Human Information Processing Model" data-listing-filename-sort="2_human_information_processing_model.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="35" data-categories="인간 공학" data-listing-date-sort="1726498800000" data-listing-file-modified-sort="1728204529091" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="268" data-listing-title-sort="Human Information Processing Model" data-listing-filename-sort="2_human_information_processing_model.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/human/2_human_information_processing_model.html" class="title listing-title">Human Information Processing Model</a>
@@ -1067,7 +1166,16 @@ window.Quarto = {
 <span class="listing-date">2024-09-17</span>
 </td>
 </tr>
-<tr data-index="34" data-categories="기초공학수학" data-listing-date-sort="1726412400000" data-listing-file-modified-sort="1728095994236" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="2장- 도함수의 개념 및 정의" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="36" data-categories="데이터베이스설계및활용" data-listing-date-sort="1726498800000" data-listing-file-modified-sort="1728542377486" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="106" data-listing-title-sort="The Relational Model" data-listing-filename-sort="3.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/data/3.html" class="title listing-title">The Relational Model</a>
+</td>
+<td>
+<span class="listing-date">2024-09-17</span>
+</td>
+</tr>
+<tr data-index="37" data-categories="기초공학수학" data-listing-date-sort="1726412400000" data-listing-file-modified-sort="1728095994236" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="2장- 도함수의 개념 및 정의" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/math/notes/3week/1.html" class="title listing-title">2장- 도함수의 개념 및 정의</a>
@@ -1076,7 +1184,7 @@ window.Quarto = {
 <span class="listing-date">2024-09-16</span>
 </td>
 </tr>
-<tr data-index="35" data-categories="공연예술의이해" data-listing-date-sort="1726412400000" data-listing-file-modified-sort="1728091460420" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="191" data-listing-title-sort="연극의 장르 - 비극과 희극" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="38" data-categories="공연예술의이해" data-listing-date-sort="1726412400000" data-listing-file-modified-sort="1728091460420" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="191" data-listing-title-sort="연극의 장르 - 비극과 희극" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/art/notes/3week/1.html" class="title listing-title">연극의 장르 - 비극과 희극</a>
@@ -1085,7 +1193,7 @@ window.Quarto = {
 <span class="listing-date">2024-09-16</span>
 </td>
 </tr>
-<tr data-index="36" data-categories="공연예술의이해" data-listing-date-sort="1725980400000" data-listing-file-modified-sort="1728091394679" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="66" data-listing-title-sort="공연예술의 개념과 특징" data-listing-filename-sort="2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="39" data-categories="공연예술의이해" data-listing-date-sort="1725980400000" data-listing-file-modified-sort="1728091394679" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="66" data-listing-title-sort="공연예술의 개념과 특징" data-listing-filename-sort="2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/art/notes/2week/2.html" class="title listing-title">공연예술의 개념과 특징</a>
@@ -1094,7 +1202,16 @@ window.Quarto = {
 <span class="listing-date">2024-09-11</span>
 </td>
 </tr>
-<tr data-index="37" data-categories="인간 공학" data-listing-date-sort="1725894000000" data-listing-file-modified-sort="1728250542055" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="682" data-listing-title-sort="Research Method in Human Factors" data-listing-filename-sort="1_reaserch_method.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="40" data-categories="데이터베이스설계및활용" data-listing-date-sort="1725894000000" data-listing-file-modified-sort="1728535140975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5" data-listing-title-sort="Introduction of Commercial DBMS" data-listing-filename-sort="2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/data/2.html" class="title listing-title">Introduction of Commercial DBMS</a>
+</td>
+<td>
+<span class="listing-date">2024-09-10</span>
+</td>
+</tr>
+<tr data-index="41" data-categories="인간 공학" data-listing-date-sort="1725894000000" data-listing-file-modified-sort="1728354122531" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="682" data-listing-title-sort="Research Method in Human Factors" data-listing-filename-sort="1_reaserch_method.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/human/1_reaserch_method.html" class="title listing-title">Research Method in Human Factors</a>
@@ -1103,7 +1220,7 @@ window.Quarto = {
 <span class="listing-date">2024-09-10</span>
 </td>
 </tr>
-<tr data-index="38" data-categories="기초공학수학" data-listing-date-sort="1725807600000" data-listing-file-modified-sort="1728095768337" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="1장- 함수의 극한" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="42" data-categories="기초공학수학" data-listing-date-sort="1725807600000" data-listing-file-modified-sort="1728095768337" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="1장- 함수의 극한" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/math/notes/2week/1.html" class="title listing-title">1장- 함수의 극한</a>
@@ -1112,7 +1229,7 @@ window.Quarto = {
 <span class="listing-date">2024-09-09</span>
 </td>
 </tr>
-<tr data-index="39" data-categories="공연예술의이해" data-listing-date-sort="1725807600000" data-listing-file-modified-sort="1728091358051" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="64" data-listing-title-sort="무대의 종류" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="43" data-categories="공연예술의이해" data-listing-date-sort="1725807600000" data-listing-file-modified-sort="1728091358051" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="64" data-listing-title-sort="무대의 종류" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/art/notes/2week/1.html" class="title listing-title">무대의 종류</a>
@@ -1121,7 +1238,7 @@ window.Quarto = {
 <span class="listing-date">2024-09-09</span>
 </td>
 </tr>
-<tr data-index="40" data-categories="기초공학수학" data-listing-date-sort="1725375600000" data-listing-file-modified-sort="1728095595473" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="66" data-listing-title-sort="1장- 함수, 수열" data-listing-filename-sort="2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="44" data-categories="기초공학수학" data-listing-date-sort="1725375600000" data-listing-file-modified-sort="1728095595473" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="66" data-listing-title-sort="1장- 함수, 수열" data-listing-filename-sort="2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/math/notes/1week/2.html" class="title listing-title">1장- 함수, 수열</a>
@@ -1130,7 +1247,7 @@ window.Quarto = {
 <span class="listing-date">2024-09-04</span>
 </td>
 </tr>
-<tr data-index="41" data-categories="공연예술의이해" data-listing-date-sort="1725375600000" data-listing-file-modified-sort="1728091291783" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="3" data-listing-title-sort="극장 및 공연 정보" data-listing-filename-sort="2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="45" data-categories="공연예술의이해" data-listing-date-sort="1725375600000" data-listing-file-modified-sort="1728091291783" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="3" data-listing-title-sort="극장 및 공연 정보" data-listing-filename-sort="2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/art/notes/1week/2.html" class="title listing-title">극장 및 공연 정보</a>
@@ -1139,7 +1256,16 @@ window.Quarto = {
 <span class="listing-date">2024-09-04</span>
 </td>
 </tr>
-<tr data-index="42" data-categories="인간 공학" data-listing-date-sort="1725289200000" data-listing-file-modified-sort="1728116520623" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42" data-listing-title-sort="Introduction to Human Factors" data-listing-filename-sort="0_intro.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="46" data-categories="데이터베이스설계및활용" data-listing-date-sort="1725289200000" data-listing-file-modified-sort="1728537890347" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="91" data-listing-title-sort="An Overview of Database" data-listing-filename-sort="1-2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="./posts/data/1-2.html" class="title listing-title">An Overview of Database</a>
+</td>
+<td>
+<span class="listing-date">2024-09-03</span>
+</td>
+</tr>
+<tr data-index="47" data-categories="인간 공학" data-listing-date-sort="1725289200000" data-listing-file-modified-sort="1728116520623" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42" data-listing-title-sort="Introduction to Human Factors" data-listing-filename-sort="0_intro.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/human/0_intro.html" class="title listing-title">Introduction to Human Factors</a>
@@ -1148,7 +1274,7 @@ window.Quarto = {
 <span class="listing-date">2024-09-03</span>
 </td>
 </tr>
-<tr data-index="43" data-categories="확률과통계1" data-listing-date-sort="1725289200000" data-listing-file-modified-sort="1728267888586" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="227" data-listing-title-sort="확률변수와 분포" data-listing-filename-sort="2-확률변수와-분포.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="48" data-categories="확률과통계1" data-listing-date-sort="1725289200000" data-listing-file-modified-sort="1728267888586" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="227" data-listing-title-sort="확률변수와 분포" data-listing-filename-sort="2-확률변수와-분포.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/stat/final/2-확률변수와-분포.html" class="title listing-title">확률변수와 분포</a>
@@ -1157,7 +1283,7 @@ window.Quarto = {
 <span class="listing-date">2024-09-03</span>
 </td>
 </tr>
-<tr data-index="44" data-categories="기초공학수학" data-listing-date-sort="1725202800000" data-listing-file-modified-sort="1728095226109" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="274" data-listing-title-sort="1장- 집합, 실수의 성질" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="49" data-categories="기초공학수학" data-listing-date-sort="1725202800000" data-listing-file-modified-sort="1728095226109" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="274" data-listing-title-sort="1장- 집합, 실수의 성질" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/math/notes/1week/1.html" class="title listing-title">1장- 집합, 실수의 성질</a>
@@ -1166,7 +1292,7 @@ window.Quarto = {
 <span class="listing-date">2024-09-02</span>
 </td>
 </tr>
-<tr data-index="45" data-categories="공연예술의이해" data-listing-date-sort="1725202800000" data-listing-file-modified-sort="1728091192139" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="3" data-listing-title-sort="Orientation" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="50" data-categories="공연예술의이해" data-listing-date-sort="1725202800000" data-listing-file-modified-sort="1728091192139" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="3" data-listing-title-sort="Orientation" data-listing-filename-sort="1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/art/notes/1week/1.html" class="title listing-title">Orientation</a>
@@ -1175,7 +1301,7 @@ window.Quarto = {
 <span class="listing-date">2024-09-02</span>
 </td>
 </tr>
-<tr data-index="46" data-categories="확률과통계1" data-listing-date-sort="1725202800000" data-listing-file-modified-sort="1728116103758" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="187" data-listing-title-sort="통계학의 개념" data-listing-filename-sort="1-통계학의-개념.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="51" data-categories="확률과통계1" data-listing-date-sort="1725202800000" data-listing-file-modified-sort="1728116103758" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="187" data-listing-title-sort="통계학의 개념" data-listing-filename-sort="1-통계학의-개념.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./posts/stat/final/1-통계학의-개념.html" class="title listing-title">통계학의 개념</a>
@@ -1614,6 +1740,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Copyright 2024, hyunghoon kim</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 

@@ -10,7 +10,410 @@
 <atom:link href="https://cryscham123.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>my 2024-2 note site</description>
 <generator>quarto-1.5.56</generator>
-<lastBuildDate>Sun, 06 Oct 2024 15:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 10 Oct 2024 15:00:00 GMT</lastBuildDate>
+<item>
+  <title>진도 나갈거 예상</title>
+  <link>https://cryscham123.github.io/posts/discrete/notes/0.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<ol start="4" type="1">
+<li>Number theory and cryptography</li>
+</ol>
+<ul>
+<li>Number Theory: Properties of integers, divisibility, prime numbers, and modular arithmetic.</li>
+<li>Cryptography: Techniques for secure communication, including encryption and decryption methods.</li>
+</ul>
+<ol start="5" type="1">
+<li>Induction and recursion</li>
+</ol>
+<ul>
+<li>Mathematical Induction: Proof technique used to prove statements about natural numbers.</li>
+<li>Recursion: Defining functions or sequences where the next term is derived from previous terms.</li>
+</ul>
+<ol start="6" type="1">
+<li>Counting</li>
+</ol>
+<ul>
+<li>Combinatorics: Study of counting, arrangement, and combination of objects.</li>
+<li>Permutations and Combinations: Methods to count arrangements and selections.</li>
+</ul>
+<ol start="10" type="1">
+<li>Graphs</li>
+</ol>
+<ul>
+<li>Graph Theory: Study of graphs, which are mathematical structures used to model pairwise relations between objects.</li>
+<li>Applications: Network analysis, shortest path problems, and graph coloring.</li>
+</ul>
+
+
+
+ ]]></description>
+  <category>이산수학</category>
+  <guid>https://cryscham123.github.io/posts/discrete/notes/0.html</guid>
+  <pubDate>Thu, 10 Oct 2024 15:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>가부키</title>
+  <link>https://cryscham123.github.io/posts/art/notes/6week/2.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="가부키-무대-구조" class="level2">
+<h2 class="anchored" data-anchor-id="가부키-무대-구조">가부키 무대 구조</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://cryscham123.github.io/img/gabuki.png" class="img-fluid figure-img"></p>
+<figcaption>무대 구조 그림</figcaption>
+</figure>
+</div>
+<ul>
+<li>가(노래) + 부(춤) + 키(연극)의 합성어</li>
+<li>하나미치(꽃길)</li>
+</ul>
+</section>
+<section id="가부키의-기원" class="level2">
+<h2 class="anchored" data-anchor-id="가부키의-기원">가부키의 기원</h2>
+<ul>
+<li>1603년 사찰 무희 <code>오쿠니</code>에서 시작</li>
+<li>성적으로 병질되면서 1653년부터는 성인 남성만 출연 가능하게 됨</li>
+<li>근데 남자가 여자연기를 하는게 예술적이라고 생각함.</li>
+<li>막과 하나미치의 발명으로 1688년 경에 연극으로서 비약함<br>
+=&gt; 야외극에서 실내극으로 변화</li>
+</ul>
+</section>
+<section id="무대-미학" class="level2">
+<h2 class="anchored" data-anchor-id="무대-미학">무대 미학</h2>
+<ul>
+<li><code>하나미치</code>로 관객과 배우가 가까워짐</li>
+<li><code>수직형 연극</code>: 배우가 관객을 바라보며 연기함</li>
+<li>스펙터클의 창조: 무대에 호화로운 장치가 많다. (세리, 슷폰)<br>
+간도가에시: 무대를 뒤로 90도로 눕혀서 장면 전환<br>
+야타이 구즈시: 무대가 무너짐<br>
+추노리: 와이어 연기</li>
+<li>서민예술, 쾌락의 예술</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>공연예술의이해</category>
+  <guid>https://cryscham123.github.io/posts/art/notes/6week/2.html</guid>
+  <pubDate>Tue, 08 Oct 2024 15:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Algorithm</title>
+  <link>https://cryscham123.github.io/posts/discrete/notes/3.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="algorithms" class="level2">
+<h2 class="anchored" data-anchor-id="algorithms">Algorithms</h2>
+<p>algorithm: <code>finite sequence of precise instructions</code> for performing a computation or for <code>solving a problem.</code></p>
+<section id="pseudo-code" class="level3">
+<h3 class="anchored" data-anchor-id="pseudo-code">Pseudo code</h3>
+<p>완전히 정해진 문법은 없는듯. 이산수학에서 사용하는 형태는 다음과 같다.</p>
+</section>
+<section id="properties-of-algorithms" class="level3">
+<h3 class="anchored" data-anchor-id="properties-of-algorithms">Properties of Algorithms</h3>
+<ul>
+<li>Input</li>
+<li>Output: solution to the problem</li>
+<li>Definiteness. The steps of an algorithm must be defined precisely.</li>
+<li>Correctness</li>
+<li>Finiteness: 무한루프 돌면 안된다.</li>
+<li>Effectiveness</li>
+<li>Generality</li>
+</ul>
+</section>
+<section id="example-of-algorithms" class="level3">
+<h3 class="anchored" data-anchor-id="example-of-algorithms">Example of Algorithms</h3>
+<ul>
+<li>유한한 정수 집단에서 가장 큰 수 찾기</li>
+<li>검색 알고리즘
+<ul>
+<li>선형 검색</li>
+<li>이진 검색</li>
+</ul></li>
+<li>정렬
+<ul>
+<li>버블 정렬</li>
+<li>선택 정렬</li>
+</ul></li>
+<li>그리디 알고리즘</li>
+</ul>
+</section>
+</section>
+<section id="the-growth-of-functions" class="level2">
+<h2 class="anchored" data-anchor-id="the-growth-of-functions">The Growth of Functions</h2>
+<section id="big-o-notation" class="level3">
+<h3 class="anchored" data-anchor-id="big-o-notation">Big-O Notation</h3>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?f(x)%20is%20O(g(x))"> if there exists a constant <img src="https://latex.codecogs.com/png.latex?c%20%3E%200"> and <img src="https://latex.codecogs.com/png.latex?x_0"> such that <img src="https://latex.codecogs.com/png.latex?%7Cf(x)%7C%20%3C=%20c%7Cg(x)%7C"> for all <img src="https://latex.codecogs.com/png.latex?x%20%3E=%20x_0"></li>
+<li><img src="https://latex.codecogs.com/png.latex?f(x)%20is%20O(g(x))"> if <img src="https://latex.codecogs.com/png.latex?f(x)%20grows%20no%20faster%20than%20g(x)"></li>
+<li>당연히 여러개일 수 있다.</li>
+</ul>
+</section>
+<section id="big-ω-notation" class="level3">
+<h3 class="anchored" data-anchor-id="big-ω-notation">Big-Ω Notation</h3>
+</section>
+<section id="big-θ-notation" class="level3">
+<h3 class="anchored" data-anchor-id="big-θ-notation">Big-θ Notation</h3>
+</section>
+</section>
+<section id="complexity-of-algorithms" class="level2">
+<h2 class="anchored" data-anchor-id="complexity-of-algorithms">Complexity of Algorithms</h2>
+</section>
+<section id="combination-of-funciton" class="level2">
+<h2 class="anchored" data-anchor-id="combination-of-funciton">combination of funciton</h2>
+<p>if <img src="https://latex.codecogs.com/png.latex?f_1(x)%20is%20O(g_1(x))"> and <img src="https://latex.codecogs.com/png.latex?f_2(x)%20is%20O(g_2(x))">, then <img src="https://latex.codecogs.com/png.latex?f_1(x)%20+%20f_2(x)%20is%20O(max(%7Cg_1(x)%7C,%20%7Cg_2(x)%7C))"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%7Cf_1(x)%20+%20f_2(x)%7C%20%3C=%20%7Cf_1(x)%7C%20+%20%7Cf_2(x)%7C%0A%3C=%20c_1%7Cg_1(x)%7C%20+%20c_2%7Cg_2(x)%7C%0A%3C=%20(c_1%20+%20c_2)max(%7Cg_1(x)%7C,%20%7Cg_2(x)%7C)"></p>
+</section>
+<section id="ordering-functions-by-order-of-growth" class="level2">
+<h2 class="anchored" data-anchor-id="ordering-functions-by-order-of-growth">ordering functions by order of growth</h2>
+</section>
+<section id="big-omega" class="level2">
+<h2 class="anchored" data-anchor-id="big-omega">big-omega</h2>
+<p>lowerbound: <img src="https://latex.codecogs.com/png.latex?f(x)%20is%20%CE%A9(g(x))"> if there exists a constant <img src="https://latex.codecogs.com/png.latex?c%20%3E%200"> and <img src="https://latex.codecogs.com/png.latex?x_0"> such that <img src="https://latex.codecogs.com/png.latex?%7Cf(x)%7C%20%3E=%20c%7Cg(x)%7C"> for all <img src="https://latex.codecogs.com/png.latex?x%20%3E=%20x_0"></p>
+</section>
+<section id="big-theta" class="level2">
+<h2 class="anchored" data-anchor-id="big-theta">big-theta</h2>
+<p><img src="https://latex.codecogs.com/png.latex?f(x)%20is%20%CE%98(g(x))"> if <img src="https://latex.codecogs.com/png.latex?f(x)%20is%20O(g(x))"> and <img src="https://latex.codecogs.com/png.latex?f(x)%20is%20%CE%A9(g(x))"></p>
+</section>
+<section id="complexity" class="level2">
+<h2 class="anchored" data-anchor-id="complexity">complexity</h2>
+
+
+</section>
+
+ ]]></description>
+  <category>이산수학</category>
+  <guid>https://cryscham123.github.io/posts/discrete/notes/3.html</guid>
+  <pubDate>Mon, 07 Oct 2024 15:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Logic and Proofs</title>
+  <link>https://cryscham123.github.io/posts/discrete/notes/1.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="proposition" class="level2">
+<h2 class="anchored" data-anchor-id="proposition">Proposition</h2>
+<p>declarative sentence that is either true or false</p>
+<section id="propositional-variable" class="level3">
+<h3 class="anchored" data-anchor-id="propositional-variable">propositional variable</h3>
+<p>p, q, r, s, …<br>
+ex) p: it is raining</p>
+<blockquote class="blockquote">
+<p>Proposition must be either true or false.<br>
+‘x is 10’ is not a proposition.</p>
+</blockquote>
+</section>
+<section id="logical-operators" class="level3">
+<h3 class="anchored" data-anchor-id="logical-operators">Logical Operators</h3>
+<p>(ascending order of precedence)</p>
+<ul>
+<li><code>Negation</code>: ¬ NOT</li>
+<li><code>Conjunction</code>: ∧ AND</li>
+<li><code>Disjunction</code>: ∨ OR
+<ul>
+<li><code>Inclusive OR</code>: either is true</li>
+<li><code>Exclusive OR</code>: ⊕ either is true, but not both</li>
+</ul></li>
+<li><code>Implication</code>: -&gt; if then</li>
+<li><code>Biconditional</code>: &lt;-&gt; if and only if</li>
+</ul>
+<p><a href="https://sciphy.tistory.com/m/483">if you confuse</a></p>
+</section>
+</section>
+<section id="truth-table" class="level2">
+<h2 class="anchored" data-anchor-id="truth-table">Truth Table</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>p</th>
+<th>q</th>
+<th>¬p</th>
+<th>p∧q</th>
+<th>p∨q</th>
+<th>p-&gt;q</th>
+<th>p&lt;-&gt;q</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T</td>
+<td>T</td>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+<tr class="even">
+<td>T</td>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+<td>T</td>
+<td>F</td>
+<td>F</td>
+</tr>
+<tr class="odd">
+<td>F</td>
+<td>T</td>
+<td>T</td>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+<td>F</td>
+</tr>
+<tr class="even">
+<td>F</td>
+<td>F</td>
+<td>T</td>
+<td>F</td>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="converse-contrapositive-inverse" class="level2">
+<h2 class="anchored" data-anchor-id="converse-contrapositive-inverse">Converse, Contrapositive, Inverse</h2>
+<p>If implication is p-&gt;q</p>
+<ul>
+<li>Converse: q-&gt;p</li>
+<li>Inverse: ¬p -&gt; ¬q</li>
+<li><code>Contrapositive</code>: ¬q -&gt; ¬p</li>
+</ul>
+</section>
+<section id="logical-equivalence" class="level2">
+<h2 class="anchored" data-anchor-id="logical-equivalence">Logical Equivalence</h2>
+<ul>
+<li><code>tautology</code>: always true</li>
+<li><code>contradiction</code>: always false</li>
+<li><code>contingency</code>: neither tautology nor contradiction</li>
+<li><code>logical equivalence</code>: ≡ two propositions are always true or false together</li>
+</ul>
+<section id="laws-of-logic" class="level3">
+<h3 class="anchored" data-anchor-id="laws-of-logic">Laws of Logic</h3>
+<ul>
+<li><code>Identity Laws</code>
+<ul>
+<li>P ∧ T ≡ P</li>
+<li>P ∨ F ≡ P</li>
+</ul></li>
+<li><code>Domination Laws</code>
+<ul>
+<li>P ∨ T ≡ T</li>
+<li>P ∧ F ≡ F</li>
+</ul></li>
+<li><code>Idempotent Laws</code>
+<ul>
+<li>P ∨ P ≡ P</li>
+<li>P ∧ P ≡ P</li>
+</ul></li>
+<li><code>Double Negation Laws</code>
+<ul>
+<li>¬(¬P) ≡ P</li>
+</ul></li>
+<li><code>Absorption Laws</code>
+<ul>
+<li>P ∨ (P ∧ Q) ≡ P</li>
+<li>P ∧ (P ∨ Q) ≡ P</li>
+</ul></li>
+<li><code>Negation Laws</code>
+<ul>
+<li>P ∨ ¬P ≡ T</li>
+<li>P ∧ ¬P ≡ F</li>
+</ul></li>
+<li><code>Commutative Laws</code>
+<ul>
+<li>P ∨ Q ≡ Q ∨ P</li>
+<li>P ∧ Q ≡ Q ∧ P</li>
+</ul></li>
+<li><code>Associative Laws</code>
+<ul>
+<li>(P ∨ Q) ∨ R ≡ P ∨ (Q ∨ R)</li>
+<li>(P ∧ Q) ∧ R ≡ P ∧ (Q ∧ R)</li>
+</ul></li>
+<li><code>Distributive Laws</code>
+<ul>
+<li>P ∨ (Q ∧ R) ≡ (P ∨ Q) ∧ (P ∨ R)</li>
+<li>P ∧ (Q ∨ R) ≡ (P ∧ Q) ∨ (P ∧ R)</li>
+</ul></li>
+<li><code>De Morgan's Laws</code>
+<ul>
+<li>¬(P ∧ Q) ≡ ¬P ∨ ¬Q</li>
+<li>¬(P ∨ Q) ≡ ¬P ∧ ¬Q</li>
+</ul></li>
+</ul>
+<section id="a-few-more-equivalences" class="level4">
+<h4 class="anchored" data-anchor-id="a-few-more-equivalences">A Few More Equivalences</h4>
+<ul>
+<li>p -&gt; q ≡ ¬p ∨ q</li>
+<li>p -&gt; q ≡ ¬q -&gt; ¬p</li>
+<li>p ∨ q ≡ ¬p -&gt; q</li>
+<li>p ∧ q ≡ ¬(p -&gt; ¬q)</li>
+<li>(p -&gt; q) ∧ (p -&gt; r) ≡ p -&gt; (q ∧ r)</li>
+<li>(p -&gt; r) ∧ (q -&gt; r) ≡ (p ∧ q) -&gt; r</li>
+<li>(p -&gt; q) ∨ (p -&gt; r) ≡ p -&gt; (q ∨ r)</li>
+<li>(p -&gt; r) ∨ (q -&gt; r) ≡ (p ∧ q) -&gt; r</li>
+<li>p &lt;-&gt; q ≡ (p -&gt; q) ∧ (q -&gt; p)</li>
+<li>p &lt;-&gt; q ≡ ¬p &lt;-&gt; ¬q</li>
+<li>p &lt;-&gt; q ≡ (p ∧ q) ∨ (¬p ∧ ¬q)</li>
+<li>¬(p &lt;-&gt; q) ≡ p &lt;-&gt; ¬q</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="predicates-and-quantifiers" class="level2">
+<h2 class="anchored" data-anchor-id="predicates-and-quantifiers">Predicates and Quantifiers</h2>
+<ul>
+<li><code>predicate</code>: a sentence that contains a finite number of variables and becomes a proposition when specific values are substituted for the variables</li>
+<li><code>quantifiers</code>
+<ul>
+<li>∀: for all,</li>
+<li>∃: there exists</li>
+<li>∃!: there exists unique</li>
+</ul></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>이산수학</category>
+  <guid>https://cryscham123.github.io/posts/discrete/notes/1.html</guid>
+  <pubDate>Mon, 07 Oct 2024 15:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Working With Queries in Microsoft Access 1</title>
+  <link>https://cryscham123.github.io/posts/data/notes/6week/1.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+
+ ]]></description>
+  <category>데이터베이스설계와활용</category>
+  <guid>https://cryscham123.github.io/posts/data/notes/6week/1.html</guid>
+  <pubDate>Sun, 06 Oct 2024 15:00:00 GMT</pubDate>
+</item>
 <item>
   <title>삼각함수의 도함수</title>
   <link>https://cryscham123.github.io/posts/math/notes/6week/1.html</link>
@@ -39,6 +442,28 @@
  ]]></description>
   <category>기초공학수학</category>
   <guid>https://cryscham123.github.io/posts/math/notes/6week/1.html</guid>
+  <pubDate>Sun, 06 Oct 2024 15:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>안톤 체홉의 사실주의극</title>
+  <link>https://cryscham123.github.io/posts/art/notes/6week/1.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="특징" class="level2">
+
+<ul>
+<li>일상적 인물. 문제해결 능력이 약함</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>공연예술의이해</category>
+  <guid>https://cryscham123.github.io/posts/art/notes/6week/1.html</guid>
   <pubDate>Sun, 06 Oct 2024 15:00:00 GMT</pubDate>
 </item>
 <item>
@@ -71,8 +496,21 @@
 
 
 
-<section id="지수함수" class="level2">
+<section id="로그함수" class="level2">
 
+<ul>
+<li>지수함수의 역함수</li>
+<li><img src="https://latex.codecogs.com/png.latex?y%20=%20%5Clog_a%20x"> =&gt; <img src="https://latex.codecogs.com/png.latex?a%5Ey%20=%20x,%20a%20%3E%200,%20a%20%E2%89%A0%201,%20x%20%3E%200"></li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Clog_a(xy)%20=%20%5Clog_a%20x%20+%20%5Clog_a%20y"></li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Clog_a(%5Cfrac%7Bx%7D%7By%7D)%20=%20%5Clog_a%20x%20-%20%5Clog_a%20y"></li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Clog_a%20x%5En%20=%20n%5Clog_a%20x"></li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7Bd%7D%7Bdx%7D%5Clog_a%20x%20=%20%5Cfrac%7Blog_a%20e%7D%7Bx%7D%20=%20%5Cfrac%7B1%7D%7Bx%5Cln%20a%7D"></li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7Bd%7D%7Bdx%7D%5Cln%20x%20=%20%5Cfrac%7B1%7D%7Bx%7D"></li>
+<li><code>밑변환 공식</code>: <img src="https://latex.codecogs.com/png.latex?%5Clog_a%20x%20=%20%5Cfrac%7B%5Clog_b%20x%7D%7B%5Clog_b%20a%7D"></li>
+</ul>
+</section>
+<section id="지수함수" class="level2">
+<h2 class="anchored" data-anchor-id="지수함수">지수함수</h2>
 <ul>
 <li>a &gt; 0, a ≠ 1</li>
 <li><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7Bd%7D%7Bdx%7Da%5Ex%20=%20a%5Ex%20%5Cln%20a"></li>
@@ -111,432 +549,6 @@
   <category>이산수학</category>
   <category>과제</category>
   <guid>https://cryscham123.github.io/posts/discrete/work/work2.pdf</guid>
-  <pubDate>Fri, 04 Oct 2024 15:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>init</title>
-  <link>https://cryscham123.github.io/posts/data/3.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="entity" class="level2">
-<h2 class="anchored" data-anchor-id="entity">entity</h2>
-<p>a formal name for a thing that is being tracked one theme or topic (just single table)</p>
-<section id="associative-entity-association-entity" class="level3">
-<h3 class="anchored" data-anchor-id="associative-entity-association-entity">associative entity / association entity</h3>
-<p>intersection table</p>
-</section>
-</section>
-<section id="domain-cartesian-product" class="level2">
-<h2 class="anchored" data-anchor-id="domain-cartesian-product">domain &amp; cartesian product</h2>
-<ul>
-<li>domain: set of possible values for a column</li>
-<li>cartesian product: set of all possible combinations of rows from two tables</li>
-</ul>
-<p>table = file = relation row = record = tuple column = field = attribute</p>
-</section>
-<section id="key" class="level2">
-<h2 class="anchored" data-anchor-id="key">key</h2>
-<section id="primary-key" class="level3">
-<h3 class="anchored" data-anchor-id="primary-key">primary key</h3>
-<p>the candidate key that is chosen as the main key for the table ### foreign key ### composite key &lt;-&gt; surrogate key ### candidate key</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>데이터베이스설계및활용</category>
-  <guid>https://cryscham123.github.io/posts/data/3.html</guid>
-  <pubDate>Fri, 04 Oct 2024 15:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>init</title>
-  <link>https://cryscham123.github.io/posts/data/5.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="data-normalization" class="level2">
-<h2 class="anchored" data-anchor-id="data-normalization">data normalization</h2>
-<ul>
-<li>well formedness: each relational has only one theme every determinant must be a candidate key ### <strong>normalization process</strong> 한문제 내신단다.</li>
-</ul>
-<ol type="1">
-<li>identify all the candidate keys of relation</li>
-<li>identify all functional dependencies in the relation</li>
-<li>examine the determinants of the functional dependencies if the determinant is not a candidate key, not well-formed</li>
-</ol>
-<p>is every determinant a candidate key? - if not, not well-formed</p>
-</section>
-<section id="functional-dependency" class="level2">
-<h2 class="anchored" data-anchor-id="functional-dependency">functional dependency</h2>
-<ul>
-<li>student_id -&gt; student_name, student_major, student_grade</li>
-<li>course_id -&gt; course_name, course_credit</li>
-<li>student_id, course_id -&gt; score</li>
-<li>determinant -&gt; dependent</li>
-<li>primary key of a relation will functionally determine all other attributes in the row</li>
-<li><strong>candidate key</strong> can also functionally determine all other attributes in the row</li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <category>데이터베이스설계및활용</category>
-  <guid>https://cryscham123.github.io/posts/data/5.html</guid>
-  <pubDate>Fri, 04 Oct 2024 15:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>init</title>
-  <link>https://cryscham123.github.io/posts/data/1-2.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>다음주 목요일 휴강</p>
-<section id="multiple-themes-in-same-table" class="level2">
-<h2 class="anchored" data-anchor-id="multiple-themes-in-same-table">multiple themes in same table</h2>
-<ol type="1">
-<li>redundancy problem in table</li>
-<li>없는 row 발생</li>
-<li>일관성 문제(referential integrity constraint)</li>
-</ol>
-<p>=&gt; in relational db, each informational topic is stored in its own table</p>
-<p>db is self-describing collection of related tables table and metadata, index, application metadata are stored in db</p>
-
-
-</section>
-
- ]]></description>
-  <category>데이터베이스설계및활용</category>
-  <guid>https://cryscham123.github.io/posts/data/1-2.html</guid>
-  <pubDate>Fri, 04 Oct 2024 15:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>init</title>
-  <link>https://cryscham123.github.io/posts/data/4.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="sql" class="level2">
-
-<section id="ddl" class="level3">
-
-<ol type="1">
-<li>CREATE (database, tables, views, indexes)</li>
-<li>ALTER: add, modify, drop columns</li>
-<li>DROP</li>
-<li>TRUNCATE (delete all rows)</li>
-</ol>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">CREATE</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">TABLE</span> student (</span>
-<span id="cb1-2">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">id</span> <span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">INT</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">PRIMARY</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">KEY</span>,</span>
-<span id="cb1-3">    name <span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">VARCHAR</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">100</span>),</span>
-<span id="cb1-4">    age <span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">INT</span></span>
-<span id="cb1-5">);</span>
-<span id="cb1-6"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">ALTER</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">TABLE</span> student <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">ADD</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">COLUMN</span> major <span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">VARCHAR</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">100</span>);</span>
-<span id="cb1-7"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">DROP</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">TABLE</span> student;</span>
-<span id="cb1-8"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">TRUNCATE</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">TABLE</span> student;</span></code></pre></div>
-</section>
-<section id="dml" class="level3">
-
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">INSERT</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">INTO</span> student <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">VALUES</span> (<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Alice'</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">20</span>);</span>
-<span id="cb2-2"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">UPDATE</span> student <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">SET</span> age <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">21</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">WHERE</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">id</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>;</span>
-<span id="cb2-3"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">DELETE</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">FROM</span> student <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">WHERE</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">id</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>;</span></code></pre></div>
-</section>
-<section id="dql" class="level3">
-
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb3-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">SELECT</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">FROM</span> student;</span>
-<span id="cb3-2"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">SELECT</span> name <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">FROM</span> student <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">WHERE</span> age <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">20</span>;</span></code></pre></div>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>데이터베이스설계및활용</category>
-  <guid>https://cryscham123.github.io/posts/data/4.html</guid>
-  <pubDate>Fri, 04 Oct 2024 15:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>intro</title>
-  <link>https://cryscham123.github.io/posts/discrete/1-1.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>1, 3, 4, 5, 6, 10장이 중요하다고 하신다. 1. The foundations: logic and proofs - Logic: Study of reasoning, including propositional and predicate logic. - Proofs: Methods to demonstrate the truth of statements, including direct, indirect, and contradiction proofs.</p>
-<ol start="3" type="1">
-<li>Algorithms</li>
-</ol>
-<ul>
-<li>Design and Analysis: Techniques for creating efficient algorithms and analyzing their complexity.</li>
-<li>Sorting and Searching: Common algorithms like quicksort, mergesort, and binary search.</li>
-</ul>
-<ol start="4" type="1">
-<li>Number theory and cryptography</li>
-</ol>
-<ul>
-<li>Number Theory: Properties of integers, divisibility, prime numbers, and modular arithmetic.</li>
-<li>Cryptography: Techniques for secure communication, including encryption and decryption methods.</li>
-</ul>
-<ol start="5" type="1">
-<li>Induction and recursion</li>
-</ol>
-<ul>
-<li>Mathematical Induction: Proof technique used to prove statements about natural numbers.</li>
-<li>Recursion: Defining functions or sequences where the next term is derived from previous terms.</li>
-</ul>
-<ol start="6" type="1">
-<li>Counting</li>
-</ol>
-<ul>
-<li>Combinatorics: Study of counting, arrangement, and combination of objects.</li>
-<li>Permutations and Combinations: Methods to count arrangements and selections.</li>
-</ul>
-<ol start="10" type="1">
-<li>Graphs</li>
-</ol>
-<ul>
-<li>Graph Theory: Study of graphs, which are mathematical structures used to model pairwise relations between objects.</li>
-<li>Applications: Network analysis, shortest path problems, and graph coloring.</li>
-</ul>
-<section id="proposition" class="level2">
-<h2 class="anchored" data-anchor-id="proposition">Proposition</h2>
-<p>declarative sentence that is either true or false ### propositional variable p, q, r, s, … ex) p: it is raining Negation: ㄱ false Conjunction: ^ both is true =&gt; true, else false Disjunction: v either is true =&gt; true, else false Implication: -&gt; if p then q Biconditional: &lt;-&gt; p if and only if q</p>
-<p>p-&gt;q is equivalent to ㄱp v q</p>
-<section id="converse-contrapositive-inverse" class="level3">
-<h3 class="anchored" data-anchor-id="converse-contrapositive-inverse">converse, contrapositive, inverse</h3>
-<ol type="1">
-<li>converse: q-&gt;p</li>
-<li>contrapositive: ㄱq -&gt; ㄱp</li>
-<li>inverse: ㄱp -&gt; ㄱq</li>
-</ol>
-</section>
-<section id="biconditional" class="level3">
-<h3 class="anchored" data-anchor-id="biconditional">Biconditional</h3>
-<p>p &lt;-&gt; q is equivalent to (p-&gt;q) ^ (q-&gt;p)</p>
-<p>rosen 44, 46</p>
-</section>
-<section id="precidence" class="level3">
-<h3 class="anchored" data-anchor-id="precidence">precidence</h3>
-<ol type="1">
-<li>Negation</li>
-<li>Conjunction</li>
-<li>Disjunction</li>
-<li>Implication</li>
-<li>Biconditional</li>
-</ol>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>이산수학</category>
-  <guid>https://cryscham123.github.io/posts/discrete/1-1.html</guid>
-  <pubDate>Fri, 04 Oct 2024 15:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>intro</title>
-  <link>https://cryscham123.github.io/posts/discrete/own4.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="introdution-sets" class="level2">
-
-<ul>
-<li>set: unordered collection of objects</li>
-<li>elment: object in a set</li>
-</ul>
-</section>
-<section id="set-notation" class="level2">
-<h2 class="anchored" data-anchor-id="set-notation">set notation</h2>
-<section id="roster-notation-discrete-sets" class="level3">
-<h3 class="anchored" data-anchor-id="roster-notation-discrete-sets">Roster notation (discrete sets)</h3>
-<ul>
-<li>{1, 2, 3, 4, 5}</li>
-<li>{1, 2, 3, 4, 5, …}</li>
-</ul>
-</section>
-<section id="set-builder-notation" class="level3">
-<h3 class="anchored" data-anchor-id="set-builder-notation">Set builder notation</h3>
-<ul>
-<li>{x | x is a positive integer}</li>
-<li>{x | x is a positive even integer}</li>
-</ul>
-</section>
-<section id="interval-notation-continuous-sets" class="level3">
-<h3 class="anchored" data-anchor-id="interval-notation-continuous-sets">interval notation (continuous sets)</h3>
-<ul>
-<li>(a, b) = {x | a &lt; x &lt; b}</li>
-<li>[a, b] = {x | a &lt;= x &lt;= b}</li>
-</ul>
-</section>
-</section>
-<section id="special-sets" class="level2">
-<h2 class="anchored" data-anchor-id="special-sets">special sets</h2>
-<ul>
-<li>empty set: {} or ∅</li>
-<li>universal set: set of all possible elements</li>
-</ul>
-</section>
-<section id="set-relations" class="level2">
-<h2 class="anchored" data-anchor-id="set-relations">set relations</h2>
-<ul>
-<li>subset: A ⊆ B</li>
-<li>proper subset: A ⊂ B</li>
-<li>cardinality: the number of distinct elements of set |A| = n</li>
-<li>power sets: set of all subsets of a set P(A)</li>
-<li>equal set: A = B</li>
-<li>disjoint set: A ∩ B = ∅</li>
-</ul>
-</section>
-<section id="tuples" class="level2">
-<h2 class="anchored" data-anchor-id="tuples">tuples</h2>
-<ul>
-<li>ordered collection of elements</li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <category>이산수학</category>
-  <guid>https://cryscham123.github.io/posts/discrete/own4.html</guid>
   <pubDate>Fri, 04 Oct 2024 15:00:00 GMT</pubDate>
 </item>
 <item>
@@ -785,47 +797,6 @@ font-style: inherit;">return</span> arr</span></code></pre></div>
  ]]></description>
   <category>이산수학</category>
   <guid>https://cryscham123.github.io/posts/discrete/6.html</guid>
-  <pubDate>Fri, 04 Oct 2024 15:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>intro</title>
-  <link>https://cryscham123.github.io/posts/discrete/own1-1.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="propositions-negations-conjunctions-disjunctions" class="level2">
-<h2 class="anchored" data-anchor-id="propositions-negations-conjunctions-disjunctions">propositions, negations, conjunctions, disjunctions</h2>
-<ol type="1">
-<li>proposition: declarative statement thet is either true or false x + 1 = 2 (this is not proposition)</li>
-<li>negation: the opposite of a propositions</li>
-<li>conjunction: a compound proposition formed by joining two propositions with the word “and”</li>
-<li>disjunction: a compound proposition formed by joining two propositions with the word “or”</li>
-<li>connective or (xor)</li>
-</ol>
-<section id="propositional-variable" class="level3">
-<h3 class="anchored" data-anchor-id="propositional-variable">propositional variable</h3>
-<p>p, q, r, s, … ex) p: it is raining Negation: ㄱ false Conjunction: ^ both is true =&gt; true, else false Disjunction: v either is true =&gt; true, else false Implication: -&gt; if p then q Biconditional: &lt;-&gt; p if and only if q</p>
-</section>
-</section>
-<section id="implications-converse-inverse-contrapositive-biconditional" class="level2">
-<h2 class="anchored" data-anchor-id="implications-converse-inverse-contrapositive-biconditional">implications (converse, inverse, contrapositive, biconditional)</h2>
-<ol type="1">
-<li>implication: If p Then q, it is equivalent to ㄱp v q p | q | p -&gt; q T | T | T T | F | F F | T | T F | F | T =&gt; if hypothesis is not true, no matter what the conclusion is, the implication is true</li>
-<li>converse: If q Then p, q -&gt; p</li>
-<li>inverse: If not p Then not q, ㄱp -&gt; ㄱq</li>
-<li>contrapositive: If not q Then not p (same truthe value as the original implication), ㄱq -&gt; ㄱp</li>
-<li>biconditional: p &lt;-&gt; q, it is equivalent to (p -&gt; q) ^ (q -&gt; p). (if and only if) &gt; <a href="https://sciphy.tistory.com/m/483">if you confuse</a></li>
-</ol>
-<p>p | q | p-&gt;q | q-&gt;p | (p-&gt;q)^(q-&gt;p) | p&lt;-&gt;q T | T | T | T | T | T T | F | F | T | F | F F | T | T | F | F | F F | F | T | T | T | T</p>
-
-
-</section>
-
- ]]></description>
-  <category>이산수학</category>
-  <guid>https://cryscham123.github.io/posts/discrete/own1-1.html</guid>
   <pubDate>Fri, 04 Oct 2024 15:00:00 GMT</pubDate>
 </item>
 <item>
@@ -1325,6 +1296,227 @@ font-style: inherit;">return</span> arr</span></code></pre></div>
   <category>기초공학수학</category>
   <guid>https://cryscham123.github.io/posts/math/final/triangle_func1.html</guid>
   <pubDate>Fri, 04 Oct 2024 15:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>SQL</title>
+  <link>https://cryscham123.github.io/posts/data/4-2.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>SQL is not programming language but a <code>data sublanguage</code></p>
+<section id="ddl-data-definition-language" class="level2">
+<h2 class="anchored" data-anchor-id="ddl-data-definition-language">DDL (Data Definition Language)</h2>
+<ol type="1">
+<li>CREATE (database, tables, views, indexes)</li>
+<li>ALTER: add, modify, drop columns / constraints</li>
+<li>DROP (database, tables, views, indexes)</li>
+<li>TRUNCATE (delete all rows)</li>
+</ol>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">CREATE</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">TABLE</span> student (</span>
+<span id="cb1-2">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">id</span> <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">INT</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">NOT</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">NULL</span>,</span>
+<span id="cb1-3">    CourseID <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">INT</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">NOT</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">NULL</span>,</span>
+<span id="cb1-4">    Name <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">VARCHAR</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span>),</span>
+<span id="cb1-5">    Age <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">INT</span>,</span>
+<span id="cb1-6">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">CONSTRAINT</span> STUDENT_PK <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">PRIMARY</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">KEY</span> (<span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">id</span>),</span>
+<span id="cb1-7">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">CONSTRAINT</span> COURSE_FK <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">FOREIGN</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">KEY</span> (CourseID) <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">REFERENCES</span> Course(CourseID) <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">ON</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">UPDATE</span> CASACADE</span>
+<span id="cb1-8">);</span>
+<span id="cb1-9"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">ALTER</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">TABLE</span> student <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">ADD</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">COLUMN</span> major <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">VARCHAR</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span>);</span>
+<span id="cb1-10"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">DROP</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">TABLE</span> student;</span>
+<span id="cb1-11"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">TRUNCATE</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">TABLE</span> student;</span></code></pre></div>
+<section id="dml-data-manipulation-language" class="level3">
+<h3 class="anchored" data-anchor-id="dml-data-manipulation-language">DML (Data Manipulation Language)</h3>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">INSERT</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">INTO</span> student <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">VALUES</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Alice'</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">20</span>);</span>
+<span id="cb2-2"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">UPDATE</span> student <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">SET</span> age <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">21</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">WHERE</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">id</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>;</span>
+<span id="cb2-3"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">DELETE</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">FROM</span> student <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">WHERE</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">id</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>;</span></code></pre></div>
+</section>
+<section id="dql-data-query-language" class="level3">
+<h3 class="anchored" data-anchor-id="dql-data-query-language">DQL (Data Query Language)</h3>
+<p>A query create temporarily a new table.<br>
+this allows a query to <code>create a new relation</code> and feed information to another query as a <code>subquery</code></p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb3-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">SELECT</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">FROM</span> student;</span>
+<span id="cb3-2"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">SELECT</span> name <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">FROM</span> student <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">WHERE</span> age <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">20</span>;</span>
+<span id="cb3-3"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">SELECT</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">DISTINCT</span> name <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">FROM</span> student;</span></code></pre></div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>데이터베이스설계및활용</category>
+  <guid>https://cryscham123.github.io/posts/data/4-2.html</guid>
+  <pubDate>Thu, 26 Sep 2024 15:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
