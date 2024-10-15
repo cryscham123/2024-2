@@ -10,7 +10,625 @@
 <atom:link href="https://cryscham123.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>my 2024-2 note site</description>
 <generator>quarto-1.5.56</generator>
-<lastBuildDate>Thu, 10 Oct 2024 15:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 15 Oct 2024 07:14:36 GMT</lastBuildDate>
+<item>
+  <title>확률변수의 기댓값</title>
+  <link>https://cryscham123.github.io/posts/stat/notes/6week/1.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="확률변수의-기댓값" class="level2">
+<h2 class="anchored" data-anchor-id="확률변수의-기댓값">확률변수의 기댓값</h2>
+<ul>
+<li><p><img src="https://latex.codecogs.com/png.latex?%CE%BC%20=%20E(x)">로 가정. (모집단)</p></li>
+<li><p>covariance는 선형관계를 보여준다.<br>
+x와 y는 독립이다 -&gt; cov(x, y) = 0</p></li>
+</ul>
+</section>
+<section id="moment-generationg-functions" class="level2">
+<h2 class="anchored" data-anchor-id="moment-generationg-functions">Moment Generationg Functions</h2>
+<ul>
+<li>평균과 분산만으로 확률분포를 설명하기에는 부족하다.<br>
+</li>
+<li>moment: <img src="https://latex.codecogs.com/png.latex?%CE%BC_k%E2%80%B2%20=%20E(X%5Ek),%20k%20%E2%88%88%20%E2%84%A4+"></li>
+<li>Var(x) = <img src="https://latex.codecogs.com/png.latex?%CE%BC_2%E2%80%B2%20-%20%CE%BC_1%E2%80%B2%5E2"></li>
+<li>모든 k에 대해 검증 불가 =&gt; mgf(moment generating function)</li>
+<li>mgf: <img src="https://latex.codecogs.com/png.latex?M_X(t)%20=%20E(e%5E%7Btx%7D)"></li>
+</ul>
+<ol type="1">
+<li><p><img src="https://latex.codecogs.com/png.latex?M_X(t)%20=%201%20+%20t%CE%BC_1%E2%80%B2%20+%20%5Cfrac%7Bt%5E2%7D%7B2!%7D%CE%BC_2%E2%80%B2%20+%20%5Cfrac%7Bt%5E3%7D%7B3!%7D%CE%BC_3%E2%80%B2%20+%20..."></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?M%E2%80%B2(t)%20=%20%CE%BC_1%E2%80%B2%20+%20%5Cfrac%7B2t%7D%7B2!%7D%CE%BC_2%E2%80%B2%20+%20%5Cfrac%7B3t%5E2%7D%7B3!%7D%CE%BC_3%E2%80%B2%20+%20..."></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?M%E2%80%B2(0)%20=%20%CE%BC_1%E2%80%B2"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?M%E2%80%B2%E2%80%B2(0)%20=%20%CE%BC_2%E2%80%B2"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?M%5E%7B(k)%7D(0)%20=%20%CE%BC_k%E2%80%B2"></p></li>
+</ol>
+</section>
+<section id="answer" class="level2">
+<h2 class="anchored" data-anchor-id="answer">answer</h2>
+<ol type="1">
+<li>3</li>
+<li>모집단, 표본</li>
+<li>1,2,3</li>
+<li>2,4</li>
+<li>2,3</li>
+<li>2,3,4</li>
+<li>이거는 뭐</li>
+</ol>
+
+
+</section>
+
+ ]]></description>
+  <category>확률과통계1</category>
+  <guid>https://cryscham123.github.io/posts/stat/notes/6week/1.html</guid>
+  <pubDate>Tue, 15 Oct 2024 07:14:36 GMT</pubDate>
+</item>
+<item>
+  <title>Number Theory and cryptography</title>
+  <link>https://cryscham123.github.io/posts/discrete/notes/4.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="divisibility" class="level2">
+<h2 class="anchored" data-anchor-id="divisibility">Divisibility</h2>
+<p>Theorem1 증명문제 나온다함</p>
+
+
+</section>
+
+ ]]></description>
+  <category>이산수학</category>
+  <guid>https://cryscham123.github.io/posts/discrete/notes/4.html</guid>
+  <pubDate>Tue, 15 Oct 2024 04:03:35 GMT</pubDate>
+</item>
+<item>
+  <title>Auditory Haptic</title>
+  <link>https://cryscham123.github.io/posts/human/4_Auditory_Haptic.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="alarms" class="level2">
+<h2 class="anchored" data-anchor-id="alarms">Alarms</h2>
+<ul>
+<li><p>Conspicuous from ambient noise<br>
+15~30dB required</p></li>
+<li><p>Remain within the safe range<br>
+below 85 to 90 dB<br>
+masking 위협때문에 여러 소리를 혼합해서 냄</p></li>
+<li><p>Not disruptive with other signals</p></li>
+<li><p>Informative and distinctive</p>
+<ol type="1">
+<li>stereotypic: 어디서 소리가 오는지</li>
+<li>pitch physical dimension(pitch(4), duration(4), magnification(4)) &lt;= 4</li>
+</ol></li>
+</ul>
+<section id="non-speech-alarm" class="level3">
+<h3 class="anchored" data-anchor-id="non-speech-alarm">Non-speech Alarm</h3>
+<ul>
+<li><p>language independent<br>
+글로벌하게 가고 싶다면</p></li>
+<li><p>Evidence to show they are useful<br>
+fewer mistakes with key click<br>
+video games harder without sound</p></li>
+<li><p>Especially good for transient/background status info</p></li>
+<li><p>use of stereo allow positional information<br>
+비쥬얼로는 3d 표현하기 어려움</p></li>
+</ul>
+</section>
+<section id="voice-alarm" class="level3">
+<h3 class="anchored" data-anchor-id="voice-alarm">Voice Alarm</h3>
+<ul>
+<li>voice is beign accepted as a natural way to interact with devices</li>
+<li>Able to give more meanings than symbolic alarm<br>
+symbolic alarm은 학습을 해야한다는 단점이 있음</li>
+<li>Limitations
+<ol type="1">
+<li>more confusable with a background sound and communication: 소리가 섞이면 헷갈림</li>
+<li>more susceptible to frequency-specific masking<br>
+사람의 voice는 정해진 주파수가 있다.<br>
+</li>
+<li>need to consider the multilingual environment</li>
+<li>Sound Transmission Problem</li>
+</ol></li>
+</ul>
+</section>
+</section>
+<section id="voice-recognition" class="level2">
+<h2 class="anchored" data-anchor-id="voice-recognition">voice recognition</h2>
+<ul>
+<li><p>Articulation index: pure bottom-up approach<br>
+physical 품질<br>
+0.1: 10% of speech is understood<br>
+0.9: 90% of speech is understood<br>
+1.0: 100% of speech is understood<br>
+0.3: 30% of speech is understood<br>
+0.5: 50% of speech is understood<br>
+0.7: 70% of speech is understood</p></li>
+<li><p>Speech intelligibility measure poor signal quality is compensated by top-down processing<br>
+restricting message set size, redundant carrier sentence</p></li>
+</ul>
+</section>
+<section id="tactile-perception" class="level2">
+<h2 class="anchored" data-anchor-id="tactile-perception">Tactile Perception</h2>
+<ul>
+<li>Touch is complex</li>
+<li>Only bi-directional communication channel</li>
+<li>Mechanoreceptor detect skin deformation</li>
+<li>Tactile acuity is determined by the density of mechanoreceptor</li>
+<li>Tactile information
+<ol type="1">
+<li>feedback by force: 저항감</li>
+<li>feedback by vibration:</li>
+</ol></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://cryscham123.github.io/posts/human/4_Auditory_Haptic.html</guid>
+  <pubDate>Mon, 14 Oct 2024 15:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Signal Detection Theory</title>
+  <link>https://cryscham123.github.io/posts/human/4_signal_detction.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>주변의 제품, 서비스 문제 파악, 해결 디자인 제시, 검증</p>
+
+
+
+ ]]></description>
+  <category>인간 공학</category>
+  <guid>https://cryscham123.github.io/posts/human/4_signal_detction.html</guid>
+  <pubDate>Mon, 14 Oct 2024 15:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>사실주의</title>
+  <link>https://cryscham123.github.io/posts/art/10.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="수정-사실주의" class="level2">
+
+<ul>
+<li>유럽 아방가르드(반사실주의): <code>환상적인 장면</code>, <code>다다이즘</code>, <code>과거회상</code>, <code>부조리 연극</code>, <code>상징주의</code>, <code>표현주의</code> 이 등장</li>
+<li>미국은 사실주의 포기 못함</li>
+<li>반사실주의와 절충한 수정 사실주의 등장</li>
+</ul>
+<section id="특징" class="level3">
+
+<ul>
+<li>사실주의보다는 연극성을 강조</li>
+<li>반사실주의보다는 환영주의에 덜 의존</li>
+<li><code>잘 짜여진 극</code>(well made) 기법에 덜 의존</li>
+<li><code>내면적 리얼리즘</code></li>
+<li>변화의 원인: <code>잠재의식</code> 영역 인정</li>
+</ul>
+</section>
+</section>
+<section id="대표작" class="level2">
+<h2 class="anchored" data-anchor-id="대표작">대표작</h2>
+<section id="테네시-윌리엄스-욕망이라는-이름의-전차" class="level3">
+<h3 class="anchored" data-anchor-id="테네시-윌리엄스-욕망이라는-이름의-전차">테네시 윌리엄스 욕망이라는 이름의 전차</h3>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>공연예술의이해</category>
+  <guid>https://cryscham123.github.io/posts/art/10.html</guid>
+  <pubDate>Mon, 14 Oct 2024 07:05:05 GMT</pubDate>
+</item>
+<item>
+  <title></title>
+  <dc:creator>20192208 김형훈</dc:creator>
+  <link>https://cryscham123.github.io/posts/math/homework/work4.pdf</link>
+  <description><![CDATA[ undefined ]]></description>
+  <category>기초공학수학</category>
+  <category>과제</category>
+  <guid>https://cryscham123.github.io/posts/math/homework/work4.pdf</guid>
+  <pubDate>Mon, 14 Oct 2024 03:17:44 GMT</pubDate>
+</item>
+<item>
+  <title>Data Modeling and the Entity-Relationship Model</title>
+  <link>https://cryscham123.github.io/posts/data/7-1.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="data-and-information" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-information">Data and information</h2>
+<ul>
+<li>Data: 사실</li>
+<li>Information: <code>meaningful context</code></li>
+</ul>
+</section>
+<section id="what-is-information-system" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-information-system">What is information system?</h2>
+<ul>
+<li><p>System: a <code>set of components</code> that interact to achieve some <code>purpose</code> or goal</p></li>
+<li><p>Information System: composed of <code>hardware</code>, <code>software</code>, <code>data</code>, <code>procedures</code>, <code>people</code></p></li>
+</ul>
+</section>
+<section id="sdlc-system-development-life-cycle" class="level2">
+<h2 class="anchored" data-anchor-id="sdlc-system-development-life-cycle"><code>SDLC</code> (System Development Life Cycle)</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://cryscham123.github.io/img/system-use.png" class="img-fluid figure-img"></p>
+<figcaption>SDLC</figcaption>
+</figure>
+</div>
+<ol type="1">
+<li>System definitions</li>
+<li><code>Requirements</code> analysis</li>
+<li>Component design</li>
+<li>Implementation</li>
+<li>System maintenance</li>
+</ol>
+
+
+</section>
+
+ ]]></description>
+  <category>데이터베이스설계및활용</category>
+  <guid>https://cryscham123.github.io/posts/data/7-1.html</guid>
+  <pubDate>Sun, 13 Oct 2024 15:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Logic and Proofs</title>
+  <link>https://cryscham123.github.io/posts/discrete/notes/1.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="proposition" class="level2">
+<h2 class="anchored" data-anchor-id="proposition">Proposition</h2>
+<p>declarative sentence that is either true or false</p>
+<section id="propositional-variable" class="level3">
+<h3 class="anchored" data-anchor-id="propositional-variable">propositional variable</h3>
+<p>p, q, r, s, …<br>
+ex) p: it is raining</p>
+<blockquote class="blockquote">
+<p>Proposition must be either true or false.<br>
+‘x is 10’ is not a proposition.</p>
+</blockquote>
+</section>
+<section id="logical-operators" class="level3">
+<h3 class="anchored" data-anchor-id="logical-operators">Logical Operators</h3>
+<p>(ascending order of precedence)</p>
+<ul>
+<li><code>Negation</code>: ¬ NOT</li>
+<li><code>Conjunction</code>: ∧ AND</li>
+<li><code>Disjunction</code>: ∨ OR
+<ul>
+<li><code>Inclusive OR</code>: either is true</li>
+<li><code>Exclusive OR</code>: ⊕ either is true, but not both</li>
+</ul></li>
+<li><code>Implication</code>: -&gt; if then it is not real-world’s causual relationship. <code>just depend on p and q's value</code><br>
+ex) If I am elected, then I will lower taxes.<br>
+if politician is elected but not lower taxes, implication is false.<br>
+but politician is not elected, no matter what, implication is true.</li>
+<li><code>Biconditional</code>: &lt;-&gt; if and only if</li>
+</ul>
+</section>
+</section>
+<section id="truth-table" class="level2">
+<h2 class="anchored" data-anchor-id="truth-table">Truth Table</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>p</th>
+<th>q</th>
+<th>¬p</th>
+<th>p∧q</th>
+<th>p∨q</th>
+<th>p-&gt;q</th>
+<th>p&lt;-&gt;q</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T</td>
+<td>T</td>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+<tr class="even">
+<td>T</td>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+<td>T</td>
+<td>F</td>
+<td>F</td>
+</tr>
+<tr class="odd">
+<td>F</td>
+<td>T</td>
+<td>T</td>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+<td>F</td>
+</tr>
+<tr class="even">
+<td>F</td>
+<td>F</td>
+<td>T</td>
+<td>F</td>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+</tr>
+</tbody>
+</table>
+<section id="different-ways-of-expressing-implication" class="level4">
+<h4 class="anchored" data-anchor-id="different-ways-of-expressing-implication">Different Ways of Expressing Implication</h4>
+<ul>
+<li>if p, then q</li>
+<li>if p, q</li>
+<li>q unless ¬ p</li>
+<li>q if p</li>
+<li>q whenever p</li>
+<li>q follows from p</li>
+<li>p implies q</li>
+<li>p only if q</li>
+<li>q when p</li>
+<li>p is sufficient for q</li>
+<li>q is necessary for p</li>
+<li>a necessary condition for p is q</li>
+<li>a sufficient condition for q is p</li>
+</ul>
+</section>
+<section id="different-ways-of-expressing-biconditional" class="level4">
+<h4 class="anchored" data-anchor-id="different-ways-of-expressing-biconditional">Different Ways of Expressing Biconditional</h4>
+<ul>
+<li>p is necessary and sufficient for q</li>
+<li>if p then q, and conversely</li>
+<li>p iff q.</li>
+<li>p exactly when q.</li>
+</ul>
+<p><a href="https://sciphy.tistory.com/m/483">if you confuse</a></p>
+</section>
+</section>
+<section id="converse-contrapositive-inverse" class="level2">
+<h2 class="anchored" data-anchor-id="converse-contrapositive-inverse">Converse, Contrapositive, Inverse</h2>
+<p>If implication is p-&gt;q</p>
+<ul>
+<li>Converse: q-&gt;p</li>
+<li>Inverse: ¬p -&gt; ¬q</li>
+<li><code>Contrapositive</code>: ¬q -&gt; ¬p</li>
+</ul>
+</section>
+<section id="logical-equivalence" class="level2">
+<h2 class="anchored" data-anchor-id="logical-equivalence">Logical Equivalence</h2>
+<ul>
+<li><code>tautology</code>: always true</li>
+<li><code>contradiction</code>: always false</li>
+<li><code>contingency</code>: neither tautology nor contradiction</li>
+<li><code>logical equivalence</code>: ≡ two propositions are always true or false together</li>
+</ul>
+<section id="laws-of-logic" class="level3">
+<h3 class="anchored" data-anchor-id="laws-of-logic">Laws of Logic</h3>
+<ul>
+<li><code>Identity Laws</code>
+<ul>
+<li>P ∧ T ≡ P</li>
+<li>P ∨ F ≡ P</li>
+</ul></li>
+<li><code>Domination Laws</code>
+<ul>
+<li>P ∨ T ≡ T</li>
+<li>P ∧ F ≡ F</li>
+</ul></li>
+<li><code>Idempotent Laws</code>
+<ul>
+<li>P ∨ P ≡ P</li>
+<li>P ∧ P ≡ P</li>
+</ul></li>
+<li><code>Double Negation Laws</code>
+<ul>
+<li>¬(¬P) ≡ P</li>
+</ul></li>
+<li><code>Absorption Laws</code>
+<ul>
+<li>P ∨ (P ∧ Q) ≡ P</li>
+<li>P ∧ (P ∨ Q) ≡ P</li>
+</ul></li>
+<li><code>Negation Laws</code>
+<ul>
+<li>P ∨ ¬P ≡ T</li>
+<li>P ∧ ¬P ≡ F</li>
+</ul></li>
+<li><code>Commutative Laws</code>
+<ul>
+<li>P ∨ Q ≡ Q ∨ P</li>
+<li>P ∧ Q ≡ Q ∧ P</li>
+</ul></li>
+<li><code>Associative Laws</code>
+<ul>
+<li>(P ∨ Q) ∨ R ≡ P ∨ (Q ∨ R)</li>
+<li>(P ∧ Q) ∧ R ≡ P ∧ (Q ∧ R)</li>
+</ul></li>
+<li><code>Distributive Laws</code>
+<ul>
+<li>P ∨ (Q ∧ R) ≡ (P ∨ Q) ∧ (P ∨ R)</li>
+<li>P ∧ (Q ∨ R) ≡ (P ∧ Q) ∨ (P ∧ R)</li>
+</ul></li>
+<li><code>De Morgan's Laws</code>
+<ul>
+<li>¬(P ∧ Q) ≡ ¬P ∨ ¬Q</li>
+<li>¬(P ∨ Q) ≡ ¬P ∧ ¬Q</li>
+</ul></li>
+</ul>
+<section id="a-few-more-equivalences" class="level4">
+<h4 class="anchored" data-anchor-id="a-few-more-equivalences">A Few More Equivalences</h4>
+<ul>
+<li>p -&gt; q ≡ ¬p ∨ q</li>
+<li>p -&gt; q ≡ ¬q -&gt; ¬p</li>
+<li>p ∨ q ≡ ¬p -&gt; q</li>
+<li>p ∧ q ≡ ¬(p -&gt; ¬q)</li>
+<li>(p -&gt; q) ∧ (p -&gt; r) ≡ p -&gt; (q ∧ r)</li>
+<li>(p -&gt; r) ∧ (q -&gt; r) ≡ (p ∨ q) -&gt; r</li>
+<li>(p -&gt; q) ∨ (p -&gt; r) ≡ p -&gt; (q ∨ r)</li>
+<li>(p -&gt; r) ∨ (q -&gt; r) ≡ (p ∧ q) -&gt; r</li>
+<li>p &lt;-&gt; q ≡ (p -&gt; q) ∧ (q -&gt; p)</li>
+<li>p &lt;-&gt; q ≡ ¬p &lt;-&gt; ¬q</li>
+<li>p &lt;-&gt; q ≡ (p ∧ q) ∨ (¬p ∧ ¬q)</li>
+<li>¬(p &lt;-&gt; q) ≡ p &lt;-&gt; ¬q</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="predicates-and-quantifiers" class="level2">
+<h2 class="anchored" data-anchor-id="predicates-and-quantifiers">Predicates and Quantifiers</h2>
+<ul>
+<li><code>predicate</code>: a sentence that contains a finite number of variables and becomes a proposition when specific values are substituted for the variables</li>
+<li><code>quantifiers</code>
+<ul>
+<li>∀: for all,</li>
+<li>∃: there exists</li>
+<li>∃!: there exists unique</li>
+<li>¬∀ ≡ ∃, ¬∃ ≡ ∀</li>
+</ul></li>
+</ul>
+</section>
+<section id="rules-of-inference" class="level2">
+<h2 class="anchored" data-anchor-id="rules-of-inference">Rules of Inference</h2>
+<section id="modus-ponens" class="level3">
+<h3 class="anchored" data-anchor-id="modus-ponens">Modus Ponens</h3>
+<p>p -&gt; q<br>
+p<br>
+<u>______</u><br>
+∴ q</p>
+</section>
+<section id="modus-tollens" class="level3">
+<h3 class="anchored" data-anchor-id="modus-tollens">Modus Tollens</h3>
+<p>p -&gt; q<br>
+¬q<br>
+<u>______</u><br>
+∴ ¬p</p>
+</section>
+<section id="hypothetical-syllogism" class="level3">
+<h3 class="anchored" data-anchor-id="hypothetical-syllogism">Hypothetical Syllogism</h3>
+<p>p -&gt; q<br>
+q -&gt; r<br>
+<u>______</u><br>
+∴ p -&gt; r</p>
+</section>
+<section id="disjunctive-syllogism" class="level3">
+<h3 class="anchored" data-anchor-id="disjunctive-syllogism">Disjunctive Syllogism</h3>
+<p>p ∨ q<br>
+¬p<br>
+<u>______</u><br>
+∴ q</p>
+</section>
+<section id="addition" class="level3">
+<h3 class="anchored" data-anchor-id="addition">Addition</h3>
+<p>p<br>
+<u>______</u><br>
+∴ p ∨ q</p>
+</section>
+<section id="simplification" class="level3">
+<h3 class="anchored" data-anchor-id="simplification">Simplification</h3>
+<p>p ∧ q<br>
+<u>______</u><br>
+∴ q</p>
+</section>
+<section id="conjunction" class="level3">
+<h3 class="anchored" data-anchor-id="conjunction">Conjunction</h3>
+<p>p<br>
+q<br>
+<u>______</u><br>
+∴ p ∧ q</p>
+</section>
+<section id="resolution" class="level3">
+<h3 class="anchored" data-anchor-id="resolution">Resolution</h3>
+<p>¬p ∨ r<br>
+p ∨ q<br>
+<u>______</u><br>
+∴ q ∨ r</p>
+</section>
+<section id="universal-instantiation-ui" class="level3">
+<h3 class="anchored" data-anchor-id="universal-instantiation-ui">Universal instantiation (UI)</h3>
+<p>∀xp(x)<br>
+<u>______</u><br>
+∴ p(c) c is an arbitrary constant in the domain of x</p>
+</section>
+<section id="universal-generalization-ug" class="level3">
+<h3 class="anchored" data-anchor-id="universal-generalization-ug">Universal generalization (UG)</h3>
+<p>p(c) for an arbitrary c<br>
+<u>______</u><br>
+∴ ∀xp(x)</p>
+</section>
+<section id="existential-instantiation-ei" class="level3">
+<h3 class="anchored" data-anchor-id="existential-instantiation-ei">Existential instantiation (EI)</h3>
+<p>∃xp(x)<br>
+<u>______</u><br>
+∴ p(c) for some c</p>
+</section>
+<section id="existential-generalization-eg" class="level3">
+<h3 class="anchored" data-anchor-id="existential-generalization-eg">Existential generalization (EG)</h3>
+<p>p(c) for some element c<br>
+<u>______</u><br>
+∴ ∃xp(x)</p>
+</section>
+</section>
+<section id="methods-of-proofs" class="level2">
+<h2 class="anchored" data-anchor-id="methods-of-proofs">Methods of Proofs</h2>
+<ul>
+<li><p><code>direct proof</code><br>
+p -&gt; q 형태로 치환 후, p가 참이라 가정<br>
+trivial proof: q가 true인걸 알 경우<br>
+vacuous proof: p가 false인걸 알 경우</p></li>
+<li><p><code>proof by contraposition</code><br>
+¬q -&gt; ¬p 형태로 치환 후, ¬q가 참이라 가정</p></li>
+<li><p><code>proof by contradiction</code></p>
+<ul>
+<li>one proposition: ¬p가 참이라 가정 후, contradiction(always false)를 찾음</li>
+<li>p -&gt; q: p ∧ ¬q가 참이라 가정 후, contradiction을 찾음</li>
+</ul></li>
+<li><p><code>proof by cases</code><br>
+도메인의 모든 경우를 나누어서 증명</p></li>
+<li><p><code>proof of Existence</code><br>
+∃xP(x)를 증명</p></li>
+</ul>
+<section id="proof" class="level3">
+<h3 class="anchored" data-anchor-id="proof">proof</h3>
+<ul>
+<li>theorem: 증명된 명제</li>
+<li>lemma: 보조정리</li>
+<li>corollary: 정리의 결과로 얻어지는 명제</li>
+<li>conjecture: 증명되지 않은 명제</li>
+</ul>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>이산수학</category>
+  <guid>https://cryscham123.github.io/posts/discrete/notes/1.html</guid>
+  <pubDate>Sun, 13 Oct 2024 09:08:46 GMT</pubDate>
+</item>
 <item>
   <title>진도 나갈거 예상</title>
   <link>https://cryscham123.github.io/posts/discrete/notes/0.html</link>
@@ -56,8 +674,40 @@
   <pubDate>Thu, 10 Oct 2024 15:00:00 GMT</pubDate>
 </item>
 <item>
+  <title>확률과 통계1 과제 3</title>
+  <link>https://cryscham123.github.io/posts/stat/homework/work3.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section">1</h2>
+<p>P(X=k) = <img src="https://latex.codecogs.com/png.latex?/chosen%7B3%7D%7Bk%7D%20*%20%5Cfrac%7B1%7D%7B3%7D%5Ek%20*%20%5Cfrac%7B2%7D%7B3%7D%5E%7B3-k%7D"><br>
+P(Y=k) = <img src="https://latex.codecogs.com/png.latex?/chosen%7B3%7D%7Bk%7D%20*%20%5Cfrac%7B1%7D%7B15%7D%5Ek%20*%20%5Cfrac%7B14%7D%7B15%7D%5E%7B3-k%7D"></p>
+<p>P(X+Y) = <img src="https://latex.codecogs.com/png.latex?/sum_%7Bk=0%7D%5E%7B3%7D%20P(X=k)P(Y=k)"></p>
+</section>
+<section id="section-1" class="level2">
+<h2 class="anchored" data-anchor-id="section-1">2</h2>
+</section>
+<section id="section-2" class="level2">
+<h2 class="anchored" data-anchor-id="section-2">3</h2>
+<section id="a" class="level3">
+<h3 class="anchored" data-anchor-id="a">a</h3>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>확률과통계1</category>
+  <category>과제</category>
+  <guid>https://cryscham123.github.io/posts/stat/homework/work3.html</guid>
+  <pubDate>Thu, 10 Oct 2024 15:00:00 GMT</pubDate>
+</item>
+<item>
   <title>가부키</title>
-  <link>https://cryscham123.github.io/posts/art/notes/6week/2.html</link>
+  <link>https://cryscham123.github.io/posts/art/9.html</link>
   <description><![CDATA[ 
 
 
@@ -103,7 +753,7 @@
 
  ]]></description>
   <category>공연예술의이해</category>
-  <guid>https://cryscham123.github.io/posts/art/notes/6week/2.html</guid>
+  <guid>https://cryscham123.github.io/posts/art/9.html</guid>
   <pubDate>Tue, 08 Oct 2024 15:00:00 GMT</pubDate>
 </item>
 <item>
@@ -199,222 +849,6 @@
   <pubDate>Mon, 07 Oct 2024 15:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>Logic and Proofs</title>
-  <link>https://cryscham123.github.io/posts/discrete/notes/1.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="proposition" class="level2">
-<h2 class="anchored" data-anchor-id="proposition">Proposition</h2>
-<p>declarative sentence that is either true or false</p>
-<section id="propositional-variable" class="level3">
-<h3 class="anchored" data-anchor-id="propositional-variable">propositional variable</h3>
-<p>p, q, r, s, …<br>
-ex) p: it is raining</p>
-<blockquote class="blockquote">
-<p>Proposition must be either true or false.<br>
-‘x is 10’ is not a proposition.</p>
-</blockquote>
-</section>
-<section id="logical-operators" class="level3">
-<h3 class="anchored" data-anchor-id="logical-operators">Logical Operators</h3>
-<p>(ascending order of precedence)</p>
-<ul>
-<li><code>Negation</code>: ¬ NOT</li>
-<li><code>Conjunction</code>: ∧ AND</li>
-<li><code>Disjunction</code>: ∨ OR
-<ul>
-<li><code>Inclusive OR</code>: either is true</li>
-<li><code>Exclusive OR</code>: ⊕ either is true, but not both</li>
-</ul></li>
-<li><code>Implication</code>: -&gt; if then</li>
-<li><code>Biconditional</code>: &lt;-&gt; if and only if</li>
-</ul>
-<p><a href="https://sciphy.tistory.com/m/483">if you confuse</a></p>
-</section>
-</section>
-<section id="truth-table" class="level2">
-<h2 class="anchored" data-anchor-id="truth-table">Truth Table</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>p</th>
-<th>q</th>
-<th>¬p</th>
-<th>p∧q</th>
-<th>p∨q</th>
-<th>p-&gt;q</th>
-<th>p&lt;-&gt;q</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>T</td>
-<td>T</td>
-<td>F</td>
-<td>T</td>
-<td>T</td>
-<td>T</td>
-<td>T</td>
-</tr>
-<tr class="even">
-<td>T</td>
-<td>F</td>
-<td>F</td>
-<td>F</td>
-<td>T</td>
-<td>F</td>
-<td>F</td>
-</tr>
-<tr class="odd">
-<td>F</td>
-<td>T</td>
-<td>T</td>
-<td>F</td>
-<td>T</td>
-<td>T</td>
-<td>F</td>
-</tr>
-<tr class="even">
-<td>F</td>
-<td>F</td>
-<td>T</td>
-<td>F</td>
-<td>F</td>
-<td>T</td>
-<td>T</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="converse-contrapositive-inverse" class="level2">
-<h2 class="anchored" data-anchor-id="converse-contrapositive-inverse">Converse, Contrapositive, Inverse</h2>
-<p>If implication is p-&gt;q</p>
-<ul>
-<li>Converse: q-&gt;p</li>
-<li>Inverse: ¬p -&gt; ¬q</li>
-<li><code>Contrapositive</code>: ¬q -&gt; ¬p</li>
-</ul>
-</section>
-<section id="logical-equivalence" class="level2">
-<h2 class="anchored" data-anchor-id="logical-equivalence">Logical Equivalence</h2>
-<ul>
-<li><code>tautology</code>: always true</li>
-<li><code>contradiction</code>: always false</li>
-<li><code>contingency</code>: neither tautology nor contradiction</li>
-<li><code>logical equivalence</code>: ≡ two propositions are always true or false together</li>
-</ul>
-<section id="laws-of-logic" class="level3">
-<h3 class="anchored" data-anchor-id="laws-of-logic">Laws of Logic</h3>
-<ul>
-<li><code>Identity Laws</code>
-<ul>
-<li>P ∧ T ≡ P</li>
-<li>P ∨ F ≡ P</li>
-</ul></li>
-<li><code>Domination Laws</code>
-<ul>
-<li>P ∨ T ≡ T</li>
-<li>P ∧ F ≡ F</li>
-</ul></li>
-<li><code>Idempotent Laws</code>
-<ul>
-<li>P ∨ P ≡ P</li>
-<li>P ∧ P ≡ P</li>
-</ul></li>
-<li><code>Double Negation Laws</code>
-<ul>
-<li>¬(¬P) ≡ P</li>
-</ul></li>
-<li><code>Absorption Laws</code>
-<ul>
-<li>P ∨ (P ∧ Q) ≡ P</li>
-<li>P ∧ (P ∨ Q) ≡ P</li>
-</ul></li>
-<li><code>Negation Laws</code>
-<ul>
-<li>P ∨ ¬P ≡ T</li>
-<li>P ∧ ¬P ≡ F</li>
-</ul></li>
-<li><code>Commutative Laws</code>
-<ul>
-<li>P ∨ Q ≡ Q ∨ P</li>
-<li>P ∧ Q ≡ Q ∧ P</li>
-</ul></li>
-<li><code>Associative Laws</code>
-<ul>
-<li>(P ∨ Q) ∨ R ≡ P ∨ (Q ∨ R)</li>
-<li>(P ∧ Q) ∧ R ≡ P ∧ (Q ∧ R)</li>
-</ul></li>
-<li><code>Distributive Laws</code>
-<ul>
-<li>P ∨ (Q ∧ R) ≡ (P ∨ Q) ∧ (P ∨ R)</li>
-<li>P ∧ (Q ∨ R) ≡ (P ∧ Q) ∨ (P ∧ R)</li>
-</ul></li>
-<li><code>De Morgan's Laws</code>
-<ul>
-<li>¬(P ∧ Q) ≡ ¬P ∨ ¬Q</li>
-<li>¬(P ∨ Q) ≡ ¬P ∧ ¬Q</li>
-</ul></li>
-</ul>
-<section id="a-few-more-equivalences" class="level4">
-<h4 class="anchored" data-anchor-id="a-few-more-equivalences">A Few More Equivalences</h4>
-<ul>
-<li>p -&gt; q ≡ ¬p ∨ q</li>
-<li>p -&gt; q ≡ ¬q -&gt; ¬p</li>
-<li>p ∨ q ≡ ¬p -&gt; q</li>
-<li>p ∧ q ≡ ¬(p -&gt; ¬q)</li>
-<li>(p -&gt; q) ∧ (p -&gt; r) ≡ p -&gt; (q ∧ r)</li>
-<li>(p -&gt; r) ∧ (q -&gt; r) ≡ (p ∧ q) -&gt; r</li>
-<li>(p -&gt; q) ∨ (p -&gt; r) ≡ p -&gt; (q ∨ r)</li>
-<li>(p -&gt; r) ∨ (q -&gt; r) ≡ (p ∧ q) -&gt; r</li>
-<li>p &lt;-&gt; q ≡ (p -&gt; q) ∧ (q -&gt; p)</li>
-<li>p &lt;-&gt; q ≡ ¬p &lt;-&gt; ¬q</li>
-<li>p &lt;-&gt; q ≡ (p ∧ q) ∨ (¬p ∧ ¬q)</li>
-<li>¬(p &lt;-&gt; q) ≡ p &lt;-&gt; ¬q</li>
-</ul>
-</section>
-</section>
-</section>
-<section id="predicates-and-quantifiers" class="level2">
-<h2 class="anchored" data-anchor-id="predicates-and-quantifiers">Predicates and Quantifiers</h2>
-<ul>
-<li><code>predicate</code>: a sentence that contains a finite number of variables and becomes a proposition when specific values are substituted for the variables</li>
-<li><code>quantifiers</code>
-<ul>
-<li>∀: for all,</li>
-<li>∃: there exists</li>
-<li>∃!: there exists unique</li>
-</ul></li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <category>이산수학</category>
-  <guid>https://cryscham123.github.io/posts/discrete/notes/1.html</guid>
-  <pubDate>Mon, 07 Oct 2024 15:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Working With Queries in Microsoft Access 1</title>
-  <link>https://cryscham123.github.io/posts/data/notes/6week/1.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-
- ]]></description>
-  <category>데이터베이스설계와활용</category>
-  <guid>https://cryscham123.github.io/posts/data/notes/6week/1.html</guid>
-  <pubDate>Sun, 06 Oct 2024 15:00:00 GMT</pubDate>
-</item>
-<item>
   <title>삼각함수의 도함수</title>
   <link>https://cryscham123.github.io/posts/math/notes/6week/1.html</link>
   <description><![CDATA[ 
@@ -446,7 +880,7 @@ ex) p: it is raining</p>
 </item>
 <item>
   <title>안톤 체홉의 사실주의극</title>
-  <link>https://cryscham123.github.io/posts/art/notes/6week/1.html</link>
+  <link>https://cryscham123.github.io/posts/art/8.html</link>
   <description><![CDATA[ 
 
 
@@ -463,29 +897,7 @@ ex) p: it is raining</p>
 
  ]]></description>
   <category>공연예술의이해</category>
-  <guid>https://cryscham123.github.io/posts/art/notes/6week/1.html</guid>
-  <pubDate>Sun, 06 Oct 2024 15:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>확률변수의 기댓값</title>
-  <link>https://cryscham123.github.io/posts/stat/notes/6week/1.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="확률변수의-기댓값" class="level2">
-
-<ul>
-<li><img src="https://latex.codecogs.com/png.latex?%CE%BC%20=%20E(x)">로 가정. (모집단)</li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <category>확률과통계1</category>
-  <guid>https://cryscham123.github.io/posts/stat/notes/6week/1.html</guid>
+  <guid>https://cryscham123.github.io/posts/art/8.html</guid>
   <pubDate>Sun, 06 Oct 2024 15:00:00 GMT</pubDate>
 </item>
 <item>
@@ -549,577 +961,6 @@ ex) p: it is raining</p>
   <category>이산수학</category>
   <category>과제</category>
   <guid>https://cryscham123.github.io/posts/discrete/work/work2.pdf</guid>
-  <pubDate>Fri, 04 Oct 2024 15:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>intro</title>
-  <link>https://cryscham123.github.io/posts/discrete/5.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="algorithms" class="level1">
-
-<section id="definition" class="level2">
-
-<ul>
-<li>알고리즘은 어떤 문제를 해결하기 위한 일련의 절차</li>
-</ul>
-</section>
-<section id="properties" class="level2">
-
-<ul>
-<li>input</li>
-<li>output</li>
-<li>correctness</li>
-<li>finiteness: 무한루프 x</li>
-<li>effectiveness</li>
-<li>generality</li>
-</ul>
-</section>
-<section id="searching-problem" class="level2">
-
-<section id="binary-search" class="level3">
-
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> binary_search(arr, target):</span>
-<span id="cb1-2">    left, right <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>, <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">len</span>(arr) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span></span>
-<span id="cb1-3">    </span>
-<span id="cb1-4">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">while</span> left <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;=</span> right:</span>
-<span id="cb1-5">        mid <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> (left <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span> right) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">//</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span></span>
-<span id="cb1-6">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> arr[mid] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> target:</span>
-<span id="cb1-7">            <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> mid</span>
-<span id="cb1-8">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">elif</span> arr[mid] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;</span> target:</span>
-<span id="cb1-9">            left <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> mid <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span></span>
-<span id="cb1-10">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">else</span>:</span>
-<span id="cb1-11">            right <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> mid <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span></span>
-<span id="cb1-12">    </span>
-<span id="cb1-13">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>  <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># 타겟을 찾지 못한 경우</span></span>
-<span id="cb1-14"></span>
-<span id="cb1-15"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># 사용 예시</span></span>
-<span id="cb1-16">sorted_array <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> [<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">7</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">9</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">11</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">13</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">15</span>]</span>
-<span id="cb1-17">target <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">7</span></span>
-<span id="cb1-18">result <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> binary_search(sorted_array, target)</span>
-<span id="cb1-19"><span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">f"타겟 </span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span>target<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span><span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">의 인덱스: </span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span>result<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span><span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"</span>)</span></code></pre></div>
-
-
-</section>
-</section>
-</section>
-
- ]]></description>
-  <category>이산수학</category>
-  <guid>https://cryscham123.github.io/posts/discrete/5.html</guid>
-  <pubDate>Fri, 04 Oct 2024 15:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>intro</title>
-  <link>https://cryscham123.github.io/posts/discrete/6.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> insertion_sort(arr):</span>
-<span id="cb1-2">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>, <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">len</span>(arr)):</span>
-<span id="cb1-3">        key <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> arr[i]</span>
-<span id="cb1-4">        j <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> i <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span></span>
-<span id="cb1-5">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">while</span> j <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&gt;=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">and</span> arr[j] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&gt;</span> key:</span>
-<span id="cb1-6">            arr[j <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> arr[j]</span>
-<span id="cb1-7">            j <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span></span>
-<span id="cb1-8">        arr[j <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> key</span>
-<span id="cb1-9">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> arr</span></code></pre></div>
-<section id="greedy" class="level2">
-<h2 class="anchored" data-anchor-id="greedy">Greedy</h2>
-
-
-</section>
-
- ]]></description>
-  <category>이산수학</category>
-  <guid>https://cryscham123.github.io/posts/discrete/6.html</guid>
-  <pubDate>Fri, 04 Oct 2024 15:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>intro</title>
-  <link>https://cryscham123.github.io/posts/discrete/1-2.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>at most one of the premises is true Ai=1~n-1 Aj=i+1~n (~pi V ~pj)</p>
-<p>at least one of the premises must be true <sub>(Ai=1</sub>n~pi) = Vi=1~n pi</p>
-<p>exactly one of the premises is true</p>
-<p>satisfiability problem</p>
-
-
-
- ]]></description>
-  <category>이산수학</category>
-  <guid>https://cryscham123.github.io/posts/discrete/1-2.html</guid>
-  <pubDate>Fri, 04 Oct 2024 15:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>intro</title>
-  <link>https://cryscham123.github.io/posts/discrete/4.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="rules-of-inference" class="level2">
-<h2 class="anchored" data-anchor-id="rules-of-inference">Rules of inference</h2>
-<section id="modus-ponens" class="level3">
-<h3 class="anchored" data-anchor-id="modus-ponens">Modus Ponens</h3>
-<p>p -&gt; q p __ ∴ q</p>
-</section>
-<section id="modus-tollens" class="level3">
-<h3 class="anchored" data-anchor-id="modus-tollens">Modus Tollens</h3>
-<p>p -&gt; q ¬q __ ∴ ¬p (p -&gt; q ≡ ¬q -&gt; ¬p)</p>
-</section>
-<section id="hypothetical-syllogism" class="level3">
-<h3 class="anchored" data-anchor-id="hypothetical-syllogism">Hypothetical Syllogism</h3>
-<p>p -&gt; q q -&gt; r __ ∴ p -&gt; r</p>
-</section>
-<section id="disjunctive-syllogism" class="level3">
-<h3 class="anchored" data-anchor-id="disjunctive-syllogism">Disjunctive Syllogism</h3>
-<p>p ∨ q ¬p __ ∴ q</p>
-</section>
-<section id="addition" class="level3">
-<h3 class="anchored" data-anchor-id="addition">Addition</h3>
-<p>p __ ∴ p ∨ q</p>
-</section>
-<section id="simplification" class="level3">
-<h3 class="anchored" data-anchor-id="simplification">Simplification</h3>
-<p>p ∧ q __ ∴ p</p>
-</section>
-<section id="conjunction" class="level3">
-<h3 class="anchored" data-anchor-id="conjunction">Conjunction</h3>
-<p>p q __ ∴ p ∧ q</p>
-</section>
-<section id="resolution" class="level3">
-<h3 class="anchored" data-anchor-id="resolution">Resolution</h3>
-<p>¬p ∨ r p ∨ q __ ∴ q ∨ r</p>
-</section>
-</section>
-<section id="universal-instantiation-ui" class="level2">
-<h2 class="anchored" data-anchor-id="universal-instantiation-ui">Universal instantiation (UI)</h2>
-<p>∀xp(x) __ ∴ p(c)</p>
-</section>
-<section id="universal-generalization-ug" class="level2">
-<h2 class="anchored" data-anchor-id="universal-generalization-ug">Universal generalization (UG)</h2>
-<p>p(c) for an arbitrary c __ ∴ ∀xp(x)</p>
-</section>
-<section id="existential-instantiation-ei" class="level2">
-<h2 class="anchored" data-anchor-id="existential-instantiation-ei">Existential instantiation (EI)</h2>
-<p>∃xp(x) __ ∴ p(c) for some element c</p>
-</section>
-<section id="existential-generalization-eg" class="level2">
-<h2 class="anchored" data-anchor-id="existential-generalization-eg">Existential generalization (EG)</h2>
-<p>p(c) for some element c __ ∴ ∃xp(x)</p>
-</section>
-<section id="proof" class="level2">
-<h2 class="anchored" data-anchor-id="proof">proof</h2>
-<ul>
-<li>theorem: 증명된 명제</li>
-<li>lemma: 보조정리</li>
-<li>corollary: 정리의 결과로 얻어지는 명제</li>
-<li>conjecture: 증명되지 않은 명제</li>
-</ul>
-<blockquote class="blockquote">
-<p>페르마의 마지막 정리 (conjecture) 방정식 x^n + y^n = z^n은 n이 2보다 큰 정수일 때 양의 정수해를 갖지 않는다. 1637년 페르마가 주장했으나, 1995년에 앤드루 와일스에 의해 최종적으로 증명되었다. 300년 이상 미해결 상태로 남아있던 수학계의 가장 유명한 난제 중 하나였다.</p>
-</blockquote>
-<section id="form-of-theorem" class="level3">
-<h3 class="anchored" data-anchor-id="form-of-theorem">form of theorem</h3>
-</section>
-<section id="proof-of-theorem" class="level3">
-<h3 class="anchored" data-anchor-id="proof-of-theorem">proof of theorem</h3>
-<ul>
-<li><p>direct proof: 가정을 이용하여 결론을 증명</p></li>
-<li><p>trivial proof: 결론이 true인 경우</p></li>
-<li><p>vacuous proof: 가정이 false인 경우</p></li>
-<li><p>proof by contradiction: p ∧ ¬q 가 false인 경우</p></li>
-<li><p>without loss of generality: 반복 안하고 생략.</p></li>
-<li><p>constructive existence proof: 구체적인 예시를 들어서 존재를 증명하는 방법.</p></li>
-<li><p>Nonconstructive existence proof</p></li>
-<li><p>Counterexample: 반례</p></li>
-<li><p>Uniqueness proof: 유일성 증명</p></li>
-<li><p>Backward Reasoning: 역추론</p></li>
-</ul>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>이산수학</category>
-  <guid>https://cryscham123.github.io/posts/discrete/4.html</guid>
-  <pubDate>Fri, 04 Oct 2024 15:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>intro</title>
-  <link>https://cryscham123.github.io/posts/discrete/own1-2.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="some-terminology" class="level2">
-<h2 class="anchored" data-anchor-id="some-terminology">some terminology</h2>
-<ul>
-<li>tautology: a statement that is always true</li>
-<li>contradiction: a statement that is always false</li>
-<li>contingent: a statement that is neither a tautology nor a contradiction</li>
-</ul>
-</section>
-<section id="compound-propositions" class="level2">
-<h2 class="anchored" data-anchor-id="compound-propositions">compound propositions</h2>
-<p>if p &lt;-&gt; q is a tautology, then p and q are logically equivalent p | q | p ^ q | ㄱ(p ^ q) | ㄱp | ㄱq | ㄱp v ㄱq T | T | T | F | F | F | F T | F | F | T | F | T | T F | T | F | T | T | F | T F | F | F | T | T | T | T</p>
-</section>
-<section id="logical-logical-equivalence" class="level2">
-<h2 class="anchored" data-anchor-id="logical-logical-equivalence">logical logical equivalence</h2>
-<section id="identity-laws" class="level3">
-<h3 class="anchored" data-anchor-id="identity-laws">identity laws</h3>
-<ul>
-<li>p ^ T = p</li>
-<li>p v F = p</li>
-</ul>
-</section>
-<section id="domination-laws" class="level3">
-<h3 class="anchored" data-anchor-id="domination-laws">domination laws</h3>
-<ul>
-<li>p v T = T(tautology)</li>
-<li>p ^ F = F(contradiction)</li>
-</ul>
-</section>
-<section id="idempotent-laws" class="level3">
-<h3 class="anchored" data-anchor-id="idempotent-laws">idempotent laws</h3>
-<ul>
-<li>p v p = p</li>
-<li>p ^ p = p</li>
-</ul>
-</section>
-<section id="double-negation-laws" class="level3">
-<h3 class="anchored" data-anchor-id="double-negation-laws">double negation laws</h3>
-<ul>
-<li>ㄱ(ㄱp) = p</li>
-</ul>
-</section>
-<section id="absorbation-laws" class="level3">
-<h3 class="anchored" data-anchor-id="absorbation-laws">Absorbation laws</h3>
-<ul>
-<li>p v (p ^ q) = p</li>
-<li>p ^ (p v q) = p</li>
-</ul>
-</section>
-<section id="negation-laws" class="level3">
-<h3 class="anchored" data-anchor-id="negation-laws">negation laws</h3>
-<ul>
-<li>p v ㄱp = T(tautology)</li>
-<li>p ^ ㄱp = F(contradiction)</li>
-</ul>
-</section>
-</section>
-<section id="predict-logic" class="level2">
-<h2 class="anchored" data-anchor-id="predict-logic">predict logic</h2>
-<ul>
-<li>variables</li>
-<li>predicates</li>
-<li>quantifier universal quantifier(∀): for all in domain existential quantifier(∃): there exists at least one in domain uniqune quantifier(∃!): there exists only one in domain ㄱ∀xP(x) = ∃xㄱP(x) ㄱ∃xP(x) = ∀xㄱP(x)</li>
-</ul>
-</section>
-<section id="nested-quantifiers" class="level2">
-<h2 class="anchored" data-anchor-id="nested-quantifiers">nested quantifiers</h2>
-<ul>
-<li>∀x∃yP(x, y) = for every x, there exists a y such that P(x, y)</li>
-<li>∃x∀yP(x, y) = there exists an x such that for every y, P(x, y)</li>
-</ul>
-</section>
-<section id="rules-of-inference" class="level2">
-<h2 class="anchored" data-anchor-id="rules-of-inference">rules of inference</h2>
-<section id="argument" class="level3">
-<h3 class="anchored" data-anchor-id="argument">argument</h3>
-<ul>
-<li>a sequence of statements that end with a conclusion</li>
-<li>premises: statements that are assumed to be true</li>
-<li>conclusion: statement that can be inferred from the premises</li>
-<li>valid argument: if the conclusion follows from the premises</li>
-</ul>
-</section>
-<section id="modus-ponens" class="level3">
-<h3 class="anchored" data-anchor-id="modus-ponens">modus ponens</h3>
-<ul>
-<li>p -&gt; q</li>
-<li>p</li>
-<li>q</li>
-</ul>
-</section>
-<section id="modus-tollens" class="level3">
-<h3 class="anchored" data-anchor-id="modus-tollens">modus tollens</h3>
-<ul>
-<li>p -&gt; q</li>
-<li>ㄱq</li>
-<li>ㄱp</li>
-</ul>
-</section>
-<section id="hypothetical-syllogism" class="level3">
-<h3 class="anchored" data-anchor-id="hypothetical-syllogism">hypothetical syllogism</h3>
-<ul>
-<li>p -&gt; q</li>
-<li>q -&gt; r</li>
-<li>p -&gt; r</li>
-</ul>
-</section>
-<section id="disjunctive-syllogism" class="level3">
-<h3 class="anchored" data-anchor-id="disjunctive-syllogism">disjunctive syllogism</h3>
-<ul>
-<li>p v q</li>
-<li>ㄱp</li>
-<li>q</li>
-</ul>
-</section>
-<section id="addition" class="level3">
-<h3 class="anchored" data-anchor-id="addition">addition</h3>
-<ul>
-<li>p</li>
-<li>p v q</li>
-</ul>
-</section>
-<section id="simplification" class="level3">
-<h3 class="anchored" data-anchor-id="simplification">simplification</h3>
-<ul>
-<li>p ^ q</li>
-<li>p</li>
-</ul>
-</section>
-<section id="conjunction" class="level3">
-<h3 class="anchored" data-anchor-id="conjunction">conjunction</h3>
-<ul>
-<li>p</li>
-<li>q</li>
-<li>p ^ q</li>
-</ul>
-</section>
-<section id="resolution" class="level3">
-<h3 class="anchored" data-anchor-id="resolution">resolution</h3>
-<ul>
-<li>p v q</li>
-<li>ㄱp v r</li>
-<li>q v r</li>
-</ul>
-</section>
-</section>
-<section id="predicate-logic" class="level2">
-<h2 class="anchored" data-anchor-id="predicate-logic">predicate logic</h2>
-<ul>
-<li>universal instantiation: if P(x) is true for all x, then P(c) is true for any c in the domain</li>
-<li>universal generalization: if P(c) is true for any c in the domain, then P(x) is true for all x</li>
-<li>existential instantiation: if P(x) is true for some x, then there exists an x such that P(x) is true</li>
-<li>existential generalization: if there exists an x such that P(x) is true, then P(x) is true for some x</li>
-</ul>
-</section>
-<section id="direct-proof" class="level2">
-<h2 class="anchored" data-anchor-id="direct-proof">direct proof</h2>
-<ul>
-<li>assume p is true</li>
-<li>show that q is true</li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <category>이산수학</category>
-  <guid>https://cryscham123.github.io/posts/discrete/own1-2.html</guid>
-  <pubDate>Fri, 04 Oct 2024 15:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>intro</title>
-  <link>https://cryscham123.github.io/posts/discrete/1-3.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="quantifiers" class="level2">
-<h2 class="anchored" data-anchor-id="quantifiers">Quantifiers</h2>
-<p>∀: p(x) is always true for all x in the domain ∃: p(x) is true for at least one x in the domain</p>
-<p>¬∀p(x) is ∃¬p(x) and vice versa</p>
-<section id="uniqueness-quantifier" class="level3">
-<h3 class="anchored" data-anchor-id="uniqueness-quantifier">Uniqueness Quantifier</h3>
-<p>∃!x: p(x) is true for exactly one x in the domain</p>
-</section>
-<section id="precedence-of-quantifiers" class="level3">
-<h3 class="anchored" data-anchor-id="precedence-of-quantifiers">precedence of Quantifiers</h3>
-<p>∀xp(x) v q(x) is equivalent to (∀xp(x)) v q(x)</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>이산수학</category>
-  <guid>https://cryscham123.github.io/posts/discrete/1-3.html</guid>
   <pubDate>Fri, 04 Oct 2024 15:00:00 GMT</pubDate>
 </item>
 <item>
@@ -1287,6 +1128,58 @@ font-style: inherit;">return</span> arr</span></code></pre></div>
 </ul>
 <p><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7Ba%7D%7Bsin%20A%7D%20=%20%5Cfrac%7Bb%7D%7Bsin%20B%7D%20=%20%5Cfrac%7Bc%7D%7Bsin%20C%7D%20=%202R"><br>
 <img src="https://latex.codecogs.com/png.latex?cos%20A%20=%20%5Cfrac%7Bb%5E2%20+%20c%5E2%20-%20a%5E2%7D%7B2bc%7D"></p>
+</section>
+</section>
+<section id="삼각함수-항등식" class="level2">
+<h2 class="anchored" data-anchor-id="삼각함수-항등식">삼각함수 항등식</h2>
+<section id="피타고라스-항등식" class="level3">
+<h3 class="anchored" data-anchor-id="피타고라스-항등식">피타고라스 항등식</h3>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?%5Csin%5E2%20%CE%B8%20+%20%5Ccos%5E2%20%CE%B8%20=%201"></li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Ctan%5E2%20%CE%B8%20+%201%20=%20%5Csec%5E2%20%CE%B8"></li>
+<li><img src="https://latex.codecogs.com/png.latex?1%20+%20%5Ccot%5E2%20%CE%B8%20=%20%5Ccsc%5E2%20%CE%B8"></li>
+</ul>
+</section>
+<section id="덧셈-정리" class="level3">
+<h3 class="anchored" data-anchor-id="덧셈-정리">덧셈 정리</h3>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?%5Csin%20(%CE%B1%20%C2%B1%20%CE%B2)%20=%20%5Csin%20%CE%B1%20%5Ccos%20%CE%B2%20%C2%B1%20%5Ccos%20%CE%B1%20%5Csin%20%CE%B2"></li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Ccos%20(%CE%B1%20%C2%B1%20%CE%B2)%20=%20%5Ccos%20%CE%B1%20%5Ccos%20%CE%B2%20%E2%88%93%20%5Csin%20%CE%B1%20%5Csin%20%CE%B2"></li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Ctan%20(%CE%B1%20%C2%B1%20%CE%B2)%20=%20%5Cfrac%7B%5Ctan%20%CE%B1%20%C2%B1%20%5Ctan%20%CE%B2%7D%7B1%20%E2%88%93%20%5Ctan%20%CE%B1%20%5Ctan%20%CE%B2%7D"></li>
+</ul>
+</section>
+<section id="배각-공식" class="level3">
+<h3 class="anchored" data-anchor-id="배각-공식">배각 공식</h3>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?%5Csin%202%CE%B8%20=%202%5Csin%20%CE%B8%20%5Ccos%20%CE%B8"></li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Ccos%202%CE%B8%20=%20%5Ccos%5E2%20%CE%B8%20-%20%5Csin%5E2%20%CE%B8%20=%202%5Ccos%5E2%20%CE%B8%20-%201%20=%201%20-%202%5Csin%5E2%20%CE%B8"></li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Ctan%202%CE%B8%20=%20%5Cfrac%7B2%5Ctan%20%CE%B8%7D%7B1%20-%20%5Ctan%5E2%20%CE%B8%7D"></li>
+</ul>
+</section>
+<section id="반각-공식" class="level3">
+<h3 class="anchored" data-anchor-id="반각-공식">반각 공식</h3>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?%5Csin%20%5Cfrac%7B%CE%B8%7D%7B2%7D%20=%20%C2%B1%5Csqrt%7B%5Cfrac%7B1%20-%20%5Ccos%20%CE%B8%7D%7B2%7D%7D"></li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Ccos%20%5Cfrac%7B%CE%B8%7D%7B2%7D%20=%20%C2%B1%5Csqrt%7B%5Cfrac%7B1%20+%20%5Ccos%20%CE%B8%7D%7B2%7D%7D"></li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Ctan%20%5Cfrac%7B%CE%B8%7D%7B2%7D%20=%20%C2%B1%5Csqrt%7B%5Cfrac%7B1%20-%20%5Ccos%20%CE%B8%7D%7B1%20+%20%5Ccos%20%CE%B8%7D%7D"></li>
+</ul>
+</section>
+<section id="곱을-합으로-변환하는-공식" class="level3">
+<h3 class="anchored" data-anchor-id="곱을-합으로-변환하는-공식">곱을 합으로 변환하는 공식</h3>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?%5Csin%20%CE%B1%20%5Csin%20%CE%B2%20=%20%5Cfrac%7B1%7D%7B2%7D%5B%5Csin(%CE%B1%20+%20%CE%B2)%20+%20%5Csin(%CE%B1%20-%20%CE%B2)%5D"></li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Csin%20%CE%B1%20%5Csin%20%CE%B2%20=%20%5Cfrac%7B1%7D%7B2%7D%5B%5Ccos(%CE%B1%20-%20%CE%B2)%20-%20%5Ccos(%CE%B1%20+%20%CE%B2)%5D"></li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Ccos%20%CE%B1%20%5Ccos%20%CE%B2%20=%20%5Cfrac%7B1%7D%7B2%7D%5B%5Ccos(%CE%B1%20-%20%CE%B2)%20+%20%5Ccos(%CE%B1%20+%20%CE%B2)%5D"></li>
+</ul>
+</section>
+<section id="덧셈을-곱으로-변환하는-공식" class="level3">
+<h3 class="anchored" data-anchor-id="덧셈을-곱으로-변환하는-공식">덧셈을 곱으로 변환하는 공식</h3>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?%5Csin%20%CE%B1%20+%20%5Csin%20%CE%B2%20=%202%5Csin%20%5Cfrac%7B%CE%B1%20+%20%CE%B2%7D%7B2%7D%20%5Ccos%20%5Cfrac%7B%CE%B1%20-%20%CE%B2%7D%7B2%7D"></li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Csin%20%CE%B1%20-%20%5Csin%20%CE%B2%20=%202%5Ccos%20%5Cfrac%7B%CE%B1%20+%20%CE%B2%7D%7B2%7D%20%5Csin%20%5Cfrac%7B%CE%B1%20-%20%CE%B2%7D%7B2%7D"></li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Ccos%20%CE%B1%20+%20%5Ccos%20%CE%B2%20=%202%5Ccos%20%5Cfrac%7B%CE%B1%20+%20%CE%B2%7D%7B2%7D%20%5Ccos%20%5Cfrac%7B%CE%B1%20-%20%CE%B2%7D%7B2%7D"></li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Ccos%20%CE%B1%20-%20%5Ccos%20%CE%B2%20=%20-2%5Csin%20%5Cfrac%7B%CE%B1%20+%20%CE%B2%7D%7B2%7D%20%5Csin%20%5Cfrac%7B%CE%B1%20-%20%CE%B2%7D%7B2%7D"></li>
+</ul>
 
 
 </section>
@@ -1307,7 +1200,7 @@ font-style: inherit;">return</span> arr</span></code></pre></div>
 
 <p>SQL is not programming language but a <code>data sublanguage</code></p>
 <section id="ddl-data-definition-language" class="level2">
-<h2 class="anchored" data-anchor-id="ddl-data-definition-language">DDL (Data Definition Language)</h2>
+<h2 class="anchored" data-anchor-id="ddl-data-definition-language">DDL (<code>Data Definition Language</code>)</h2>
 <ol type="1">
 <li>CREATE (database, tables, views, indexes)</li>
 <li>ALTER: add, modify, drop columns / constraints</li>
@@ -1403,11 +1296,42 @@ font-style: inherit;">100</span>);</span>
 <span id="cb1-10"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
+font-style: inherit;">ALTER</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">TABLE</span> student <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">ADD</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">CONSTRAINT</span> STUDENT_FK <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">FOREIGN</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">KEY</span> (CourseID) <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">REFERENCES</span> Course(CourseID) <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">ON</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">DELETE</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">CASCADE</span>;</span>
+<span id="cb1-11"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
 font-style: inherit;">DROP</span> <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">TABLE</span> student;</span>
-<span id="cb1-11"><span class="kw" style="color: #003B4F;
+<span id="cb1-12"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">TRUNCATE</span> <span class="kw" style="color: #003B4F;
@@ -1415,7 +1339,7 @@ background-color: null;
 font-weight: bold;
 font-style: inherit;">TABLE</span> student;</span></code></pre></div>
 <section id="dml-data-manipulation-language" class="level3">
-<h3 class="anchored" data-anchor-id="dml-data-manipulation-language">DML (Data Manipulation Language)</h3>
+<h3 class="anchored" data-anchor-id="dml-data-manipulation-language">DML (<code>Data Manipulation Language</code>)</h3>
 <div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
@@ -1487,10 +1411,12 @@ font-style: inherit;">FROM</span> student;</span>
 <span id="cb3-2"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
-font-style: inherit;">SELECT</span> name <span class="kw" style="color: #003B4F;
+font-style: inherit;">SELECT</span> name </span>
+<span id="cb3-3"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
-font-style: inherit;">FROM</span> student <span class="kw" style="color: #003B4F;
+font-style: inherit;">FROM</span> student </span>
+<span id="cb3-4"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">WHERE</span> age <span class="op" style="color: #5E5E5E;
@@ -1498,7 +1424,7 @@ background-color: null;
 font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">20</span>;</span>
-<span id="cb3-3"><span class="kw" style="color: #003B4F;
+<span id="cb3-5"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">SELECT</span> <span class="kw" style="color: #003B4F;
