@@ -10,60 +10,56 @@
 <atom:link href="https://cryscham123.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>my 2024-2 note site</description>
 <generator>quarto-1.5.56</generator>
-<lastBuildDate>Tue, 15 Oct 2024 07:14:36 GMT</lastBuildDate>
+<lastBuildDate>Wed, 16 Oct 2024 07:08:01 GMT</lastBuildDate>
 <item>
-  <title>확률변수의 기댓값</title>
-  <link>https://cryscham123.github.io/posts/stat/notes/6week/1.html</link>
+  <title>수정 사실주의</title>
+  <link>https://cryscham123.github.io/posts/art/j.html</link>
   <description><![CDATA[ 
 
 
 
 
-<section id="확률변수의-기댓값" class="level2">
-<h2 class="anchored" data-anchor-id="확률변수의-기댓값">확률변수의 기댓값</h2>
+<section id="수정-사실주의" class="level2">
+
 <ul>
-<li><p><img src="https://latex.codecogs.com/png.latex?%CE%BC%20=%20E(x)">로 가정. (모집단)</p></li>
-<li><p>covariance는 선형관계를 보여준다.<br>
-x와 y는 독립이다 -&gt; cov(x, y) = 0</p></li>
+<li>유럽 아방가르드(반사실주의): <code>환상적인 장면</code>, <code>다다이즘</code>, <code>과거회상</code>, <code>부조리 연극</code>, <code>상징주의</code>, <code>표현주의</code> 이 등장</li>
+<li>미국은 사실주의 포기 못함</li>
+<li>반사실주의와 절충한 수정 사실주의 등장</li>
+</ul>
+<section id="특징" class="level3">
+
+<ul>
+<li>사실주의보다는 연극성을 강조</li>
+<li>반사실주의보다는 환영주의에 덜 의존</li>
+<li><code>잘 짜여진 극</code>(well made) 기법에 덜 의존</li>
+<li><code>내면적 리얼리즘</code></li>
+<li>변화의 원인: <code>잠재의식</code> 영역 인정</li>
 </ul>
 </section>
-<section id="moment-generationg-functions" class="level2">
-<h2 class="anchored" data-anchor-id="moment-generationg-functions">Moment Generationg Functions</h2>
-<ul>
-<li>평균과 분산만으로 확률분포를 설명하기에는 부족하다.<br>
-</li>
-<li>moment: <img src="https://latex.codecogs.com/png.latex?%CE%BC_k%E2%80%B2%20=%20E(X%5Ek),%20k%20%E2%88%88%20%E2%84%A4+"></li>
-<li>Var(x) = <img src="https://latex.codecogs.com/png.latex?%CE%BC_2%E2%80%B2%20-%20%CE%BC_1%E2%80%B2%5E2"></li>
-<li>모든 k에 대해 검증 불가 =&gt; mgf(moment generating function)</li>
-<li>mgf: <img src="https://latex.codecogs.com/png.latex?M_X(t)%20=%20E(e%5E%7Btx%7D)"></li>
-</ul>
-<ol type="1">
-<li><p><img src="https://latex.codecogs.com/png.latex?M_X(t)%20=%201%20+%20t%CE%BC_1%E2%80%B2%20+%20%5Cfrac%7Bt%5E2%7D%7B2!%7D%CE%BC_2%E2%80%B2%20+%20%5Cfrac%7Bt%5E3%7D%7B3!%7D%CE%BC_3%E2%80%B2%20+%20..."></p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?M%E2%80%B2(t)%20=%20%CE%BC_1%E2%80%B2%20+%20%5Cfrac%7B2t%7D%7B2!%7D%CE%BC_2%E2%80%B2%20+%20%5Cfrac%7B3t%5E2%7D%7B3!%7D%CE%BC_3%E2%80%B2%20+%20..."></p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?M%E2%80%B2(0)%20=%20%CE%BC_1%E2%80%B2"></p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?M%E2%80%B2%E2%80%B2(0)%20=%20%CE%BC_2%E2%80%B2"></p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?M%5E%7B(k)%7D(0)%20=%20%CE%BC_k%E2%80%B2"></p></li>
-</ol>
 </section>
-<section id="answer" class="level2">
-<h2 class="anchored" data-anchor-id="answer">answer</h2>
-<ol type="1">
-<li>3</li>
-<li>모집단, 표본</li>
-<li>1,2,3</li>
-<li>2,4</li>
-<li>2,3</li>
-<li>2,3,4</li>
-<li>이거는 뭐</li>
-</ol>
+<section id="대표작" class="level2">
+<h2 class="anchored" data-anchor-id="대표작">대표작</h2>
+<section id="테네시-윌리엄스-욕망이라는-이름의-전차" class="level3">
+<h3 class="anchored" data-anchor-id="테네시-윌리엄스-욕망이라는-이름의-전차">테네시 윌리엄스 욕망이라는 이름의 전차</h3>
+</section>
+<section id="세일즈맨의-죽음" class="level3">
+<h3 class="anchored" data-anchor-id="세일즈맨의-죽음">세일즈맨의 죽음</h3>
+<ul>
+<li>플래시백이 많음.</li>
+<li>플롯이 서사극이라 사실주의로 분류</li>
+<li>플롯이 인과관계에 의해 진행됨</li>
+<li>당대의 사회현실을 그대로 반영함</li>
+<li>비현실적인 요소(유령, 과거)</li>
+</ul>
 
 
+</section>
 </section>
 
  ]]></description>
-  <category>확률과통계1</category>
-  <guid>https://cryscham123.github.io/posts/stat/notes/6week/1.html</guid>
-  <pubDate>Tue, 15 Oct 2024 07:14:36 GMT</pubDate>
+  <category>공연예술의이해</category>
+  <guid>https://cryscham123.github.io/posts/art/j.html</guid>
+  <pubDate>Wed, 16 Oct 2024 07:08:01 GMT</pubDate>
 </item>
 <item>
   <title>Number Theory and cryptography</title>
@@ -75,7 +71,7 @@ x와 y는 독립이다 -&gt; cov(x, y) = 0</p></li>
 
 <section id="divisibility" class="level2">
 <h2 class="anchored" data-anchor-id="divisibility">Divisibility</h2>
-<p>Theorem1 증명문제 나온다함</p>
+<p><del>Theorem1 증명문제 나온다함</del></p>
 
 
 </section>
@@ -83,7 +79,50 @@ x와 y는 독립이다 -&gt; cov(x, y) = 0</p></li>
  ]]></description>
   <category>이산수학</category>
   <guid>https://cryscham123.github.io/posts/discrete/notes/4.html</guid>
-  <pubDate>Tue, 15 Oct 2024 04:03:35 GMT</pubDate>
+  <pubDate>Wed, 16 Oct 2024 04:22:39 GMT</pubDate>
+</item>
+<item>
+  <title>확률변수의 기댓값</title>
+  <link>https://cryscham123.github.io/posts/stat/3-확률변수의-기댓값.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="확률변수의-기댓값" class="level2">
+<h2 class="anchored" data-anchor-id="확률변수의-기댓값">확률변수의 기댓값</h2>
+<ul>
+<li><p><img src="https://latex.codecogs.com/png.latex?%CE%BC%20=%20E(x)">로 가정. (모집단)</p></li>
+<li><p>covariance는 선형관계를 보여준다.<br>
+<code>x와 y는 독립이다 -&gt; cov(x, y) = 0</code></p></li>
+</ul>
+</section>
+<section id="moment-generationg-functions" class="level2">
+<h2 class="anchored" data-anchor-id="moment-generationg-functions">Moment Generationg Functions</h2>
+<ul>
+<li>평균과 분산만으로 확률분포를 설명하기에는 부족하다.<br>
+</li>
+<li>moment: <img src="https://latex.codecogs.com/png.latex?%CE%BC_k%E2%80%B2%20=%20E(X%5Ek),%20k%20%E2%88%88%20%E2%84%A4+"></li>
+<li>Var(x) = <img src="https://latex.codecogs.com/png.latex?%CE%BC_2%E2%80%B2%20-%20%CE%BC_1%E2%80%B2%5E2"></li>
+<li>E(x) = <img src="https://latex.codecogs.com/png.latex?%CE%BC_1%E2%80%B2"></li>
+<li>모든 k에 대해 검증 불가 =&gt; mgf(moment generating function)</li>
+<li>mgf: <img src="https://latex.codecogs.com/png.latex?M_X(t)%20=%20E(e%5E%7Btx%7D)"></li>
+</ul>
+<ol type="1">
+<li><p><img src="https://latex.codecogs.com/png.latex?M_X(t)%20=%201%20+%20t%CE%BC_1%E2%80%B2%20+%20%5Cfrac%7Bt%5E2%7D%7B2!%7D%CE%BC_2%E2%80%B2%20+%20%5Cfrac%7Bt%5E3%7D%7B3!%7D%CE%BC_3%E2%80%B2%20+%20..."></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?M%E2%80%B2(t)%20=%20%CE%BC_1%E2%80%B2%20+%20%5Cfrac%7B2t%7D%7B2!%7D%CE%BC_2%E2%80%B2%20+%20%5Cfrac%7B3t%5E2%7D%7B3!%7D%CE%BC_3%E2%80%B2%20+%20..."></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?M%E2%80%B2(0)%20=%20%CE%BC_1%E2%80%B2"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?M%E2%80%B2%E2%80%B2(0)%20=%20%CE%BC_2%E2%80%B2"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?M%5E%7B(k)%7D(0)%20=%20%CE%BC_k%E2%80%B2"></p></li>
+</ol>
+
+
+</section>
+
+ ]]></description>
+  <category>개념 정리</category>
+  <guid>https://cryscham123.github.io/posts/stat/3-확률변수의-기댓값.html</guid>
+  <pubDate>Tue, 15 Oct 2024 15:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Auditory Haptic</title>
@@ -164,8 +203,31 @@ restricting message set size, redundant carrier sentence</p></li>
 <li>Tactile information
 <ol type="1">
 <li>feedback by force: 저항감</li>
-<li>feedback by vibration:</li>
+<li>feedback by vibration</li>
+<li>electrical stimulation: 위험해서 적극적으로 쓰이진 않지만 종종 쓰인다. (저주파 마사지)</li>
 </ol></li>
+<li>중요한 정보는 시각, 나머지 feedback은 촉각, 청각으로 받아들임.</li>
+</ul>
+</section>
+<section id="force-feedback" class="level2">
+<h2 class="anchored" data-anchor-id="force-feedback">Force feedback</h2>
+<ul>
+<li>Kinesthetic information is poduced: 뭘 누를 때 반력 / 저항을 느낌.
+<ul>
+<li>큰 물체는 움직이기 어렵게 함 =&gt; 더 세밀하게 조종 가능</li>
+<li>게임에서 많이 사용됨</li>
+</ul></li>
+</ul>
+</section>
+<section id="vibration-feedback" class="level2">
+<h2 class="anchored" data-anchor-id="vibration-feedback">vibration feedback</h2>
+<ul>
+<li>using vibration for information transfer</li>
+<li>similar physical characteristics to auditory signal
+<ul>
+<li>amplitude, frequency, duration, wave pattern</li>
+</ul></li>
+<li>used for navigation aid</li>
 </ul>
 
 
@@ -177,60 +239,48 @@ restricting message set size, redundant carrier sentence</p></li>
 </item>
 <item>
   <title>Signal Detection Theory</title>
-  <link>https://cryscham123.github.io/posts/human/4_signal_detction.html</link>
+  <link>https://cryscham123.github.io/posts/human/5_signal_detction.html</link>
   <description><![CDATA[ 
 
 
 
 
-<p>주변의 제품, 서비스 문제 파악, 해결 디자인 제시, 검증</p>
+<p>주변의 제품, 서비스 문제 파악, 해결 디자인 제시, 검증 - Detection of signals is crucial to the performance of many tasks<br>
+- quality-control inspector - flash warning light (cctv) - airport security guard (이상한 물건 있는지) - x-ray</p>
+<section id="what-does-it-mean-to-detect" class="level2">
+<h2 class="anchored" data-anchor-id="what-does-it-mean-to-detect">What does it mean to detect?</h2>
+<ul>
+<li><p>signal is digital (exist / not exist)</p></li>
+<li><p>Absolute threshold is exist =&gt; <code>where the threshold?</code></p></li>
+<li><p>signal vs noise</p></li>
+</ul>
+</section>
+<section id="signal-detection-theory" class="level2">
+<h2 class="anchored" data-anchor-id="signal-detection-theory">Signal Detection Theory</h2>
+<ul>
+<li>Trials
+<ul>
+<li>Signal case(signal + noise): target이 존재</li>
+<li>Noise case: target이 없음</li>
+</ul></li>
+<li>Response</li>
+</ul>
+<section id="assumptions" class="level3">
+<h3 class="anchored" data-anchor-id="assumptions">Assumptions</h3>
+<ul>
+<li>사용자가 관찰할 수 있는 근거는 숫자나 변수로 표현할 수 있어야함</li>
+<li>evidence는 random variation이 있어야함</li>
+<li>simple decision criterion으로 결정할 수 있어야함</li>
+</ul>
 
 
+</section>
+</section>
 
  ]]></description>
   <category>인간 공학</category>
-  <guid>https://cryscham123.github.io/posts/human/4_signal_detction.html</guid>
+  <guid>https://cryscham123.github.io/posts/human/5_signal_detction.html</guid>
   <pubDate>Mon, 14 Oct 2024 15:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>사실주의</title>
-  <link>https://cryscham123.github.io/posts/art/10.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="수정-사실주의" class="level2">
-
-<ul>
-<li>유럽 아방가르드(반사실주의): <code>환상적인 장면</code>, <code>다다이즘</code>, <code>과거회상</code>, <code>부조리 연극</code>, <code>상징주의</code>, <code>표현주의</code> 이 등장</li>
-<li>미국은 사실주의 포기 못함</li>
-<li>반사실주의와 절충한 수정 사실주의 등장</li>
-</ul>
-<section id="특징" class="level3">
-
-<ul>
-<li>사실주의보다는 연극성을 강조</li>
-<li>반사실주의보다는 환영주의에 덜 의존</li>
-<li><code>잘 짜여진 극</code>(well made) 기법에 덜 의존</li>
-<li><code>내면적 리얼리즘</code></li>
-<li>변화의 원인: <code>잠재의식</code> 영역 인정</li>
-</ul>
-</section>
-</section>
-<section id="대표작" class="level2">
-<h2 class="anchored" data-anchor-id="대표작">대표작</h2>
-<section id="테네시-윌리엄스-욕망이라는-이름의-전차" class="level3">
-<h3 class="anchored" data-anchor-id="테네시-윌리엄스-욕망이라는-이름의-전차">테네시 윌리엄스 욕망이라는 이름의 전차</h3>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>공연예술의이해</category>
-  <guid>https://cryscham123.github.io/posts/art/10.html</guid>
-  <pubDate>Mon, 14 Oct 2024 07:05:05 GMT</pubDate>
 </item>
 <item>
   <title></title>
@@ -244,7 +294,7 @@ restricting message set size, redundant carrier sentence</p></li>
 </item>
 <item>
   <title>Data Modeling and the Entity-Relationship Model</title>
-  <link>https://cryscham123.github.io/posts/data/7-1.html</link>
+  <link>https://cryscham123.github.io/posts/data/7.html</link>
   <description><![CDATA[ 
 
 
@@ -253,19 +303,26 @@ restricting message set size, redundant carrier sentence</p></li>
 <section id="data-and-information" class="level2">
 <h2 class="anchored" data-anchor-id="data-and-information">Data and information</h2>
 <ul>
-<li>Data: 사실</li>
+<li>Data: raw facts. <code>recorded facts</code></li>
 <li>Information: <code>meaningful context</code></li>
+<li>Knowledge: information + 가치</li>
 </ul>
 </section>
 <section id="what-is-information-system" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-information-system">What is information system?</h2>
 <ul>
-<li><p>System: a <code>set of components</code> that interact to achieve some <code>purpose</code> or goal</p></li>
+<li><p>System: a <code>set of components</code> that interact to achieve some <code>purpose</code> or <code>goal</code></p></li>
 <li><p>Information System: composed of <code>hardware</code>, <code>software</code>, <code>data</code>, <code>procedures</code>, <code>people</code></p></li>
 </ul>
 </section>
-<section id="sdlc-system-development-life-cycle" class="level2">
-<h2 class="anchored" data-anchor-id="sdlc-system-development-life-cycle"><code>SDLC</code> (System Development Life Cycle)</h2>
+<section id="system-analysis-and-design" class="level2">
+<h2 class="anchored" data-anchor-id="system-analysis-and-design">System Analysis and Design</h2>
+<ul>
+<li><code>System analysis and design</code>: process of creating and maintaining <code>information systems</code></li>
+<li>classic methodology: <code>SDLC</code></li>
+</ul>
+<section id="sdlc-system-development-life-cycle" class="level3">
+<h3 class="anchored" data-anchor-id="sdlc-system-development-life-cycle"><code>SDLC</code> (System Development Life Cycle)</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://cryscham123.github.io/img/system-use.png" class="img-fluid figure-img"></p>
@@ -279,13 +336,66 @@ restricting message set size, redundant carrier sentence</p></li>
 <li>Implementation</li>
 <li>System maintenance</li>
 </ol>
+<p><img src="https://cryscham123.github.io/img/system-work.png" class="img-fluid"></p>
+<section id="database-development-process" class="level4">
+<h4 class="anchored" data-anchor-id="database-development-process">database development process</h4>
+<ol type="1">
+<li><code>Requirements</code> analysis<br>
+input: the project plan<br>
+output: a set of approved requirements -&gt; <code>data model</code> (<code>ER model</code>로 <code>conceptual design</code>)<br>
+source: Use cases, Business rules</li>
+<li>Component Design: Relational Database Design (상세 설계)</li>
+<li>Implementation</li>
+</ol>
+</section>
+</section>
+</section>
+<section id="er-model" class="level2">
+<h2 class="anchored" data-anchor-id="er-model">ER model</h2>
+<ul>
+<li><code>Entities</code>
+<ul>
+<li><code>Entity class</code></li>
+<li><code>Entity instance</code></li>
+</ul></li>
+<li>Attributes: <code>Data type</code>, <code>Properties</code></li>
+<li>Identifiers
+<ul>
+<li><code>unique</code></li>
+<li><code>Nonunique</code>: identifies a set of instances</li>
+</ul></li>
+<li><code>Relationships</code>
+<ul>
+<li><code>binary relationship</code>
+<ul>
+<li>Maximum cardinality: <code>1:1</code>, <code>1:N</code>, <code>M:N</code></li>
+<li>Minimum cardinality: <code>0</code>, <code>1</code></li>
+</ul></li>
+<li><code>ternary relationship</code></li>
+</ul></li>
+</ul>
+<p><img src="https://cryscham123.github.io/img/entity.png" class="img-fluid"></p>
+</section>
+<section id="entit-relationship-diagram" class="level2">
+<h2 class="anchored" data-anchor-id="entit-relationship-diagram"><code>Entit-Relationship Diagram</code></h2>
+<ul>
+<li><code>Entity classes</code>: rectangle</li>
+<li><code>Relationships</code>: diamond</li>
+<li><code>maximum cardinality</code>: inside the diamond</li>
+<li><code>minimum cardinality</code>: oval or hash mark next to diamond</li>
+</ul>
+<p>다음주 수업 없다 까마귀발 그리는거 시험 내신단다 100%라시단다</p>
+<ul>
+<li><code>strong entity</code>: 독자적으로 존재 가능. 강한개체 관계는 점선</li>
+<li><code>weak entity</code>: 약, 강 관계는 실선. IS: rounded square, traditional: 2 layer square</li>
+</ul>
 
 
 </section>
 
  ]]></description>
   <category>데이터베이스설계및활용</category>
-  <guid>https://cryscham123.github.io/posts/data/7-1.html</guid>
+  <guid>https://cryscham123.github.io/posts/data/7.html</guid>
   <pubDate>Sun, 13 Oct 2024 15:00:00 GMT</pubDate>
 </item>
 <item>
@@ -674,40 +784,8 @@ vacuous proof: p가 false인걸 알 경우</p></li>
   <pubDate>Thu, 10 Oct 2024 15:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>확률과 통계1 과제 3</title>
-  <link>https://cryscham123.github.io/posts/stat/homework/work3.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">1</h2>
-<p>P(X=k) = <img src="https://latex.codecogs.com/png.latex?/chosen%7B3%7D%7Bk%7D%20*%20%5Cfrac%7B1%7D%7B3%7D%5Ek%20*%20%5Cfrac%7B2%7D%7B3%7D%5E%7B3-k%7D"><br>
-P(Y=k) = <img src="https://latex.codecogs.com/png.latex?/chosen%7B3%7D%7Bk%7D%20*%20%5Cfrac%7B1%7D%7B15%7D%5Ek%20*%20%5Cfrac%7B14%7D%7B15%7D%5E%7B3-k%7D"></p>
-<p>P(X+Y) = <img src="https://latex.codecogs.com/png.latex?/sum_%7Bk=0%7D%5E%7B3%7D%20P(X=k)P(Y=k)"></p>
-</section>
-<section id="section-1" class="level2">
-<h2 class="anchored" data-anchor-id="section-1">2</h2>
-</section>
-<section id="section-2" class="level2">
-<h2 class="anchored" data-anchor-id="section-2">3</h2>
-<section id="a" class="level3">
-<h3 class="anchored" data-anchor-id="a">a</h3>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>확률과통계1</category>
-  <category>과제</category>
-  <guid>https://cryscham123.github.io/posts/stat/homework/work3.html</guid>
-  <pubDate>Thu, 10 Oct 2024 15:00:00 GMT</pubDate>
-</item>
-<item>
   <title>가부키</title>
-  <link>https://cryscham123.github.io/posts/art/9.html</link>
+  <link>https://cryscham123.github.io/posts/art/i.html</link>
   <description><![CDATA[ 
 
 
@@ -753,7 +831,7 @@ P(Y=k) = <img src="https://latex.codecogs.com/png.latex?/chosen%7B3%7D%7Bk%7D%20
 
  ]]></description>
   <category>공연예술의이해</category>
-  <guid>https://cryscham123.github.io/posts/art/9.html</guid>
+  <guid>https://cryscham123.github.io/posts/art/i.html</guid>
   <pubDate>Tue, 08 Oct 2024 15:00:00 GMT</pubDate>
 </item>
 <item>
@@ -789,13 +867,43 @@ P(Y=k) = <img src="https://latex.codecogs.com/png.latex?/chosen%7B3%7D%7Bk%7D%20
 <li>유한한 정수 집단에서 가장 큰 수 찾기</li>
 <li>검색 알고리즘
 <ul>
-<li>선형 검색</li>
-<li>이진 검색</li>
+<li><p>선형 검색</p>
+<pre><code>procedure linear search(x: integer, a_1, a_2, ..., a_n: distinct integers)
+i := 1
+while i &lt;= n and x != a_i
+  i := i + 1
+if i &lt;= n then position := i
+else position := 0
+return position {position is subscript of the term that equals x, or 0 if not found}</code></pre></li>
+<li><p>이진 검색</p>
+<pre><code>procedure binary search(x: integer, a_1, a_2, ..., a_n: increasing integers)
+i := 1
+j := n
+while i &lt; j
+  m := (i + j) / 2
+  if x &gt; a_m then i := m + 1
+  else j := m
+if x = a_i then position := i
+else position := 0
+return position</code></pre></li>
 </ul></li>
 <li>정렬
 <ul>
-<li>버블 정렬</li>
-<li>선택 정렬</li>
+<li><p>버블 정렬</p>
+<pre><code>procedure bubble sort(a_1, a_2, ..., a_n: real number with n &gt;= 2)
+for i := 1 to n-1
+  for j:= 1 to n-i
+    if a_j &gt; a_j+1 then swap a_j and a_j+1</code></pre></li>
+<li><p>선택 정렬</p>
+<pre><code>procedure insertion sort (a_1, a_2, ..., a_n: real numbers with n &gt;= 2)
+for j := 2 to n
+  i := 1
+  while a_j &gt; a_i
+  i := i + 1
+  m := a_j
+  for k := 0 to j - i - 1
+  a_{j-k} := a_{j-k-1}
+  a_i := m</code></pre></li>
 </ul></li>
 <li>그리디 알고리즘</li>
 </ul>
@@ -806,16 +914,46 @@ P(Y=k) = <img src="https://latex.codecogs.com/png.latex?/chosen%7B3%7D%7Bk%7D%20
 <section id="big-o-notation" class="level3">
 <h3 class="anchored" data-anchor-id="big-o-notation">Big-O Notation</h3>
 <ul>
-<li><img src="https://latex.codecogs.com/png.latex?f(x)%20is%20O(g(x))"> if there exists a constant <img src="https://latex.codecogs.com/png.latex?c%20%3E%200"> and <img src="https://latex.codecogs.com/png.latex?x_0"> such that <img src="https://latex.codecogs.com/png.latex?%7Cf(x)%7C%20%3C=%20c%7Cg(x)%7C"> for all <img src="https://latex.codecogs.com/png.latex?x%20%3E=%20x_0"></li>
-<li><img src="https://latex.codecogs.com/png.latex?f(x)%20is%20O(g(x))"> if <img src="https://latex.codecogs.com/png.latex?f(x)%20grows%20no%20faster%20than%20g(x)"></li>
+<li><img src="https://latex.codecogs.com/png.latex?f(x)"> is <img src="https://latex.codecogs.com/png.latex?O(g(x))"> if there exists a constant <img src="https://latex.codecogs.com/png.latex?c%20%3E%200"> and <img src="https://latex.codecogs.com/png.latex?x_0"> such that <img src="https://latex.codecogs.com/png.latex?%7Cf(x)%7C%20%E2%89%A4%20c%7Cg(x)%7C"> for all <img src="https://latex.codecogs.com/png.latex?x%20%E2%89%A5%20x_0"></li>
+<li><img src="https://latex.codecogs.com/png.latex?f(x)"> is <img src="https://latex.codecogs.com/png.latex?O(g(x))"> if <img src="https://latex.codecogs.com/png.latex?f(x)%20grows%20no%20faster%20than%20g(x)"></li>
 <li>당연히 여러개일 수 있다.</li>
+<li><img src="https://latex.codecogs.com/png.latex?f(x)%20=%20O(g(x))">가 아니라 <img src="https://latex.codecogs.com/png.latex?f(x)%20%E2%88%88%20O(g(x))"></li>
 </ul>
+<section id="example" class="level4">
+<h4 class="anchored" data-anchor-id="example">Example</h4>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?f(x)%20=%20a_nx%5En%20+%20a_%7Bn-1%7Dx%5E%7Bn-1%7D%20+%20...%20+%20a_1x%20+%20a_0"><br>
+<img src="https://latex.codecogs.com/png.latex?f(x)"> is <img src="https://latex.codecogs.com/png.latex?O(x%5En)"></li>
+<li><img src="https://latex.codecogs.com/png.latex?f(x)%20=%201%20+%202%20+%20...%20+%20n"><br>
+<img src="https://latex.codecogs.com/png.latex?f(x)"> is <img src="https://latex.codecogs.com/png.latex?O(n%5E2)"></li>
+<li><img src="https://latex.codecogs.com/png.latex?f(n)%20=%20n!"><br>
+$f(n) is <img src="https://latex.codecogs.com/png.latex?O(n%5En)"></li>
+<li><img src="https://latex.codecogs.com/png.latex?f_1(x)"> is <img src="https://latex.codecogs.com/png.latex?O(g_1(x))"> and <img src="https://latex.codecogs.com/png.latex?f_2(x)"> is <img src="https://latex.codecogs.com/png.latex?O(g_2(x))"><br>
+<img src="https://latex.codecogs.com/png.latex?(f_1%20+%20f_2)(x)"> is <img src="https://latex.codecogs.com/png.latex?O(max(%7Cg_1(x)%7C,%20%7Cg_2(x)%7C))"><br>
+<img src="https://latex.codecogs.com/png.latex?(f_1%20f_2)(x)"> is <img src="https://latex.codecogs.com/png.latex?O(max(g_1(x)%20g_2(x)))"></li>
+<li><img src="https://latex.codecogs.com/png.latex?f_1(x)"> and <img src="https://latex.codecogs.com/png.latex?f_2(x)"> both <img src="https://latex.codecogs.com/png.latex?O(g(x))"><br>
+<img src="https://latex.codecogs.com/png.latex?(f_1%20+%20f_2)(x)"> is <img src="https://latex.codecogs.com/png.latex?O(g(x))"></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://cryscham123.github.io/img/growth-bigo.png" class="img-fluid figure-img"></p>
+<figcaption>Growth of Functins</figcaption>
+</figure>
+</div>
+</section>
 </section>
 <section id="big-ω-notation" class="level3">
 <h3 class="anchored" data-anchor-id="big-ω-notation">Big-Ω Notation</h3>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?%7Cf(x)%7C%20%E2%89%A5%20C%7Cg(x)%7C"> when <img src="https://latex.codecogs.com/png.latex?x%20%3E%20k"></li>
+</ul>
 </section>
 <section id="big-θ-notation" class="level3">
 <h3 class="anchored" data-anchor-id="big-θ-notation">Big-θ Notation</h3>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?f(x)"> is <img src="https://latex.codecogs.com/png.latex?%CE%A9(g(x))"> and <img src="https://latex.codecogs.com/png.latex?f(x)"> is <img src="https://latex.codecogs.com/png.latex?O(g(x))"></li>
+<li><img src="https://latex.codecogs.com/png.latex?C_1%20g(x)%20%3C%20f(x)%20%3C%20C_2%20g(x),%20x%20%3E%20k"></li>
+</ul>
 </section>
 </section>
 <section id="complexity-of-algorithms" class="level2">
@@ -823,8 +961,10 @@ P(Y=k) = <img src="https://latex.codecogs.com/png.latex?/chosen%7B3%7D%7Bk%7D%20
 </section>
 <section id="combination-of-funciton" class="level2">
 <h2 class="anchored" data-anchor-id="combination-of-funciton">combination of funciton</h2>
-<p>if <img src="https://latex.codecogs.com/png.latex?f_1(x)%20is%20O(g_1(x))"> and <img src="https://latex.codecogs.com/png.latex?f_2(x)%20is%20O(g_2(x))">, then <img src="https://latex.codecogs.com/png.latex?f_1(x)%20+%20f_2(x)%20is%20O(max(%7Cg_1(x)%7C,%20%7Cg_2(x)%7C))"></p>
-<p><img src="https://latex.codecogs.com/png.latex?%7Cf_1(x)%20+%20f_2(x)%7C%20%3C=%20%7Cf_1(x)%7C%20+%20%7Cf_2(x)%7C%0A%3C=%20c_1%7Cg_1(x)%7C%20+%20c_2%7Cg_2(x)%7C%0A%3C=%20(c_1%20+%20c_2)max(%7Cg_1(x)%7C,%20%7Cg_2(x)%7C)"></p>
+<p>if <img src="https://latex.codecogs.com/png.latex?f_1(x)%20is%20O(g_1(x))"> and <img src="https://latex.codecogs.com/png.latex?f_2(x)%20is%20O(g_2(x))">, then <img src="https://latex.codecogs.com/png.latex?f_1(x)%20+%20f_2(x)%20is%20O(max(%7Cg_1(x)%7C,%20%7Cg_2(x)%7C))"><br>
+<img src="https://latex.codecogs.com/png.latex?%7Cf_1(x)%20+%20f_2(x)%7C%20%E2%89%A4%20%7Cf_1(x)%7C%20+%20%7Cf_2(x)%7C"><br>
+<img src="https://latex.codecogs.com/png.latex?%E2%89%A4%20c_1%7Cg_1(x)%7C%20+%20c_2%7Cg_2(x)%7C"><br>
+<img src="https://latex.codecogs.com/png.latex?%E2%89%A4%20(c_1%20+%20c_2)max(%7Cg_1(x)%7C,%20%7Cg_2(x)%7C)"></p>
 </section>
 <section id="ordering-functions-by-order-of-growth" class="level2">
 <h2 class="anchored" data-anchor-id="ordering-functions-by-order-of-growth">ordering functions by order of growth</h2>
@@ -880,7 +1020,7 @@ P(Y=k) = <img src="https://latex.codecogs.com/png.latex?/chosen%7B3%7D%7Bk%7D%20
 </item>
 <item>
   <title>안톤 체홉의 사실주의극</title>
-  <link>https://cryscham123.github.io/posts/art/8.html</link>
+  <link>https://cryscham123.github.io/posts/art/h.html</link>
   <description><![CDATA[ 
 
 
@@ -897,7 +1037,7 @@ P(Y=k) = <img src="https://latex.codecogs.com/png.latex?/chosen%7B3%7D%7Bk%7D%20
 
  ]]></description>
   <category>공연예술의이해</category>
-  <guid>https://cryscham123.github.io/posts/art/8.html</guid>
+  <guid>https://cryscham123.github.io/posts/art/h.html</guid>
   <pubDate>Sun, 06 Oct 2024 15:00:00 GMT</pubDate>
 </item>
 <item>
@@ -1443,6 +1583,22 @@ font-style: inherit;">FROM</span> student;</span></code></pre></div>
   <category>데이터베이스설계및활용</category>
   <guid>https://cryscham123.github.io/posts/data/4-2.html</guid>
   <pubDate>Thu, 26 Sep 2024 15:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>사실주의 연극과 헨릭 입센</title>
+  <link>https://cryscham123.github.io/posts/art/g.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+
+ ]]></description>
+  <category>공연예술의이해</category>
+  <guid>https://cryscham123.github.io/posts/art/g.html</guid>
+  <pubDate>Tue, 24 Sep 2024 15:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

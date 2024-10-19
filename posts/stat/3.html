@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-09-19">
 
-<title>확률과 통계1 – 2024-2 정리노트</title>
+<title>R base 03 – 2024-2 정리노트</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../posts/stat/final/1-통계학의-개념.html" rel="next">
+<link href="../../posts/stat/3-확률변수의-기댓값.html" rel="next">
 <link href="../../posts/stat/2week.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -105,7 +106,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="확률과 통계1 – 2024-2 정리노트">
+<meta property="og:title" content="R base 03 – 2024-2 정리노트">
 <meta property="og:site_name" content="2024-2 정리노트">
 </head>
 
@@ -136,7 +137,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/stat/1week.html">Stat</a></li><li class="breadcrumb-item"><a href="../../posts/stat/3.html">확률과 통계1</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/stat/1-통계학의-개념.html">Stat</a></li><li class="breadcrumb-item"><a href="../../posts/stat/3.html">R base 03</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -159,62 +160,62 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/art/1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/art/a.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">무대의 종류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/art/10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">사실주의</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/art/2.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/art/b.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">공연예술의 개념과 특징</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/art/3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">연극의 장르 - 비극과 희극</span></a>
+  <a href="../../posts/art/c.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">그리스 비극의 기원과 특징</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/art/4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">연극의 장르 - 멜로드라마와 소극</span></a>
+  <a href="../../posts/art/d.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">그리스 비극의 주요 작가와 작품</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/art/5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">연극의 장르 - 멜로드라마와 소극</span></a>
+  <a href="../../posts/art/e.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">셰익스피어의 희극 - 한여름 밤의 꿈</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/art/6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">연극의 장르 - 멜로드라마와 소극</span></a>
+  <a href="../../posts/art/f.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">셰익스피어의 비극 - 햄릿</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/art/7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">셰익스피어 희극 - 한여름 밤의 꿈</span></a>
+  <a href="../../posts/art/g.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">사실주의 연극과 헨릭 입센</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/art/8.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/art/h.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">안톤 체홉의 사실주의극</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/art/9.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/art/i.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">가부키</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/art/j.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">수정 사실주의</span></a>
   </div>
 </li>
       </ul>
@@ -232,12 +233,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="../../posts/data/1-2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">An Overview of Database</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/data/2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction of Commercial DBMS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -260,7 +255,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/data/7-1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/data/7.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Modeling and the Entity-Relationship Model</span></a>
   </div>
 </li>
@@ -376,7 +371,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/human/4_signal_detction.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/human/5_signal_detction.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Signal Detection Theory</span></a>
   </div>
 </li>
@@ -547,102 +542,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../posts/stat/1-통계학의-개념.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">확률과 통계의 정의</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../posts/stat/1week.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">r base</span></a>
+ <span class="menu-text">R base 01</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/stat/2-확률변수와-분포.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">확률변수와 확률분포</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../posts/stat/2week.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">r base</span></a>
+ <span class="menu-text">R base 02</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../posts/stat/3.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">확률과 통계1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false">
- <span class="menu-text">Final</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/stat/final/1-통계학의-개념.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">통계학의 개념</span></a>
+ <span class="menu-text">R base 03</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/stat/final/2-확률변수와-분포.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">확률변수와 분포</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false">
- <span class="menu-text">Homework</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/stat/homework/work1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">확률과 통계1 과제 1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/stat/homework/work2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">확률과 통계1 과제 2</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/stat/homework/work3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">확률과 통계1 과제 3</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="false">
- <span class="menu-text">Notes</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false">
- <span class="menu-text">6week</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth3 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/stat/notes/6week/1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/stat/3-확률변수의-기댓값.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">확률변수의 기댓값</span></a>
   </div>
 </li>
-      </ul>
-  </li>
-      </ul>
-  </li>
       </ul>
   </li>
     </ul>
@@ -657,7 +590,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#descriptive-statistics" id="toc-descriptive-statistics" class="nav-link active" data-scroll-target="#descriptive-statistics">descriptive statistics</a>
   <ul class="collapse">
-  <li><a href="#data-classification" id="toc-data-classification" class="nav-link" data-scroll-target="#data-classification">data classification</a></li>
+  <li><a href="#데이터-분류" id="toc-데이터-분류" class="nav-link" data-scroll-target="#데이터-분류">데이터 분류</a></li>
   <li><a href="#basic-statistics" id="toc-basic-statistics" class="nav-link" data-scroll-target="#basic-statistics">basic statistics</a></li>
   </ul></li>
   <li><a href="#bar-plot" id="toc-bar-plot" class="nav-link" data-scroll-target="#bar-plot">bar plot</a></li>
@@ -668,11 +601,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/stat/1week.html">Stat</a></li><li class="breadcrumb-item"><a href="../../posts/stat/3.html">확률과 통계1</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/stat/1-통계학의-개념.html">Stat</a></li><li class="breadcrumb-item"><a href="../../posts/stat/3.html">R base 03</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">확률과 통계1</h1>
+<h1 class="title">R base 03</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">확률과통계1</div>
+    <div class="quarto-category">개념 정리</div>
+    <div class="quarto-category">R</div>
   </div>
   </div>
 
@@ -681,6 +615,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 19, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -692,8 +632,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="descriptive-statistics" class="level2">
 <h2 class="anchored" data-anchor-id="descriptive-statistics">descriptive statistics</h2>
-<section id="data-classification" class="level3">
-<h3 class="anchored" data-anchor-id="data-classification">data classification</h3>
+<section id="데이터-분류" class="level3">
+<h3 class="anchored" data-anchor-id="데이터-분류">데이터 분류</h3>
 <ol type="1">
 <li>범주형 데이터
 <ul>
@@ -720,9 +660,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>분산</li>
 <li>표준편차</li>
-<li>범위</li>
-<li>사분위수</li>
 <li>IQR</li>
+<li>변동계수</li>
 </ul></li>
 <li>분포도
 <ul>
@@ -809,11 +748,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>, <span class="dv">10</span>, <span class="at">replace=</span>T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 17 16  7 16  3  5 10 12 14 15</code></pre>
+<pre><code> [1]  5  3 10 13 20  1 20  2 10 20</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">'H'</span>, <span class="st">'T'</span>), <span class="dv">10</span>, <span class="at">replace=</span>T, <span class="at">prob=</span><span class="fu">c</span>(<span class="fl">0.3</span>, <span class="fl">0.7</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] "T" "T" "T" "T" "H" "T" "H" "T" "T" "T"</code></pre>
+<pre><code> [1] "T" "T" "T" "T" "T" "T" "T" "H" "T" "H"</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">c</span>(<span class="dv">100</span>, <span class="dv">1000</span>, <span class="dv">10000</span>, <span class="dv">100000</span>)) {</span>
@@ -1256,13 +1195,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../posts/stat/2week.html" class="pagination-link" aria-label="r base">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">r base</span>
+      <a href="../../posts/stat/2week.html" class="pagination-link" aria-label="R base 02">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">R base 02</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../posts/stat/final/1-통계학의-개념.html" class="pagination-link" aria-label="통계학의 개념">
-        <span class="nav-page-text">통계학의 개념</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../posts/stat/3-확률변수의-기댓값.html" class="pagination-link" aria-label="확률변수의 기댓값">
+        <span class="nav-page-text">확률변수의 기댓값</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

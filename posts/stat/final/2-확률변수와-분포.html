@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2024-09-03">
 
-<title>확률변수와 분포 – 2024-2 정리노트</title>
+<title>확률변수와 확률분포 – 2024-2 정리노트</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../posts/stat/homework/work1.html" rel="next">
+<link href="../../../posts/stat/final/3-확률변수의-기댓값.html" rel="next">
 <link href="../../../posts/stat/final/1-통계학의-개념.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
@@ -101,7 +101,7 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../../../styles.css">
-<meta property="og:title" content="확률변수와 분포 – 2024-2 정리노트">
+<meta property="og:title" content="확률변수와 확률분포 – 2024-2 정리노트">
 <meta property="og:description" content="my 2024-2 note site">
 <meta property="og:site_name" content="2024-2 정리노트">
 </head>
@@ -133,7 +133,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../posts/stat/1week.html">Stat</a></li><li class="breadcrumb-item"><a href="../../../posts/stat/final/1-통계학의-개념.html">Final</a></li><li class="breadcrumb-item"><a href="../../../posts/stat/final/2-확률변수와-분포.html">확률변수와 분포</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../posts/stat/1week.html">Stat</a></li><li class="breadcrumb-item"><a href="../../../posts/stat/final/1-통계학의-개념.html">Final</a></li><li class="breadcrumb-item"><a href="../../../posts/stat/final/2-확률변수와-분포.html">확률변수와 확률분포</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -156,62 +156,62 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../posts/art/1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../posts/art/a.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">무대의 종류</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../posts/art/10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">사실주의</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../posts/art/2.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../posts/art/b.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">공연예술의 개념과 특징</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../posts/art/3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">연극의 장르 - 비극과 희극</span></a>
+  <a href="../../../posts/art/c.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">그리스 비극의 기원과 특징</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../posts/art/4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">연극의 장르 - 멜로드라마와 소극</span></a>
+  <a href="../../../posts/art/d.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">그리스 비극의 주요 작가와 작품</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../posts/art/5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">연극의 장르 - 멜로드라마와 소극</span></a>
+  <a href="../../../posts/art/e.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">셰익스피어의 희극 - 한여름 밤의 꿈</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../posts/art/6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">연극의 장르 - 멜로드라마와 소극</span></a>
+  <a href="../../../posts/art/f.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">셰익스피어의 비극 - 햄릿</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../posts/art/7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">셰익스피어 희극 - 한여름 밤의 꿈</span></a>
+  <a href="../../../posts/art/g.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">사실주의 연극과 헨릭 입센</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../posts/art/8.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../posts/art/h.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">안톤 체홉의 사실주의극</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../posts/art/9.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../posts/art/i.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">가부키</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../posts/art/j.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">수정 사실주의</span></a>
   </div>
 </li>
       </ul>
@@ -229,12 +229,6 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../../../posts/data/1-2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">An Overview of Database</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../posts/data/2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction of Commercial DBMS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -257,7 +251,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../posts/data/7-1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../posts/data/7.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Modeling and the Entity-Relationship Model</span></a>
   </div>
 </li>
@@ -373,7 +367,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../posts/human/4_signal_detction.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../posts/human/5_signal_detction.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Signal Detection Theory</span></a>
   </div>
 </li>
@@ -572,13 +566,19 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../posts/stat/final/1-통계학의-개념.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">통계학의 개념</span></a>
+ <span class="menu-text">확률과 통계의 정의</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../posts/stat/final/2-확률변수와-분포.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">확률변수와 분포</span></a>
+ <span class="menu-text">확률변수와 확률분포</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../posts/stat/final/3-확률변수의-기댓값.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">확률변수의 기댓값</span></a>
   </div>
 </li>
       </ul>
@@ -672,11 +672,11 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../posts/stat/1week.html">Stat</a></li><li class="breadcrumb-item"><a href="../../../posts/stat/final/1-통계학의-개념.html">Final</a></li><li class="breadcrumb-item"><a href="../../../posts/stat/final/2-확률변수와-분포.html">확률변수와 분포</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../posts/stat/1week.html">Stat</a></li><li class="breadcrumb-item"><a href="../../../posts/stat/final/1-통계학의-개념.html">Final</a></li><li class="breadcrumb-item"><a href="../../../posts/stat/final/2-확률변수와-분포.html">확률변수와 확률분포</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">확률변수와 분포</h1>
+<h1 class="title">확률변수와 확률분포</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">확률과통계1</div>
+    <div class="quarto-category">개념 정리</div>
   </div>
   </div>
 
@@ -702,18 +702,21 @@ window.Quarto = {
 
 <section id="확률변수" class="level2">
 <h2 class="anchored" data-anchor-id="확률변수">확률변수</h2>
-<p>sample space의 원소를 실수로 대응시키는 함수</p>
+<p>sample space의 원소를 <code>상호 배반인 event들로 분할</code>하여 <code>실수 값으로 대응</code>시키는 함수</p>
 <ul>
-<li>이산확률변수: 확률변수가 취할 수 있는 값이 유한개 또는 무한개이지만 셀 수 있는 경우</li>
-<li>연속확률변수: 확률변수가 취할 수 있는 값이 실수의 구간이고 셀 수 없는 경우</li>
+<li>이산확률변수: 확률변수가 취할 수 있는 값이 유한개 또는 무한개이지만 <code>셀 수 있는 경우</code></li>
+<li>연속확률변수: 확률변수가 취할 수 있는 값이 실수의 구간이고 <code>셀 수 없는 경우</code></li>
 </ul>
 <p>이산 표본공간 -&gt; 이산 확률변수<br>
 연속 표본공간 -&gt; 연속 확률변수<br>
 연속 표본공간 -&gt; 이산 확률변수</p>
-<p>확률 실험 -&gt; 표본공간 -&gt; 확률변수 -&gt; 확률분포</p>
 </section>
 <section id="확률-분포" class="level2">
 <h2 class="anchored" data-anchor-id="확률-분포">확률 분포</h2>
+<ul>
+<li>표본공간 S에 정의된 <code>확률변수 X의 모든 함수값들이 발생할 확률</code>. <code>모집단의 확률구조</code>를 나타냄</li>
+<li>확률 실험 -&gt; 표본공간 -&gt; 확률변수 -&gt; 확률분포</li>
+</ul>
 <section id="이산확률분포" class="level3">
 <h3 class="anchored" data-anchor-id="이산확률분포">이산확률분포</h3>
 <p>확률 질량 함수(pmf): P(X=x) = f(x) =&gt; X가 x일 확률<br>
@@ -724,9 +727,10 @@ window.Quarto = {
 <ul>
 <li>확률 밀도 함수(pdf): <span class="math inline">\(\int{f(x)}dx = 1\)</span></li>
 <li><span class="math inline">\(\int_a^b {f(x)}dx = P(a ≤ x ≤ b)\)</span> =&gt; x가 a와 b사이에 있을 확률</li>
-<li>P(X=x) = 0 (연속형 데이터여서 특정값을 가질 확률은 0)</li>
-<li>f(x)는 1보다 큰 값을 가질 수 있음</li>
-<li>누적분포함수(cdf): <span class="math inline">\(F(x) = P(X ≤ x)\)</span> =&gt; <span class="math inline">\(\int_{-∞}^x{f(y)}dy\)</span> (이산확률분포와 연속확률분포 모두에 적용)</li>
+<li><code>P(X=x) = 0</code> (연속형 데이터여서 특정값을 가질 확률은 0)</li>
+<li><code>f(x) ≠ P(X=x)</code></li>
+<li><code>f(x)는 1보다 큰 값을 가질 수 있음</code></li>
+<li>누적분포함수(cdf): <span class="math inline">\(F(x) = P(X ≤ x)\)</span> =&gt; <span class="math inline">\(\int_{-∞}^x{f(y)}dy\)</span></li>
 </ul>
 </section>
 </section>
@@ -747,8 +751,7 @@ window.Quarto = {
 <section id="조건부-확률분포" class="level2">
 <h2 class="anchored" data-anchor-id="조건부-확률분포">조건부 확률분포</h2>
 <ul>
-<li><span class="math inline">\(f(x|y) = \frac{joint}{marginal}\)</span></li>
-<li><span class="math inline">\(f(x|y) = \frac{f(x, y)}{f_Y(y)}\)</span></li>
+<li><span class="math inline">\(f(x|y)\)</span> = <span class="math inline">\(\frac{joint}{marginal}\)</span> = <span class="math inline">\(\frac{f(x, y)}{f_Y(y)}\)</span></li>
 </ul>
 </section>
 <section id="독립-확률변수" class="level2">
@@ -761,7 +764,7 @@ window.Quarto = {
 <li><span class="math inline">\(f(x, y) = g(x) * h(y)\)</span><br>
 </li>
 <li>x, y 의 구간이 서로 간섭받지 않는다.<br>
-X,Y는 독립이다. 100%는 아니다.</li>
+X,Y는 독립이다.</li>
 </ol>
 </blockquote>
 </section>
@@ -773,7 +776,7 @@ X,Y는 독립이다. 100%는 아니다.</li>
 </ol>
 <section id="역함수가-존재할-경우" class="level3">
 <h3 class="anchored" data-anchor-id="역함수가-존재할-경우">역함수가 존재할 경우</h3>
-<p><span class="math inline">\(g(y) = f(g^{-1}(y)) * |g'(g^{-1}(y))|\)</span></p>
+<p><span class="math inline">\(g(y) = f(u^{-1}(y)) * |\frac{du^{-1}}{dy}|\)</span></p>
 
 
 </section>
@@ -1202,13 +1205,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../posts/stat/final/1-통계학의-개념.html" class="pagination-link" aria-label="통계학의 개념">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">통계학의 개념</span>
+      <a href="../../../posts/stat/final/1-통계학의-개념.html" class="pagination-link" aria-label="확률과 통계의 정의">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">확률과 통계의 정의</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../posts/stat/homework/work1.html" class="pagination-link" aria-label="확률과 통계1 과제 1">
-        <span class="nav-page-text">확률과 통계1 과제 1</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../posts/stat/final/3-확률변수의-기댓값.html" class="pagination-link" aria-label="확률변수의 기댓값">
+        <span class="nav-page-text">확률변수의 기댓값</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
