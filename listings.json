@@ -2,8 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/art/j.html",
       "/posts/discrete/notes/4.html",
+      "/posts/art/j.html",
       "/posts/stat/3-확률변수의-기댓값.html",
       "/posts/human/4_Auditory_Haptic.html",
       "/posts/human/5_signal_detction.html",

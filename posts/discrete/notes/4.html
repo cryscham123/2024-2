@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-10-16">
+<meta name="dcterms.date" content="2024-10-20">
 
 <title>Number Theory and cryptography – 2024-2 정리노트</title>
 <style>
@@ -555,7 +555,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#divisibility" id="toc-divisibility" class="nav-link active" data-scroll-target="#divisibility">Divisibility</a></li>
+  <li><a href="#divisibility" id="toc-divisibility" class="nav-link active" data-scroll-target="#divisibility">Divisibility</a>
+  <ul class="collapse">
+  <li><a href="#theorem-1" id="toc-theorem-1" class="nav-link" data-scroll-target="#theorem-1">Theorem 1</a></li>
+  </ul></li>
+  <li><a href="#congruence-relation" id="toc-congruence-relation" class="nav-link" data-scroll-target="#congruence-relation">Congruence Relation</a></li>
+  <li><a href="#congruences-of-sums-and-products" id="toc-congruences-of-sums-and-products" class="nav-link" data-scroll-target="#congruences-of-sums-and-products">Congruences of sums and products</a></li>
   </ul>
 </nav>
     </div>
@@ -578,7 +583,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 16, 2024</p>
+      <p class="date">October 20, 2024</p>
     </div>
   </div>
   
@@ -592,7 +597,38 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="divisibility" class="level2">
 <h2 class="anchored" data-anchor-id="divisibility">Divisibility</h2>
-<p><del>Theorem1 증명문제 나온다함</del></p>
+<p>a | b: a divides b, if there exists an integer c such that b = ac.</p>
+<ul>
+<li>divisor</li>
+<li>dividend</li>
+<li>quotient</li>
+<li>remainder: 0 ≤ r &lt; divisor</li>
+</ul>
+<section id="theorem-1" class="level3">
+<h3 class="anchored" data-anchor-id="theorem-1">Theorem 1</h3>
+<p>Let a, b and c be integers, where a ≠ 0.</p>
+<ol type="1">
+<li>if a | b and a | c, then a | (b + c)</li>
+<li>if a | b, then a | bc for all integer c</li>
+<li>if a | b and b | c, then a | c</li>
+</ol>
+<ul>
+<li>Corollary: if a | b and a | c, then a | mb + nc whenever m and n are integers</li>
+</ul>
+</section>
+</section>
+<section id="congruence-relation" class="level2">
+<h2 class="anchored" data-anchor-id="congruence-relation">Congruence Relation</h2>
+<ul>
+<li>a ≡ b (mod m) if m | (a - b)</li>
+<li>a and b are congruent modulo m &lt;-&gt; there is an integer k such that a = b + km</li>
+</ul>
+</section>
+<section id="congruences-of-sums-and-products" class="level2">
+<h2 class="anchored" data-anchor-id="congruences-of-sums-and-products">Congruences of sums and products</h2>
+<ul>
+<li>if a ≡ b (mod m) and c ≡ d (mod m), then a + c ≡ b + d (mod m) and ac ≡ bd (mod m)</li>
+</ul>
 
 
 </section>

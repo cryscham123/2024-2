@@ -10,7 +10,58 @@
 <atom:link href="https://cryscham123.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>my 2024-2 note site</description>
 <generator>quarto-1.5.56</generator>
-<lastBuildDate>Wed, 16 Oct 2024 07:08:01 GMT</lastBuildDate>
+<lastBuildDate>Sun, 20 Oct 2024 07:30:27 GMT</lastBuildDate>
+<item>
+  <title>Number Theory and cryptography</title>
+  <link>https://cryscham123.github.io/posts/discrete/notes/4.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="divisibility" class="level2">
+<h2 class="anchored" data-anchor-id="divisibility">Divisibility</h2>
+<p>a | b: a divides b, if there exists an integer c such that b = ac.</p>
+<ul>
+<li>divisor</li>
+<li>dividend</li>
+<li>quotient</li>
+<li>remainder: 0 ≤ r &lt; divisor</li>
+</ul>
+<section id="theorem-1" class="level3">
+<h3 class="anchored" data-anchor-id="theorem-1">Theorem 1</h3>
+<p>Let a, b and c be integers, where a ≠ 0.</p>
+<ol type="1">
+<li>if a | b and a | c, then a | (b + c)</li>
+<li>if a | b, then a | bc for all integer c</li>
+<li>if a | b and b | c, then a | c</li>
+</ol>
+<ul>
+<li>Corollary: if a | b and a | c, then a | mb + nc whenever m and n are integers</li>
+</ul>
+</section>
+</section>
+<section id="congruence-relation" class="level2">
+<h2 class="anchored" data-anchor-id="congruence-relation">Congruence Relation</h2>
+<ul>
+<li>a ≡ b (mod m) if m | (a - b)</li>
+<li>a and b are congruent modulo m &lt;-&gt; there is an integer k such that a = b + km</li>
+</ul>
+</section>
+<section id="congruences-of-sums-and-products" class="level2">
+<h2 class="anchored" data-anchor-id="congruences-of-sums-and-products">Congruences of sums and products</h2>
+<ul>
+<li>if a ≡ b (mod m) and c ≡ d (mod m), then a + c ≡ b + d (mod m) and ac ≡ bd (mod m)</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>이산수학</category>
+  <guid>https://cryscham123.github.io/posts/discrete/notes/4.html</guid>
+  <pubDate>Sun, 20 Oct 2024 07:30:27 GMT</pubDate>
+</item>
 <item>
   <title>수정 사실주의</title>
   <link>https://cryscham123.github.io/posts/art/j.html</link>
@@ -60,26 +111,6 @@
   <category>공연예술의이해</category>
   <guid>https://cryscham123.github.io/posts/art/j.html</guid>
   <pubDate>Wed, 16 Oct 2024 07:08:01 GMT</pubDate>
-</item>
-<item>
-  <title>Number Theory and cryptography</title>
-  <link>https://cryscham123.github.io/posts/discrete/notes/4.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="divisibility" class="level2">
-<h2 class="anchored" data-anchor-id="divisibility">Divisibility</h2>
-<p><del>Theorem1 증명문제 나온다함</del></p>
-
-
-</section>
-
- ]]></description>
-  <category>이산수학</category>
-  <guid>https://cryscham123.github.io/posts/discrete/notes/4.html</guid>
-  <pubDate>Wed, 16 Oct 2024 04:22:39 GMT</pubDate>
 </item>
 <item>
   <title>확률변수의 기댓값</title>
@@ -314,6 +345,7 @@ restricting message set size, redundant carrier sentence</p></li>
 <li><p>System: a <code>set of components</code> that interact to achieve some <code>purpose</code> or <code>goal</code></p></li>
 <li><p>Information System: composed of <code>hardware</code>, <code>software</code>, <code>data</code>, <code>procedures</code>, <code>people</code></p></li>
 </ul>
+<p><img src="https://cryscham123.github.io/img/system-work.png" class="img-fluid"></p>
 </section>
 <section id="system-analysis-and-design" class="level2">
 <h2 class="anchored" data-anchor-id="system-analysis-and-design">System Analysis and Design</h2>
@@ -330,20 +362,19 @@ restricting message set size, redundant carrier sentence</p></li>
 </figure>
 </div>
 <ol type="1">
-<li>System definitions</li>
+<li>System definitions: 예산 편상, 위험 분석, …</li>
 <li><code>Requirements</code> analysis</li>
 <li>Component design</li>
 <li>Implementation</li>
 <li>System maintenance</li>
 </ol>
-<p><img src="https://cryscham123.github.io/img/system-work.png" class="img-fluid"></p>
 <section id="database-development-process" class="level4">
 <h4 class="anchored" data-anchor-id="database-development-process">database development process</h4>
 <ol type="1">
 <li><code>Requirements</code> analysis<br>
 input: the project plan<br>
 output: a set of approved requirements -&gt; <code>data model</code> (<code>ER model</code>로 <code>conceptual design</code>)<br>
-source: Use cases, Business rules</li>
+source: <code>Use cases</code>, <code>Business rules</code></li>
 <li>Component Design: Relational Database Design (상세 설계)</li>
 <li>Implementation</li>
 </ol>
@@ -358,7 +389,7 @@ source: Use cases, Business rules</li>
 <li><code>Entity class</code></li>
 <li><code>Entity instance</code></li>
 </ul></li>
-<li>Attributes: <code>Data type</code>, <code>Properties</code></li>
+<li>Attributes: <code>Data type</code>, <code>Properties</code>(default, constraints)</li>
 <li>Identifiers
 <ul>
 <li><code>unique</code></li>
@@ -368,33 +399,43 @@ source: Use cases, Business rules</li>
 <ul>
 <li><code>binary relationship</code>
 <ul>
-<li>Maximum cardinality: <code>1:1</code>, <code>1:N</code>, <code>M:N</code></li>
+<li>Maximum cardinality: <code>1:1</code>(A has a B), <code>1:N</code>(A has a set of B), <code>M:N</code></li>
 <li>Minimum cardinality: <code>0</code>, <code>1</code></li>
 </ul></li>
 <li><code>ternary relationship</code></li>
 </ul></li>
 </ul>
-<p><img src="https://cryscham123.github.io/img/entity.png" class="img-fluid"></p>
+<p><img src="https://cryscham123.github.io/img/entity.jpg" class="img-fluid"></p>
 </section>
 <section id="entit-relationship-diagram" class="level2">
 <h2 class="anchored" data-anchor-id="entit-relationship-diagram"><code>Entit-Relationship Diagram</code></h2>
 <ul>
-<li><code>Entity classes</code>: rectangle</li>
-<li><code>Relationships</code>: diamond</li>
-<li><code>maximum cardinality</code>: inside the diamond</li>
-<li><code>minimum cardinality</code>: oval or hash mark next to diamond</li>
-</ul>
-<p>다음주 수업 없다 까마귀발 그리는거 시험 내신단다 100%라시단다</p>
+<li><p><code>Entity classes</code>: rectangle</p></li>
+<li><p><code>Relationships</code>: diamond</p></li>
+<li><p><code>maximum cardinality</code>: inside the diamond</p></li>
+<li><p><code>minimum cardinality</code>: oval or hash mark next to diamond</p></li>
+<li><p><code>strong entity</code>: 독자적으로 존재 가능. 강한개체 관계는 점선<br>
+<code>Non-ID-dependent</code>: identifier에 다른 entity의 identifier가 포함되어 있지 않음. 점선으로 표기(<code>non-identifying relationship</code>)</p></li>
+<li><p><code>weak entity</code>: 약, 강 관계는 실선. IS: rounded square, traditional: 2 layer square<br>
+<code>ID-dependent</code>: identifier에 다른 entity의 identifier가 포함되어 있음. 실선으로 표기(<code>identifying relationship</code>)<br>
+</p></li>
+<li><p><code>associative entity</code>: <code>relationship</code>이 <code>entity</code>로 변환된 것.<br>
+<code>Many-to-many</code> relationship을 2개의 <code>1:N</code>으로 변환</p></li>
+<li><p><code>super type</code>, <code>sub type</code>: 상속관계. <code>sub type</code> is a <code>super type</code></p>
 <ul>
-<li><code>strong entity</code>: 독자적으로 존재 가능. 강한개체 관계는 점선</li>
-<li><code>weak entity</code>: 약, 강 관계는 실선. IS: rounded square, traditional: 2 layer square</li>
+<li>exclusive: <code>Discriminator attribute</code>가 필요함</li>
+<li>inclusive</li>
+</ul></li>
+<li><p><code>recursive relationship</code></p></li>
+<li><p>Business rule: build-in constraints, trigger, stored procedure, application code로 구현 가능</p></li>
+<li><p>data model validation: form, report를 이용한 prototyping</p></li>
 </ul>
 
 
 </section>
 
  ]]></description>
-  <category>데이터베이스설계및활용</category>
+  <category>개념 정리</category>
   <guid>https://cryscham123.github.io/posts/data/7.html</guid>
   <pubDate>Sun, 13 Oct 2024 15:00:00 GMT</pubDate>
 </item>
@@ -1338,14 +1379,20 @@ $f(n) is <img src="https://latex.codecogs.com/png.latex?O(n%5En)"></li>
 
 
 
-<p>SQL is not programming language but a <code>data sublanguage</code></p>
+<ul>
+<li>SQL is not programming language but a <code>data sublanguage</code></li>
+<li>MS Access 89에서는 <code>UNIQUE, CHECK, DEFAULT</code>,<code>NUMERIC(m,n)</code>, <code>LIKE</code>, <code>on update casacade, on delete casacade</code> 제약조건을 지원하지 않음</li>
+<li>MS Access에서는 <code>AutoNumber</code>를 지원하지 않음. 대신 <code>Identity</code>를 사용</li>
+<li>MS Access에서는 database 생성을 지원하지 않음</li>
+</ul>
 <section id="ddl-data-definition-language" class="level2">
 <h2 class="anchored" data-anchor-id="ddl-data-definition-language">DDL (<code>Data Definition Language</code>)</h2>
 <ol type="1">
 <li>CREATE (database, tables, views, indexes)</li>
-<li>ALTER: add, modify, drop columns / constraints</li>
+<li>ALTER: modify columns / constraints</li>
 <li>DROP (database, tables, views, indexes)</li>
-<li>TRUNCATE (delete all rows)</li>
+<li>TRUNCATE: delete table data while keeping structure.<br>
+<code>MS Access에서는 지원하지 않음</code> =&gt; <code>DELETE FROM table</code></li>
 </ol>
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><span class="kw" style="color: #003B4F;
 background-color: null;
@@ -1379,7 +1426,13 @@ font-style: inherit;">NULL</span>,</span>
 background-color: null;
 font-style: inherit;">VARCHAR</span>(<span class="dv" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">100</span>),</span>
+font-style: inherit;">100</span>) <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">UNIQUE</span>, # unique는 자동으로 <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">index</span> 생성</span>
 <span id="cb1-5">    Age <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">INT</span>,</span>
@@ -1399,24 +1452,37 @@ font-style: inherit;">id</span>),</span>
 <span id="cb1-7">    <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
-font-style: inherit;">CONSTRAINT</span> COURSE_FK <span class="kw" style="color: #003B4F;
+font-style: inherit;">CONSTRAINT</span> </span>
+<span id="cb1-8">    COURSE_FK <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">FOREIGN</span> <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
-font-style: inherit;">KEY</span> (CourseID) <span class="kw" style="color: #003B4F;
+font-style: inherit;">KEY</span> (CourseID) </span>
+<span id="cb1-9">    <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
-font-style: inherit;">REFERENCES</span> Course(CourseID) <span class="kw" style="color: #003B4F;
+font-style: inherit;">REFERENCES</span> Course(CourseID) </span>
+<span id="cb1-10">    <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">ON</span> <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
-font-style: inherit;">UPDATE</span> CASACADE</span>
-<span id="cb1-8">);</span>
-<span id="cb1-9"><span class="kw" style="color: #003B4F;
+font-style: inherit;">UPDATE</span> CASACADE </span>
+<span id="cb1-11">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">ON</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">DELETE</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">NO</span> ACTION</span>
+<span id="cb1-12">);</span>
+<span id="cb1-13"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">ALTER</span> <span class="kw" style="color: #003B4F;
@@ -1433,7 +1499,7 @@ background-color: null;
 font-style: inherit;">VARCHAR</span>(<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">100</span>);</span>
-<span id="cb1-10"><span class="kw" style="color: #003B4F;
+<span id="cb1-14"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">ALTER</span> <span class="kw" style="color: #003B4F;
@@ -1464,20 +1530,75 @@ font-style: inherit;">DELETE</span> <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">CASCADE</span>;</span>
-<span id="cb1-11"><span class="kw" style="color: #003B4F;
+<span id="cb1-15"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">ALTER</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">TABLE</span> student <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">ADD</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">CONSTRAINT</span> AGE_CHECK <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">CHECK</span> (Age <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>);</span>
+<span id="cb1-16"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">ALTER</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">TABLE</span> student <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">DROP</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">CONSTRAINT</span> AGE_CHECK;</span>
+<span id="cb1-17"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">DROP</span> <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">TABLE</span> student;</span>
-<span id="cb1-12"><span class="kw" style="color: #003B4F;
+<span id="cb1-18"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">TRUNCATE</span> <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
-font-style: inherit;">TABLE</span> student;</span></code></pre></div>
+font-style: inherit;">TABLE</span> student;</span>
+<span id="cb1-19"></span>
+<span id="cb1-20"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">CREATE</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">VIEW</span> [<span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">view</span> name] <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">AS</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">SELECT</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">FROM</span> student;</span></code></pre></div>
 <section id="dml-data-manipulation-language" class="level3">
 <h3 class="anchored" data-anchor-id="dml-data-manipulation-language">DML (<code>Data Manipulation Language</code>)</h3>
 <div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><span class="kw" style="color: #003B4F;
@@ -1506,7 +1627,11 @@ font-style: inherit;">SET</span> age <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">21</span> <span class="kw" style="color: #003B4F;
+font-style: inherit;">21</span>, Name <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'babo'</span> <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">WHERE</span> <span class="kw" style="color: #003B4F;
@@ -1563,8 +1688,21 @@ font-style: inherit;">WHERE</span> age <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">20</span>;</span>
+font-style: inherit;">20</span></span>
 <span id="cb3-5"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">ORDER</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">BY</span> name <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">DESC</span>, age <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">ASC</span>;</span>
+<span id="cb3-6"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">SELECT</span> <span class="kw" style="color: #003B4F;
@@ -1573,14 +1711,50 @@ font-weight: bold;
 font-style: inherit;">DISTINCT</span> name <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
-font-style: inherit;">FROM</span> student;</span></code></pre></div>
+font-style: inherit;">FROM</span> student;</span>
+<span id="cb3-7"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">SELECT</span> name, age <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">FROM</span> student <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">WHERE</span> Age <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> (<span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">SELECT</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">AVG</span>(Age) <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">FROM</span> student);</span></code></pre></div>
+</section>
+<section id="join" class="level3">
+<h3 class="anchored" data-anchor-id="join">JOIN</h3>
+<ul>
+<li>inner join(equijoin)
+<ul>
+<li>explicit join: <code>FROM table1 INNER JOIN table2 ON table1.id = table2.id</code><br>
+(MS Access에서는 INNER를 명시해야됨)</li>
+<li>implicit join: <code>FROM table1, table2 WHERE table1.id = table2.id</code></li>
+</ul></li>
+<li>outer join
+<ul>
+<li>left outer join: <code>FROM table1 LEFT JOIN table2 ON table1.id = table2.id</code></li>
+<li>right outer join: <code>FROM table1 RIGHT JOIN table2 ON table1.id = table2.id</code></li>
+</ul></li>
+</ul>
 
 
 </section>
 </section>
 
  ]]></description>
-  <category>데이터베이스설계및활용</category>
+  <category>개념 정리</category>
   <guid>https://cryscham123.github.io/posts/data/4-2.html</guid>
   <pubDate>Thu, 26 Sep 2024 15:00:00 GMT</pubDate>
 </item>

@@ -107,7 +107,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="SQL – 2024-2 정리노트">
-<meta property="og:description" content="my 2024-2 note site">
 <meta property="og:site_name" content="2024-2 정리노트">
 </head>
 
@@ -593,6 +592,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#dml-data-manipulation-language" id="toc-dml-data-manipulation-language" class="nav-link" data-scroll-target="#dml-data-manipulation-language">DML (<code>Data Manipulation Language</code>)</a></li>
   <li><a href="#dql-data-query-language" id="toc-dql-data-query-language" class="nav-link" data-scroll-target="#dql-data-query-language">DQL (Data Query Language)</a></li>
+  <li><a href="#join" id="toc-join" class="nav-link" data-scroll-target="#join">JOIN</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -604,7 +604,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-title">
 <h1 class="title">SQL</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">데이터베이스설계및활용</div>
+    <div class="quarto-category">개념 정리</div>
   </div>
   </div>
 
@@ -628,31 +628,45 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>SQL is not programming language but a <code>data sublanguage</code></p>
+<ul>
+<li>SQL is not programming language but a <code>data sublanguage</code></li>
+<li>MS Access 89에서는 <code>UNIQUE, CHECK, DEFAULT</code>,<code>NUMERIC(m,n)</code>, <code>LIKE</code>, <code>on update casacade, on delete casacade</code> 제약조건을 지원하지 않음</li>
+<li>MS Access에서는 <code>AutoNumber</code>를 지원하지 않음. 대신 <code>Identity</code>를 사용</li>
+<li>MS Access에서는 database 생성을 지원하지 않음</li>
+</ul>
 <section id="ddl-data-definition-language" class="level2">
 <h2 class="anchored" data-anchor-id="ddl-data-definition-language">DDL (<code>Data Definition Language</code>)</h2>
 <ol type="1">
 <li>CREATE (database, tables, views, indexes)</li>
-<li>ALTER: add, modify, drop columns / constraints</li>
+<li>ALTER: modify columns / constraints</li>
 <li>DROP (database, tables, views, indexes)</li>
-<li>TRUNCATE (delete all rows)</li>
+<li>TRUNCATE: delete table data while keeping structure.<br>
+<code>MS Access에서는 지원하지 않음</code> =&gt; <code>DELETE FROM table</code></li>
 </ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> student (</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">id</span> <span class="dt">INT</span> <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    CourseID <span class="dt">INT</span> <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    Name <span class="dt">VARCHAR</span>(<span class="dv">100</span>),</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    Name <span class="dt">VARCHAR</span>(<span class="dv">100</span>) <span class="kw">UNIQUE</span>, # unique는 자동으로 <span class="kw">index</span> 생성</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    Age <span class="dt">INT</span>,</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">CONSTRAINT</span> STUDENT_PK <span class="kw">PRIMARY</span> <span class="kw">KEY</span> (<span class="kw">id</span>),</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">CONSTRAINT</span> COURSE_FK <span class="kw">FOREIGN</span> <span class="kw">KEY</span> (CourseID) <span class="kw">REFERENCES</span> Course(CourseID) <span class="kw">ON</span> <span class="kw">UPDATE</span> CASACADE</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>);</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="kw">ALTER</span> <span class="kw">TABLE</span> student <span class="kw">ADD</span> <span class="kw">COLUMN</span> major <span class="dt">VARCHAR</span>(<span class="dv">100</span>);</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">ALTER</span> <span class="kw">TABLE</span> student <span class="kw">ADD</span> <span class="kw">CONSTRAINT</span> STUDENT_FK <span class="kw">FOREIGN</span> <span class="kw">KEY</span> (CourseID) <span class="kw">REFERENCES</span> Course(CourseID) <span class="kw">ON</span> <span class="kw">DELETE</span> <span class="kw">CASCADE</span>;</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">DROP</span> <span class="kw">TABLE</span> student;</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="kw">TRUNCATE</span> <span class="kw">TABLE</span> student;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">CONSTRAINT</span> </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    COURSE_FK <span class="kw">FOREIGN</span> <span class="kw">KEY</span> (CourseID) </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">REFERENCES</span> Course(CourseID) </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">ON</span> <span class="kw">UPDATE</span> CASACADE </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">ON</span> <span class="kw">DELETE</span> <span class="kw">NO</span> ACTION</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>);</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="kw">ALTER</span> <span class="kw">TABLE</span> student <span class="kw">ADD</span> <span class="kw">COLUMN</span> major <span class="dt">VARCHAR</span>(<span class="dv">100</span>);</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="kw">ALTER</span> <span class="kw">TABLE</span> student <span class="kw">ADD</span> <span class="kw">CONSTRAINT</span> STUDENT_FK <span class="kw">FOREIGN</span> <span class="kw">KEY</span> (CourseID) <span class="kw">REFERENCES</span> Course(CourseID) <span class="kw">ON</span> <span class="kw">DELETE</span> <span class="kw">CASCADE</span>;</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="kw">ALTER</span> <span class="kw">TABLE</span> student <span class="kw">ADD</span> <span class="kw">CONSTRAINT</span> AGE_CHECK <span class="kw">CHECK</span> (Age <span class="op">&gt;</span> <span class="dv">0</span>);</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="kw">ALTER</span> <span class="kw">TABLE</span> student <span class="kw">DROP</span> <span class="kw">CONSTRAINT</span> AGE_CHECK;</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="kw">DROP</span> <span class="kw">TABLE</span> student;</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="kw">TRUNCATE</span> <span class="kw">TABLE</span> student;</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">VIEW</span> [<span class="kw">view</span> name] <span class="kw">AS</span> <span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> student;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <section id="dml-data-manipulation-language" class="level3">
 <h3 class="anchored" data-anchor-id="dml-data-manipulation-language">DML (<code>Data Manipulation Language</code>)</h3>
 <div class="sourceCode" id="cb2"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">INSERT</span> <span class="kw">INTO</span> student <span class="kw">VALUES</span> (<span class="dv">1</span>, <span class="st">'Alice'</span>, <span class="dv">20</span>);</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">UPDATE</span> student <span class="kw">SET</span> age <span class="op">=</span> <span class="dv">21</span> <span class="kw">WHERE</span> <span class="kw">id</span> <span class="op">=</span> <span class="dv">1</span>;</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">UPDATE</span> student <span class="kw">SET</span> age <span class="op">=</span> <span class="dv">21</span>, Name <span class="op">=</span> <span class="st">'babo'</span> <span class="kw">WHERE</span> <span class="kw">id</span> <span class="op">=</span> <span class="dv">1</span>;</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">DELETE</span> <span class="kw">FROM</span> student <span class="kw">WHERE</span> <span class="kw">id</span> <span class="op">=</span> <span class="dv">1</span>;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="dql-data-query-language" class="level3">
@@ -662,8 +676,26 @@ this allows a query to <code>create a new relation</code> and feed information t
 <div class="sourceCode" id="cb3"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> student;</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> name </span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> student </span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> age <span class="op">&gt;</span> <span class="dv">20</span>;</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="kw">DISTINCT</span> name <span class="kw">FROM</span> student;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> age <span class="op">&gt;</span> <span class="dv">20</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="kw">ORDER</span> <span class="kw">BY</span> name <span class="kw">DESC</span>, age <span class="kw">ASC</span>;</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="kw">DISTINCT</span> name <span class="kw">FROM</span> student;</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> name, age <span class="kw">FROM</span> student <span class="kw">WHERE</span> Age <span class="op">&gt;</span> (<span class="kw">SELECT</span> <span class="fu">AVG</span>(Age) <span class="kw">FROM</span> student);</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="join" class="level3">
+<h3 class="anchored" data-anchor-id="join">JOIN</h3>
+<ul>
+<li>inner join(equijoin)
+<ul>
+<li>explicit join: <code>FROM table1 INNER JOIN table2 ON table1.id = table2.id</code><br>
+(MS Access에서는 INNER를 명시해야됨)</li>
+<li>implicit join: <code>FROM table1, table2 WHERE table1.id = table2.id</code></li>
+</ul></li>
+<li>outer join
+<ul>
+<li>left outer join: <code>FROM table1 LEFT JOIN table2 ON table1.id = table2.id</code></li>
+<li>right outer join: <code>FROM table1 RIGHT JOIN table2 ON table1.id = table2.id</code></li>
+</ul></li>
+</ul>
 
 
 </section>

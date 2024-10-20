@@ -73,7 +73,6 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Data Modeling and the Entity-Relationship Model – 2024-2 정리노트">
-<meta property="og:description" content="my 2024-2 note site">
 <meta property="og:site_name" content="2024-2 정리노트">
 </head>
 
@@ -573,7 +572,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title">
 <h1 class="title">Data Modeling and the Entity-Relationship Model</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">데이터베이스설계및활용</div>
+    <div class="quarto-category">개념 정리</div>
   </div>
   </div>
 
@@ -611,6 +610,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>System: a <code>set of components</code> that interact to achieve some <code>purpose</code> or <code>goal</code></p></li>
 <li><p>Information System: composed of <code>hardware</code>, <code>software</code>, <code>data</code>, <code>procedures</code>, <code>people</code></p></li>
 </ul>
+<p><img src="../../img/system-work.png" class="img-fluid"></p>
 </section>
 <section id="system-analysis-and-design" class="level2">
 <h2 class="anchored" data-anchor-id="system-analysis-and-design">System Analysis and Design</h2>
@@ -627,20 +627,19 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <ol type="1">
-<li>System definitions</li>
+<li>System definitions: 예산 편상, 위험 분석, …</li>
 <li><code>Requirements</code> analysis</li>
 <li>Component design</li>
 <li>Implementation</li>
 <li>System maintenance</li>
 </ol>
-<p><img src="../../img/system-work.png" class="img-fluid"></p>
 <section id="database-development-process" class="level4">
 <h4 class="anchored" data-anchor-id="database-development-process">database development process</h4>
 <ol type="1">
 <li><code>Requirements</code> analysis<br>
 input: the project plan<br>
 output: a set of approved requirements -&gt; <code>data model</code> (<code>ER model</code>로 <code>conceptual design</code>)<br>
-source: Use cases, Business rules</li>
+source: <code>Use cases</code>, <code>Business rules</code></li>
 <li>Component Design: Relational Database Design (상세 설계)</li>
 <li>Implementation</li>
 </ol>
@@ -655,7 +654,7 @@ source: Use cases, Business rules</li>
 <li><code>Entity class</code></li>
 <li><code>Entity instance</code></li>
 </ul></li>
-<li>Attributes: <code>Data type</code>, <code>Properties</code></li>
+<li>Attributes: <code>Data type</code>, <code>Properties</code>(default, constraints)</li>
 <li>Identifiers
 <ul>
 <li><code>unique</code></li>
@@ -665,26 +664,36 @@ source: Use cases, Business rules</li>
 <ul>
 <li><code>binary relationship</code>
 <ul>
-<li>Maximum cardinality: <code>1:1</code>, <code>1:N</code>, <code>M:N</code></li>
+<li>Maximum cardinality: <code>1:1</code>(A has a B), <code>1:N</code>(A has a set of B), <code>M:N</code></li>
 <li>Minimum cardinality: <code>0</code>, <code>1</code></li>
 </ul></li>
 <li><code>ternary relationship</code></li>
 </ul></li>
 </ul>
-<p><img src="../../img/entity.png" class="img-fluid"></p>
+<p><img src="../../img/entity.jpg" class="img-fluid"></p>
 </section>
 <section id="entit-relationship-diagram" class="level2">
 <h2 class="anchored" data-anchor-id="entit-relationship-diagram"><code>Entit-Relationship Diagram</code></h2>
 <ul>
-<li><code>Entity classes</code>: rectangle</li>
-<li><code>Relationships</code>: diamond</li>
-<li><code>maximum cardinality</code>: inside the diamond</li>
-<li><code>minimum cardinality</code>: oval or hash mark next to diamond</li>
-</ul>
-<p>다음주 수업 없다 까마귀발 그리는거 시험 내신단다 100%라시단다</p>
+<li><p><code>Entity classes</code>: rectangle</p></li>
+<li><p><code>Relationships</code>: diamond</p></li>
+<li><p><code>maximum cardinality</code>: inside the diamond</p></li>
+<li><p><code>minimum cardinality</code>: oval or hash mark next to diamond</p></li>
+<li><p><code>strong entity</code>: 독자적으로 존재 가능. 강한개체 관계는 점선<br>
+<code>Non-ID-dependent</code>: identifier에 다른 entity의 identifier가 포함되어 있지 않음. 점선으로 표기(<code>non-identifying relationship</code>)</p></li>
+<li><p><code>weak entity</code>: 약, 강 관계는 실선. IS: rounded square, traditional: 2 layer square<br>
+<code>ID-dependent</code>: identifier에 다른 entity의 identifier가 포함되어 있음. 실선으로 표기(<code>identifying relationship</code>)<br>
+</p></li>
+<li><p><code>associative entity</code>: <code>relationship</code>이 <code>entity</code>로 변환된 것.<br>
+<code>Many-to-many</code> relationship을 2개의 <code>1:N</code>으로 변환</p></li>
+<li><p><code>super type</code>, <code>sub type</code>: 상속관계. <code>sub type</code> is a <code>super type</code></p>
 <ul>
-<li><code>strong entity</code>: 독자적으로 존재 가능. 강한개체 관계는 점선</li>
-<li><code>weak entity</code>: 약, 강 관계는 실선. IS: rounded square, traditional: 2 layer square</li>
+<li>exclusive: <code>Discriminator attribute</code>가 필요함</li>
+<li>inclusive</li>
+</ul></li>
+<li><p><code>recursive relationship</code></p></li>
+<li><p>Business rule: build-in constraints, trigger, stored procedure, application code로 구현 가능</p></li>
+<li><p>data model validation: form, report를 이용한 prototyping</p></li>
 </ul>
 
 
